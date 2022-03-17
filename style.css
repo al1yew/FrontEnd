@@ -1,0 +1,37 @@
+h1{
+    color: aqua;
+    background-color:rgb(255, 0, 0);
+    font-weight: 400;
+    font-stretch: semi-expanded;
+    font-style: italic;
+} 
+p{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input{
+    padding: 10px 16px;
+}
+ol{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul{
+    font-weight: 700;
+    font: optional;
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    background-color: aquamarine;
+}
+a{
+    font-size: 45;
+    color: blue;
+}
+h2{
+    font-size: 120;
+    font-style: italic;
+}
+img{
+    padding: 10px 10px 10px 100px;
+}
