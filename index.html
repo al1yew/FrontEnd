@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Register, dear visitor!</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Please, enter your new Username</th>
+                <td><input type="text" name="username" maxlength="12" placeholder="Username" ></td>
+            </tr>
+            <tr>
+                <th>Please, enter your new Password</th>
+                <td><input type="password" name="password" maxlength="12" placeholder="Password"></td>
+            </tr>
+            <tr>
+                <th>Your email</th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>Have you ever been to our website?</th>
+                <td>
+                    <input type="checkbox" name="Yes" value="yes" checked>
+                    <label for="yes">Yes</label>
+
+                    <input type="checkbox" name="No" value="no">
+                    <label for="no">No</label>
+
+                    <input type="checkbox" name="I cannot remember" value="no">
+                    <label for="icannotremember">I cannot remember</label>
+
+                    <input type="checkbox" name="Maybe yes" value="yes">
+                    <label for="maybeyes">Maybe yes</label>
+
+                    <input type="checkbox" name="Maybe no" value="no">
+                    <label for="Maybeno">Maybe no</label>       
+                </td>
+            </tr>
+            <tr>
+                <th>How old are you?</th>
+                <td><input type="text" name="age" placeholder="age" maxlength="2" > </td>
+            </tr>
+            <tr>
+                <th>How often do you listen to radio while driving?</th>
+                <td>
+                    <select name="radio_listen">
+                        <option value="moreFive">More than 5 times</option>
+                        <option value="lessFive">Less than 5 times</option>
+                        <option selected value="moreTen">More than 10 times</option>
+                        <option value="lessTen">Less than 10 times</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Are you married?</th>
+                <td>
+                    <input type="radio" name="ismarried" value="ismarried">
+                    <label for="ismarried">Yes</label>
+                    <input type="radio" name="notmarried" value="notmarried" checked>
+                    <label for="notmarried">No</label>      
+                </td>
+            </tr>
+            <tr>
+                <th>If you are able, please add your photo:</th>
+                <td>
+                    <input type="file" name="photo" value="photo">
+                    <input type="submit" name="submit" value="Submit">
+                </td>
+            </tr>
+            <tr>
+                <th>Do you want to get news on mentioned eMail address?</th>
+                <td>
+                    <input type="checkbox" name="yes" value="yes">
+                    <label for="Yes">Yes</label>
+                    <input type="checkbox" name="no" value="no">
+                    <label for="No">No</label>      
+                </td>
+            </tr>
+            <tr>
+                <th>We would be grateful if you write some words about our webpage :)</th>
+                <td>
+                    <textarea name="Comment" cols="50" rows="10">
+                
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>If you have your own website, write it down:</th>
+                <td>
+                    <input type="url" name="urlvisitor">
+                    <button>Send</button>
+                </td>
+            </tr>
+            <tr>
+                <th>If you want to find something there, you can write it down:</th>
+                <td>
+                    <input type="search" name="search">
+                    <button>Search</button>
+                </td>
+            </tr>
+            <tr>
+                <th>Please enter the date of your visit:</th>
+                <td>
+                    <input type="date" name="date" value="date">
+                    <button>Set</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

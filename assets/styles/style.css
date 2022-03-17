@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Verdana, sans-serif;
+    color: #111111;
+}
+table{
+    align-items: baseline;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgb(253, 241, 227);
+}
+th, td {
+    width: 250px;
+    height: 25px;
+    letter-spacing: 0.1px;
+    font-size: 10px;
+    text-align: center;
+    border: 0.5px groove;
+    border-color: aqua;
+}
+input,textarea{
+    background-color: aliceblue;
+}
