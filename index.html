@@ -1,0 +1,113 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="http://www.misalcun.bizim.next.page.com" method="post">
+        <h1>Welcome to Bookface!</h1>
+        <fieldset class="Register">
+            <p>Please, enter your Username</p>
+            <input type="text" name="username" maxlength="12" placeholder="Username" value="username">
+            <hr>
+            <p>Please, enter your Password</p>
+            <input type="password" name="password" maxlength="12" placeholder="Password" value="password">
+            <hr>
+            <p>Your email</p>
+            <input type="email" name="email">
+            <hr>
+            <button>Register</button>
+        </fieldset>
+        
+        <br>
+        
+        <h3>Let us ask you some questions!</h3>
+
+        <fieldset class="Info">
+            <p>How old are you?</p>
+            <input type="text" name="age" placeholder="age" maxlength="2" value="age">
+            <hr>
+
+            <p>Are you married?</p>
+            <input type="radio" name="ismarried" value="ismarried">
+            <label for="ismarried">Yes</label>
+            <input type="radio" name="notmarried" value="notmarried" checked>
+            <label for="notmarried">No</label>
+            <hr>
+
+            <p>Have you ever been to our website?</p>
+            <input type="checkbox" name="Yes" value="yes" checked>
+            <label for="yes">Yes</label>
+
+            <input type="checkbox" name="No" value="no">
+            <label for="no">No</label>
+
+            <input type="checkbox" name="I cannot remember" value="no">
+            <label for="icannotremember">I cannot remember</label>
+
+            <input type="checkbox" name="Maybe yes" value="yes">
+            <label for="maybeyes">Maybe yes</label>
+
+            <input type="checkbox" name="Maybe no" value="no">
+            <label for="Maybeno">Maybe no</label>
+            <hr>
+            
+            <p>How often do you listen to radio while driving?</p>
+            <select name="radio_listen">
+                <option value="moreFive">More than 5 times</option>
+                <option value="lessFive">Less than 5 times</option>
+                <option selected value="moreTen">More than 10 times</option>
+                <option value="lessTen">Less than 10 times</option>
+            </select>
+            <hr>
+
+            <p>If you are able, please add your photo:</p>
+            <input type="file" name="photo" value="photo">
+            <br>
+            <input type="submit" name="submit" value="Submit">
+            <hr>
+        </fieldset>
+       
+        <br>
+
+        <h3>Your feedback :)</h3>
+
+        <fieldset>
+            <p>Do you want to get news on mentioned eMail address?</p>
+            <input type="checkbox" name="yes" value="yes">
+            <label for="Yes">Yes</label>
+            <input type="checkbox" name="no" value="no">
+            <label for="No">No</label>
+            <hr>
+            <p>We would be grateful if you write some words about our webpage :)</p>
+            <textarea name="Comment" cols="50" rows="10">
+                
+            </textarea>
+            <hr>
+            
+            <p>If you have your own website, write it down:</p>
+            <input type="url" name="urlvisitor">
+            <button>Send</button>
+            <hr>
+            <p>If you want to find something there, you can write it down:</p>
+            <input type="search" name="search">
+            <button>Search</button>
+            <hr>
+        </fieldset>
+        <br>
+        <h3>Please enter the date of your visit and your phone number:</h3>
+        <fieldset>
+            <input type="date" name="date" value="date">
+            <button>Set</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
