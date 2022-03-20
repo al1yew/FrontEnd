@@ -1,0 +1,10 @@
+body{
+    background-color: white;
+}
+.fonts_for_all_doc{
+    font-family: 'Roboto', Times, sans-serif;
+}
+.logo{
+    width: 150px;
+    height: 80px;
+}
