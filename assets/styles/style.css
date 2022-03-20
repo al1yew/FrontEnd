@@ -11,3 +11,10 @@ body{
 #search{
     margin: left;
 }
+.mainnav{
+    font-size: 25px;
+}
+.search_nav{
+    border-radius: 7px;
+}
+
