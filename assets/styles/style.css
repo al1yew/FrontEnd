@@ -8,15 +8,25 @@ body{
     width: 150px;
     height: 80px;
 }
-#search{
-    margin: left;
-}
 .mainnav{
     font-size: 25px;
 }
 .search_nav{
     border-radius: 7px;
+    position: relative;
+    margin-left: 1120px;
+    margin-top: -65px;
 }
-.button_search_nav{
-    
+.header{
+    background-color: antiquewhite;
+}
+.logo_social_media{
+    width: 20px;
+    height: 20px;
+}
+.button_socialmedia_logos{
+    border-radius: 25px;
+}
+.social_media_logos_div{
+    margin-left: 800px;
 }
