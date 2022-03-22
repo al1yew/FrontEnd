@@ -12,13 +12,13 @@ body{
     font-size: 25px;
 }
 .search_nav{
-    border-radius: 7px;
-    position: relative;
-    margin-left: 1120px;
-    margin-top: -65px;
+    border-radius: 5px;
+    width: 430px;
+    height: 30px;
+    /* how to place it to right*/
 }
 .header{
-    background-color: antiquewhite;
+    background-color: rgb(252, 244, 235);
 }
 .logo_social_media{
     width: 20px;
@@ -29,4 +29,36 @@ body{
 }
 .social_media_logos_div{
     margin-left: 800px;
+}
+.reviewphoto2{
+    width:260px;
+    height: 160px;
+}
+.welcome_head{
+    text-align: center;
+    color: darkblue;
+}
+.welcome_text{
+    text-align: center;
+    color: darkblue;
+}
+.click_on_image_text{
+    text-align: center;
+    color: darkblue;
+}
+.reviewphoto3{
+    width:260px;
+    height: 160px;
+}
+.reviewphoto4{
+    width:260px;
+    height: 160px;
+}
+.reviewphoto5{
+    width:260px;
+    height: 160px;
+}
+.reviewphoto6{
+    width:260px;
+    height: 160px;
 }
