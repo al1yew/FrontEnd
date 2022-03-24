@@ -57,3 +57,8 @@ td{
 .main_navigation{
     padding: 5px;
 }
+.button_search_nav{
+    width: 25px;
+    height: 25px;
+    border: none;
+}
