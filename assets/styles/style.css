@@ -32,6 +32,13 @@
 .h2_in_li{
     padding-bottom: 0px;
 }
+.lorem_p{
+    padding-bottom: 25px;
+}
+.empty_span_end{
+    width: 200px;
+    height: 200px;
+}
 .work_other_edu_lang_it{
     padding: 0px 3px 0px 3px;
     font-size: 30px;
