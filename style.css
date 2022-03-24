@@ -1,14 +1,14 @@
 .div1{
     margin: auto;
     height: 50px;
-    width: 100px;
+    width: 120px;
     background-color: brown;
     border-radius: 15px 0px 15px 0px;
 }
 .div2{
     margin: auto;
     height: 50px;
-    width: 95px;
+    width: 115px;
     background-color: blue;
     border-radius: 15px 0px 15px 0px;
 }
