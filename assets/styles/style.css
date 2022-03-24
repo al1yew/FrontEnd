@@ -3,9 +3,13 @@
 }
 .main_all{
     padding-top: 50px;
+    margin: auto;
+    width: 70%;
 }
 .main_head_resume{
     border-bottom: 3px red solid;
+    width: 70%;
+    margin: auto;
 }
 .my_photo{
     border-radius: 50%;
@@ -14,17 +18,17 @@
 }
 .name_surname{
     padding-top: 30px;
-    padding-left: 350px;
-    font-size: 70px;
+    padding-left: 300px;
+    font-size: 50px;
     color: darkblue;
 }
 .job_title{
-    padding-left: 350px;
-    font-size: 35px;
+    padding-left: 300px;
+    font-size: 25px;
 }
 .email_phone{
-    padding-left: 350px;
-    font-size: 25px;
+    padding-left: 300px;
+    font-size: 20px;
 }
 .p_in_li{
     padding-bottom: 20px;
