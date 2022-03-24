@@ -20,8 +20,8 @@ body{
     background-color: rgb(252, 244, 235);
 }
 .logo_social_media{
-    width: 20px;
-    height: 20px;
+    width:30px;
+    height: 30px;
 }
 .welcome_text_head{
     text-align: center;
@@ -50,4 +50,10 @@ body{
 .reviews{
     margin-left: auto;
     margin-right: auto;
+}
+td{
+    padding: 10px;
+}
+.main_navigation{
+    padding: 5px;
 }
