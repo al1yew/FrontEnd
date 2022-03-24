@@ -1,0 +1,56 @@
+* {
+    font-family: "Roboto" serif;
+}
+.main_all{
+    padding-top: 50px;
+}
+.main_head_resume{
+    border-bottom: 3px red solid;
+}
+.my_photo{
+    border-radius: 50%;
+    float: left;
+    padding: 20px;
+}
+.name_surname{
+    padding-top: 30px;
+    padding-left: 350px;
+    font-size: 70px;
+    color: darkblue;
+}
+.job_title{
+    padding-left: 350px;
+    font-size: 25px;
+}
+.email_phone{
+    padding-left: 350px;
+    font-size: 20px;
+}
+.p_in_li{
+    padding-bottom: 20px;
+}
+.h2_in_li{
+    padding-bottom: 0px;
+}
+.work_other_edu_lang_it{
+    padding: 0px 3px 0px 3px;
+    font-size: 30px;
+    color: rgb(99, 205, 240);
+}
+.work_other{
+    border-left: 3px grey dashed;
+    border-right: 3px grey dashed;
+    padding: 0px 15px;
+}
+.edu_lang_it{
+    border-right: 3px grey dashed;
+    padding: 0px 15px;
+}
+.main_work_other{
+    width: 50%;
+    float: left;
+}
+.main_edu_lang_it{
+    width: 50%;
+    float: right;
+}
