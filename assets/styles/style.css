@@ -9,7 +9,7 @@
 
 }
 .header{
-
+    
 }
 .main{
 
@@ -24,6 +24,18 @@
 .photo_link{
 
 }
+
+
+/* Text h1 and h3 */
+
+.description_of_person{
+    /* text-align: center; */
+    width: 600px;
+}
+.name_surname{
+    /* text-align: center; */
+}
+
 
 /* Logos and logos hover color */
 
@@ -44,14 +56,6 @@ i{
     padding: 10px;
 }
 
-/* Text h1 and h3 */
 
-.description_of_person{
-    /* text-align: center; */
-    width: 600px;
-}
-h1{
-    /* text-align: center; */
-}
 
 
