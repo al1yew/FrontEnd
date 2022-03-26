@@ -44,11 +44,11 @@ i{
 /* Text h1 and h3 */
 
 .description_of_person{
-    text-align: center;
+    /* text-align: center; */
     width: 600px;
 }
 h1{
-    text-align: center;
+    /* text-align: center; */
 }
 
 
