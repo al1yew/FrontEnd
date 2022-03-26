@@ -6,7 +6,7 @@
 /* Containers */
 
 .main_html{
-
+    position: absolute;
 }
 .header{
     
@@ -21,19 +21,11 @@
     width: 170px;
     border-radius: 50%;
 }
-.photo_link{
-
-}
-
 
 /* Text h1 and h3 */
 
 .description_of_person{
-    /* text-align: center; */
     width: 600px;
-}
-.name_surname{
-    /* text-align: center; */
 }
 
 
@@ -52,18 +44,18 @@
     color: blue;
 }
 i{
-    font-size: 50px;
     padding: 10px;
 }
-
+.fa-brands{
+    font-size: 40px;
+}
 
 /* buttons */
 
 .button_website{
-    width: 600px;
+    width: 500px;
     height: max-content;
     color: white;
     background-color: rgb(11, 23, 128);
 }
-
 
