@@ -27,11 +27,14 @@
 
 /* Logos and logos hover color */
 
-.youtube:hover, .instagram:hover{
+.youtube:hover{
     color: red;
 }
+.instagram:hover{
+    color: rgb(255, 0, 76);
+}
 .whatsapp:hover{
-    color: green;
+    color: rgb(0, 102, 0);
 }
 .facebook:hover, .twitter:hover{
     color: blue;
