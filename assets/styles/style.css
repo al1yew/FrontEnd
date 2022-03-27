@@ -10,6 +10,11 @@
     width: 520px;
     padding: 5px;
     margin: auto;
+    background-color: rgb(255, 244, 231);
+}
+
+.header{
+    margin-top: 20px;
 }
 
 /* Photo */
@@ -37,7 +42,7 @@
     color: red;
 }
 .instagram:hover{
-    color: rgb(255, 0, 76);
+    color: rgb(255, 0, 55);
 }
 .whatsapp:hover{
     color: rgb(0, 102, 0);
