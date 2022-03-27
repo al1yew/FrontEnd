@@ -6,6 +6,7 @@
 /* Containers */
 
 .main_html{
+    border: 4px double #000;
     text-align: center;
     width: 520px;
     padding: 5px;
@@ -15,9 +16,11 @@
 
 .header{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Photo */
+
 .my_photo{
     width: 200px;
     border-radius: 50%;
@@ -27,6 +30,7 @@
 
 .description_of_person{
     width: 500px;
+    margin: auto;
 }
 .code_edu_az{
     color: blue;
@@ -50,12 +54,15 @@
 .facebook:hover, .twitter:hover{
     color: blue;
 }
+.fa-github:hover{
+    color: blueviolet;
+}
 .fa-brands{
     font-size: 40px;
-    padding: 10px 10px 50px 10px;
+    padding: 10px 10px 30px 10px;
 }
 .fa-brands:hover{
-    text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.7);
+    text-shadow: 1px 1px 3px rgba(255, 0, 0, 0.7);
 }
 
 /* buttons */
