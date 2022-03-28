@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 1000px;
+}
+
+.section_1{
+    background-color: black;
+    height: 10%;
+}
+
+.section_2{
+    height: 90%;
+    display: flex;
+}
+
+.section_3{
+    background-color: grey;
+    height: inherit;
+}
+
+.section_4{
+    width: 66.66%;
+    background-color: rgb(255, 255, 255);
+}
+
+.section_5{
+    height: 80%;
+}
+
+.section_6{
+    background-color: black;
+    height: 10%;
+} 
+
+.col2{
+    width: 16.66%;
+}
+
+.col8{
+    height: 100%;
+}
+
+.col12{
+    height: 10%;
+}

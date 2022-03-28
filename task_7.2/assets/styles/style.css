@@ -1,0 +1,59 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    height: 700px;
+}
+
+.section1{
+    background-color: grey;
+    height: 10%;
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.text_div{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    overflow: hidden;
+}
+
+.text{
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 5px;
+    text-shadow: 2px 2px 5px green;
+}
+
+.color1{
+    background-color: blue;
+}
+.color2{
+    background-color: aqua;
+}
+.color3{
+    background-color: greenyellow;
+}
+.color4{
+    background-color: yellow;
+}
+.colors{
+    height: 10%;
+}
+
+
+
+.col12{
+    width: 100%;
+}
