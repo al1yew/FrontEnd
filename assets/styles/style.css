@@ -62,13 +62,20 @@ h5{
     flex-direction: column;
 }
 .learn-more-read-more{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
+    
 }
 .three{
+    padding: 0px;
     grid-row: 2 / 4;
     grid-column: 2 / 4;
-    background-color: blue;
+}
+.photo{
+    object-position: 80% 0;
+    object-fit: cover;
+    width: 100%;
+    margin: 0px;
 }
 .four{
     grid-row: 4;
@@ -80,7 +87,6 @@ h5{
     grid-column: 2 / 3;
     background-color: brown;
 }
-/* six seven eight */
 
 .nine{
     grid-row: 6 / 8;
