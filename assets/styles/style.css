@@ -62,9 +62,8 @@ h5{
     flex-direction: column;
 }
 .learn-more-read-more{
-    /* position: absolute;
-    bottom: 0; */
-    
+    position: absolute;
+    bottom: 0; 
 }
 .three{
     padding: 0px;
