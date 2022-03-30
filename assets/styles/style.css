@@ -63,28 +63,20 @@ header{
 
 .first{
     background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg);
-    height: 700px;
     background-position: center;
+    padding: 350px 0px;
     background-size: cover;
     background-attachment: fixed;
-    
 }
-
 .first_text{
     text-align: center;
     color: white;
+    transition: .3s;
 }
 .first_text h1{
-    font-size: 50px;
+    font-size: 40px;
+
 }
-.first_text h4{
-    font-size: 16px;
-}
-.first form{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.form_div{
-    width: 10%;
+.first_text:hover{
+    opacity: 0.5;
 }
