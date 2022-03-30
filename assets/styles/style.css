@@ -86,3 +86,7 @@ header{
 .first_text:hover{
     opacity: 0.5;
 }
+
+.first_text p{
+    font-size: 22px;
+}
