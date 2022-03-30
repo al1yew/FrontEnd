@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto' sans-serif;
+}
+::selection{
+    background-color: rgba(174, 255, 172, 0.624);
 }
 
 .container{
@@ -18,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px ;
+    padding: 25px 0px ;
 }
 
 .logo{
@@ -28,15 +32,11 @@ header{
 .navigation a{
     text-decoration: none;
     color: white;
-    font-weight: 10px;
-}
-
-.navigation{
-    display: flex;
 }
 
 .navigation_item{
     margin-left: 15px;
+    font-size: 18px;
 }
 .fa-cart-shopping{
     position: relative;
@@ -51,15 +51,40 @@ header{
     font-size: 10px;
 }
 .fa-angle-down{
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 1px;
 }
 
+
+
+/* Sections */
+
+
+
 .first{
     background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg);
-    height: 800px;
+    height: 700px;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
+.first_text{
+    text-align: center;
+    color: white;
+}
+.first_text h1{
+    font-size: 50px;
+}
+.first_text h4{
+    font-size: 16px;
+}
+.first form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.form_div{
+    width: 10%;
+}
