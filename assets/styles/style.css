@@ -14,7 +14,7 @@ header{
 }
 
 .header_pridumay_ima{
-    background-color: rgb(40, 51, 51);
+    /* background-color: rgb(40, 51, 51); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,6 @@ header{
 
 .navigation{
     display: flex;
-    justify-content: space-between;
 }
 
 .navigation_item{
@@ -56,27 +55,11 @@ header{
     margin-left: 1px;
 }
 
-/* .first{
+.first{
     background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg);
     height: 800px;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
-.first_text{
-    text-align: center;
-}
-.first_text h1{
-    font-size: 50px;
-    color: white;
-}
-.first_text h4{
-    font-size: 20px;
-    color: white;
-}
-.content{
 
-}
-.first form{
-    display: flex;
-} */
