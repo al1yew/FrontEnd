@@ -12,6 +12,10 @@
     padding: 0px 100px;
 }
 
+i{
+    all: unset;
+}
+
 header{
     width: 100%;
     position: fixed;
@@ -78,6 +82,7 @@ header{
     text-align: center;
     color: white;
     transition: .3s;
+    margin-bottom: 20px;
 }
 .first_text h1{
     margin-bottom: 12px;
@@ -89,4 +94,40 @@ header{
 
 .first_text p{
     font-size: 22px;
+}
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.form_div{
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .2s;
+}
+.form_div:hover{
+    box-shadow: 3px 3px 3px rgb(66, 28, 28);
+}
+.form_div input{
+    all: unset;
+    width: 75%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.fa-search, .fa-calendar-days{
+    color: black;
+    opacity: 0.5;
+    transition: .5s;
+}
+.fa-search:hover{
+    opacity: 1;
+}
+.btn{
+    width: 100%;
+    
 }
