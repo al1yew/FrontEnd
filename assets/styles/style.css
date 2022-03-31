@@ -416,11 +416,13 @@ video{
 
 .sixth_bottom{
     padding: 28px;
-    
     /* return here and move readmore down*/
 }
 .h5_date{
     font-size: 10px;
+}
+.sixth_bottom{
+    color: rgba(22, 22, 22, 0.877);
 }
 .sixth_bottom h3{
     font-size: 20px;
@@ -437,6 +439,18 @@ video{
     display: flex;
     justify-content: space-between;
 }
+.sixth_readmore{
+    margin-top: 20px;
+}
+.sixth_readmore a{
+    text-decoration: none;
+    font-size: 80%;
+    transition: 2s;
+    color: rgba(22, 22, 22, 0.322);
+}
+.readmore:hover{
+    opacity: 1;
+}
 .sixth_card img{
     max-height: 250px;
     object-fit: cover;
@@ -448,3 +462,12 @@ video{
     filter: contrast(0.85);
     filter: brightness(.8);
     transition: .3s;
+}
+.sixth_card:hover{
+    box-shadow: 0px 0px 20px 4px grey;
+    margin-top: 0;
+}
+.sixth_card img:hover{
+    filter: contrast(1);
+    filter: brightness(1);
+}
