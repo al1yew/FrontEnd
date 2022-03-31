@@ -1,9 +1,14 @@
+@font-face {
+    font-family: Font;
+    src: url(../fonts/Poppins-Light.ttf);
+}
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Font,sans-serif;
 }
+
 ::selection{
     background-color: rgba(174, 255, 172, 0.624);
 }
@@ -145,4 +150,43 @@ form{
 .btn:hover{
     background-color: rgb(0, 214, 214);
     color: black;
+}
+
+/* section second */
+.second{
+    margin-top: 50px;
+}
+.second_text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.second_text h1{
+    font-size: 36px;
+}
+.second_text p{
+    color: grey;
+}
+.second_cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.second_card{
+    width: 23%;
+    height: 300px;
+    position: relative;
+
+}
+.second_card img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+.second_card h4{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    color: white;
+    font-size: 26px;
 }
