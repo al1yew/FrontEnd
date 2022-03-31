@@ -380,3 +380,71 @@ video{
     top: 200px;
     background-attachment: fixed;
 } */
+
+
+/* sixth */
+
+
+.sixth{
+    margin: 50px 0;
+}
+.sixth_text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sixth_text h1{
+    font-size: 36px;
+}
+.sixth_text p{
+    color: grey;
+}
+.sixth_cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.sixth_card{
+    border: 1px solid rgba(128, 128, 128, 0.39);
+    width: 32%;
+    position: relative;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.sixth_bottom{
+    padding: 28px;
+    
+    /* return here and move readmore down*/
+}
+.h5_date{
+    font-size: 10px;
+}
+.sixth_bottom h3{
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+.sixth_bottom p{
+    font-size: 15px;
+}
+.sixth_bottom a{
+    margin-top: 30px;
+}
+.sixth_bottom_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.sixth_card img{
+    max-height: 250px;
+    object-fit: cover;
+    width: 100%;
+    height: 259.38px;
+    vertical-align: bottom;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    filter: contrast(0.85);
+    filter: brightness(.8);
+    transition: .3s;
