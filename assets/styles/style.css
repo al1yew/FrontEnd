@@ -225,13 +225,35 @@ form{
     width: 100%;
 }
 .third_card{
-    width: 31%;
-    height: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.39);
+    width: 32%;
     position: relative;
-    border-radius: 8px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
     transition: .3s;
     cursor: pointer;
     margin-top: 5px;
+}
+.third_bottom{
+    padding: 15px;
+}
+.third_bottom h3{
+    font-size: 20px;
+}
+.third_bottom p{
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+.third_bottom_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.third_bottom_bottom span{
+    font-size: 12px;
+}
+.fa-star{
+    color: rgb(101, 207, 243);
 }
 .third_card_third_for_span{
     position: relative;
@@ -244,15 +266,58 @@ form{
     padding: 10px 5px;
     border-radius: 100%;
 }
-
+.third_top_price1::after{
+    content: '$5,000';
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+.third_top_price2::after{
+    content: '$6,500';
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+.third_top_price3::after{
+    content: '$6,000';
+    text-decoration: line-through;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+.third_top{
+    position: relative;
+}
 .third_card img{
-    max-height: 259.38px;
+    max-height: 250px;
     object-fit: cover;
     width: 100%;
     height: 259.38px;
     vertical-align: bottom;
-    border-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     filter: contrast(0.85);
-    filter: brightness(.7);
+    filter: brightness(.8);
     transition: .3s;
+}
+
+.third_card:hover{
+    box-shadow: 0px 0px 20px 4px grey;
+    margin-top: 0;
+}
+.third_card img:hover{
+    filter: contrast(1);
+    filter: brightness(1);
 }
