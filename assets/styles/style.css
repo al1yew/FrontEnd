@@ -362,12 +362,21 @@ form{
     font-size: 20px;
     margin-bottom: 10px;
 }
-.third_bottom p{
-    font-size: 13px;
-    margin-top: 8px;
-    margin-bottom: 15px;
+.fourth_bottom p{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    color: black;
 }
-.third_bottom_bottom{
-    display: flex;
-    justify-content: space-between;
+/* fifth  --- try to write*/
+
+/* .fifth_video{
+    height: 300px
 }
+video{
+    width: 1349px;
+    height: 759px;
+    left: 0px;
+    top: 200px;
+    background-attachment: fixed;
+} */
