@@ -464,8 +464,10 @@ video{
     filter: contrast(1);
     filter: brightness(1);
 }
+/* SDELAY TAK SHTO V KARTOCHKI TOJE DVIGALIS VVERX I CENI NA NIX TOJE */
 
-/* footer */
+
+/* footer left */
 
 .footer{
     background-color: black;
@@ -476,8 +478,72 @@ video{
 .footer_all_flex{
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 .flex_elements_footer{
-    width: calc(100%/3); 
-    padding: 15px;
+    padding: 70px 0px;
+    width: 31%;
+}
+.footer h2{
+    font-size: 18px;
+}
+.left p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.left img{
+    margin-top: 30px;
+}
+
+/* footer middle */
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.element_for_column{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.social_media{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.fa-facebook-f{
+    background-color: blue;
+    padding: 12px 15px;
+    border-radius: 100%;
+    color: white;
+    text-decoration: none;
+}
+.fa-youtube{
+    background-color: red;
+    padding: 13px 12px;
+    border-radius: 100%;
+    color: white;
+    text-decoration: none;
+}
+.fa-instagram{
+    background-color: rgb(228, 53, 140);
+    padding: 12px 13px;
+    border-radius: 100%;
+    color: white;
+    text-decoration: none;
+}
+.fa-pinterest{
+    background-color: red;
+    padding: 12px 12px;
+    border-radius: 100%;
+    color: white;
+    text-decoration: none;
+}
+.fa-twitter{
+    background-color: rgb(151, 197, 212);
+    padding: 12px 12px;
+    border-radius: 100%;
+    color: white;
+    text-decoration: none;
 }
