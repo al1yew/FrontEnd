@@ -9,6 +9,35 @@
     font-family: Font,sans-serif;
 }
 
+/* scroll */
+
+::-webkit-scrollbar{
+    width: 3px;
+    transition: .2s;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    transition: .2s;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: red;
+    transition: .2s;
+}
+::-webkit-scrollbar:hover{
+    width: 8px;
+}
+::-webkit-scrollbar-track:hover{
+    background-color: grey;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: white;
+}
+
+/* body design */
+
 ::selection{
     background-color: rgba(174, 255, 172, 0.624);
 }
@@ -22,8 +51,10 @@ i{
 }
 
 header{
+    background-color: #00000027;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .header_pridumay_ima{
@@ -42,7 +73,7 @@ header{
 }
 .navigation a{
     text-decoration: none;
-    color: white;
+    color: grey;
 }
 
 .navigation_item{
@@ -51,7 +82,9 @@ header{
     transition: 0.3s;
 }
 .navigation_item:hover{
-    opacity: 0.4;
+    color: blue;
+    opacity: 0.5;
+    font-size: 120%;
 }
 .fa-cart-shopping{
     position: relative;
@@ -148,6 +181,7 @@ form{
 .btn:hover{
     background-color: rgb(0, 214, 214);
     color: black;
+    cursor: pointer;
 }
 
 /* section second */
@@ -231,6 +265,7 @@ form{
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     transition: .3s;
+    margin-top: 5px;
     cursor: pointer;
 }
 .third_bottom{
@@ -274,6 +309,7 @@ form{
     padding: 5px;
     color: white;
     letter-spacing: 1px;
+    transition: .3s;
 }
 .third_top_price2::after{
     content: '$6,500';
@@ -284,6 +320,7 @@ form{
     padding: 5px;
     color: white;
     letter-spacing: 1px;
+    transition: .3s;
 }
 .third_top_price3::after{
     content: '$6,000';
@@ -295,7 +332,9 @@ form{
     padding: 5px;
     color: white;
     letter-spacing: 1px;
+    transition: .3s;
 }
+/* how to change 6000 to 2000 */
 .third_top{
     position: relative;
 }
@@ -318,6 +357,11 @@ form{
 .third_card img:hover{
     filter: contrast(1);
     filter: brightness(1);
+}
+.third_card:hover ::after{
+    padding: 8px;
+    border-radius: 2px;
+    left: -4px;
 }
 
 /* fourth section */
@@ -408,6 +452,7 @@ video{
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     transition: .3s;
+    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -464,8 +509,6 @@ video{
     filter: contrast(1);
     filter: brightness(1);
 }
-/* SDELAY TAK SHTO V KARTOCHKI TOJE DVIGALIS VVERX I CENI NA NIX TOJE */
-
 
 /* footer left */
 
@@ -559,6 +602,13 @@ video{
     color: white;
     text-decoration: none;
 }
+.fa-brands{
+    margin: 0px;
+    transition: .2s;
+}
+.fa-brands:hover{
+    margin-top: 5px;
+}
 
 /* right footer */
 
@@ -569,6 +619,7 @@ video{
     "right_botom1 right_bottom2 right_bottom3";
     row-gap: 5px;
     column-gap: 5px;
+    position: relative;
 }
 .right_grid img{
     width: 100%;
@@ -578,7 +629,17 @@ video{
 .right h2{
     margin-bottom: 20px;
 }
-
+/* .photos_for_hover{
+    transition: .3s;
+}
+.photos_for_hover:hover{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+need to place it by hovering in middle of grid */
 
 /* footer footer */
 
@@ -586,11 +647,22 @@ video{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 100%;
     border-top: 2px solid grey;
 }
 .footer_footer p{
     font-size: 80%;
+    color: grey;
+    padding: 22px 0px;
+}
+.navbar_footer a{
+    text-decoration: none;
+    color: grey;
+    transition: .3s;
+    margin-right: 5px;
+}
+.navbar_footer a:hover{
+    color: blue;
+    margin-right: 10px;
+    font-size: 110%;
 }
