@@ -232,7 +232,6 @@ form{
     border-top-right-radius: 9px;
     transition: .3s;
     cursor: pointer;
-    margin-top: 5px;
 }
 .third_bottom{
     padding: 15px;
@@ -345,7 +344,6 @@ form{
     width: 32%;
     position: relative;
     transition: .3s;
-    margin-top: 5px;
 }
 .fourth_top{
     display: flex;
@@ -411,12 +409,10 @@ video{
     border-top-right-radius: 9px;
     transition: .3s;
     cursor: pointer;
-    margin-top: 5px;
 }
 
 .sixth_bottom{
     padding: 28px;
-    /* return here and move readmore down*/
 }
 .h5_date{
     font-size: 10px;
@@ -435,21 +431,18 @@ video{
 .sixth_bottom a{
     margin-top: 30px;
 }
-.sixth_bottom_bottom{
-    display: flex;
-    justify-content: space-between;
-}
 .sixth_readmore{
     margin-top: 20px;
 }
 .sixth_readmore a{
     text-decoration: none;
     font-size: 80%;
-    transition: 2s;
+    transition: .3s;
     color: rgba(22, 22, 22, 0.322);
 }
 .readmore:hover{
-    opacity: 1;
+    color: black;
+    font-size: 100%;
 }
 .sixth_card img{
     max-height: 250px;
@@ -470,4 +463,21 @@ video{
 .sixth_card img:hover{
     filter: contrast(1);
     filter: brightness(1);
+}
+
+/* footer */
+
+.footer{
+    background-color: black;
+}
+.footer h2, p, span{
+    color: white;
+}
+.footer_all_flex{
+    display: flex;
+    width: 100%;
+}
+.flex_elements_footer{
+    width: calc(100%/3); 
+    padding: 15px;
 }
