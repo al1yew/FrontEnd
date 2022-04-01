@@ -8,6 +8,63 @@
     box-sizing: border-box;
     font-family: Font,sans-serif;
 }
+html, body{
+    scroll-behavior: smooth;
+}
+/* fixed helpgul elements right nav and scropp up */
+
+.right_nav{
+    position: fixed;
+    background-color: white;
+    top: 180px;
+    right: 0px;
+    padding: 5px;
+    height: 120px;
+    box-shadow: 0px 0px 10px 4px grey;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+}
+.right_nav_elements{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+}
+.right_nav_element a{
+    text-decoration: none;
+}
+.right_nav_element i{
+    color: black;
+}
+.right_nav_elements:hover{
+    padding: 0px 4px;
+}
+.right_nav_element:hover{
+    color: red;
+}
+/* scroll up */
+
+.scroll_up{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+.scroll_up_custom{
+    color: black;
+    background-color: rgb(56, 56, 255);
+    opacity: 0.5;
+    padding: 9px 15px;
+    border-radius: 100%;
+    transition: .3s;
+}
+.scroll_up_custom:hover{
+    opacity: 1;
+    padding: 11px 17px;
+}
+
+
 
 /* scroll */
 
@@ -22,18 +79,18 @@
 }
   
 ::-webkit-scrollbar-thumb {
-    background: red;
+    background: rgba(255, 0, 0, 0.514);
     transition: .2s;
 }
 ::-webkit-scrollbar:hover{
     width: 8px;
 }
 ::-webkit-scrollbar-track:hover{
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.459);
     width: 8px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: white;
+    background-color:rgb(255, 0, 0);
 }
 
 /* body design */
@@ -55,6 +112,7 @@ header{
     width: 100%;
     position: fixed;
     z-index: 1;
+    box-shadow: 0px 1px 4px 0px black;
 }
 
 .header_pridumay_ima{
@@ -82,7 +140,7 @@ header{
     transition: 0.3s;
 }
 .navigation_item:hover{
-    color: blue;
+    color: rgb(0, 0, 255);
     opacity: 0.5;
     font-size: 120%;
 }
@@ -110,7 +168,7 @@ header{
 .first{
     background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg);
     background-position: center;
-    padding: 300px 0px;
+    padding: 250px 0px 300px 0px;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -278,6 +336,7 @@ form{
     font-size: 13px;
     margin-top: 8px;
     margin-bottom: 15px;
+    color: black;
 }
 .third_bottom_bottom{
     display: flex;
@@ -285,6 +344,7 @@ form{
 }
 .third_bottom_bottom span{
     font-size: 12px;
+    color: black;
 }
 .fa-star{
     color: rgb(101, 207, 243);
@@ -472,6 +532,7 @@ video{
 }
 .sixth_bottom p{
     font-size: 15px;
+    color: rgba(0, 0, 0, 0.726);
 }
 .sixth_bottom a{
     margin-top: 30px;
