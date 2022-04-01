@@ -1,18 +1,17 @@
 @font-face {
     font-family: My Font;
-    src: url(../fonts/Poppins-ExtraBold.ttf);
+    src: url(../fonts/Poppins-Bold.ttf);
 }
 *{
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
-    font-family: Font, sans-serif;
+    font-family: My Font, sans-serif;
 }
 
 html, body{
     scroll-behavior: smooth;
 }
-
 
 /* scroll up */
 
@@ -33,7 +32,6 @@ html, body{
     opacity: 1;
     padding: 11px 17px;
 }
-
 
 
 /* scroll */
@@ -64,6 +62,10 @@ html, body{
 }
 
 /* body design */
+body{
+    height: 2222px;
+}
+
 
 ::selection{
     background-color: rgba(18, 156, 16, 0.733);
@@ -73,7 +75,129 @@ html, body{
     padding: 0px 120px;
 }
 
-i{
-    all: unset;
+/* header */
+
+header{
+    background-color: #00000027;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 1px 4px 0px black;
+}
+.header_all_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    transition: 0.3s;
+    border-bottom: 1px solid grey;
 }
 
+/* left top header */
+
+.left{
+    width: 65%;
+}
+.left_p{
+    font-size: 12px;
+    color: white;
+}
+.tel_num{
+    margin-right: 10px; 
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+.tel_num:hover{
+    color: blue;
+    font-size: 120%;
+}
+
+
+/* top header right */
+
+
+.right{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right_social_media{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    transition: 0.3s;
+}
+.right_social_media:hover{
+    color: blue;
+    font-size: 150%;
+}
+
+
+
+/* header bottom */
+
+.header_all_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px ;
+    transition: 0.3s;
+}
+.header_all_bottom a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 40px;
+    transition: 0.4s;
+}
+.logo:hover{
+    opacity: 0.4;
+    color: rgba(0, 0, 255, 0.764);
+}
+.navigation_item{
+    margin-left: 10px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+.navigation_item:hover{
+    color: rgba(0, 0, 255, 0.764);
+    font-size: 135%;
+}
+.fa-globe{
+    position: relative;
+}
+.globe_en{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    font-size: 70%;
+}
+
+/* Sections */
+/* first section */
+
+.first{
+    background-image: url(https://wallpaperaccess.com/full/1191990.jpg);
+    background-position: center;
+    padding: 250px 0px 300px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.left_right_first{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_text_left_first{
+    color: white;
+}
+.header_text_left_first1{
+    font-size: 90px;
+}
+.header_text_left_first2{
+    font-size: 50px;
+}
