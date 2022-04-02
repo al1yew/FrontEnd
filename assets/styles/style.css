@@ -321,21 +321,108 @@ header{
 }
 
 /* section second */
-
+.second{
+    margin-bottom: 40px;
+}
 .second_top{
     text-align: center;
     font-size: 33px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.531);
+    margin-bottom: 30px;
+    padding-bottom: 25px;
 }
 .second_middle{
+    margin-bottom: 30px;
+    padding-bottom: 25px;
     text-align: center;
     color: rgb(150,150,150);
     border-bottom: 1px solid rgba(128, 128, 128, 0.531);
 }
 .second_bottom{
     display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 .second_bottom div{
     width: 22%;
+}
+.second_bottom_awesome{
+    font-size: 35px;
+    color: rgb(72,72,72);
+}
+.second_p{
+    font-size: 14px;
+    color: #777777;
+    line-height: 28px;
+}
+.second_h3{
+    margin: 10px 0px;
+}
+
+/* third section cards etc */
+
+.third{
+    margin-bottom: 40px;
+}
+
+.third_top_h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.531);
+}
+.third_middle{
+    font-size: 18px;
+    text-align: center;
+    color: #777777;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.531);
+}
+.third_bottom{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.third_bottom_card{
+    width: 22%; 
+}
+.third_bottom_card{
+    border-radius: 5px;
+}
+.third_bottom_card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.photo_card{
+    position: relative;
+    width: 100%;
+}
+.save_money{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 40px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    padding: 4px 10px 4px 7px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.room_type{
+    position: absolute;
+    right: 26%;
+    /* transform: translate(55%, 0px); */   
+    bottom: 15px;
+    color: white;
+    font-size: 18px;
 }
