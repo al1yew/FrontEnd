@@ -62,9 +62,6 @@ html, body{
 }
 
 /* body design */
-body{
-    height: 2222px;
-}
 
 ::selection{
     background-color: rgba(18, 156, 16, 0.733);
