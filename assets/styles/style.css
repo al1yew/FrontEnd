@@ -11,3 +11,38 @@
 html, body{
     scroll-behavior: smooth;
 }
+/* background: rgb(175,185,205); */
+/* background: linear-gradient(90deg, rgba(175,185,205,1) 0%, rgba(225,235,255,1) 100%); */
+
+/* scroll */
+
+.scroll_up{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+.scroll_up_custom{
+    color: black;
+    background-color: rgb(56, 56, 255);
+    opacity: 0.5;
+    padding: 9px 15px;
+    border-radius: 100%;
+    transition: .3s;
+}
+.scroll_up_custom:hover{
+    opacity: 1;
+    padding: 11px 17px;
+}
+
+/* body */
+
+::selection{
+    background-color: rgba(18, 156, 16, 0.733);
+}
+
+.container{
+    padding: 0px 50px;
+}
+
+/* header */
+
