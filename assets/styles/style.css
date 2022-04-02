@@ -1,6 +1,6 @@
 @font-face {
     font-family: My Font;
-    src: url(../fonts/Poppins-Bold.ttf);
+    src: url(../fonts/Poppins-Light.ttf);
 }
 *{
     margin: 0;
@@ -108,8 +108,7 @@ header{
     transition: 0.4s;
 }
 .tel_num:hover{
-    color: rgba(255, 0, 166, 0.764);
-
+    color: rgba(0, 0, 0, 0.764);
     font-size: 120%;
 }
 
@@ -153,8 +152,7 @@ header{
 }
 .logo:hover{
     opacity: 0.4;
-    color: rgba(255, 0, 166, 0.764);
-
+    color: rgba(0, 0, 0, 0.764);
 }
 .navigation_item{
     margin-left: 10px;
@@ -162,7 +160,7 @@ header{
     transition: 0.4s;
 }
 .navigation_item:hover{
-    color: rgba(255, 0, 166, 0.764);
+    color: rgba(0, 0, 0, 0.764);
     font-size: 120%;
 }
 .fa-globe{
@@ -390,11 +388,13 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    padding: 20px 0px ;
 }
 .third_bottom_card{
     width: 22%; 
 }
 .third_bottom_card{
+    transition: 0.4s;
     border-radius: 5px;
 }
 .third_bottom_card img{
@@ -417,12 +417,49 @@ header{
     background-color: red;
     border-radius: 100%;
 }
-
 .room_type{
     position: absolute;
     right: 26%;
-    /* transform: translate(55%, 0px); */   
     bottom: 15px;
     color: white;
     font-size: 18px;
+}
+.card_middle{
+    margin: 20px 8px;
+}
+.card_text{
+    padding-bottom: 10px;
+    color: #777777;
+    font-size: 14px;
+    border-bottom: 1px solid #77777754;
+}
+.card_bottom{
+    margin: 10px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_bottom_btn{
+    width: 30%;
+}
+.card_btn{
+    width: 100%;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: white;
+    background-color: #0333E8;
+    padding: 10px 0px;
+}
+.third_bottom_bottom{
+    border-bottom: 1px solid #77777752;
+}
+.third_bottom_card:hover{
+    box-shadow: 0px 0px 10px 2px red;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.card_btn:hover{
+    background-color: #2250fc;
+    cursor: pointer;
 }
