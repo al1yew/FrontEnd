@@ -109,7 +109,8 @@ header{
     transition: 0.4s;
 }
 .tel_num:hover{
-    color: blue;
+    color: rgba(255, 0, 166, 0.764);
+
     font-size: 120%;
 }
 
@@ -134,8 +135,6 @@ header{
     font-size: 150%;
 }
 
-
-
 /* header bottom */
 
 .header_all_bottom{
@@ -155,7 +154,8 @@ header{
 }
 .logo:hover{
     opacity: 0.4;
-    color: rgba(0, 0, 255, 0.764);
+    color: rgba(255, 0, 166, 0.764);
+
 }
 .navigation_item{
     margin-left: 10px;
@@ -163,7 +163,7 @@ header{
     transition: 0.4s;
 }
 .navigation_item:hover{
-    color: rgba(0, 0, 255, 0.764);
+    color: rgba(255, 0, 166, 0.764);
     font-size: 135%;
 }
 .fa-globe{
@@ -182,7 +182,7 @@ header{
 .first{
     background-image: url(https://wallpaperaccess.com/full/1191990.jpg);
     background-position: center;
-    padding: 250px 0px 300px 0px;
+    padding: 220px 0px;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -192,6 +192,10 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.left_first{
+    width: 50%;
+    line-height: 100px;
+}
 .header_text_left_first{
     color: white;
 }
@@ -200,4 +204,43 @@ header{
 }
 .header_text_left_first2{
     font-size: 50px;
+}
+.right_first{
+    width: 45%;
+    background-color: rgba(85, 85, 85, 0.439);
+    padding: 15px;
+    border: 10px solid rgba(85, 85, 85, 0.667);
+    border-radius: 5px;
+}
+.right_first_form{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "top1 top2"
+    "middle1 middle2"
+    "bottom bottom"
+    ". button_check";
+}
+.top1{
+    grid-area: top1;
+}
+
+.top2{
+    grid-area: top2;
+}
+
+.middle1{
+    grid-area: middle1;
+}
+
+.middle2{
+    grid-area: middle2;
+}
+
+.bottom{
+    grid-area: bottom;
+}
+
+.button_check{
+    grid-area: button_check;
 }
