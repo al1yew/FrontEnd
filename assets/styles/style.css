@@ -463,3 +463,48 @@ header{
     background-color: #2250fc;
     cursor: pointer;
 }
+/* fourth */
+
+
+.fourth{
+    margin-bottom: 40px;
+}
+.fourth_h1{
+    font-size: 50px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+.fourth_flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_fourth{
+    width: 55%;
+}
+.right{
+    width: 42%;
+}
+.fourth_days{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0333E8;
+    margin-bottom: 15px;
+}
+.fourth_day{
+    padding: 10px 0px;
+}
+.fourth_name{
+    font-weight: bold;
+}
+.fourth_p_p{
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.fourth_padding{
+    padding-bottom: 15px;
+}
