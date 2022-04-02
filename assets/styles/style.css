@@ -478,13 +478,13 @@ header{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 .left_fourth{
-    width: 55%;
+    width: 57%;
 }
-.right{
-    width: 42%;
+.right_fourth{
+    width: 39%;
 }
 .fourth_days{
     display: flex;
@@ -493,6 +493,10 @@ header{
     align-items: center;
     border-bottom: 2px solid #0333E8;
     margin-bottom: 15px;
+}
+.fourth_ready_to_purchase{
+    color: #777777;
+    font-weight: bold;
 }
 .fourth_day{
     padding: 10px 0px;
@@ -507,4 +511,69 @@ header{
 }
 .fourth_padding{
     padding-bottom: 15px;
+}
+
+/* form in fourth section */
+
+.fourth_form{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.fourth_form_label{
+    color: #777777;
+}
+.fourth_form_input{
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #777777;
+}
+.textarea{
+    overflow: auto;
+    resize: vertical;
+    width: 100%;
+}
+.fourth_form_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth_btn{
+    background-color: #0333E8;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+}
+
+.fourth_btn:hover{
+    background-color: #2250fc;
+    cursor: pointer;
+}
+
+/* map is ready in html */
+
+/* footer */
+
+.footer_btn{
+    border: 0px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+}
+
+.footer_button{
+    background-color: #2250fc;
+    cursor: pointer;
+}
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
 }
