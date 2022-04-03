@@ -36,9 +36,6 @@ html, body{
 body{
     height: 2345px;
 }
-::selection{
-    background-color: rgba(18, 156, 16, 0.733);
-}
 
 .container{
     padding: 0px 40px;
@@ -415,8 +412,124 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
-.fourth_card_left{
+.fourth_card1{
+    margin-top: 5px;
+    background: rgb(40,179,240);
+    background: linear-gradient(90deg, rgba(40,179,240,1) 0%, rgba(10,149,210,1) 100%);
+    display: flex;
+    justify-content: space-between;
     width: 49%;
-
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 3px;
 }
+.fourth_card_h3{
+    color: white;
+    font-size: 25px;
+}
+.fourth_card_left{
+    width: 60%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fourth_img{
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.fourth_img1{
+    object-fit: cover;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.fourth_readmore a{
+    text-decoration: none;
+    font-size: 120%;
+    transition: .3s;
+    color: white;
+}
+.fourth_card_right{
+    height: 320px;
+    overflow: hidden;
+}
+.fourth_card_right1{
+    height: 320px;
+    overflow: hidden;
+    padding-right: 40px;
+}
+.readmore_fourth:hover{
+    color: black;
+    font-size: 130%;
+}
+
+.fourth_card1:hover{
+    box-shadow: 0px 0px 20px 4px grey;
+    margin-top: 0;
+}
+
+
+/* fifth */
+.fifth{
+    padding-bottom: 80px ;
+}
+.fifth_h1{
+    font-size: 36px;
+    padding-bottom: 70px;
+}
+
+.news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.date_news{
+    padding: 10px 0px;
+}
+.news_card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    transition: 0.3s;
+    border-bottom: 1px solid #7777776a;
+}
+.news_card:hover{
+    cursor: pointer;
+    color: #1a69c8;
+}
+
+/* sixth section */
+.sixth{
+    padding: 50px 0px;
+}
+.sixth_all{
+    background: url(https://abb-bank.az/img/t_banner.png) no-repeat right; 
+    background-size: cover;
+    height: 200px;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sixth_readmore{
+    margin-top: 20px;
+}
+.sixth_readmore a{
+    text-decoration: none;
+    font-size: 120%;
+    transition: .3s;
+    color: white;
+}
+.sixth_h1{
+    font-size: 36px;
+    color: white;
+}
+
+
+/* footer */
+
