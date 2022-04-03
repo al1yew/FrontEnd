@@ -535,4 +535,70 @@ body{
 
 .footer_bottom_color_flex{
     background-color: rgb(249,249,249);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.footer_column{
+    width: 15%;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_column h5{
+    font-size: 21px;
+    padding: 15px 0px;
+}
+.footer_column a{
+    text-decoration: none;
+    color: #777777;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.footer_column p{
+    color: #777777;
+    font-size: 15px;
+}
+.footer_tel{
+    font-size: 20px
+}
+
+
+
+
+
+.download_all{
+    background-color: rgb(249,249,249);
+}
+.download_all_elements{
+    display: flex;
+    justify-content: flex-start;
+}
+.click_download{
+    padding-right: 10px;
+    display: flex;
+}
+.click_download_a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.download_all a{
+    color: #666666;
+    text-decoration: none;
+}
+.fa-app-store-ios{
+    font-size: 40px;
+    padding: 5px;
+}
+.download_all_element{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(236,236,236);
+    transition: 0.3s;
+}
+.download_all_element:hover{
+    background-color: blue;
+    color: white;
 }
