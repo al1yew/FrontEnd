@@ -36,6 +36,9 @@ html, body{
 
 /* body */
 
+body{
+    height: 2345px;
+}
 ::selection{
     background-color: rgba(18, 156, 16, 0.733);
 }
@@ -43,13 +46,19 @@ html, body{
 .container{
     padding: 0px 40px;
 }
+.container1{
+    padding: 0px 40px;
+}
 
 /* header */
-
-.header{
+.header_top_color{
     background-color: #F6F7F8;
+    width: 100%;
 }
 .header_top{
+    background-color: #F6F7F8;
+    padding: 0px 40px;
+    /* position: sticky; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,6 +106,7 @@ html, body{
     text-decoration: none;
     font-size: 14px;
     color: #666666;
+    transition: 0.3s;
 }
 .top_right select{
     border: none;
@@ -104,4 +114,62 @@ html, body{
     outline: none;
     cursor: pointer;
 }
-.
+.tel:hover{
+    color: rgb(51, 41, 202);
+}
+
+/* middle */
+/* i tryed there position fixed smth went wrong */
+.header_middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;  
+    width: 100%;
+    border-bottom: 1px solid #6666664d;
+}
+
+.header_middle_left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+}
+
+.header_middle_left_left{
+    margin-right: 30px;
+}
+
+.header_middle_left_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.itisgrey{
+    color: #666666;
+}
+
+.header_middle_right{
+    width: 20%;
+}
+
+.header_middle_left_right_p{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.internet_banking{
+    color: rgb(51, 41, 202);
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.photo_in{
+    margin-right: 5px;
+}
+
+/* bottom header */
+
