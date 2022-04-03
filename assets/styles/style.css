@@ -1,12 +1,12 @@
 @font-face {
     font-family: Font;
-    src: url(../fonts/Poppins-Medium.ttf);
+    src: url(../fonts/SourceSansPro-Regular.ttf);
 }
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Font,sans-serif;
+    font-family: Font, sans-serif;
 }
 html, body{
     scroll-behavior: smooth;
@@ -41,8 +41,67 @@ html, body{
 }
 
 .container{
-    padding: 0px 50px;
+    padding: 0px 40px;
 }
 
 /* header */
 
+.header{
+    background-color: #F6F7F8;
+}
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0px;
+    width: 100%;
+}
+.top_left{
+    display: flex;
+    align-items: center;
+    width: 65%;
+}
+.top_left_nav{
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.top_left_blue_button{
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid rgb(0,86,193);
+    padding: 7px 10px;
+    color: rgb(0,86,193);
+    transition: 0.3s;
+}
+.top_left_nav:hover{
+    font-size: 110%;
+    color: black;
+}
+/* v task 8 i task 10 prover kak ti delal hover na nav elements  i dla cards, oni narushali celostnost i dvigali vsex tuda suda vmeste s marginami i paddingami, a tut ya font size sdelal i vse norm */
+.top_left_blue_button:hover{
+    background-color: rgb(51, 41, 202);
+    color: white;
+}
+/* nav top right */
+.top_right{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top_right_nav{
+    text-decoration: none;
+    font-size: 14px;
+    color: #666666;
+}
+.top_right select{
+    border: none;
+    background-color: #F6F7F8;
+    outline: none;
+    cursor: pointer;
+}
+.
