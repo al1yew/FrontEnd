@@ -112,7 +112,6 @@ body{
 }
 
 /* middle */
-/* i tryed there position fixed smth went wrong */
 .header_middle{
     display: flex;
     justify-content: space-between;
@@ -270,23 +269,40 @@ body{
     align-items: center;
     width: 100%;
 }
+
+
 .card_second{
+    height: 200px;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
     width: 31%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: rgb(242,245,248);
     border-radius: 8px;
 }
 .card_second_left{
-    width: 68%;
-    padding: 30px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.card_second_left div{
+    height: 25%;
+    padding-top: 10px;
+}
+.card_second_left h3{
+    height: 25%;
+    padding-top: 10px;
+}
+.card_second_left p{
+    height: 45%;
+    padding-top: 10px;
 }
 .card_second_right{
-    width: 30%;
+    width: 20%;
     box-sizing: border-box;
 }
 .card_second_right_photo{    
@@ -298,9 +314,7 @@ body{
     overflow: hidden;
     box-sizing: border-box;
 }
-.card_second_btn{ 
-    padding-top: 35px;
-}
+
 .card_second_button{
     background-color: #0056c1;
     border: none;
@@ -716,3 +730,4 @@ body{
 .fa-brands1:hover{
     margin-top: 5px;
 }
+
