@@ -533,3 +533,6 @@ body{
 
 /* footer */
 
+.footer_bottom_color_flex{
+    background-color: rgb(249,249,249);
+}
