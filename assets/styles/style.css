@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Font;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Font, sans-serif;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+/* scroll */
+
