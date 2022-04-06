@@ -9,7 +9,10 @@
     font-family: Font, sans-serif;
 }
 html, body{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 /* scroll */
 
+svg{
+    background-color: green;
+}
