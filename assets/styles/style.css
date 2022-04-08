@@ -22,6 +22,9 @@ html, body{
 .container{
     padding: 1rem 3rem;
 }
+.container1{
+    padding: 1rem 6rem;
+}
 /* scroll */
 
 .logo{
@@ -122,4 +125,35 @@ header a{
     font-size: 95px;
     color: #007A5B;
     font-family: Font1;
+}
+
+
+/* second section */
+
+.second_all{
+    background-color: white;
+    padding: 80px;
+}
+.main_text_head{
+    font-size: 45px;
+    color: black;
+    font-family: Font1;
+    margin-bottom: 50px;
+}
+.main_text_middle1{
+    font-size: 20px;
+    color: rgba(0,0,0,0.7);
+    margin: 0 0 20px 0;
+}
+.box_middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+}
+.box_middle_left_and_right{
+    width: 49%;
+    text-align: center;
 }
