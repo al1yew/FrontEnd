@@ -190,6 +190,9 @@ header a{
     align-items: center;
     overflow: hidden;
 }
+.box_bottom a{
+    text-align: center;
+}
 .img_grid{
     opacity: 0.5;
     transition: 0.3s;
