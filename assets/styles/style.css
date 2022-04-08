@@ -133,11 +133,12 @@ header a{
 .second_all{
     background-color: white;
     padding: 80px;
+    font-family: Font1;
+
 }
 .main_text_head{
     font-size: 45px;
     color: black;
-    font-family: Font1;
     margin-bottom: 50px;
 }
 .main_text_middle1{
@@ -152,8 +153,49 @@ header a{
     flex-wrap: wrap;
     width: 100%;
     margin-top: 100px;
+    border-bottom: 1px solid #777777a1;
+    padding-bottom: 50px;
 }
 .box_middle_left_and_right{
-    width: 49%;
+    width: 46%;
     text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+}
+.middle_price{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.boxes_bottom{
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    grid-row: auto;
+    grid-column: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-areas: 
+    "box_bottom box_bottom box_bottom box_bottom"
+    "box_bottom box_bottom box_bottom box_bottom"
+    "box_bottom box_bottom box_bottom box_bottom";
+}
+.box_bottom{
+    cursor: pointer;
+    border: 1px solid #66666691;
+    border-radius: 8px;
+    padding: 90px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.img_grid{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.box_bottom:hover img{
+    transform: scale(1.2);
+    opacity: 1;
+
 }
