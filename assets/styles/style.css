@@ -9,10 +9,51 @@
     font-family: Font, sans-serif;
 }
 html, body{
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;   
+    background-image: url(../images/shutterstock_527339023_copy_17.png); 
+    background-attachment: fixed;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    height: 1223px;
+}
+.container{
+    padding: 1rem 3rem;
 }
 /* scroll */
+header{
+    position: fixed;
 
-svg{
-    background-color: green;
+}
+.logo{
+    width: 160px;
+    height: 60px;
+}
+.header{
+    background-color: transparent;
+}
+
+.header_all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_box_left{
+    width: 15%;
+}
+
+.header_box_middle{
+    width: 80%;
+}
+
+.header_box_right{
+    width: 5%;
+}
+.contacts_border{
+    border-right: 1px solid grey;
+    margin-right: 10px;
+}
+a{
+    color: rgba(0, 140, 0, 0.652) !important;
+    text-decoration: none !important;
 }
