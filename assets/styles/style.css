@@ -190,7 +190,72 @@ header a{
     align-items: center;
     overflow: hidden;
 }
+
+
+
+
+/* .box_bottom1{
+    cursor: pointer;
+    border: 1px solid #66666691;
+    border-radius: 8px;
+    padding: 80px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.change_box1{
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    line-height: 35px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.change_box1_bank{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.box_bottom1:hover .change_box1{
+    opacity: 1;
+}
+
+.box_bottom1:hover .change_box2{
+    opacity: 0;
+}
+.change_box1_bank{
+    position: relative;
+}
+.change_box1_bank::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    bottom: 0px;
+    left: 0px;
+    background-color: #000000;
+    height: 1px;
+    transition: 0.4s;
+}
+.change_box1_bank:hover::before{
+    width: 90%;
+}  */
+
+
+
+
+
+.change_box2{
+    transition: 0.3s;
+}
 .box_bottom a{
+    text-align: center;
+}
+.box_bottom1 a{
     text-align: center;
 }
 .img_grid{
@@ -200,5 +265,4 @@ header a{
 .box_bottom:hover img{
     transform: scale(1.2);
     opacity: 1;
-
 }
