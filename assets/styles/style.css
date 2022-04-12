@@ -124,18 +124,17 @@ button {
 }
 
 #Fourth {
-  padding: 100px 0;
+  padding: 120px 0;
   background-color: #f8f9fa;
-}
-
-#Fourth h2, #Fourth h5, #Fourth p {
-  text-align: center;
 }
 
 #Fourth img {
   border-radius: 100%;
   -webkit-box-shadow: 1px 2px 10px 2px #666666;
           box-shadow: 1px 2px 10px 2px #666666;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
 }
 
 #Fourth .row {
@@ -148,15 +147,55 @@ button {
 }
 
 #Fourth h2 {
+  text-align: center;
   font-size: 32px;
   margin-bottom: 50px;
 }
 
 #Fourth h5, #Fourth p {
+  text-align: center;
   margin-top: 10px;
 }
 
 #Fourth p {
+  text-align: center;
   font-size: 16px;
+}
+
+#Fourth .col-lg-3 {
+  height: 400px;
+}
+
+#Fifth {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 100px 0;
+}
+
+#Fifth p {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+}
+
+#Fifth form input {
+  width: 79%;
+  padding: 17px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+#Fifth form button {
+  width: 18%;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#Fifth form button:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

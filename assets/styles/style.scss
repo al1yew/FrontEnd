@@ -114,27 +114,63 @@ button{
 
 
 #Fourth{
-    padding: 100px 0;
+    padding: 120px 0;
     background-color: rgb(248,249,250);
-    h2,h5,p{
-        text-align: center;
-    }
     img{
         border-radius: 100%;
         box-shadow: 1px 2px 10px 2px #666666;
+        object-fit: cover;
+        background-size: cover;
     }
     .row{
         justify-content: space-evenly;
         align-items: center;
     }
     h2{
+        text-align: center;
         font-size: 32px;
         margin-bottom: 50px;
     }
     h5,p{
+        text-align: center;
         margin-top: 10px;
     }
     p{
+        text-align: center;
         font-size: 16px;
     }
+    .col-lg-3{
+        height: 400px;
+    }
 }
+
+#Fifth{
+    background-image: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 100px 0;
+    p{
+        font-size: 32px;
+        color: #fff;
+        text-align: center;
+    }
+    form{
+        input{
+            width: 79%;
+            padding: 17px;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+        }        
+        button{
+            width: 18%;
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+        button:hover{
+            opacity: 1;
+        }
+    }
+}
+
