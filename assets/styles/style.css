@@ -25,6 +25,18 @@ button {
   background-color: #f8f9fa;
 }
 
+#Header .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #Header .left a {
   font-size: 20px;
 }
@@ -92,7 +104,9 @@ button {
   margin: auto;
 }
 
-#Second .row div img, #Second .row div h3, #Second .row div p {
+#Second .row div img,
+#Second .row div h3,
+#Second .row div p {
   margin-bottom: 1rem;
 }
 
@@ -152,7 +166,8 @@ button {
   margin-bottom: 50px;
 }
 
-#Fourth h5, #Fourth p {
+#Fourth h5,
+#Fourth p {
   text-align: center;
   margin-top: 10px;
 }
@@ -212,16 +227,23 @@ button {
           align-items: center;
 }
 
-#Footer .row a {
-  position: relative;
+#Footer .row .left .top {
+  margin-bottom: 10px;
 }
 
-#Footer .row a::before {
-  all: unset;
-  content: '-';
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  color: black;
+#Footer .row .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#Footer .row .right a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 28px;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
