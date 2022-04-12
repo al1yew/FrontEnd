@@ -122,4 +122,41 @@ button {
 #Third .third_text_div p {
   font-size: 20px;
 }
+
+#Fourth {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+
+#Fourth h2, #Fourth h5, #Fourth p {
+  text-align: center;
+}
+
+#Fourth img {
+  border-radius: 100%;
+  -webkit-box-shadow: 1px 2px 10px 2px #666666;
+          box-shadow: 1px 2px 10px 2px #666666;
+}
+
+#Fourth .row {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Fourth h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+#Fourth h5, #Fourth p {
+  margin-top: 10px;
+}
+
+#Fourth p {
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */
