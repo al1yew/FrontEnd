@@ -75,3 +75,38 @@ button{
 }
 // mediada buttonun font size ni 70% ele
 
+#Second{
+    background-color: rgb(248,249,250);
+    padding: 100px 0;
+    .row{
+        justify-content: space-between;
+        align-items: center;
+        div{
+            text-align: center;
+            margin: auto;
+            img,h3,p{
+                margin-bottom: 1rem;
+            }
+            img{
+                width: 25%;
+            }
+        }
+    }
+}
+
+#Third{
+    .third_text_div{
+        padding: 0px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+// mediada text divlere yuxaridan padding ver
