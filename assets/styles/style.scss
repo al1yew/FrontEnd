@@ -174,3 +174,21 @@ button{
     }
 }
 
+#Footer{
+    background-color: rgb(248,249,250);
+    .row{
+        justify-content: space-between;
+        align-items: center;
+        a{
+            position: relative;
+        }
+        a::before{
+            all:unset;
+            content: '-';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            color: black;
+        }
+    }
+}
