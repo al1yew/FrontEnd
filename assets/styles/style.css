@@ -10,6 +10,17 @@
   color: #181819;
 }
 
+button {
+  padding: 15px 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  background-color: #0d6efd;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
 #Header {
   background-color: #f8f9fa;
 }
@@ -19,11 +30,46 @@
 }
 
 #Header .right a {
-  padding: 10px 12px;
-  border: 1px solid blue;
-  border-radius: 5px;
+  padding: 14px 14px;
+  border-radius: 3px;
   background-color: #0d6efd;
   color: white;
   font-size: 16px;
+  text-decoration: none;
+}
+
+#First {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 150px 0 200px;
+}
+
+#First p {
+  color: #FFFFFF;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#First form input {
+  width: 79%;
+  padding: 17px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+#First form button {
+  width: 18%;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#First form button:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
