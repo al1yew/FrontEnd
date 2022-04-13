@@ -234,5 +234,25 @@ button {
 }
 
 @media (max-width:576px){
-
+    #First{
+        form{
+            button{
+                padding: 18px 10px;
+                font-size: 90%;
+            }
+        }
+    }
+    #Second{
+        .phone_row{
+            all: unset;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .second_phone{
+            padding-bottom: 50px;
+        }
+    }
 }
+
