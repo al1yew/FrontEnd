@@ -1,3 +1,4 @@
+@import url(./_media.scss);
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +54,6 @@ button {
 #First {
   background-image: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   padding: 150px 0 200px;
 }
@@ -90,7 +90,7 @@ button {
   padding: 100px 0;
 }
 
-#Second .row {
+#Second .all {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -99,18 +99,18 @@ button {
           align-items: center;
 }
 
-#Second .row div {
+#Second .all div {
   text-align: center;
   margin: auto;
 }
 
-#Second .row div img,
-#Second .row div h3,
-#Second .row div p {
+#Second .all div img,
+#Second .all div h3,
+#Second .all div p {
   margin-bottom: 1rem;
 }
 
-#Second .row div img {
+#Second .all div img {
   width: 25%;
 }
 
@@ -135,6 +135,10 @@ button {
 
 #Third .third_text_div p {
   font-size: 20px;
+}
+
+#Third .phone {
+  display: none;
 }
 
 #Fourth {
@@ -177,7 +181,6 @@ button {
 #Fifth {
   background-image: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   padding: 100px 0;
 }
@@ -238,5 +241,43 @@ button {
   transition: 0.2s;
   font-size: 28px;
   margin-left: 20px;
+}
+
+@media (max-width: 576px) {
+  #First p {
+    font-size: 30px;
+  }
+  #First form button {
+    padding: 20px 10px;
+    font-size: 80%;
+  }
+  #Second .phone_row {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #Second .phone_row h3 {
+    font-size: 2rem;
+  }
+  #Second .phone_row p {
+    font-size: 1.25rem;
+  }
+  #Second .second_phone {
+    padding-bottom: 50px;
+  }
+  #Second .second_phone img {
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
