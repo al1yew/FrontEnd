@@ -3,14 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-@import url(./_media.scss);
-
 .header_a {
     text-decoration: none;
     color: rgb(24, 24, 25);
 }
-
 button {
     padding: 15px 20px;
     font-size: 20px;
@@ -21,25 +17,20 @@ button {
     border: none;
     border-radius: 3px;
 }
-
 // i just tried to implement extend method :)
-
 #Header {
     background-color: rgb(248, 249, 250);
-
     .all {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     .left {
         a {
             @extend .header_a;
             font-size: 20px;
         }
     }
-
     .right {
         a {
             padding: 14px 14px;
@@ -51,13 +42,12 @@ button {
         }
     }
 }
-
 #First {
     background-image: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     padding: 150px 0 200px;
-
     p {
         color: #FFFFFF;
         font-size: 50px;
@@ -65,7 +55,6 @@ button {
         text-align: center;
         margin-bottom: 30px;
     }
-
     form {
         input {
             width: 79%;
@@ -74,116 +63,95 @@ button {
             border: none;
             outline: none;
         }
-
         button {
             width: 18%;
             opacity: 0.7;
             transition: 0.3s;
         }
-
         button:hover {
             opacity: 1;
         }
     }
 }
-
 // mediada buttonun font size ni 70% ele
-
 #Second {
     background-color: rgb(248, 249, 250);
     padding: 100px 0;
-
-    .all {
+    .row {
         justify-content: space-between;
         align-items: center;
-
         div {
             text-align: center;
             margin: auto;
-
             img,
             h3,
             p {
                 margin-bottom: 1rem;
             }
-
             img {
                 width: 25%;
             }
         }
     }
 }
-
 #Third {
     .third_text_div {
         padding: 0px 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         h3 {
             font-size: 30px;
             font-weight: 600;
         }
-
         p {
             font-size: 20px;
         }
     }
-    .phone{
-        display: none;
-    }
 }
-
 // mediada text divlere yuxaridan padding ver
-
-
 #Fourth {
-    
     padding: 120px 0;
     background-color: rgb(248, 249, 250);
-
     img {
         border-radius: 100%;
         box-shadow: 1px 2px 10px 2px #666666;
         object-fit: cover;
         background-size: cover;
     }
-
-    .all {
+    .row {
         justify-content: space-evenly;
+        align-items: center;
     }
-
     h2 {
         text-align: center;
         font-size: 32px;
         margin-bottom: 50px;
     }
-
     h5,
     p {
         text-align: center;
         margin-top: 10px;
     }
-
     p {
         text-align: center;
         font-size: 16px;
     }
+    .col-lg-3 {
+        height: 400px;
+    }
 }
-
 #Fifth {
     background-image: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     padding: 100px 0;
-
     p {
         font-size: 32px;
         color: #fff;
         text-align: center;
     }
-
     form {
         input {
             width: 79%;
@@ -192,68 +160,49 @@ button {
             border: none;
             outline: none;
         }
-
         button {
             width: 18%;
             opacity: 0.7;
             transition: 0.3s;
         }
-
         button:hover {
             opacity: 1;
         }
     }
 }
-
 #Footer {
     background-color: rgb(248, 249, 250);
-
     .row {
         justify-content: space-between;
         align-items: center;
-
         .left {
             .top {
                 margin-bottom: 10px;
             }
         }
-
         .right {
             display: flex;
             justify-content: flex-end;
-
             a {
                 transition: 0.2s;
                 font-size: 28px;
                 margin-left: 20px;
             }
         }
-
     }
 }
 
-// Phone responsiveness
-
 @media (max-width:576px){
     #First{
-        p{
-            font-size: 30px;
-        }
         form{
             button{
-                padding: 20px 10px;
-                font-size: 80%;
+                padding: 18px 10px;
+                font-size: 90%;
             }
         }
     }
     #Second{
         .phone_row{
-            h3{
-                font-size: 2rem;
-            }
-            p{
-                font-size: 1.25rem;
-            }
             all: unset;
             display: flex;
             flex-direction: column;
@@ -262,10 +211,6 @@ button {
         }
         .second_phone{
             padding-bottom: 50px;
-            img{
-                width: 200px;
-            }
         }
-        
     }
 }
