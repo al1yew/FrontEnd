@@ -4,29 +4,36 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-/*# sourceMappingURL=style.css.map */
-
-/* Slider First section */
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+/* 
+body {
+  background-color: #21210f;
 }
 
-/* Hide the images by default */
-.mySlides {
+.slideshow-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
   display: none;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+  from {
+
+  }
+  to {
+    
+  }
+} */
+
+
+
+/*# sourceMappingURL=style.css.map */
