@@ -78,9 +78,10 @@ button {
             width: 18%;
             opacity: 0.7;
             transition: 0.3s;
-            &:hover{
-                opacity: 1;
-            }
+        }
+
+        button:hover {
+            opacity: 1;
         }
     }
 }
@@ -91,11 +92,11 @@ button {
     background-color: rgb(248, 249, 250);
     padding: 100px 0;
 
-    .all {
+    .row {
         justify-content: space-between;
         align-items: center;
 
-        .second_comp {
+        div {
             text-align: center;
             margin: auto;
 
@@ -130,28 +131,37 @@ button {
     }
 }
 
+// mediada text divlere yuxaridan padding ver
+
+
 #Fourth {
+    
     padding: 120px 0;
     background-color: rgb(248, 249, 250);
+
     img {
         border-radius: 100%;
         box-shadow: 1px 2px 10px 2px #666666;
         object-fit: cover;
         background-size: cover;
     }
+
     .all {
         justify-content: space-evenly;
     }
+
     h2 {
         text-align: center;
         font-size: 32px;
         margin-bottom: 50px;
     }
+
     h5,
     p {
         text-align: center;
         margin-top: 10px;
     }
+
     p {
         text-align: center;
         font-size: 16px;
@@ -184,9 +194,10 @@ button {
             width: 18%;
             opacity: 0.7;
             transition: 0.3s;
-            &:hover{
-                opacity: 1;
-            }
+        }
+
+        button:hover {
+            opacity: 1;
         }
     }
 }
@@ -194,7 +205,7 @@ button {
 #Footer {
     background-color: rgb(248, 249, 250);
 
-    .all {
+    .row {
         justify-content: space-between;
         align-items: center;
 
@@ -220,115 +231,5 @@ button {
 
 // Phone responsiveness
 
-#Third_phone{
-    display: none;
-}
-#Footer_phone{
-    display: none;
-}
 
-@media (max-width:576px){
-
-    #First{
-        form{
-            button{
-                padding: 18px 10px;
-                font-size: 90%;
-            }
-        }
-    }
-
-    #Second{
-        .phone_row{
-            all: unset;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .second_phone{
-            padding-bottom: 50px;
-        }
-    }
-
-    #Third{
-        display: none;
-    }
-
-    #Third_phone{
-        display: block;
-        .third_text_div{
-            padding: 100px 50px;
-            margin: 0;
-        }
-    }
-
-    #Fourth{
-        padding: 60px 0;
-        .all{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            .img_divs{
-                margin: auto;
-                margin-top: 20px;
-            }
-        }
-    }
-
-    #Fifth{
-        form{
-            button{
-                padding: 18px 10px;
-                font-size: 90%;
-            }
-        }
-    }
-
-    #Footer{
-        display: none;
-    }
-
-    #Footer_phone{
-        display: block;
-        padding: 50px 0;
-        .all{
-            justify-content: center;
-            .footer_div{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 15px;
-                a{
-                    margin: 0px 5px;
-                }
-                span{
-                    color: red;
-                    font-size: 70%;
-                }
-            }
-            div:last-child{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-            div:last-child a{
-                font-size: 40px;
-            }
-            .fb{
-                color: rgb(0, 0, 77);
-            }
-            .ig{
-                color: rgb(240,70,114);
-            }
-            
-        }
-    }
-
-
-
-
-
-
-}
 
