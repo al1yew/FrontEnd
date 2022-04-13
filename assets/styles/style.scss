@@ -77,7 +77,7 @@ button {
 #Second {
     background-color: rgb(248, 249, 250);
     padding: 100px 0;
-    .row {
+    .all {
         justify-content: space-between;
         align-items: center;
         div {
@@ -119,9 +119,8 @@ button {
         object-fit: cover;
         background-size: cover;
     }
-    .row {
+    .all {
         justify-content: space-evenly;
-        align-items: center;
     }
     h2 {
         text-align: center;
@@ -136,9 +135,6 @@ button {
     p {
         text-align: center;
         font-size: 16px;
-    }
-    .col-lg-3 {
-        height: 400px;
     }
 }
 #Fifth {
@@ -172,7 +168,7 @@ button {
 }
 #Footer {
     background-color: rgb(248, 249, 250);
-    .row {
+    .all {
         justify-content: space-between;
         align-items: center;
         .left {
@@ -188,12 +184,21 @@ button {
                 font-size: 28px;
                 margin-left: 20px;
             }
+            .fb{
+                color: rgb(0, 0, 156);
+            }
+            .ig{
+                color: rgb(245,42,112);
+            }
         }
     }
 }
 
 @media (max-width:576px){
     #First{
+        p{
+            font-size: 30px;
+        }
         form{
             button{
                 padding: 18px 10px;
@@ -202,15 +207,85 @@ button {
         }
     }
     #Second{
-        .phone_row{
-            all: unset;
+        .all{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .second_phone{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    #Third{
+        .all{
+            .third_text_div{
+                padding: 50px ;
+            }
+            .order1{
+                order: 1;
+            }
+            .order2{
+                order: 2;
+            }
+            .order3{
+                order: 4;
+            }
+            .order4{
+                order: 3;
+            }
+            .order5{
+                order: 5;
+            }
+            .order6{
+                order: 6;
+            }
+        }
+    }
+    #Fourth{
+        .all{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            div{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    #Fifth{
+        form{
+            button{
+                padding: 18px 10px;
+                font-size: 90%;
+            }
+        }
+    }
+    #Footer{
+        .all{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-        .second_phone{
-            padding-bottom: 50px;
+            .left{
+                font-size: 14px;
+                .top{
+                    display: flex;
+                    justify-content: center;
+                }
+                .bottom{
+                    display: flex;
+                    justify-content: center;
+                    margin: 15px 0;
+                }
+            }
+            .right{
+                justify-content: center;
+                a{
+                    margin-right: 20px;
+                    font-size: 40px;
+                }
+            }
         }
     }
 }

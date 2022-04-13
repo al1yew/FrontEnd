@@ -90,7 +90,7 @@ button {
   padding: 100px 0;
 }
 
-#Second .row {
+#Second .all {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -99,18 +99,18 @@ button {
           align-items: center;
 }
 
-#Second .row div {
+#Second .all div {
   text-align: center;
   margin: auto;
 }
 
-#Second .row div img,
-#Second .row div h3,
-#Second .row div p {
+#Second .all div img,
+#Second .all div h3,
+#Second .all div p {
   margin-bottom: 1rem;
 }
 
-#Second .row div img {
+#Second .all div img {
   width: 25%;
 }
 
@@ -151,13 +151,10 @@ button {
   background-size: cover;
 }
 
-#Fourth .row {
+#Fourth .all {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #Fourth h2 {
@@ -175,10 +172,6 @@ button {
 #Fourth p {
   text-align: center;
   font-size: 16px;
-}
-
-#Fourth .col-lg-3 {
-  height: 400px;
 }
 
 #Fifth {
@@ -218,7 +211,7 @@ button {
   background-color: #f8f9fa;
 }
 
-#Footer .row {
+#Footer .all {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -227,11 +220,11 @@ button {
           align-items: center;
 }
 
-#Footer .row .left .top {
+#Footer .all .left .top {
   margin-bottom: 10px;
 }
 
-#Footer .row .right {
+#Footer .all .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,20 +233,103 @@ button {
           justify-content: flex-end;
 }
 
-#Footer .row .right a {
+#Footer .all .right a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 28px;
   margin-left: 20px;
 }
 
+#Footer .all .right .fb {
+  color: #00009c;
+}
+
+#Footer .all .right .ig {
+  color: #f52a70;
+}
+
 @media (max-width: 576px) {
+  #First p {
+    font-size: 30px;
+  }
   #First form button {
     padding: 18px 10px;
     font-size: 90%;
   }
-  #Second .phone_row {
-    all: unset;
+  #Second .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #Second .all .second_phone {
+    margin-bottom: 30px;
+  }
+  #Third .all .third_text_div {
+    padding: 50px;
+  }
+  #Third .all .order1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #Third .all .order2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #Third .all .order3 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  #Third .all .order4 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #Third .all .order5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  #Third .all .order6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  #Fourth .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #Fourth .all div {
+    margin-bottom: 30px;
+  }
+  #Fifth form button {
+    padding: 18px 10px;
+    font-size: 90%;
+  }
+  #Footer .all {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -268,8 +344,34 @@ button {
         -ms-flex-align: center;
             align-items: center;
   }
-  #Second .second_phone {
-    padding-bottom: 50px;
+  #Footer .all .left {
+    font-size: 14px;
+  }
+  #Footer .all .left .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #Footer .all .left .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 15px 0;
+  }
+  #Footer .all .right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #Footer .all .right a {
+    margin-right: 20px;
+    font-size: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
