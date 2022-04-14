@@ -21,5 +21,9 @@ function Time() {
         document.body.style.background = 'rgb(41,41,41)';
     }
 }
-setInterval(Time,1000);
+setInterval(Time, 1000);
 
+// function Scale(){
+//     document.getElementById('clock').style.transform.Scale = '1.1';
+// }
+// setInterval(Time, 500);
