@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #28b3f0;
+  background: -webkit-gradient(linear, left top, right top, from(#28b3f0), to(#cf0505));
+  background: linear-gradient(90deg, #28b3f0 0%, #cf0505 100%);
+}
+
+#First {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#First .time_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#First #clock {
+  color: beige;
+  text-shadow: 2px 5px 20px #00ff4c;
+  letter-spacing: 3px;
+  font-size: 250px;
+}
+/*# sourceMappingURL=style.css.map */
