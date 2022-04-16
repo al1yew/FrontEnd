@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#first {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#first .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#first .field label {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: red;
+}
+
+#first .field input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid green;
+  border-radius: 5px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#first .field #btn {
+  border-radius: 5px;
+  border: 1px solid #054705;
+  margin-bottom: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 10px 40px;
+  background-color: #008073;
+  color: white;
+  font-size: 20px;
+}
+
+#first .field #btn:hover {
+  background-color: rgba(106, 23, 23, 0.735);
+}
+
+#first .field p {
+  font-size: 25px;
+  width: 300px;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#first .field .smile {
+  font-size: 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: green;
+}
+
+#first .field .poop {
+  font-size: 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #8d5904;
+}
+
+#first .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
