@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+#main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .all {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .all h2 {
+  font-size: 3rem;
+}
+
+#main .all h1 {
+  font-size: 5rem;
+  color: blue;
+}
+
+#main .all .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .all .buttons button {
+  width: 28%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #833b61;
+  background-color: #ffb997;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+#main .all .buttons button:hover {
+  -webkit-box-shadow: 0px 0px 3px 5px blue;
+          box-shadow: 0px 0px 3px 5px blue;
+  color: black;
+  background-color: #f67e7d;
+}
+/*# sourceMappingURL=style.css.map */

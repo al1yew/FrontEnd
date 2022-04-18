@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./assets/styles/bootstrap.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Bank calculator online</title>
+</head>
+
+<body>
+
+    <section id="Main">
+        <div class="container">
+            <div class="row all">
+                <div class="col-lg-6">
+                    <div class="form" action="">
+
+                        <label for="">
+                            Please write amount of cash you are going to take:
+                        </label>
+
+                        <input id="amount" type="text">
+
+                        <label for="">
+                            Please select duration:
+                        </label>
+
+                        <select name="" id="months">
+                            <option selected value="">Choose:</option>
+                            <option value="3">3 months</option>
+                            <option value="6">6 months</option>
+                            <option value="9">9 months</option>
+                            <option value="12">12 months</option>
+                            <option value="18">18 months</option>
+                            <option value="24">24 months</option>
+                            <option value="36">36 months</option>
+                            <option value="42">42 months</option>
+                            <option value="48">48 months</option>
+                        </select>
+
+                        <label for="">
+                            Please write the Percentage:
+                        </label>
+
+                        <select name="" id="percentage">
+                            <option selected value="">Choose:</option>
+                            <option value="1">1%</option>
+                            <option value="2">2%</option>
+                            <option value="3">3%</option>
+                            <option value="4">4%</option>
+                            <option value="5">5%</option>
+                            <option value="6">6%</option>
+                            <option value="7">7%</option>
+                            <option value="8">8%</option>
+                            <option value="9">9%</option>
+                            <option value="10">10%</option>
+                            <option value="11">11%</option>
+                            <option value="12">12%</option>
+                            <option value="13">13%</option>
+                            <option value="14">14%</option>
+                            <option value="15">15%</option>
+                            <option value="16">16%</option>
+                            <option value="17">17%</option>
+                            <option value="18">18%</option>
+                            <option value="19">19%</option>
+                            <option value="20">20%</option>
+                        </select>
+
+                        <button onclick="Calc()" class="btn" id="button">
+                            Calculate my monthly payment
+                        </button>
+
+                        <h2 id="result" class="h2_result"> </h2>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
