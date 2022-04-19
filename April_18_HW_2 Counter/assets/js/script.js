@@ -15,8 +15,4 @@ function Decrease() {
     
 }
 
-function Reset() {
-
-    document.getElementById('result').innerHTML = 0;
-    
-}
+let Reset = () => document.getElementById('result').innerHTML = 0;
