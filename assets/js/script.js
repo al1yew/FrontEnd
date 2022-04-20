@@ -30,12 +30,15 @@ btn.onclick = () => {
     let list = document.getElementById('list'); //out list ul
     let li = document.createElement('li'); // list elements li
     let span = document.createElement('span'); // span in li (add method)
+    let div_buttons = document.createElement('div');
     let del = document.createElement('button'); // delete button
     let edit = document.createElement('button'); // edit button
     let i_del = document.createElement('i');
     let i_edit = document.createElement('i');
 
     span.innerHTML = input_value;
+    //spana klass ver dizayn ver
+    //buttonlara text end ver
 
 
 
@@ -46,8 +49,9 @@ btn.onclick = () => {
     
     list.appendChild(li);
     li.appendChild(span);
-    li.appendChild(del);
-    li.appendChild(edit);
+    li.appendChild(div_buttons);
+    div_buttons.appendChild(del);
+    div_buttons.appendChild(edit);
     del.appendChild(i_del);
     edit.appendChild(i_edit);
 
