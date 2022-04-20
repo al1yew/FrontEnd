@@ -15,8 +15,8 @@ function Decrease() {
 
     //bu reset-i 0 olmaq uchundu, hemde menfi regemlere gede bilir.
 
-    
     let result = Number(document.getElementById('result').innerHTML);
+    
     if(result>1){
         result--;
         document.getElementById('result').innerHTML = result;
@@ -28,12 +28,4 @@ function Decrease() {
     
 }
 
-let Reset = () => document.getElementById('result').innerHTML = 0;
-
-
-
-
-function Decrease() {
-
-
-}
+let Reset = () => document.getElementById('result').innerHTML = 1;
