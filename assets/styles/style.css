@@ -40,7 +40,7 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px;
+  padding: 15px 0;
   position: relative;
 }
 
@@ -57,7 +57,7 @@ ul, li {
 #main .all .form #input_span {
   position: absolute;
   top: 30%;
-  left: 25px;
+  left: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: rgba(102, 102, 102, 0.563);
@@ -112,33 +112,28 @@ li span {
   color: #470202;
   font-size: 1rem;
   text-align: start;
-  width: 80%;
+  width: 90%;
 }
 
-li button {
+li i {
   padding: 5px;
   border: 1px solid black;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+li i:nth-child(2) {
+  margin: 10px;
+}
+
+li button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-li div {
-  width: 13%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

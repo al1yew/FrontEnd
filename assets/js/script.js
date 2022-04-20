@@ -25,37 +25,39 @@ input.onblur = () => {
 // dynamic list creation
 
 btn.onclick = () => {
-
+    let input = document.getElementById('input');
     let input_value = document.getElementById('input').value; 
     let list = document.getElementById('list');
     let li = document.createElement('li'); 
     let span = document.createElement('span'); 
-    let div_buttons = document.createElement('div');
-    let del = document.createElement('button'); 
-    let edit = document.createElement('button'); 
-    let i_del = document.createElement('i');
-    let i_edit = document.createElement('i');
+    let edit = document.createElement('i');
+    let del = document.createElement('i');
+
 
     span.innerHTML = input_value;
-    i_edit.className = 'fa-solid fa-pen';
-    i_del.className = 'fa-solid fa-eraser';
+    edit.className = 'fa-solid fa-pen edit';
+    del.className = 'fa-solid fa-eraser del';
     
-    
+
+    let edit_id = document.getElementsByClassName('edit');
+    let del_id = document.getElementsByClassName('del');
 
     list.appendChild(li);
     li.appendChild(span);
-    li.appendChild(div_buttons);
-    div_buttons.appendChild(del);
-    div_buttons.appendChild(edit);
-    del.appendChild(i_del);
-    edit.appendChild(i_edit);
+    li.appendChild(del);
+    li.appendChild(edit);
+    
 
-    for(let btn of btn_delete) {
-        btn.onclick = function(e) {
+    for(let i of del_id) {
+        i.onclick = function(e) {
             e.target.parentElement.remove();
         }
     }
 
+    // document.getElementById('input').innerHTML = ' ';
+    // document.getElementById('input') = ' ';
+    
+//buttonu basanda input 0 olsun
 
 }
 
