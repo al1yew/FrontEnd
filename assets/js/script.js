@@ -74,7 +74,7 @@ btn.onclick = () => {
             // k.target.parentElement.span.innerHTML = '';
             // k.target.parentElement.span.innerHTML = 'asdasd'
             // k.target.parentElement.replace('asd','dede');
-            
+            k.target
         }
     }
 
