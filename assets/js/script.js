@@ -26,27 +26,22 @@ input.onblur = () => {
 
 btn.onclick = () => {
 
-    let input_value = document.getElementById('input').value; //our input
-    let list = document.getElementById('list'); //out list ul
-    let li = document.createElement('li'); // list elements li
-    let span = document.createElement('span'); // span in li (add method)
+    let input_value = document.getElementById('input').value; 
+    let list = document.getElementById('list');
+    let li = document.createElement('li'); 
+    let span = document.createElement('span'); 
     let div_buttons = document.createElement('div');
-    let del = document.createElement('button'); // delete button
-    let edit = document.createElement('button'); // edit button
+    let del = document.createElement('button'); 
+    let edit = document.createElement('button'); 
     let i_del = document.createElement('i');
     let i_edit = document.createElement('i');
 
     span.innerHTML = input_value;
-    //spana klass ver dizayn ver
-    //buttonlara text end ver
-
-
-
-
-
     i_edit.className = 'fa-solid fa-pen';
     i_del.className = 'fa-solid fa-eraser';
     
+    
+
     list.appendChild(li);
     li.appendChild(span);
     li.appendChild(div_buttons);
@@ -55,6 +50,11 @@ btn.onclick = () => {
     del.appendChild(i_del);
     edit.appendChild(i_edit);
 
+    for(let btn of btn_delete) {
+        btn.onclick = function(e) {
+            e.target.parentElement.remove();
+        }
+    }
 
 
 }
