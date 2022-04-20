@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ecec92;
+}
+
+ul, li {
+  list-style: decimal;
+}
+
+#main {
+  padding: 40px 0;
+}
+
+#main .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .all .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  position: relative;
+}
+
+#main .all .form .input_text {
+  width: 70%;
+  outline: none;
+  border: none;
+  padding: 7px;
+  border-radius: 4px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#main .all .form #input_span {
+  position: absolute;
+  top: 30%;
+  left: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: rgba(102, 102, 102, 0.563);
+}
+
+#main .all .form button {
+  width: 20%;
+}
+
+.input_onfocus {
+  width: 70%;
+  outline: none;
+  border: none;
+  padding: 7px;
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+  border-radius: 7px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.input_onblur {
+  width: 70%;
+  outline: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: none;
+  padding: 7px;
+  border-radius: 4px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+li span {
+  color: red;
+  font-size: 1rem;
+  text-align: start;
+}
+
+li button {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-align: end;
+}
+/*# sourceMappingURL=style.css.map */

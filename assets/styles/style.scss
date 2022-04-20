@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 236, 146);
+}
+ul,li{
+    list-style: decimal;
+}
+#main {
+    padding: 40px 0;
+
+    .all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            position: relative;
+
+            .input_text {
+                width: 70%;
+                outline: none;
+                border: none;
+                padding: 7px;
+                border-radius: 4px;
+                transition: 0.7s;
+            }
+
+            #input_span {
+                position: absolute;
+                top: 30%;
+                left: 25px;
+                transition: 0.5s;
+                color: rgba(102, 102, 102, 0.563);
+            }
+
+            button {
+                width: 20%;
+            }
+        }
+    }
+}
+
+// // for js
+
+// .span_onblur {
+//     position: absolute;
+//     top: 30%;
+//     left: 25px;
+//     transition: 0.5s;
+//     color: rgba(102, 102, 102, 0.563);
+// }
+
+// .span_onclick {
+//     position: absolute;
+//     top: -20%;
+//     left: 25px;
+//     transition: 0.5s;
+//     color: rgba(205, 23, 23, 0.563);
+// }
+
+.input_onfocus {
+    width: 70%;
+    outline: none;
+    border: none;
+    padding: 7px;
+    transform: scale(1.12);
+    border-radius: 7px;
+    transition: 0.7s;
+}
+.input_onblur {
+    width: 70%;
+    outline: none;
+    transform: scale(1);
+    border: none;
+    padding: 7px;
+    border-radius: 4px;
+    transition: 0.7s;
+}
+li{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 4px;
+    span{
+        color: red;
+        font-size: 1rem;
+        text-align: start;
+    }
+    button{
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 3px;
+        text-align: end;
+    }
+}
