@@ -52,6 +52,8 @@ ul, li {
   border-radius: 4px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #main .all .form #input_span {

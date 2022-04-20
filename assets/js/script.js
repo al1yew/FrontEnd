@@ -25,6 +25,7 @@ input.onblur = () => {
 // dynamic list creation
 
 btn.onclick = () => {
+
     let input = document.getElementById('input');
     let input_value = document.getElementById('input').value; 
     let list = document.getElementById('list');
@@ -39,7 +40,6 @@ btn.onclick = () => {
     del.className = 'fa-solid fa-eraser del';
     
 
-    let edit_id = document.getElementsByClassName('edit');
     let del_id = document.getElementsByClassName('del');
 
     list.appendChild(li);
@@ -54,10 +54,15 @@ btn.onclick = () => {
         }
     }
 
-    // document.getElementById('input').innerHTML = ' ';
-    // document.getElementById('input') = ' ';
+    let edit_id = document.getElementsByClassName('edit');
+
+    
+
+    document.getElementById('input').value = '';
     
 //buttonu basanda input 0 olsun
 
 }
+
+//o funkcii
 
