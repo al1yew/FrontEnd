@@ -27,40 +27,63 @@ input.onblur = () => {
 btn.onclick = () => {
 
     let input = document.getElementById('input');
-    let input_value = document.getElementById('input').value; 
+    let input_value = document.getElementById('input').value;
     let list = document.getElementById('list');
-    let li = document.createElement('li'); 
-    let span = document.createElement('span'); 
+    let li = document.createElement('li');
+    let span = document.createElement('span');
     let edit = document.createElement('i');
     let del = document.createElement('i');
+    
+    // if (input_value.lenght > 0) {
 
+    //     let del_id = document.getElementsByClassName('del');
+    //     let edit_id = document.getElementsByClassName('edit');
+
+    //     list.appendChild(li);
+    //     li.appendChild(span);
+    //     li.appendChild(del);
+    //     li.appendChild(edit);
+    // }
+    // else {
+    //     input.style.border = '1px solid red';
+    //     input.style.boxShadow = '1px 1px 5px 10px red';
+    // }
 
     span.innerHTML = input_value;
-    edit.className = 'fa-solid fa-pen edit';
-    del.className = 'fa-solid fa-eraser del';
-    
 
+    del.className = 'fa-solid fa-eraser del';
+    edit.className = 'fa-solid fa-pen edit';
+    
+    let edit_id = document.getElementsByClassName('edit');
     let del_id = document.getElementsByClassName('del');
 
     list.appendChild(li);
     li.appendChild(span);
-    li.appendChild(del);
     li.appendChild(edit);
-    
+    li.appendChild(del);
 
-    for(let i of del_id) {
-        i.onclick = function(e) {
+    for (let i of del_id) {
+        i.onclick = function (e) {
             e.target.parentElement.remove();
         }
     }
 
-    let edit_id = document.getElementsByClassName('edit');
+    for (let z of edit_id) {
+        z.onclick = function (k) {
+            // li.firstElementChild.span.innerHTML = '';
+            // k.target.parentElement.span.innerHTML = '';
+            // k.target.parentElement.span.innerHTML = 'asdasd'
+            // k.target.parentElement.replace('asd','dede');
+            
+        }
+    }
 
-    
+
+
 
     document.getElementById('input').value = '';
-    
-//buttonu basanda input 0 olsun
+
+    //buttonu basanda input 0 olsun
 
 }
 
