@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 236, 146);
+}
+
+#main {
+    .all {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #input {
+            width: 100%;
+            padding: 20px;
+            color: red;
+            border: 1px solid green;
+            border-radius: 7px;
+            outline: none;
+            font-size: 2rem;
+        }
+    }
+}
