@@ -39,7 +39,7 @@ btn.onclick = () => {
 
     edit.className = 'fa-solid fa-pen edit';
     del.className = 'fa-solid fa-eraser del';
-    
+
     let edit_class = document.getElementsByClassName('edit');
     let del_class = document.getElementsByClassName('del');
 
@@ -55,19 +55,28 @@ btn.onclick = () => {
         }
     }
 
-    for (let i of edit_class){
-        i.onclick = function(e) {
+    for (let i of edit_class) {
+        i.onclick = function (e) {
             // console.log(e.target.parentElement.previousElementSibling);        ishledi
 
             let span_inner = e.target.parentElement.previousElementSibling.innerText;
-            let value_of_input = document.getElementById('input');
-            
-            // value_of_input = span_inner;
-            // console.log(value_of_input)         ishleyir - gosterir value olmasa da gosterir
+            let input_edit = document.getElementById('input');
+            let btn = document.getElementById('btn');
 
-            value_of_input.value = span_inner  //ishledi!!!!
-            
-            
+            input_edit.value = span_inner;
+
+            // span_inner.innerText = ' ';
+
+            btn.innerHTML = 'Change';
+
+            btn.onclick = function(e) {
+                // console.log(span_inner)
+                span_inner = document.getElementById('input').value;
+                document.getElementById('input').value = '';
+                btn.innerHTML = 'Add to List';
+            }
+
+
 
 
 
@@ -75,7 +84,7 @@ btn.onclick = () => {
 
         }
     }
-   
+
 
 
     document.getElementById('input').value = '';
