@@ -25,18 +25,20 @@ input.onblur = () => {
 // dynamic list creation
 
 btn.onclick = () => {
+
     let input = document.getElementById('input');
     let input_value = document.getElementById('input').value;
     let list = document.getElementById('list');
     let li = document.createElement('li');
     let span = document.createElement('span');
+    let div_buttons = document.createElement('div');
     let edit = document.createElement('i');
     let del = document.createElement('i');
     
     // if (input_value.lenght > 0) {
 
-    //     let del_class = document.getElementsByClassName('del');
-    //     let edit_class = document.getElementsByClassName('edit');
+    //     let del_id = document.getElementsByClassName('del');
+    //     let edit_id = document.getElementsByClassName('edit');
 
     //     list.appendChild(li);
     //     li.appendChild(span);
@@ -53,25 +55,34 @@ btn.onclick = () => {
     del.className = 'fa-solid fa-eraser del';
     edit.className = 'fa-solid fa-pen edit';
     
-    let edit_class = document.getElementsByClassName('edit');
-    let del_class = document.getElementsByClassName('del');
+    let edit_id = document.getElementsByClassName('edit');
+    let del_id = document.getElementsByClassName('del');
 
     list.appendChild(li);
     li.appendChild(span);
-    li.appendChild(edit);
-    li.appendChild(del);
+    li.appendChild(div_buttons);
+    div_buttons.appendChild(edit);
+    div_buttons.appendChild(del);
 
-    for (let i of del_class) {
+    for (let i of del_id) {
         i.onclick = function (e) {
-            e.target.parentElement.remove();
+            e.target.parentElement.parentElement.remove();
         }
     }
 
     for (let btn of edit_class) {
-        btn.onclick = () => {
-            
+        btn.onclick = function(e) {
+            // input_value = e.target.previousElementSibling.innerText;
+            let new_input = document.getElementById('input').value;
+            new_input = e.target
+
+
         }
     }
 
+    document.getElementById('input').value = '';
+
 
 }
+
+

@@ -106,14 +106,20 @@ li{
         width: 90%;
 
     }
+    div{
+        width: 13%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     i{
         padding: 5px;
         border: 1px solid black;
         border-radius: 50%;
         background-color: transparent;
-        &:nth-child(2){
-            margin: 10px;
-        }
+        // &:nth-child(2){
+        //     margin: 10px;
+        // }
         cursor: pointer;
     }
     button{
