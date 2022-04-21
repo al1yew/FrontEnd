@@ -67,6 +67,7 @@ btn.onclick = () => {
 
             value_of_input.value = span_inner  //ishledi!!!!
             
+            
 
 
 
