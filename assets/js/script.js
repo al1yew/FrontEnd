@@ -34,26 +34,11 @@ btn.onclick = () => {
     let div_buttons = document.createElement('div');
     let edit = document.createElement('i');
     let del = document.createElement('i');
-    
-    // if (input_value.lenght > 0) {
-
-    //     let del_class = document.getElementsByClassName('del');
-    //     let edit_class = document.getElementsByClassName('edit');
-
-    //     list.appendChild(li);
-    //     li.appendChild(span);
-    //     li.appendChild(del);
-    //     li.appendChild(edit);
-    // }
-    // else {
-    //     input.style.border = '1px solid red';
-    //     input.style.boxShadow = '1px 1px 5px 10px red';
-    // }
 
     span.innerHTML = input_value;
 
-    del.className = 'fa-solid fa-eraser del';
     edit.className = 'fa-solid fa-pen edit';
+    del.className = 'fa-solid fa-eraser del';
     
     let edit_class = document.getElementsByClassName('edit');
     let del_class = document.getElementsByClassName('del');
@@ -70,14 +55,27 @@ btn.onclick = () => {
         }
     }
 
-    for (let btn of edit_class) {
-        btn.onclick = function(e) {
-            let new_input = document.getElementById('input').value;
-            new_input = e.target.parentElement.innerText;
+    for (let i of edit_class){
+        i.onclick = function(e) {
+            // console.log(e.target.parentElement.previousElementSibling);        ishledi
+
+            let span_inner = e.target.parentElement.previousElementSibling.innerText;
+            let value_of_input = document.getElementById('input');
             
+            // value_of_input = span_inner;
+            // console.log(value_of_input)         ishleyir - gosterir value olmasa da gosterir
+
+            value_of_input.value = span_inner  //ishledi!!!!
+            
+
+
+
+
 
         }
     }
+   
+
 
     document.getElementById('input').value = '';
 }
