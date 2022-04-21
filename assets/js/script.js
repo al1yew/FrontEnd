@@ -62,7 +62,7 @@ btn.onclick = () => {
             let span_inner = e.target.parentElement.previousElementSibling.innerText;
             let input_edit = document.getElementById('input');
             let btn = document.getElementById('btn');
-
+            span_inner.id = 'span_inner'
             input_edit.value = span_inner;
 
             // span_inner.innerText = ' ';
@@ -70,24 +70,16 @@ btn.onclick = () => {
             btn.innerHTML = 'Change';
 
             btn.onclick = function(e) {
+                let span_inner = document.getElementById('span_inner').innerHTML;
+                //burda nese problem var
+
                 // console.log(span_inner)
                 span_inner = document.getElementById('input').value;
                 document.getElementById('input').value = '';
                 btn.innerHTML = 'Add to List';
             }
-
-
-
-
-
-
-
         }
     }
-
-
-
-    document.getElementById('input').value = '';
 }
 
 
