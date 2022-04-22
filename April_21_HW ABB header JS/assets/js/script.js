@@ -1,3 +1,6 @@
+
+//#region search
+
 let arrow = document.getElementById('search');
 
 let search = document.getElementById('search_engine');
@@ -17,4 +20,6 @@ arrow.onclick = function () {
         search.classList.add('for_visibility')
     }
 }
+//#endregion
+
 
