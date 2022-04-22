@@ -92,3 +92,40 @@ b.onclick = function() {
 
 
 
+let menu = document.getElementById('menu');
+
+let sidebar = document.getElementById('sidebar');
+
+menu.onclick = function() {
+
+
+    // ALL THREE METHODS WORK
+
+
+
+    // if (sidebar.classList.contains('sidebar_remove')) {
+    //     sidebar.classList.remove('sidebar_remove');
+    //     sidebar.classList.add('sidebar_show');
+    // }
+    // else{
+    //     sidebar.classList.remove('sidebar_show');
+    //     sidebar.classList.add('sidebar_remove');
+    // }
+
+    // if(sidebar.style.right == '-100%'){
+    //     sidebar.style.right = '0%'
+    // }
+    // else{
+    //     sidebar.style.right = '-100%';
+    // }
+
+
+    // if(sidebar.className == 'sidebar_remove'){
+    //     sidebar.className = 'sidebar_show'
+    // }
+    // else{
+    //     sidebar.className = 'sidebar_remove'
+    // }
+
+    sidebar.className == 'sidebar_remove' ? sidebar.className = 'sidebar_show' : sidebar.className = 'sidebar_remove';
+}
