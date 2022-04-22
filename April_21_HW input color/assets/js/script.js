@@ -12,5 +12,4 @@ document.body.onkeydown = function (e) {
     else if (e.keyCode === 27) {  //esc
         document.body.style.backgroundColor = 'white'
     }
-    
 }
