@@ -20,6 +20,7 @@ arrow.onclick = function () {
         search.classList.add('for_visibility')
     }
 }
+
 //#endregion
 
 
@@ -63,7 +64,31 @@ btn.onclick = function() {
 
 
 
+let a = document.getElementById('search_engine1');
+let b = document.getElementById('search1');
+let quit1 = document.getElementById('quit1')
+let second = document.getElementById('second');
 
+// console.log(a)
+// console.log(b)
+// console.log(quit1)
+
+quit1.onclick = function () {
+    a.classList.add('for_visibility')
+}
+
+
+b.onclick = function() {
+
+    if (a.classList.contains('for_visibility')) {
+        a.classList.remove('for_visibility')
+        second.classList.add('d-none')
+    }
+    else {
+        a.classList.add('for_visibility')
+        second.classList.remove('d-none')
+    }
+}
 
 
 
