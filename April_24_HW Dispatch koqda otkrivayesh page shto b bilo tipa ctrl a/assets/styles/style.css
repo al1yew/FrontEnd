@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#main .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+#main .all .div_design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+  color: blue;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 250px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: beige;
+}
+
+#main .all .div_design:hover {
+  opacity: 0.5;
+  color: darkblue;
+}
+
+#main ._all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main ._all #result {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  color: blue;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#main ._all #result:hover {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+  color: darkblue;
+}
+
+#main ._all #random_result {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  color: blue;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#main ._all #random_result:hover {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+  color: darkblue;
+}
+/*# sourceMappingURL=style.css.map */
