@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  margin: 0 7px;
+}
+
+span {
+  font-size: 14px;
+  color: #666;
+}
+
+span i {
+  font-size: 110%;
+}
+
+header .header_top_color {
+  background-color: #f6f7f8;
+}
+
+header .top {
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+}
+
+header .top .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .top .all .top_right_nav {
+  text-decoration: none;
+  font-size: 14px;
+  color: #666666;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .top .all .top_left_blue_button {
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 1px solid #0056c1;
+  padding: 7px 10px;
+  color: #0056c1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .top .all .top_left_blue_button:hover {
+  background-color: #3329ca;
+  color: white;
+}
+
+header .middle {
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+}
+
+header .middle .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .middle .all .internet_banking {
+  font-size: 18px;
+  color: #0404b5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .middle .all .internet_banking img {
+  padding-right: 3px;
+}
+
+header .bottom {
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+}
+
+header .bottom .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#phone .all {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+#phone .all .ferdi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#phone .all .ferdi p {
+  margin: 0;
+}
+
+#phone .all img {
+  width: 100%;
+}
+
+#phone .all .call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+#phone .all .call i {
+  font-size: 12px;
+  color: #666;
+  padding-right: 15px;
+}
+
+#phone .all .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+
+#phone .header_color {
+  background-color: #f6f7f8;
+}
+
+@media (min-width: 992px) {
+  #phone {
+    display: none;
+  }
+
+  #comp {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  #phone {
+    display: block;
+  }
+
+  #comp {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

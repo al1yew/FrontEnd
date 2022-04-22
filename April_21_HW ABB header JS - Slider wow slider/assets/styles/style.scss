@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    margin: 0 7px;
+}
+span{
+    font-size: 14px;
+    color: #666;
+    i{
+        font-size: 110%;
+    }
+}
+
+header {
+    .header_top_color {
+        background-color: rgb(246, 247, 248);
+    }
+
+    .top {
+        padding: 10px 10px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+
+        .all {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .top_right_nav {
+                text-decoration: none;
+                font-size: 14px;
+                color: #666666;
+                transition: 0.3s;
+            }
+
+            .top_left_blue_button {
+                text-decoration: none;
+                font-size: 14px;
+                border-radius: 20px;
+                border: 1px solid rgb(0, 86, 193);
+                padding: 7px 10px;
+                color: rgb(0, 86, 193);
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: rgb(51, 41, 202);
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .middle {
+        padding: 10px 10px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+
+        .all {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .internet_banking {
+                img {
+                    padding-right: 3px;
+                }
+
+                font-size: 18px;
+                color: rgb(4, 4, 181);
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .bottom {
+        padding: 20px 10px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+
+        .all {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+    }
+}
+
+#phone {
+    .all {
+        padding: 15px;
+
+        .ferdi {
+            display: flex;
+            align-items: center;
+            p{
+                margin: 0;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .call {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-right: 10px;
+            i{
+                font-size: 12px;
+                color: #666;
+                padding-right: 15px;
+            }
+        }
+        
+        .menu {
+            display: flex;
+            font-size: 1.5rem;
+            justify-content: end;
+            align-items: center;
+            padding-right: 10px;
+            margin-right: 5px;
+            // transform: scaleX(1.2);
+        }
+    }
+
+    .header_color {
+        background-color: rgb(246, 247, 248);
+    }
+}
+
+
+
+
+@media (min-width: 992px) {
+    #phone {
+        display: none;
+    }
+
+    #comp {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    #phone {
+        display: block;
+    }
+
+    #comp {
+        display: none;
+    }
+}

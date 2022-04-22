@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./assets/styles/slider.css">
     <link rel="stylesheet" href="./assets/styles/bootstrap.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -9,10 +10,36 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+
     <title>To Do list online</title>
 </head>
 
 <body>
+
+    <div id="wowslider-container1">
+        <div class="ws_images">
+            <ul>
+                <li><img src="data1/images/img4344.jpg" alt="javascript image slider"
+                            id="wows1_0" /></a></li>
+                <li><img src="data1/images/img_1389.jpg" alt="IMG_1389" id="wows1_1" /></li>
+            </ul>
+        </div>
+        <div class="ws_bullets">
+            <div>
+                <a href="#"><span><img src="data1/tooltips/img4344.jpg"/>1</span></a>
+                <a href="#"><span><img src="data1/tooltips/img_1389.jpg"/>2</span></a>
+            </div>
+        </div>
+        <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net"></a></div>
+        <div class="ws_shadow"></div>
+    </div>
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+
+
+
 
     <header id="comp">
         <div class="header_top_color">
@@ -108,38 +135,38 @@
     <header id="phone">
         <div class="header_color">
             <div class="container-fluid">
-            <div class="row">
-                <div class="all">
+                <div class="row">
+                    <div class="all">
 
-                    <div class="col-4 ferdi">
+                        <div class="col-4 ferdi">
 
-                        <p>Fərdi</p>
-                        <i class="fa-solid fa-angle-down px-1"></i>
+                            <p>Fərdi</p>
+                            <i class="fa-solid fa-angle-down px-1"></i>
+
+                        </div>
+
+                        <div class="col-4 call">
+
+                            <i class="fas fa-search"></i>
+
+                            <!-- lang -->
+                            <span>
+                                AZ
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+
+                            <a class="top_right_nav tel" href="tel:+99412937">
+                                937
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+
+                        </div>
 
                     </div>
-
-                    <div class="col-4 call">
-
-                        <i class="fas fa-search"></i>
-
-                        <!-- lang -->
-                        <span>
-                            AZ
-                            <i class="fa-solid fa-angle-down"></i>
-                        </span>
-
-                        <a class="top_right_nav tel" href="tel:+99412937">
-                            937
-                            <i class="fa-solid fa-phone"></i>
-                        </a>
-
-                    </div>
-
                 </div>
             </div>
         </div>
-        </div>
-        
+
 
         <div class="container-fluid">
             <div class="row">
