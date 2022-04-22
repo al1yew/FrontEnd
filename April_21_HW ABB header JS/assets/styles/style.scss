@@ -10,10 +10,12 @@ a {
     font-size: 14px;
     margin: 0 7px;
 }
-span{
+
+span {
     font-size: 14px;
     color: #666;
-    i{
+
+    i {
         font-size: 110%;
     }
 }
@@ -24,6 +26,7 @@ header {
     }
 
     .top {
+        width: 100%;
         padding: 10px 10px;
         border-bottom: 1px solid rgba(128, 128, 128, 0.267);
 
@@ -32,7 +35,89 @@ header {
             justify-content: space-between;
             align-items: center;
 
+            .search_lang_phone {
+                display: flex;
+                align-items: center;
+            }
+
+            #langs_shadow {
+                box-shadow: 0px 0px 33px 7px #666;
+                background: transparent;
+                position: absolute;
+                right: 100px;
+                display: none;
+
+                border-radius: 5px;
+
+                #langs {
+                    clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
+                    // bunun yerine before afternan atsam box shadow duzeler  + #langs_shadow - a ehtiyac qalmaz
+                    background-color: #FFF;
+                    width: 150px;
+                    height: 120px;
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    padding-top: 12px;
+                    padding-left: 15px;
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        font-size: 1.25rem;
+
+                        img {
+                            vertical-align: bottom;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+            }
+
+            #lang {
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: blue;
+                }
+
+                i {
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: blue;
+                        transform: rotate(3.142rad);
+                    }
+                }
+            }
+
+            #search {
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: blue;
+                    transform: scale(1.2);
+                }
+
+                i {
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
             .top_right_nav {
+                display: inline;
+                margin-right: 10px;
                 text-decoration: none;
                 font-size: 14px;
                 color: #666666;
@@ -55,6 +140,35 @@ header {
             }
         }
     }
+
+
+    #search_engine {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            width: 100%;
+            input {
+                width: 95%;
+                height: 136px; //bunu duzelt ikisinin yerini tutsun
+            }
+
+            span {
+                font-size: 25px;
+                padding: 0 15px;
+                border: 1px solid #666;
+                transition: .5s;
+                border-radius: 50%;
+                &:hover{
+                    color: blue;
+                }
+            }
+        }
+    }
+
+
 
     .middle {
         padding: 10px 10px;
@@ -98,7 +212,8 @@ header {
         .ferdi {
             display: flex;
             align-items: center;
-            p{
+
+            p {
                 margin: 0;
             }
         }
@@ -117,13 +232,14 @@ header {
             justify-content: end;
             align-items: center;
             padding-right: 10px;
-            i{
+
+            i {
                 font-size: 12px;
                 color: #666;
                 padding-right: 15px;
             }
         }
-        
+
         .menu {
             display: flex;
             font-size: 1.5rem;

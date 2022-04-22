@@ -26,6 +26,7 @@ header .header_top_color {
 }
 
 header .top {
+  width: 100%;
   padding: 10px 10px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.267);
 }
@@ -42,7 +43,112 @@ header .top .all {
           align-items: center;
 }
 
+header .top .all .search_lang_phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top .all #langs_shadow {
+  -webkit-box-shadow: 0px 0px 33px 7px #666;
+          box-shadow: 0px 0px 33px 7px #666;
+  background: transparent;
+  position: absolute;
+  right: 100px;
+  display: none;
+  border-radius: 5px;
+}
+
+header .top .all #langs_shadow #langs {
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
+  background-color: #FFF;
+  width: 150px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 12px;
+  padding-left: 15px;
+}
+
+header .top .all #langs_shadow #langs span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 1.25rem;
+}
+
+header .top .all #langs_shadow #langs span img {
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+header .top .all #lang {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .top .all #lang:hover {
+  color: blue;
+}
+
+header .top .all #lang i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .top .all #lang i:hover {
+  color: blue;
+  -webkit-transform: rotate(3.142rad);
+          transform: rotate(3.142rad);
+}
+
+header .top .all #search {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .top .all #search:hover {
+  color: blue;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header .top .all #search i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .top .all #search i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 header .top .all .top_right_nav {
+  display: inline;
+  margin-right: 10px;
   text-decoration: none;
   font-size: 14px;
   color: #666666;
@@ -64,6 +170,41 @@ header .top .all .top_left_blue_button {
 header .top .all .top_left_blue_button:hover {
   background-color: #3329ca;
   color: white;
+}
+
+header #search_engine {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #search_engine div {
+  width: 100%;
+}
+
+header #search_engine div input {
+  width: 95%;
+  height: 136px;
+}
+
+header #search_engine div span {
+  font-size: 25px;
+  padding: 0 15px;
+  border: 1px solid #666;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 50%;
+}
+
+header #search_engine div span:hover {
+  color: blue;
 }
 
 header .middle {
