@@ -4,6 +4,10 @@ let search = document.getElementById('search_engine');
 
 let quit = document.getElementById('quit');
 
+quit.onclick = function() {
+    search.classList.add('for_visibility')
+}
+
 arrow.onclick = function () {
 
     if (search.classList.contains('for_visibility')) {
@@ -12,6 +16,5 @@ arrow.onclick = function () {
     else{
         search.classList.add('for_visibility')
     }
-    
-
 }
+
