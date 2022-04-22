@@ -10,7 +10,12 @@ a {
     font-size: 14px;
     margin: 0 7px;
 }
+.for_visibility {
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
 
+}
 span {
     font-size: 14px;
     color: #666;
@@ -19,7 +24,46 @@ span {
         font-size: 110%;
     }
 }
+#search_engine {
 
+    transition: .4s;
+    width: 100%;
+
+    div {
+        width: 100%;
+        background-color: #FFF;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(102, 102, 102, 0.198);
+    
+        border-top: 1ps solid rgba(102, 102, 102, 0.198);
+        input {
+            width: 90%;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            opacity: 0.6;
+            color: #666;
+            padding: 20px;
+
+            &::placeholder {
+                opacity: 0.6;
+                color: #666;
+                font-weight: lighter;
+            }
+        }
+
+        span {
+            width: 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+    }
+}
 header {
     .header_top_color {
         background-color: rgb(246, 247, 248);
@@ -40,62 +84,71 @@ header {
                 align-items: center;
             }
 
-            #langs_shadow {
-                box-shadow: 0px 0px 33px 7px #666;
-                background: transparent;
-                position: absolute;
-                right: 100px;
-                display: none;
-
-                border-radius: 5px;
-
-                #langs {
-                    clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
-                    // bunun yerine before afternan atsam box shadow duzeler  + #langs_shadow - a ehtiyac qalmaz
-                    background-color: #FFF;
-                    width: 150px;
-                    height: 120px;
-                    display: flex;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    justify-content: space-evenly;
-                    flex-direction: column;
-                    padding-top: 12px;
-                    padding-left: 15px;
-
-                    span {
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-start;
-                        font-size: 1.25rem;
-
-                        img {
-                            vertical-align: bottom;
-                            margin-right: 10px;
-                        }
-                    }
-                }
-
-            }
-
             #lang {
                 cursor: pointer;
                 transition: 0.3s;
 
                 &:hover {
                     color: blue;
-                }
 
-                i {
-                    transition: 0.5s;
-
-                    &:hover {
+                    i {
                         color: blue;
                         transform: rotate(3.142rad);
                     }
                 }
+
+                i {
+                    transition: 0.5s;
+                }
+
+                .for_visibility1 {
+                    // display: none;
+                    visibility: hidden !important;
+                    opacity: 0 !important;
+                }
+
+                #langs_shadow {
+                    transition: .3s;
+                    z-index: 1;
+                    box-shadow: 0px 0px 33px 7px #666;
+                    background: transparent;
+                    position: absolute;
+                    right: 100px;
+
+                    border-radius: 5px;
+
+                    #langs {
+                        clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
+                        // bunun yerine before afternan atsam box shadow duzeler  + #langs_shadow - a ehtiyac qalmaz
+                        background-color: #FFF;
+                        width: 150px;
+                        height: 120px;
+                        display: flex;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        padding-top: 12px;
+                        padding-left: 15px;
+
+                        span {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            font-size: 1.25rem;
+
+                            img {
+                                vertical-align: bottom;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+
+                }
             }
+
+
 
             #search {
                 cursor: pointer;
@@ -144,15 +197,15 @@ header {
     .future_search {
         position: relative;
 
-        .for_visibility{
+        .for_visibility {
             // display: none;
             visibility: hidden;
             opacity: 0;
-            
+
         }
 
         #search_engine {
-            
+
             transition: .4s;
             width: 100%;
             position: absolute;
@@ -304,6 +357,55 @@ header {
 @media (max-width: 576px) {
     #phone {
         display: block;
+    }
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .call_search {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #languages {
+            #tap_it{
+                cursor: pointer;
+
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .hide_show{
+                opacity: 0;
+                visibility: hidden;
+            }
+            #hidden_langs {
+                clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
+                transition: 0.3s;
+                top: 27px;
+                height: 100px;
+                width: 100px;
+                border: 1px solid #666 ;
+                right: 46px;
+                position: absolute;
+                background-color: #fff;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 25px;
+                padding-left: 15px;
+                padding-bottom: 15px;
+            }
+
+        }
+
     }
 
     #comp {

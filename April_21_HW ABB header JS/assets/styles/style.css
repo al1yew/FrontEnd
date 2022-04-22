@@ -12,6 +12,11 @@ a {
   margin: 0 7px;
 }
 
+.for_visibility {
+  visibility: hidden;
+  opacity: 0;
+}
+
 span {
   font-size: 14px;
   color: #666;
@@ -19,6 +24,77 @@ span {
 
 span i {
   font-size: 110%;
+}
+
+#search_engine {
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 100%;
+}
+
+#search_engine div {
+  width: 100%;
+  background-color: #FFF;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.198);
+  border-top: 1ps solid rgba(102, 102, 102, 0.198);
+}
+
+#search_engine div input {
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  opacity: 0.6;
+  color: #666;
+  padding: 20px;
+}
+
+#search_engine div input::-webkit-input-placeholder {
+  opacity: 0.6;
+  color: #666;
+  font-weight: lighter;
+}
+
+#search_engine div input:-ms-input-placeholder {
+  opacity: 0.6;
+  color: #666;
+  font-weight: lighter;
+}
+
+#search_engine div input::-ms-input-placeholder {
+  opacity: 0.6;
+  color: #666;
+  font-weight: lighter;
+}
+
+#search_engine div input::placeholder {
+  opacity: 0.6;
+  color: #666;
+  font-weight: lighter;
+}
+
+#search_engine div span {
+  width: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
 }
 
 header .header_top_color {
@@ -52,17 +128,45 @@ header .top .all .search_lang_phone {
           align-items: center;
 }
 
-header .top .all #langs_shadow {
+header .top .all #lang {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .top .all #lang:hover {
+  color: blue;
+}
+
+header .top .all #lang:hover i {
+  color: blue;
+  -webkit-transform: rotate(3.142rad);
+          transform: rotate(3.142rad);
+}
+
+header .top .all #lang i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .top .all #lang .for_visibility1 {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+header .top .all #lang #langs_shadow {
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 1;
   -webkit-box-shadow: 0px 0px 33px 7px #666;
           box-shadow: 0px 0px 33px 7px #666;
   background: transparent;
   position: absolute;
   right: 100px;
-  display: none;
   border-radius: 5px;
 }
 
-header .top .all #langs_shadow #langs {
+header .top .all #lang #langs_shadow #langs {
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
           clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
   background-color: #FFF;
@@ -85,7 +189,7 @@ header .top .all #langs_shadow #langs {
   padding-left: 15px;
 }
 
-header .top .all #langs_shadow #langs span {
+header .top .all #lang #langs_shadow #langs span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,30 +202,9 @@ header .top .all #langs_shadow #langs span {
   font-size: 1.25rem;
 }
 
-header .top .all #langs_shadow #langs span img {
+header .top .all #lang #langs_shadow #langs span img {
   vertical-align: bottom;
   margin-right: 10px;
-}
-
-header .top .all #lang {
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-header .top .all #lang:hover {
-  color: blue;
-}
-
-header .top .all #lang i {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-header .top .all #lang i:hover {
-  color: blue;
-  -webkit-transform: rotate(3.142rad);
-          transform: rotate(3.142rad);
 }
 
 header .top .all #search {
@@ -389,6 +472,77 @@ header .bottom .all {
 @media (max-width: 576px) {
   #phone {
     display: block;
+  }
+  .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .call_search {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .call_search #languages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .call_search #languages #tap_it {
+    cursor: pointer;
+  }
+  .call_search #languages .hide_show {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .call_search #languages #hidden_langs {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 10%, 83% 10%, 72% 0, 60% 10%, 0 10%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    top: 27px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #666;
+    right: 46px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-bottom: 15px;
   }
   #comp {
     display: none;
