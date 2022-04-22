@@ -172,8 +172,25 @@ header .top .all .top_left_blue_button:hover {
   color: white;
 }
 
-header #search_engine {
+header .future_search {
+  position: relative;
+}
+
+header .future_search .for_visibility {
+  visibility: hidden;
+  opacity: 0;
+}
+
+header .future_search #search_engine {
+  -webkit-transition: .4s;
+  transition: .4s;
   width: 100%;
+  position: absolute;
+}
+
+header .future_search #search_engine div {
+  width: 100%;
+  background-color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,27 +200,62 @@ header #search_engine {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.198);
 }
 
-header #search_engine div {
-  width: 100%;
-}
-
-header #search_engine div input {
+header .future_search #search_engine div input {
   width: 95%;
   height: 136px;
+  border: none;
+  outline: none;
+  font-size: 40px;
+  opacity: 0.6;
+  color: #666;
+  padding: 30px;
 }
 
-header #search_engine div span {
+header .future_search #search_engine div input::-webkit-input-placeholder {
+  opacity: 0.6;
+  color: #666;
+  font-weight: lighter;
+}
+
+header .future_search #search_engine div input:-ms-input-placeholder {
+  opacity: 0.6;
+  color: #666;
+  font-weight: lighter;
+}
+
+header .future_search #search_engine div input::-ms-input-placeholder {
+  opacity: 0.6;
+  color: #666;
+  font-weight: lighter;
+}
+
+header .future_search #search_engine div input::placeholder {
+  opacity: 0.6;
+  color: #666;
+  font-weight: lighter;
+}
+
+header .future_search #search_engine div span {
+  width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 25px;
-  padding: 0 15px;
-  border: 1px solid #666;
+  cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
-  border-radius: 50%;
 }
 
-header #search_engine div span:hover {
+header .future_search #search_engine div span:hover {
   color: blue;
 }
 
