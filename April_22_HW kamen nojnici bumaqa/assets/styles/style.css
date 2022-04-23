@@ -5,6 +5,28 @@
           box-sizing: border-box;
 }
 
+.win {
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: green;
+  font-size: 2rem;
+}
+
+.lost {
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: red;
+  font-size: 2rem;
+}
+
+.draw {
+  color: black;
+  font-size: 2rem;
+  background-color: yellow;
+}
+
 #main .all {
   display: -webkit-box;
   display: -ms-flexbox;

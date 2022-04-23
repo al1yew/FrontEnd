@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+.win {
+    color: white;
+    transition: .5s;
+    background-color: green;
+    font-size: 2rem;
+}
+
+.lost {
+    color: white;
+    transition: .5s;
+    background-color: red;
+    font-size: 2rem;
+}
+
+.draw{
+    color: black;
+    font-size: 2rem;
+    background-color: yellow;
+}
+
 #main {
     .all {
         display: flex;
@@ -11,6 +31,7 @@
         align-items: center;
         margin-bottom: 70px;
         margin-top: 20px;
+
         .div_design {
             display: flex;
             justify-content: center;
@@ -53,6 +74,7 @@
                 color: darkblue;
             }
         }
+
         #random_result {
             height: 70px;
             display: flex;
