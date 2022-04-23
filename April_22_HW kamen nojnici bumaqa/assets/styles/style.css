@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+.visib {
+  visibility: hidden;
+  opacity: 0;
+}
+
 body {
   background-color: beige;
 }
@@ -29,6 +34,62 @@ body {
   color: black;
   font-size: 2rem;
   background-color: yellow;
+}
+
+#begin {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#begin label {
+  font-size: 3rem;
+}
+
+#begin input {
+  border: 1px solid red;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 2rem;
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#begin button {
+  width: 40%;
+  font-size: 1.75rem;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #main .all {
@@ -115,8 +176,8 @@ body {
 }
 
 #main ._all #result:hover {
-  -webkit-filter: brightness(1.5);
-          filter: brightness(1.5);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
   color: darkblue;
 }
 
@@ -125,6 +186,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -144,5 +206,40 @@ body {
   -webkit-filter: brightness(1.5);
           filter: brightness(1.5);
   color: darkblue;
+}
+
+#main ._all .game_count {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main ._all .game_count p {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+#main ._all .game_count p .p_span {
+  font-size: 2.25rem;
+  color: red;
+}
+
+@media (max-width: 576px) {
+  #main #game_elements div {
+    height: 100px;
+  }
+  #main #game_elements div img {
+    width: 100%;
+  }
+  #main ._all #random_result, #main ._all #result {
+    font-size: 1.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

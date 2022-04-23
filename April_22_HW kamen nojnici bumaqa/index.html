@@ -17,22 +17,33 @@
 
 <body>
 
-    <!-- burda input olsun ad yazilsin ve sonra hesab sayilsin ve gamerin adi yazilsin -->
+    <div id="begin" class="col-lg-6 col-6">
 
+        <label for="input">
+            Write your name:
+        </label>
 
-    <section id="main">
+        <input type="text" name="" id="name" autofocus autocomplete="off">
+
+        <button id="btn" class="btn btn-success">
+            Start Game!
+        </button>
+        
+    </div>
+
+    <section id="main" class="visib">
         <div class="container">
-            <div id="game_elements" class="row all">
+            <div id="game_elements" class="row all d-flex justify-content-evenly align-items-center">
 
-                <div id="rock" class="col-lg-3 div_design">
+                <div id="rock" class="col-lg-3 col-3 div_design">
                     <img src="./assets/images/rock.jpg" alt="">
                 </div>
 
-                <div id="paper" class="col-lg-3 div_design">
+                <div id="paper" class="col-lg-3 col-3 div_design">
                     <img src="./assets/images/paper.jpg" alt="">
                 </div>
 
-                <div id="scissors" class="col-lg-3 div_design">
+                <div id="scissors" class="col-lg-3 col-3 div_design">
                     <img src="./assets/images/scissors.jpg" alt="">
                 </div>
 
@@ -40,14 +51,17 @@
 
             <div class="row _all">
 
-                <div id="random_result" class="col-lg-8 mb-3">
+                <div id="random_result" class="col-lg-8 col-8 mb-3">
                     Game process...
-                    <span id="player_result"></span>
-                    <span id="comp_result"></span>
                 </div>
 
-                <div id="result" class="col-lg-6">
+                <div id="result" class="col-lg-6 col-8">
                     Result of game...
+                </div>
+
+                <div class="game_count">
+                    <p><span id="player_name"></span>: <span class="p_span" id="count_player"></span></p>
+                    <p>Comp: <span class="p_span" id="count_comp"></span></p>
                 </div>
 
             </div>

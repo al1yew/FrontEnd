@@ -3,9 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+.visib {
+    visibility: hidden;
+    opacity: 0;
+}
+
+body {
     background-color: beige;
 }
+
 .win {
     color: white;
     transition: .5s;
@@ -20,13 +27,50 @@ body{
     font-size: 2rem;
 }
 
-.draw{
+.draw {
     color: black;
     font-size: 2rem;
     background-color: yellow;
 }
 
+#begin {
+    transition: 1s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+    label {
+        font-size: 3rem;
+    }
+
+    input {
+        border: 1px solid red;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 2rem;
+        width: 60%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 40%;
+        font-size: 1.75rem;
+    }
+}
+
 #main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
     .all {
         display: flex;
         justify-content: space-between;
@@ -54,7 +98,7 @@ body{
                 color: darkblue;
             }
 
-            img{
+            img {
                 object-fit: cover;
                 vertical-align: bottom;
                 background-size: cover;
@@ -81,7 +125,8 @@ body{
             transition: .5s;
 
             &:hover {
-                filter: brightness(1.5);
+                filter: brightness(1.2);
+                // background-color: rgba(219, 7, 7, 0.164);
                 color: darkblue;
             }
         }
@@ -89,6 +134,7 @@ body{
         #random_result {
             height: 70px;
             display: flex;
+            background-color: white;
             justify-content: center;
             align-items: center;
             font-size: 3rem;
@@ -103,5 +149,45 @@ body{
                 color: darkblue;
             }
         }
+
+        .game_count {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin: 20px;
+                font-size: 2rem;
+
+                .p_span {
+                    font-size: 2.25rem;
+                    color: red;
+                }
+            }
+        }
     }
+}
+
+
+
+@media (max-width: 576px) {
+    #main {
+        #game_elements {
+            div {
+                height: 100px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        ._all{
+            #random_result, #result{
+                font-size: 1.25rem;
+            }
+
+        }
+    }
+
 }
