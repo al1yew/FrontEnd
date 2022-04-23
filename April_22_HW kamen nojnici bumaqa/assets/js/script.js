@@ -12,15 +12,12 @@ let arr = [
     "paper"
 ];
 
-math = arr[Math.floor(Math.random() * arr.length)];
-
-console.log(math)
 
 for (let div of game_elements.children) {
 
-    console.log(div.textContent.trim())
-
     div.onclick = function () {
+
+        math = arr[Math.floor(Math.random() * arr.length)];
         
         random_result.innerHTML = `Computer selected ${math.toUpperCase()}`;
 
@@ -62,14 +59,14 @@ for (let div of game_elements.children) {
         }
         else if (div.id == 'scissors' && math == 'paper') {
             result.innerHTML = 'You Won!';
-            result.className = 'col-lg-6';
+            result.className = 'col-lg-6';  
             result.classList.add('win');
             result.style.color= 'white';
         }
 
-        setTimeout(function () {
-            window.location.reload();
-        }, 3000);
+        // setTimeout(function () {
+        //     window.location.reload();
+        // }, 3000);
         
     }
 

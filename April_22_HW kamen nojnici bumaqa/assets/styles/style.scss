@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: beige;
+}
 .win {
     color: white;
     transition: .5s;
@@ -33,6 +35,7 @@
         margin-top: 20px;
 
         .div_design {
+            background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,11 +46,19 @@
             border-radius: 5px;
             height: 250px;
             transition: .5s;
-            background-color: beige;
+            overflow: hidden;
+            text-align: center;
 
             &:hover {
                 opacity: 0.5;
                 color: darkblue;
+            }
+
+            img{
+                object-fit: cover;
+                vertical-align: bottom;
+                background-size: cover;
+                transform: scale(0.75);
             }
         }
     }
