@@ -5,8 +5,10 @@
 }
 
 #header {
-    background-color: rgb(171, 171, 10);
-    padding: 15px 0px;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    padding: 10px 0px;
 
     .all {
         display: flex;
@@ -20,9 +22,10 @@
         }
 
         a {
+            font-weight: 500;
             text-decoration: none;
             color: white;
-            margin-right: 20px;
+            margin-right: 25px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,7 +35,7 @@
                 margin-left: 3px;
 
                 &:hover {
-                    transform: rotate(3.142rad);
+                    transform: rotate(2*3.142rad);
                 }
             }
         }
@@ -46,6 +49,7 @@
                 transition: 0.5s;
                 color: white;
                 outline: none;
+                font-weight: 500;
                 border: none;
                 border-radius: 4px;
 
@@ -54,6 +58,138 @@
                 }
             }
         }
-
     }
 }
+
+#first {
+    overflow: hidden;
+    background-image: url(https://templates.envytheme.com/bitr/default/assets/images/banner/banner-bg-3.jpg);
+    height: 100vh;
+    padding: 50px 20px;
+    background-attachment: fixed;
+    vertical-align: middle;
+    object-fit: cover;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left {
+        h1 {
+            font-size: 85px;
+            color: white;
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 28px;
+            font-weight: 500;
+            color: white;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                padding: 13px 40px;
+                background-color: rgb(238, 106, 62);
+                transition: 0.5s;
+                color: white;
+                outline: none;
+                font-weight: 500;
+                border: none;
+                border-radius: 4px;
+
+                &:hover {
+                    background-color: black;
+                }
+
+                &:last-child {
+                    background-color: #f7b22c;
+                    transition: 1s;
+
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.logo-carousel {
+    overflow: inherit;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-track::before,
+.slick-track::after {
+    display: table; 
+    content: '';
+}
+
+.slick-track::after {
+    clear: both;
+}
+
+.slick-track {
+    padding: 1rem 0;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slider{
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.row {
+    overflow: hidden;
+}
+
