@@ -6,6 +6,7 @@
 }
 
 #header {
+  z-index: 2;
   width: 100%;
   position: fixed;
   background-color: transparent;
@@ -232,6 +233,11 @@
   color: #ff6600;
 }
 
+#third {
+  background-color: #fff9f8;
+  padding: 30px 0;
+}
+
 #third .all {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,7 +250,7 @@
           align-items: center;
 }
 
-#third .all .left1 {
+#third .all .left {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,25 +265,278 @@
       flex-wrap: wrap;
 }
 
-#third .all .left1 .top h2 {
+#third .all .left .top h2 {
   margin-bottom: 25px;
 }
 
-#third .all .left1 .top p {
+#third .all .left .top p {
   margin-bottom: 25px;
   color: #ff6600;
 }
 
-#third .all .left1 .top p:last-child {
+#third .all .left .top p:last-child {
   color: rgba(102, 102, 102, 0.75);
   margin-bottom: 50px;
 }
 
-#third .all .right1 {
+#third .all .left .bottom {
+  padding: 20px;
+  padding-left: 0;
+}
+
+#third .all .left .bottom i {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: greenyellow;
+}
+
+#third .all .left .bottom p {
+  color: rgba(102, 102, 102, 0.75);
+}
+
+#third .all .right {
+  padding: 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+@-webkit-keyframes rotatee {
+  from {
+    -webkit-transform: rotate(0) scaleX(1.5);
+            transform: rotate(0) scaleX(1.5);
+  }
+  to {
+    -webkit-transform: rotate(6.284rad) scaleX(1.5);
+            transform: rotate(6.284rad) scaleX(1.5);
+  }
+}
+
+@keyframes rotatee {
+  from {
+    -webkit-transform: rotate(0) scaleX(1.5);
+            transform: rotate(0) scaleX(1.5);
+  }
+  to {
+    -webkit-transform: rotate(6.284rad) scaleX(1.5);
+            transform: rotate(6.284rad) scaleX(1.5);
+  }
+}
+
+#third .all .right .rotate_up {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  -webkit-animation-name: rotatee;
+          animation-name: rotatee;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  left: 13px;
+  top: 15px;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#third .all .right .rotate_down {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  -webkit-animation-name: rotatee;
+          animation-name: rotatee;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  right: 10px;
+  bottom: 25px;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#third .all .right img {
+  width: 100%;
+}
+
+#fourth {
+  padding: 50px 0;
+}
+
+#fourth .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fourth .all .left {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#fourth .all .left .top h2 {
+  margin-bottom: 25px;
+}
+
+#fourth .all .left .top p {
+  margin-bottom: 25px;
+  color: #ff6600;
+}
+
+#fourth .all .left .top p:last-child {
+  color: rgba(102, 102, 102, 0.75);
+  margin-bottom: 50px;
+}
+
+#fourth .all .left .bottom {
+  padding: 20px;
+  padding-left: 0;
+}
+
+#fourth .all .left .bottom i {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: greenyellow;
+}
+
+#fourth .all .left .bottom p {
+  color: rgba(102, 102, 102, 0.75);
+}
+
+#fourth .all .right {
   padding: 20px;
 }
 
-#third .all .right1 img {
+#fourth .all .right img {
+  width: 100%;
+}
+
+#fifth {
+  background-color: #fff9f8;
+  padding: 30px 0;
+}
+
+#fifth .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fifth .all .left {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#fifth .all .left .top h2 {
+  margin-bottom: 25px;
+}
+
+#fifth .all .left .top p {
+  margin-bottom: 25px;
+  color: #ff6600;
+}
+
+#fifth .all .left .top p:last-child {
+  color: rgba(102, 102, 102, 0.75);
+  margin-bottom: 50px;
+}
+
+#fifth .all .left .bottom {
+  padding: 20px;
+  padding-left: 0;
+}
+
+#fifth .all .left .bottom i {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: greenyellow;
+}
+
+#fifth .all .left .bottom p {
+  color: rgba(102, 102, 102, 0.75);
+}
+
+#fifth .all .right {
+  padding: 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes rotatee {
+  from {
+    -webkit-transform: rotate(0) scaleX(1.5);
+            transform: rotate(0) scaleX(1.5);
+  }
+  to {
+    -webkit-transform: rotate(6.284rad) scaleX(1.5);
+            transform: rotate(6.284rad) scaleX(1.5);
+  }
+}
+
+#fifth .all .right .rotate_up {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  -webkit-animation-name: rotatee;
+          animation-name: rotatee;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  left: 13px;
+  top: 15px;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#fifth .all .right .rotate_down {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  -webkit-animation-name: rotatee;
+          animation-name: rotatee;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  right: 10px;
+  bottom: 25px;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#fifth .all .right img {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

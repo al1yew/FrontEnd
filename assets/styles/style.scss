@@ -5,6 +5,7 @@
 }
 
 #header {
+    z-index: 2;
     width: 100%;
     position: fixed;
     background-color: transparent;
@@ -185,12 +186,15 @@
 
 
 #third {
+    background-color: rgb(255, 249, 248);
+    padding: 30px 0;
+
     .all {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .left1 {
+        .left {
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -211,12 +215,213 @@
                         margin-bottom: 50px;
                     }
                 }
+            }
 
+            .bottom {
+                padding: 20px;
+                padding-left: 0;
+
+                i {
+                    margin-bottom: 20px;
+                    font-size: 40px;
+                    color: greenyellow;
+                }
+
+                p {
+                    color: rgba(102, 102, 102, 0.750);
+                }
             }
         }
 
-        .right1 {
+        .right {
+            padding: 20px 40px;
+            position: relative;
+            overflow: hidden;
+
+            @keyframes rotatee {
+                from {
+                    transform: rotate(0) scaleX(1.5);
+                }
+
+                to {
+                    transform: rotate(2*3.142rad) scaleX(1.5);
+                }
+            }
+
+            .rotate_up {
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                animation-name: rotatee;
+                animation-duration: 30s;
+                left: 13px;
+                top: 15px;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            .rotate_down {
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                animation-name: rotatee;
+                animation-duration: 30s;
+                right: 10px;
+                bottom: 25px;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#fourth {
+    padding: 50px 0;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .top {
+                h2 {
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    margin-bottom: 25px;
+                    color: #ff6600;
+
+                    &:last-child {
+                        color: rgba(102, 102, 102, 0.750);
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+
+            .bottom {
+                padding: 20px;
+                padding-left: 0;
+
+                i {
+                    margin-bottom: 20px;
+                    font-size: 40px;
+                    color: greenyellow;
+                }
+
+                p {
+                    color: rgba(102, 102, 102, 0.750);
+                }
+            }
+        }
+
+        .right {
+            padding: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#fifth {
+    background-color: rgb(255, 249, 248);
+    padding: 30px 0;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .top {
+                h2 {
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    margin-bottom: 25px;
+                    color: #ff6600;
+
+                    &:last-child {
+                        color: rgba(102, 102, 102, 0.750);
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+
+            .bottom {
+                padding: 20px;
+                padding-left: 0;
+
+                i {
+                    margin-bottom: 20px;
+                    font-size: 40px;
+                    color: greenyellow;
+                }
+
+                p {
+                    color: rgba(102, 102, 102, 0.750);
+                }
+            }
+        }
+
+        .right {
+            padding: 20px 40px;
+            position: relative;
+            overflow: hidden;
+
+            @keyframes rotatee {
+                from {
+                    transform: rotate(0) scaleX(1.5);
+                }
+
+                to {
+                    transform: rotate(2*3.142rad) scaleX(1.5);
+                }
+            }
+
+            .rotate_up {
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                animation-name: rotatee;
+                animation-duration: 30s;
+                left: 13px;
+                top: 15px;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            .rotate_down {
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                animation-name: rotatee;
+                animation-duration: 30s;
+                right: 10px;
+                bottom: 25px;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
 
             img {
                 width: 100%;
