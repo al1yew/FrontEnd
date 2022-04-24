@@ -245,6 +245,7 @@
 }
 
 #third .all .left1 {
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,5 +257,27 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#third .all .left1 .top h2 {
+  margin-bottom: 25px;
+}
+
+#third .all .left1 .top p {
+  margin-bottom: 25px;
+  color: #ff6600;
+}
+
+#third .all .left1 .top p:last-child {
+  color: rgba(102, 102, 102, 0.75);
+  margin-bottom: 50px;
+}
+
+#third .all .right1 {
+  padding: 20px;
+}
+
+#third .all .right1 img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
