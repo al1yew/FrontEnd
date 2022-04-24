@@ -4,4 +4,18 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+::-moz-selection {
+  color: white;
+  background-color: red;
+}
+
+::selection {
+  color: white;
+  background-color: red;
+}
+
+p {
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=style.css.map */
