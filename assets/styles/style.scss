@@ -659,3 +659,90 @@
         }
     }
 }
+
+
+#tenth {
+    background-image: url(../images/back.jpg);
+    object-fit: cover;
+    padding: 80px 0;
+    background-size: cover;
+    vertical-align: bottom;
+
+    .all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .top {
+            text-align: center;
+            margin-bottom: 30px;
+
+            h2 {
+                color: white;
+            }
+
+            p {
+                color: #ff6600;
+                font-size: 25px;
+
+                &:last-child {
+                    color: white;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            margin-top: 10px;
+
+            .div_design {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .quote {
+                    i {
+                        font-size: 6rem;
+                    }
+                }
+            }
+
+            #dots {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .dot {
+                height: 10px;
+                width: 10px;
+                margin: 10px;
+                background-color: rgb(255, 242, 0);
+                transition: 0.5s;
+                cursor: pointer;
+            }
+
+            .slide_hide {
+                display: none;
+            }
+
+            .div_design {
+                padding: 20px 150px;
+                height: 40vh;
+                overflow: hidden;
+                width: 100%;
+            }
+
+            .noactive {
+                background-color: rgb(255, 242, 0);
+            }
+
+            .active {
+                background-color: #6c2626;
+            }
+        }
+    }
+}
