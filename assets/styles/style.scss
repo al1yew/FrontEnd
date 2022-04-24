@@ -3,6 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(33, 33, 15);
+
+#header{
+    .all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav{
+            display: flex;
+            justify-content: end;
+
+        }
+        a{
+            // text-decoration: none;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+        }
+    }
 }
