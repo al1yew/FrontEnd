@@ -349,7 +349,6 @@
             padding: 20px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
             flex-wrap: wrap;
 
             .top {
@@ -372,6 +371,22 @@
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
+
+                .try_now {
+                    margin-top: 20px;
+                    background-color: rgb(238, 106, 62);
+                    padding: 12px 35px;
+                    font-size: 20px;
+                    border-radius: 7px;
+                    color: white;
+                    border: none;
+                    margin-right: 20px;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.4s;
+                    justify-content: space-between;
+                    outline: none;
+                }
 
                 span {
                     padding: 10px 0;
@@ -469,11 +484,13 @@
 #seventh {
     background-color: #3c312b;
     padding: 50px 0;
+
     .all {
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
+
         @keyframes rotatee {
             from {
                 transform: rotate(0) scaleX(1.5);
@@ -498,12 +515,14 @@
 
         .piece {
             padding: 20px;
-            h4{ 
+
+            h4 {
                 padding-left: 7px;
                 margin-bottom: 20px;
                 border-left: 4px solid #ff6600;
                 color: white;
             }
+
             p {
                 color: rgb(170, 168, 168);
                 font-weight: 500;
@@ -523,7 +542,6 @@
         .left {
             padding: 40px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
 
@@ -543,15 +561,37 @@
                 }
             }
 
-            button{
-                background-color: rgb(238,106,62);
-                padding: 25px 10px;
+            button {
+
+                background-color: rgb(238, 106, 62);
+                padding: 10px 20px;
                 border-radius: 7px;
                 color: white;
                 border: none;
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+                transition: 0.4s;
+                justify-content: space-between;
                 outline: none;
-                i{
-                    font-size: 40px;
+
+                &:last-child {
+                    background-color: rgb(247, 178, 44);
+                }
+
+                &:hover {
+                    background-color: black;
+                }
+
+                .spans {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+
+                i {
+                    font-size: 30px;
                 }
             }
         }
@@ -561,6 +601,60 @@
 
             img {
                 width: 100%;
+            }
+        }
+    }
+}
+
+#nineth {
+    margin: 80px 0;
+
+    .all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .top {
+            text-align: center;
+            margin-bottom: 30px;
+
+            p {
+                color: #ff6600;
+
+                &:last-child {
+                    color: rgba(102, 102, 102, 0.750);
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .lg3 {
+                padding: 15px;
+
+                h4 {
+                    cursor: pointer;
+                }
+
+                .img_lg3 {
+                    transition: 1s;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: rotateY(3*3.142rad);
+                    }
+                }
+
+                p {
+                    color: rgba(102, 102, 102, 0.750);
+                    font-size: 17px;
+                    cursor: pointer;
+                }
             }
         }
     }
