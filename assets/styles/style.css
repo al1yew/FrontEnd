@@ -165,4 +165,70 @@
 #first .right img {
   width: 100%;
 }
+
+#second {
+  margin: 80px 0;
+}
+
+#second .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#second .all .top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#second .all .top p {
+  color: #ff6600;
+}
+
+#second .all .top p:last-child {
+  color: rgba(102, 102, 102, 0.75);
+  font-weight: 500;
+}
+
+#second .all .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#second .all .bottom .lg3 {
+  padding: 15px;
+}
+
+#second .all .bottom .lg3 .img_lg3 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-bottom: 15px;
+}
+
+#second .all .bottom .lg3 .img_lg3:hover {
+  -webkit-transform: rotateY(9.426rad);
+          transform: rotateY(9.426rad);
+}
+
+#second .all .bottom .lg3 p {
+  color: rgba(102, 102, 102, 0.75);
+  font-size: 17px;
+}
+
+#second .all .bottom .lg3 p span {
+  color: #ff6600;
+}
 /*# sourceMappingURL=style.css.map */
