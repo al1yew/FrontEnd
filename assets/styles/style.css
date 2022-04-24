@@ -473,70 +473,127 @@
 }
 
 #fifth .all .left .bottom {
-  padding: 20px;
-  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#fifth .all .left .bottom i {
-  margin-bottom: 20px;
-  font-size: 40px;
-  color: greenyellow;
+#fifth .all .left .bottom span {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#fifth .all .left .bottom p {
-  color: rgba(102, 102, 102, 0.75);
+#fifth .all .left .bottom span p {
+  margin: 0;
+  padding: 0;
+}
+
+#fifth .all .left .bottom span i {
+  margin-right: 5px;
+  border: 1px solid #ff6600;
+  border-radius: 100%;
+  padding: 3px 4px;
+  color: #ff6600;
+  font-size: 10px;
 }
 
 #fifth .all .right {
-  padding: 20px 40px;
-  position: relative;
-  overflow: hidden;
-}
-
-@keyframes rotatee {
-  from {
-    -webkit-transform: rotate(0) scaleX(1.5);
-            transform: rotate(0) scaleX(1.5);
-  }
-  to {
-    -webkit-transform: rotate(6.284rad) scaleX(1.5);
-            transform: rotate(6.284rad) scaleX(1.5);
-  }
-}
-
-#fifth .all .right .rotate_up {
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  -webkit-animation-name: rotatee;
-          animation-name: rotatee;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  left: 13px;
-  top: 15px;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-#fifth .all .right .rotate_down {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  -webkit-animation-name: rotatee;
-          animation-name: rotatee;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  right: 10px;
-  bottom: 25px;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  padding: 20px 20px;
 }
 
 #fifth .all .right img {
   width: 100%;
+}
+
+#sixth {
+  margin: 80px 0;
+}
+
+#sixth .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sixth .all .top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#sixth .all .top p {
+  color: #ff6600;
+}
+
+#sixth .all .top p:last-child {
+  color: rgba(102, 102, 102, 0.75);
+  font-weight: 500;
+}
+
+#sixth .all .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sixth .all .bottom .lg3 {
+  padding: 15px;
+}
+
+#sixth .all .bottom .lg3 h4 {
+  cursor: pointer;
+}
+
+#sixth .all .bottom .lg3 .img_lg3 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#sixth .all .bottom .lg3 .img_lg3:hover {
+  -webkit-transform: rotateY(9.426rad);
+          transform: rotateY(9.426rad);
+}
+
+#sixth .all .bottom .lg3 p {
+  color: rgba(102, 102, 102, 0.75);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#sixth .all .bottom .lg3 span {
+  color: #ff6600;
+  cursor: pointer;
+}
+
+#seventh {
+  background-color: #3c312b;
 }
 /*# sourceMappingURL=style.css.map */
