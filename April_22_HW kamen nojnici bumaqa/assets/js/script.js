@@ -36,7 +36,7 @@ for (let div of game_elements.children) {
             result.innerHTML = 'Draw!';
             result.className = 'col-lg-6 col-8';
             result.classList.add('draw');
-            result.style.color= 'white';
+            result.style.color= 'black';
             a++;
             b++;
         }
