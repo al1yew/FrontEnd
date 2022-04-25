@@ -1163,42 +1163,4 @@
   color: rgba(102, 102, 102, 0.75);
   font-weight: 500;
 }
-
-#therteenth .all .bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#therteenth .all .bottom .lg3 {
-  padding: 15px;
-}
-
-#therteenth .all .bottom .lg3 h4 {
-  cursor: pointer;
-}
-
-#therteenth .all .bottom .lg3 .img_lg3 {
-  -webkit-transition: 1s;
-  transition: 1s;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-#therteenth .all .bottom .lg3 .img_lg3:hover {
-  -webkit-transform: rotateY(9.426rad);
-          transform: rotateY(9.426rad);
-}
-
-#therteenth .all .bottom .lg3 p {
-  color: rgba(102, 102, 102, 0.75);
-  font-size: 17px;
-  cursor: pointer;
-}
 /*# sourceMappingURL=style.css.map */

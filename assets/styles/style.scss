@@ -923,33 +923,7 @@
         }
 
         .bottom {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .lg3 {
-                padding: 15px;
-
-                h4 {
-                    cursor: pointer;
-                }
-
-                .img_lg3 {
-                    transition: 1s;
-                    margin-bottom: 15px;
-                    cursor: pointer;
-
-                    &:hover {
-                        transform: rotateY(3*3.142rad);
-                    }
-                }
-
-                p {
-                    color: rgba(102, 102, 102, 0.750);
-                    font-size: 17px;
-                    cursor: pointer;
-                }
-            }
+            
         }
     }
 }
