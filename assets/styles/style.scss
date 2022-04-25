@@ -511,7 +511,7 @@
             animation-iteration-count: infinite;
             right: 35px;
             top: -80px;
-            
+
         }
 
         .piece {
@@ -707,17 +707,20 @@
                         color: red;
                     }
                 }
-                .content{
-                    p{
+
+                .content {
+                    p {
                         font-size: 20px;
                         font-weight: 500;
                         color: rgb(0, 28, 185);
                     }
-                    i{
+
+                    i {
                         color: yellow;
                         margin-bottom: 10px;
                     }
-                    h4{
+
+                    h4 {
                         color: rgb(0, 19, 125);
                     }
                 }
@@ -764,28 +767,33 @@
 #eleventh {
     background-color: #3c312b;
     padding: 100px 0;
+
     .all {
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
-        p{
+
+        p {
             text-align: center;
             padding: 0 100px;
             font-size: 1.5rem;
             margin: 0;
             color: white;
-            em{
+
+            em {
                 color: #ff6600;
 
             }
-            span{
+
+            span {
                 color: #ff6600;
                 font-size: 110%;
                 cursor: pointer;
             }
         }
-        .img_1{
+
+        .img_1 {
             position: absolute;
             top: -80px;
             width: 150px;
@@ -794,9 +802,10 @@
             animation-duration: 1s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
-            
+
         }
-        .img_2{
+
+        .img_2 {
             position: absolute;
             bottom: -80px;
             width: 150px;
@@ -805,9 +814,9 @@
             animation-duration: 1s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
-            
+
         }
-        
+
         @keyframes sparkle {
             from {
                 filter: brightness(0.5);
@@ -842,10 +851,105 @@
                 }
             }
         }
-        .bottom{
+
+        .bottom {
             margin-top: 20px;
-            .bottom
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .bottom_div {
+                border-radius: 3px;
+                box-shadow: 0px 0px 20px 3px rgb(185, 185, 185);
+                padding: 20px;
+
+                span {
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    font-weight: 500;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+                p {
+                    font-weight: 500;
+                    color: rgba(94, 94, 94, 0.689);
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #FF6600;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.3s;
+                    font-weight: 500;
+
+                    i {
+                        margin-left: 5px;
+                    }
+
+                    &:hover {
+                        letter-spacing: 1px;
+                    }
+                }
+            }
         }
     }
 }
 
+#therteenth {
+    padding : 80px 0;
+    background-color: rgb(255, 249, 248);
+    
+    .all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .top {
+            text-align: center;
+            margin-bottom: 30px;
+
+            p {
+                color: #ff6600;
+
+                &:last-child {
+                    color: rgba(102, 102, 102, 0.750);
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .lg3 {
+                padding: 15px;
+
+                h4 {
+                    cursor: pointer;
+                }
+
+                .img_lg3 {
+                    transition: 1s;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: rotateY(3*3.142rad);
+                    }
+                }
+
+                p {
+                    color: rgba(102, 102, 102, 0.750);
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

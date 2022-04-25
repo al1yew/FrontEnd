@@ -27,3 +27,11 @@ function Slider() {
 
     setTimeout(Slider, 3000);
 }
+
+
+$('.slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
