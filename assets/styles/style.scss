@@ -900,9 +900,9 @@
 }
 
 #therteenth {
-    padding : 80px 0;
+    padding: 80px 0;
     background-color: rgb(255, 249, 248);
-    
+
     .all {
         display: flex;
         justify-content: center;
@@ -923,7 +923,32 @@
         }
 
         .bottom {
-            
+            // margin: 0 !important;
+            // padding: 0 !important;
+            .slider {
+
+                .slider_element {
+                    width: 100%;
+                    padding: 15px;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        vertical-align: middle;
+                    }
+                }  
+
+                .slick-prev{
+                    left: 30px;
+                    background-color: red;
+                    z-index: 111;
+                }
+                .slick-next{
+                    background-color: red;
+                    right: 30px;
+                    z-index: 111;
+                }
+            }
         }
     }
 }

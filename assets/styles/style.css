@@ -1163,4 +1163,28 @@
   color: rgba(102, 102, 102, 0.75);
   font-weight: 500;
 }
+
+#therteenth .all .bottom .slider .slider_element {
+  width: 100%;
+  padding: 15px;
+}
+
+#therteenth .all .bottom .slider .slider_element img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+#therteenth .all .bottom .slider .slick-prev {
+  left: 30px;
+  background-color: red;
+  z-index: 111;
+}
+
+#therteenth .all .bottom .slider .slick-next {
+  background-color: red;
+  right: 30px;
+  z-index: 111;
+}
 /*# sourceMappingURL=style.css.map */
