@@ -944,12 +944,20 @@
             vertical-align: middle;
         }
         .element_relative{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
             position: absolute;
             width: 80%;
             right: 0;
-            bottom: 0;
-            padding: 40px 15px;
+            bottom: -20px;
+            padding: 30px 15px;
             background-color: white;
+            
+            .element_relative_child{
+                font-size: 16px;
+            }
         }
     }
 
@@ -964,11 +972,13 @@
 
     .slick-prev {
         left: 30px;
+        top: 30%;
         z-index: 111;
     }
 
     .slick-next {
         right: 30px;
+        top: 30%;
         z-index: 111;
     }
 }
