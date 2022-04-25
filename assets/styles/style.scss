@@ -925,38 +925,49 @@
     }
 }
 
-
-
 //slider
 
 .slider {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     background-color: rgb(255, 249, 248);
     width: 100%;
+
     .slider_element {
         position: relative;
         width: 100%;
-        padding: 15px;
+        padding: 100px 20px;
 
         img {
             width: 100%;
+            box-shadow: 0px 0px 20px 1px rgba(102, 102, 102, 0.52);
+
             object-fit: cover;
             vertical-align: middle;
         }
-        .element_relative{
+
+        .element_relative {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             flex-wrap: wrap;
             position: absolute;
-            width: 80%;
-            right: 0;
-            bottom: -20px;
-            padding: 30px 15px;
+            width: 70%;
+            right: 20px;
+            bottom: 20px;
+            padding: 25px 15px;
             background-color: white;
-            
-            .element_relative_child{
+            box-shadow: 0px 0px 20px 1px rgba(102, 102, 102, 0.52);
+
+            p {
+                margin: 0;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .element_relative_child {
                 font-size: 16px;
+                color: #ff6600;
+                padding-bottom: 20px;
             }
         }
     }
@@ -980,5 +991,120 @@
         right: 30px;
         top: 30%;
         z-index: 111;
+    }
+}
+
+#footer {
+    background-color: black;
+    padding: 80px 0;
+    background-image: url(https://templates.envytheme.com/bitr/default/assets/images/footer-bg-shape.png);
+
+    .all {
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .footer_element1 {
+            img {
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.600);
+                font-weight: 400;
+
+                &:last-child {
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        i {
+                            font-size: 2rem;
+                            padding-left: 15px;
+                            transition: 0.3s;
+                            cursor: pointer;
+
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+
+                        .fb {
+                            &:hover {
+                                transform: scale(1.2);
+                                color: blue;
+                            }
+                        }
+
+                        .ig {
+                            &:hover {
+                                transform: scale(1.2);
+                                color: rgb(239, 76, 110);
+                            }
+                        }
+
+                        .tw {
+                            &:hover {
+                                transform: scale(1.2);
+                                color: #1da1f2;
+                            }
+                        }
+
+                        .ln {
+                            &:hover {
+                                transform: scale(1.2);
+                                color: #0e76a8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer_element{
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h5{
+                color: rgba(255, 255, 255, 0.600);
+                padding-bottom: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.600);
+                transition: 0.4s;
+                padding-bottom: 12px;
+                &:hover{
+                    color: #f7b93b;
+                    transform: scale(1.2);
+                }
+            }
+            span{
+                color: rgba(255, 255, 255, 0.600);
+                transition: 0.4s;
+                line-height: 27px;
+                padding-bottom: 12px;
+                i{
+                    color: #f7b22c;
+                }
+            }
+        }
+    }
+
+}
+
+#bye{
+    background-color: rgb(30,29,29);
+    padding: 15px;
+    p{
+        color: white;
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+        span{
+            color: #ff6600;
+            cursor: pointer;
+        }
     }
 }

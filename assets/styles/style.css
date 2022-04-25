@@ -1169,7 +1169,7 @@
 }
 
 .slider {
-  padding-bottom: 80px;
+  padding-bottom: 120px;
   background-color: #fff9f8;
   width: 100%;
 }
@@ -1177,11 +1177,13 @@
 .slider .slider_element {
   position: relative;
   width: 100%;
-  padding: 15px;
+  padding: 100px 20px;
 }
 
 .slider .slider_element img {
   width: 100%;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(102, 102, 102, 0.52);
+          box-shadow: 0px 0px 20px 1px rgba(102, 102, 102, 0.52);
   -o-object-fit: cover;
      object-fit: cover;
   vertical-align: middle;
@@ -1194,21 +1196,31 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: absolute;
-  width: 80%;
-  right: 0;
-  bottom: -20px;
-  padding: 30px 15px;
+  width: 70%;
+  right: 20px;
+  bottom: 20px;
+  padding: 25px 15px;
   background-color: white;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(102, 102, 102, 0.52);
+          box-shadow: 0px 0px 20px 1px rgba(102, 102, 102, 0.52);
+}
+
+.slider .slider_element .element_relative p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .slider .slider_element .element_relative .element_relative_child {
   font-size: 16px;
+  color: #ff6600;
+  padding-bottom: 20px;
 }
 
 .slider .slick-dots {
@@ -1230,5 +1242,139 @@
   right: 30px;
   top: 30%;
   z-index: 111;
+}
+
+#footer {
+  background-color: black;
+  padding: 80px 0;
+  background-image: url(https://templates.envytheme.com/bitr/default/assets/images/footer-bg-shape.png);
+}
+
+#footer .all {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .all .footer_element1 img {
+  margin-bottom: 20px;
+}
+
+#footer .all .footer_element1 p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+#footer .all .footer_element1 p:last-child {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .all .footer_element1 p:last-child span i {
+  font-size: 2rem;
+  padding-left: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#footer .all .footer_element1 p:last-child span i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#footer .all .footer_element1 p:last-child span .fb:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: blue;
+}
+
+#footer .all .footer_element1 p:last-child span .ig:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #ef4c6e;
+}
+
+#footer .all .footer_element1 p:last-child span .tw:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #1da1f2;
+}
+
+#footer .all .footer_element1 p:last-child span .ln:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #0e76a8;
+}
+
+#footer .all .footer_element {
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#footer .all .footer_element h5 {
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 20px;
+}
+
+#footer .all .footer_element a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding-bottom: 12px;
+}
+
+#footer .all .footer_element a:hover {
+  color: #f7b93b;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#footer .all .footer_element span {
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  line-height: 27px;
+  padding-bottom: 12px;
+}
+
+#footer .all .footer_element span i {
+  color: #f7b22c;
+}
+
+#bye {
+  background-color: #1e1d1d;
+  padding: 15px;
+}
+
+#bye p {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+#bye p span {
+  color: #ff6600;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
