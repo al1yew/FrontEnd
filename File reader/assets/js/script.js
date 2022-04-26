@@ -37,21 +37,24 @@ download.nextElementSibling.onchange = function (e) { //download icondu deye ve 
       // console.log(img)  yoxladig id-ni
 
 
-      //imagenin adi
+      //#region Image name
+
       // console.log(file.name) yoxladig indi if-e salacam
       let file_name = file.name;
       // console.log(file_name.toString().slice(-4));  budu 
-      if (file_name.toString().slice(-4).toLowerCase() == '.jpg') { //stringe ceviririk axirdan 4 denesini gotururuk lower edirik. mutleq noqte ile lazimdir cunki birder hansisa menasiz fayl oldu, extensionu ppdf ya da nebilim mpdf. bize ise .pdf lazimdi
+      if (file_name.toString().slice(-4).toLowerCase() == '.pdf') { //stringe ceviririk axirdan 4 denesini gotururuk lower edirik. mutleq noqte ile lazimdir cunki birder hansisa menasiz fayl oldu, extensionu ppdf ya da nebilim mpdf ola biler. Bize ise mehz .pdf lazimdi
         tdImgName.innerHTML = file.name;
         tdName.appendChild(tdImgName);
       }
-      else{
+      else {
         alert('You can upload only PDF!')
       }
+      // hetta papkalardaki view-dan file extensionslari sondursem ishleyir 
 
+      //#endregion
 
+      //#region Image size
 
-      //imagenin size-i
       let size = file.size / 1024 / 1024;
 
       if (size > 1024) {
@@ -61,15 +64,20 @@ download.nextElementSibling.onchange = function (e) { //download icondu deye ve 
         tdImgSize.innerHTML = size.toFixed(2) + "MB";
       }
 
+      //#endregion
+
+      //#region 
+
       //imagenin sizeni p-ile oturduk td-ya
       tdSize.appendChild(tdImgSize);
-
-      // console.log(tdImgSize) yoxladig
-      // console.log(tdImgName) yoxladig
 
       tr.append(tdImg, tdName, tdSize);
       document.getElementById('tbody').appendChild(tr);
       //yigdig hamsini tr-ya, tr-ni da tbody-ye
+      
+      //#endregion
+
+
     }
     //bunu sorush
     reader.readAsDataURL(file);
