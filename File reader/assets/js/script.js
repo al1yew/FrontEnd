@@ -1,16 +1,16 @@
 let download = document.querySelector('.download'); // get download classli olani getir, query selectorAll ise hamsini getirir ve menimsetdiyimiz variableni sonra for loop-unda ishlede bilerik
 
-download.addEventListener('click',function(){
+download.addEventListener('click', function () {
   this.nextElementSibling.click(); // bu odu ki inputun ozu gorsenmesin ve gozel icon ile add edek 
 })
-    
-download.nextElementSibling.onchange = function(e){ //download icondu deye ve biz onu inputun ishini gorduyune gore burda cagiririg
 
-  for(let file of e.target.files) { //butun files-larin arasindaki yuklenen file ucun funksiya
+download.nextElementSibling.onchange = function (e) { //download icondu deye ve biz onu inputun ishini gorduyune gore burda cagiririg
+
+  for (let file of e.target.files) { //butun files-larin arasindaki yuklenen file ucun funksiya
 
     const reader = new FileReader(); // mutleq obyekti yaradirig
 
-    reader.onloadend = function(event) { //onloadend yani loading olannan sonra (misalcun 15gb yuklemishik, bize bosh table yaradmasin, bizde bosh table-ya baxib demeyek fayl noldu e. yuklenennen sonra yaradir tableni ve d-none-ni yigishdirir)
+    reader.onloadend = function (event) { //onloadend yani loading olannan sonra (misalcun 15gb yuklemishik, bize bosh table yaradmasin, bizde bosh table-ya baxib demeyek fayl noldu e. yuklenennen sonra yaradir tableni ve d-none-ni yigishdirir)
 
       //tr yaradiriq, icinde td dinamic shekilde, icinde p-ler ki display flex verib ortaya getirek
 
@@ -23,6 +23,7 @@ download.nextElementSibling.onchange = function(e){ //download icondu deye ve bi
       let tdImgName = document.createElement('p');
       let tdImgSize = document.createElement('p');
 
+      // console.log(getFileExtension(img)); sehvdi
 
       //imageler
       let img = document.createElement('img'); //img yaratdig
@@ -33,33 +34,46 @@ download.nextElementSibling.onchange = function(e){ //download icondu deye ve bi
 
       tdImg.appendChild(img); // saldig td-nin icine
 
-      console.log(img) // yoxladig id-ni
+      // console.log(img)  yoxladig id-ni
 
 
       //imagenin adi
-      tdImgName.innerHTML = file.name;
-      tdName.appendChild(tdImgName);
+      // console.log(file.name) yoxladig indi if-e salacam
+      let file_name = file.name;
+      // console.log(file_name.toString().slice(-4));  budu 
+      if (file_name.toString().slice(-4).toLowerCase() == '.jpg') { //stringe ceviririk axirdan 4 denesini gotururuk lower edirik. mutleq noqte ile lazimdir cunki birder hansisa menasiz fayl oldu, extensionu ppdf ya da nebilim mpdf. bize ise .pdf lazimdi
+        tdImgName.innerHTML = file.name;
+        tdName.appendChild(tdImgName);
+      }
+      else{
+        alert('You can upload only PDF!')
+      }
+
 
 
       //imagenin size-i
       let size = file.size / 1024 / 1024;
 
-      if(size > 1024) {
+      if (size > 1024) {
         tdImgSize.innerHTML = (size / 1024).toFixed(2) + "GB";
       }
-      else{
+      else {
         tdImgSize.innerHTML = size.toFixed(2) + "MB";
       }
 
       //imagenin sizeni p-ile oturduk td-ya
       tdSize.appendChild(tdImgSize);
-      console.log(tdImgSize)
-      console.log(tdImgName)
-      tr.append(tdImg,tdName,tdSize);
-      document.getElementById('tbody').appendChild(tr);
-    }
 
+      // console.log(tdImgSize) yoxladig
+      // console.log(tdImgName) yoxladig
+
+      tr.append(tdImg, tdName, tdSize);
+      document.getElementById('tbody').appendChild(tr);
+      //yigdig hamsini tr-ya, tr-ni da tbody-ye
+    }
+    //bunu sorush
     reader.readAsDataURL(file);
   }
+  //disp none-ni da yigishdiririg ki normal gostersin loaded olannan sonra
   document.querySelector('.table').classList.remove('d-none');
 }
