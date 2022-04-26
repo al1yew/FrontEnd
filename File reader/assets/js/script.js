@@ -12,6 +12,8 @@ download.nextElementSibling.onchange = function (e) { //download icondu deye ve 
 
     reader.onloadend = function (event) { //onloadend yani loading olannan sonra (misalcun 15gb yuklemishik, bize bosh table yaradmasin, bizde bosh table-ya baxib demeyek fayl noldu e. yuklenennen sonra yaradir tableni ve d-none-ni yigishdirir)
 
+      //#region Element creation
+
       //tr yaradiriq, icinde td dinamic shekilde, icinde p-ler ki display flex verib ortaya getirek
 
       let tr = document.createElement('tr');
@@ -20,10 +22,18 @@ download.nextElementSibling.onchange = function (e) { //download icondu deye ve 
       let tdName = document.createElement('td');
       let tdSize = document.createElement('td');
 
+      let tdRemove = document.createElement('td');
+      let remove = document.createElement('span');
+      remove.setAttribute('id', 'remove');
+      remove.innerHTML = 'X';
       let tdImgName = document.createElement('p');
       let tdImgSize = document.createElement('p');
 
       // console.log(getFileExtension(img)); sehvdi
+
+      //#endregion
+
+      //#region Images creation, id, src
 
       //imageler
       let img = document.createElement('img'); //img yaratdig
@@ -35,21 +45,6 @@ download.nextElementSibling.onchange = function (e) { //download icondu deye ve 
       tdImg.appendChild(img); // saldig td-nin icine
 
       // console.log(img)  yoxladig id-ni
-
-
-      //#region Image name
-
-      // console.log(file.name) yoxladig indi if-e salacam
-      let file_name = file.name;
-      // console.log(file_name.toString().slice(-4));  budu 
-      if (file_name.toString().slice(-4).toLowerCase() == '.pdf') { //stringe ceviririk axirdan 4 denesini gotururuk lower edirik. mutleq noqte ile lazimdir cunki birder hansisa menasiz fayl oldu, extensionu ppdf ya da nebilim mpdf ola biler. Bize ise mehz .pdf lazimdi
-        tdImgName.innerHTML = file.name;
-        tdName.appendChild(tdImgName);
-      }
-      else {
-        alert('You can upload only PDF!')
-      }
-      // hetta papkalardaki view-dan file extensionslari sondursem ishleyir 
 
       //#endregion
 
@@ -66,16 +61,35 @@ download.nextElementSibling.onchange = function (e) { //download icondu deye ve 
 
       //#endregion
 
-      //#region 
+      //#region Image name, Appned child
 
-      //imagenin sizeni p-ile oturduk td-ya
-      tdSize.appendChild(tdImgSize);
+      // console.log(file.name.toString().slice(-4)); bax budu  
 
-      tr.append(tdImg, tdName, tdSize);
-      document.getElementById('tbody').appendChild(tr);
-      //yigdig hamsini tr-ya, tr-ni da tbody-ye
-      
+      if (file.name.toString().slice(-4).toLowerCase() == '.pdf') { //stringe ceviririk axirdan 4 denesini gotururuk lower edirik. mutleq noqte ile lazimdir cunki birden hansisa menasiz fayl oldu, extensionu ppdf ya da nebilim mpdf ola biler. Bize ise mehz .pdf lazimdi
+        tdImgName.innerHTML = file.name;
+        tdName.appendChild(tdImgName);
+        tdRemove.appendChild(remove);
+        tdSize.appendChild(tdImgSize);
+
+        tr.append(tdImg, tdName, tdSize, tdRemove);
+        document.getElementById('tbody').appendChild(tr);
+      }
+      else {
+        alert('You can upload only PDF!');
+      }
+      // hetta papkalardaki view-dan file extensionslari sondursem ishleyir 
+      //demeli fayl pdf-dise if-in shertleri yerine getirilir. 
+
       //#endregion
+
+      //#region Remove
+
+
+
+
+      //#endregion
+
+
 
 
     }

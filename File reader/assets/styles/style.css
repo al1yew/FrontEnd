@@ -35,4 +35,19 @@ td {
   font-size: 20px;
   font-weight: bold;
 }
+
+#remove {
+  padding: 2px 7px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #666;
+  border-radius: 100%;
+}
+
+#remove:hover {
+  background-color: #9c0000;
+}
 /*# sourceMappingURL=style.css.map */
