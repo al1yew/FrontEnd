@@ -81,7 +81,14 @@ download.nextElementSibling.onchange = function (e) { //download icondu deye ve 
       //demeli fayl pdf-dise if-in shertleri yerine getirilir. 
 
       //#endregion
+      // let spans = document.querySelectorAll('#remove');
+      // for(let span of spans){
+      //   span.onclick = function() {
+      //     e.target.parentElement.remove();
+      //   }
+      // }
 
+      //                                                                       BURDA MARAGLI SHEYLER VAR DUZELT
       //#region Remove
 
 
