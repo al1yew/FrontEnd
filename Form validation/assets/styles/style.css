@@ -23,8 +23,20 @@
   padding: 30px;
 }
 
+#main .all .elements .button_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #main .all .elements label {
-  font-size: 36px;
+  font-size: 24px;
   margin-bottom: 10px;
   color: #666;
   font-weight: 400;

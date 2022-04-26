@@ -14,11 +14,15 @@
 
         .elements {
             padding: 30px;
-            // display: flex;
             
+            .button_holder{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
             label {
-                font-size: 36px;
+                font-size: 24px;
                 margin-bottom: 10px;
 
                 color: #666;
