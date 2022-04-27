@@ -4,4 +4,54 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+header .logo {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+header i {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+
+header i span {
+  position: absolute;
+  top: -17px;
+  font-size: 14px;
+  background: #fff;
+  color: green;
+  padding: 2px 5px;
+  border-radius: 100%;
+  right: -16px;
+}
+
+#Cart-products {
+  margin-top: 3rem;
+}
+
+#Cart-products .pr-box {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid grey;
+}
+
+#Cart-products .pr-box input {
+  width: 100%;
+  text-align: center;
+}
+
+#Cart-products .pr-box i {
+  cursor: pointer;
+  font-size: 18px;
+}
 /*# sourceMappingURL=style.css.map */
