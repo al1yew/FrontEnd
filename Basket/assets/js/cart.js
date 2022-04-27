@@ -1,23 +1,25 @@
+
+
 function CountBasket() {
     let basket = JSON.parse(localStorage.getItem('basket'));
     let count = basket.length;
     document.getElementById('count_prod').innerHTML = count;
-  }
-  
-  CountBasket();
+}
+
+CountBasket();
 
 
 let basket = JSON.parse(localStorage.getItem('basket'));
 let alert = document.getElementById('basket_alert');
 
-if(basket.length===0) {
+if (basket.length === 0) {
     alert.classList.remove('d-none');
     document.getElementById('btn_list').classList.add('d-none');
 }
-else{
+else {
     alert.classList.add('d-none');
     let pr = '';
-    for(let product of basket) {
+    for (let product of basket) {
         pr += `
         <div class="pr-box">
         <div class="row align-items-center justify-content-between">
@@ -36,6 +38,7 @@ else{
             <div class="col-lg-1">
                 <i class="fa fa-trash delete_icon" aria-hidden="true"></i>
             </div>
+            
         </div>
     </div> 
         `
@@ -51,14 +54,14 @@ let clear_btn = document.getElementById('clear');
 
 let delete_icon = document.querySelectorAll('.delete_icon');
 console.log(delete_icon);
-for(let d_btn of delete_icon) {
-    d_btn.addEventListener('click',function(e){
+for (let d_btn of delete_icon) {
+    d_btn.addEventListener('click', function (e) {
         let div = e.target.parentElement.parentElement.parentElement;
         div.remove();
     })
 }
 
-refresh_btn.addEventListener('click',function(){
+refresh_btn.addEventListener('click', function () {
     document.body.style.opacity = '0'
     setTimeout(() => {
         document.body.style.opacity = '1'
@@ -66,7 +69,7 @@ refresh_btn.addEventListener('click',function(){
     }, 500);
 })
 
-clear_btn.addEventListener('click',function(){
-    localStorage.setItem('basket',JSON.stringify([]));
+clear_btn.addEventListener('click', function () {
+    localStorage.setItem('basket', JSON.stringify([]));
     location.reload();
 })
