@@ -52,4 +52,20 @@
           box-shadow: 0px 0px 5px 2px #726a6a;
   border-radius: 5px;
 }
+
+#main .all .ps p {
+  margin-top: 30px;
+  color: red;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+#main .all .ps1 p {
+  margin-top: 120px;
+  color: red;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=style.css.map */
