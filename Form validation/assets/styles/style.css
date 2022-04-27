@@ -52,4 +52,25 @@
           box-shadow: 0px 0px 5px 2px #726a6a;
   border-radius: 5px;
 }
+
+#main .all #email_p {
+  position: absolute;
+  font-size: 20px;
+  color: red;
+  font-weight: 600;
+  left: 17%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#main .all #email {
+  position: relative;
+}
+
+#main .all .email_p_active {
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+}
 /*# sourceMappingURL=style.css.map */
