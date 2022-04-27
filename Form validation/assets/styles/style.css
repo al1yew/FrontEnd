@@ -53,24 +53,19 @@
   border-radius: 5px;
 }
 
-#main .all #email_p {
-  position: absolute;
-  font-size: 20px;
+#main .all .ps p {
+  margin-top: 30px;
   color: red;
-  font-weight: 600;
-  left: 17%;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 50px;
 }
 
-#main .all #email {
-  position: relative;
-}
-
-#main .all .email_p_active {
-  -webkit-transform: scale(1) !important;
-          transform: scale(1) !important;
+#main .all .ps1 p {
+  margin-top: 120px;
+  color: red;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */

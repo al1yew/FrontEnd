@@ -19,62 +19,69 @@ btn.addEventListener('click', function () {
     //#endregion
 
     //#region phone validation
-    // if (phone_regex.test(phone.value)) {
-    //     phone.style.boxShadow = '0px 0px 5px 2px green';
-    // }
-    // else {
-    //     phone.style.boxShadow = '0px 0px 5px 2px red';
-    //     alert("Enter your phone number in right way!")  //belede olar
-    //     // let p = document.createElement('p');            // belede olar
-    //     // p.setAttribute('id', 'p');                      // amma yaxshisi yaradib d-none vermekdi
-    //     // p.innerHTML = "Enter in right Way!"
-    //     // elements.append(p);
-
-    // }
+    if (phone_regex.test(phone.value)) {
+        document.getElementById('p_number').classList.add('d-none');
+        phone.style.boxShadow = '0px 0px 5px 2px green';
+    }
+    else {
+        phone.style.boxShadow = '0px 0px 5px 2px red';
+        // alert("Enter your phone number in right way!")  //belede olar
+        // let p = document.createElement('p');            // belede olar
+        // p.setAttribute('id', 'p');                      // amma yaxshisi yaradib d-none vermekdi
+        // p.innerHTML = "Enter in right Way!"
+        // elements.append(p);
+        document.getElementById('p_number').classList.remove('d-none');
+    }
     //#endregion
 
     //#region email validation
     if (email_regex.test(email.value)) {
+        document.getElementById('p_email').classList.add('d-none');
         email.style.boxShadow = '0px 0px 5px 2px green';
-        document.getElementById('email_p').classList.remove('email_p_active');
     }
     else {
         // alert('Write eMail in right way!');
-        document.getElementById('email_p').classList.add('email_p_active');
         email.style.boxShadow = '0px 0px 5px 2px red';
+        document.getElementById('p_email').classList.remove('d-none');
     }
 
     //#endregion
 
-    // //#region name validation
+    //#region name validation
 
-    // if (nnname.length < 1) {
-    //     alert('Name must be minimum 1 character')
-    // }
-    // else {
-    //     nnname.style.boxShadow = '0px 0px 5px 2px green';
-    // }
-    // //#endregion
+    if (nnname.length < 1) {
+        // alert('Name must be minimum 1 character');
+        document.getElementById('p_name').classList.remove('d-none');
+    }
+    else {
+        // nnname.style.boxShadow = '0px 0px 5px 2px green';
+        document.getElementById('p_name').classList.add('d-none');
+    }
+    //#endregion
 
-    // //#region surname validation
+    //#region surname validation
 
-    // if (sssurname.length < 1) {
-    //     alert('Surname must be minimum 1 character')
-    // }
-    // else {
-    //     sssurname.style.boxShadow = '0px 0px 5px 2px green';
-    // }
-    // //#endregion
+    if (sssurname.length < 1) {
+        // alert('Surname must be minimum 1 character');
+        document.getElementById('p_surname').classList.remove('d-none');
+    }
+    else {
+        document.getElementById('p_surname').classList.add('d-none');
+        // sssurname.style.boxShadow = '0px 0px 5px 2px green';
+    }
+    //#endregion
 
-    // //#region age validation
+    //#region age validation
 
-    // if (age <= 18) {
-    //     alert('Your age must be at least 18')
-    // }
-    // else {
-    //     age.style.boxShadow = '0px 0px 5px 2px green';
-    // }
+    if (age <= 18) {
+        // alert('Your age must be at least 18');
+        document.getElementById('p_age').classList.remove('d-none');
+    }
+    else {
+        document.getElementById('p_age').classList.add('d-none');
+        age.style.boxShadow = '0px 0px 5px 2px green';
+    }
 
-    // //#endregion
+    //#endregion
 
 })
