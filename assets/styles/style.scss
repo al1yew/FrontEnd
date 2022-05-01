@@ -4,19 +4,19 @@
     box-sizing: border-box;
 }
 
-// body{
-//     position: relative;
-// }
+body{
+    position: relative;
+}
 
-// #scroll_up{
-//     position: absolute;
-//     right: 30px;
-//     bottom: 30px;
-//     color: white;
-//     padding: 5px 12px;
-//     border: 1px solid blue;
-//     border-radius: 100%;
-// }
+#scroll_up{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: white;
+    padding: 5px 12px;
+    border: 1px solid blue;
+    border-radius: 100%;
+}
 
 #header {
     z-index: 2;
@@ -197,7 +197,6 @@
         }
     }
 }
-
 
 #third {
     background-color: rgb(255, 249, 248);
@@ -679,6 +678,7 @@
     background-image: url(../images/back.jpg);
     object-fit: cover;
     padding: 80px 0;
+    background-attachment: fixed;
     background-size: cover;
     vertical-align: bottom;
 
@@ -696,13 +696,13 @@
             }
 
             p {
-                color: #ff6600;
-                font-size: 25px;
+                color: #3A0CA3;
+                font-size: 30px;
 
                 &:last-child {
                     color: white;
                     font-weight: 500;
-                    font-size: 1rem;
+                    font-size: 25px;
                 }
             }
         }
@@ -938,8 +938,6 @@
         }
     }
 }
-
-//slider
 
 .slider {
     padding-bottom: 120px;
