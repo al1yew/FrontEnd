@@ -124,5 +124,8 @@ $(window).scroll(function () {
   }
 })
 
-
-
+let scroll = document.querySelector('#scroll_up');
+scroll.addEventListener('click', function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})

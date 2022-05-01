@@ -4,18 +4,21 @@
     box-sizing: border-box;
 }
 
-body{
-    position: relative;
-}
-
 #scroll_up{
-    position: absolute;
+    position: fixed;
+    z-index: 2323;
     right: 30px;
     bottom: 30px;
-    color: white;
-    padding: 5px 12px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px 11px;
     border: 1px solid blue;
     border-radius: 100%;
+    &:hover{
+        color: white;
+        background-color: red;
+    }
 }
 
 #header {
