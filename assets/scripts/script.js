@@ -67,3 +67,18 @@ $('.slider').slick({
     }
   ]
 });
+
+
+// $(window).scroll(function () {
+//   if ($(window).scrollTop() > 70) {
+//     $('header').css('background-color', 'black');
+//     $('header').css('transition', '0.4s')
+//     $('header').css('padding', '3px 10px')
+
+//   }
+//   else {
+//     $('header').css('background-color', 'transparent');
+//     $('header').css('transition', '0.4s')
+//     $('header').css('padding', '10px')
+//   }
+// })
