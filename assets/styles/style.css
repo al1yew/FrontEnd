@@ -856,7 +856,7 @@ body {
 }
 
 #tenth {
-  background-image: url(../images/back.jpg);
+  background-image: url(../images/back1.jpg);
   -o-object-fit: cover;
      object-fit: cover;
   padding: 80px 0;
@@ -887,7 +887,7 @@ body {
 }
 
 #tenth .all .top p {
-  color: #3A0CA3;
+  color: #ff6600;
   font-size: 30px;
 }
 
