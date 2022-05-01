@@ -1,32 +1,32 @@
 
-let slideNo = 0;
+// let slideNo = 0;
 
-let slide = document.getElementsByClassName("slide_hide");
-let dot = document.getElementsByClassName("dot");
+// let slide = document.getElementsByClassName("slide_hide");
+// let dot = document.getElementsByClassName("dot");
 
-Slider();
+// Slider();
 
-function Slider() {
+// function Slider() {
 
-  for (let _slide of slide) {
-    _slide.style.display = 'none';
-  }
+//   for (let _slide of slide) {
+//     _slide.style.display = 'none';
+//   }
 
-  slideNo++;
+//   slideNo++;
 
-  if (slideNo > slide.length) {
-    slideNo = 1
-  }
+//   if (slideNo > slide.length) {
+//     slideNo = 1
+//   }
 
-  for (i = 0; i < dot.length; i++) {
-    dot[i].className = dot[i].className.replace(" active", "");
-  }
+//   for (i = 0; i < dot.length; i++) {
+//     dot[i].className = dot[i].className.replace(" active", "");
+//   }
 
-  slide[slideNo - 1].style.display = "flex";
-  dot[slideNo - 1].className += " active";
+//   slide[slideNo - 1].style.display = "flex";
+//   dot[slideNo - 1].className += " active";
 
-  setTimeout(Slider, 3000);
-}
+//   setTimeout(Slider, 3000);
+// }
 
 $('.slider').slick({
   arrows: true,
@@ -69,16 +69,16 @@ $('.slider').slick({
 });
 
 
-// $(window).scroll(function () {
-//   if ($(window).scrollTop() > 70) {
-//     $('header').css('background-color', 'black');
-//     $('header').css('transition', '0.4s')
-//     $('header').css('padding', '3px 10px')
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 70) {
+    $('header').css('background-color', 'black');
+    $('header').css('transition', '0.4s')
+    $('header').css('padding', '3px 10px')
 
-//   }
-//   else {
-//     $('header').css('background-color', 'transparent');
-//     $('header').css('transition', '0.4s')
-//     $('header').css('padding', '10px')
-//   }
-// })
+  }
+  else {
+    $('header').css('background-color', 'transparent');
+    $('header').css('transition', '0.4s')
+    $('header').css('padding', '10px')
+  }
+})
