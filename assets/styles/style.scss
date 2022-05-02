@@ -194,6 +194,7 @@
 
                     span {
                         color: #ff6600;
+                        cursor: pointer;
                     }
                 }
             }
@@ -402,6 +403,9 @@
                     transition: 0.4s;
                     justify-content: space-between;
                     outline: none;
+                    &:hover{
+                        background-color: black;
+                    }
                 }
 
                 span {

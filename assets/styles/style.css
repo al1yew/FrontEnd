@@ -250,6 +250,7 @@
 
 #second .all .bottom .lg3 p span {
   color: #ff6600;
+  cursor: pointer;
 }
 
 #third {
@@ -522,6 +523,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   outline: none;
+}
+
+#fifth .all .left .bottom .try_now:hover {
+  background-color: black;
 }
 
 #fifth .all .left .bottom span {
