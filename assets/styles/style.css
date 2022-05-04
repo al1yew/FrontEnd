@@ -26,7 +26,6 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 #header .top {
@@ -70,7 +69,7 @@ a {
 }
 
 #header .middle .all .all_first a:hover {
-  color: blue;
+  color: #2bbef9;
 }
 
 #header .middle .all .middle_middle {
@@ -84,28 +83,42 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 12px;
-  color: #3E445A;
 }
 
-#header .middle .all .middle_middle .middle_middle_first {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#header .middle .all .middle_middle .middle_middle_first p {
-  margin: 0;
-  margin-left: 7px;
-  font-size: 12px;
-  color: #3E445A;
-  padding-right: 12px;
+#header .middle .all .middle_middle p {
+  padding: 0 18px;
   border-right: 1px solid #d9d9e9;
+  color: #3E445A;
 }
 
-#header .middle .all .middle_middle .middle_middle_middle {
+#header .middle .all .middle_middle p a {
+  font-weight: 700;
+  color: #2bbef9;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#header .middle .all .middle_middle p a::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  left: 0px;
+  width: 0%;
+  height: 1px;
+  color: black;
+  background-color: black;
+}
+
+#header .middle .all .middle_middle p a:hover::before {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#header .middle .all .middle_middle .language_currency {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,11 +127,29 @@ a {
           align-items: center;
 }
 
-#header .middle .all .middle_middle .middle_middle_middle a {
-  color: blue;
+#header .middle .all .middle_middle .language_currency p {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-#header .middle .all .middle_middle .middle_middle_middle a:hover {
-  text-decoration: underline;
+#header .middle .all .middle_middle .language_currency p:hover {
+  color: #2bbef9;
+}
+
+#header .middle .all .middle_middle .language_currency p:hover i {
+  -webkit-transform: rotate(3.142rad);
+          transform: rotate(3.142rad);
+  color: #2bbef9;
+}
+
+#header .middle .all .middle_middle .language_currency p i {
+  font-size: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#header .middle .all .middle_middle .language_currency p:last-child {
+  border-right: 1px solid #d9d9e9;
 }
 /*# sourceMappingURL=style.css.map */
