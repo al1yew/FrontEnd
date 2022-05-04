@@ -52,7 +52,7 @@
     content: '\e8b4';
     font-size: 20px;
     padding: 10px 29px 10px 10px;
-    color: rgb(237,52,15);
+    color: rgb(237, 52, 15);
     cursor: pointer;
     border-radius: 100%;
     background-color: #FFF1EE;
@@ -72,7 +72,7 @@
 
 @font-face {
     font-family: Dosis;
-    src: url(../fonts/Dosis/Dosis-Medium.ttf);
+    src: url(../fonts/Dosis/Dosis-Bold.ttf);
 }
 
 p {
@@ -84,9 +84,9 @@ a {
 }
 
 #header {
-    font-family: Inter;
 
     .top {
+        font-family: Inter;
         background-color: rgb(35, 58, 149);
 
         p {
@@ -100,6 +100,7 @@ a {
     }
 
     .middle {
+        font-family: Inter;
         padding: 6px;
         border-bottom: 1px solid #d9d9e9;
 
@@ -109,11 +110,12 @@ a {
             align-items: center;
 
             .middle_left {
+                padding: 0; //bunu sorush
                 a {
                     font-family: Inter;
                     text-decoration: none;
                     transition: 0.4s;
-                    margin-left: 15px;
+                    margin-right: 15px;
                     color: #3E445A;
                     font-size: 12px;
 
@@ -193,11 +195,13 @@ a {
     }
 
     .bottom {
-        padding: 25px 0;
+        padding: 20px 0;
         border-bottom: 1px solid #d9d9e9;
 
         .all {
             .bottom_top {
+                padding: 0; 
+                font-family: Inter;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -227,7 +231,12 @@ a {
                     cursor: pointer;
                     display: flex;
                     justify-content: space-between;
+                    transition: 0.3s;
                     align-items: center;
+
+                    &:hover {
+                        box-shadow: 0px 0px 10px 1px #666;
+                    }
 
                     p {
                         text-align: start;
@@ -286,18 +295,88 @@ a {
                     }
                 }
 
-                .money_user{
+                .money_user {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    span{
+
+                    .money {
                         font-family: Dosis;
                         font-weight: 600;
                         font-size: 1.25rem;
                         padding: 0 20px;
                     }
+
+                    .bag_icon {
+                        position: relative;
+                    }
+
+                    .amount {
+                        position: absolute;
+                        top: -4px;
+                        right: -4px;
+                        font-size: 12px;
+                        font-style: normal !important;
+                        color: white;
+                        padding: 0px 5px;
+                        background-color: red;
+                        border-radius: 100%;
+                    }
                 }
             }
+
+            .bottom_bottom {
+                font-family: Dosis;
+                font-weight: 800;
+                // padding-top: 20px; //burda da niyese sag sol 12 verir
+                padding: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .categories {
+                    background-color: rgb(43, 190, 249);
+                    border-radius: 20px;
+                    display: flex;
+                    cursor: pointer;
+                    position: relative;
+                    padding: 10px;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    i {
+                        color: white;
+                        font-size: 18px;
+                        margin: 0 5px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        color: white;
+
+                        span {
+                            font-size: 10px;
+                            position: absolute;
+                            left: 50%;
+                            color: #71778E;
+                            top: 34px;
+                            border-radius: 8px;
+
+                            padding: 2px 5px;
+                            background-color: rgb(237, 238, 245);
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+
+                .navigation{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                }
+            }
+
         }
     }
 }
