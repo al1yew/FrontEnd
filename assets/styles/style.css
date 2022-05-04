@@ -34,12 +34,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*#endregion Icons do not open it is too big press alt z*/
 .klbth-icon-secure:before {
   content: '\e8b5';
   font-size: 20px;
 }
 
+/*#endregion Icons do not open it is too big press alt z*/
 @font-face {
   font-family: Inter;
   src: url(../fonts/Inter/Inter-Medium.ttf);
@@ -47,7 +47,7 @@
 
 @font-face {
   font-family: Roboto;
-  src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
 }
 
 @font-face {
@@ -186,5 +186,28 @@ a {
 
 #header .middle .all .middle_right .language_currency p:last-child {
   border-right: 1px solid #d9d9e9;
+}
+
+#header .bottom {
+  padding: 20px 0;
+  border-bottom: 1px solid #d9d9e9;
+}
+
+#header .bottom .all .bottom_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .bottom .all .bottom_top img {
+  width: 90%;
+  background-size: cover;
+  vertical-align: bottom;
 }
 /*# sourceMappingURL=style.css.map */
