@@ -39,6 +39,24 @@
     font-size: 20px;
 }
 
+.klbth-icon-user:before {
+    content: '\e807';
+    font-size: 20px;
+    padding: 9px 29px 9px 9px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid #7A7A7A;
+}
+
+.klbth-icon-shopping-bag:before {
+    content: '\e8b4';
+    font-size: 20px;
+    padding: 9px 29px 9px 9px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid #7A7A7A;
+}
+
 /*#endregion Icons do not open it is too big press alt z*/
 
 @font-face {
@@ -174,7 +192,7 @@ a {
     }
 
     .bottom {
-        padding: 20px 0;
+        padding: 25px 0;
         border-bottom: 1px solid #d9d9e9;
 
         .all {
@@ -251,16 +269,22 @@ a {
                         outline: none;
                         color: black;
                         font-size: 14px;
-                        
+
                     }
 
                     i {
+                        width: 5%;
                         font-size: 25px;
                         margin-right: 5px;
                         cursor: pointer;
                     }
 
+                    span {
+                        width: 5%;
+                        font-size: 16px;
+                    }
                 }
+
             }
         }
     }

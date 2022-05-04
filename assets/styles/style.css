@@ -40,6 +40,24 @@
   font-size: 20px;
 }
 
+.klbth-icon-user:before {
+  content: '\e807';
+  font-size: 20px;
+  padding: 9px 29px 9px 9px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 1px solid #7A7A7A;
+}
+
+.klbth-icon-shopping-bag:before {
+  content: '\e8b4';
+  font-size: 20px;
+  padding: 9px 29px 9px 9px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 1px solid #7A7A7A;
+}
+
 /*#endregion Icons do not open it is too big press alt z*/
 @font-face {
   font-family: Inter;
@@ -194,7 +212,7 @@ a {
 }
 
 #header .bottom {
-  padding: 20px 0;
+  padding: 25px 0;
   border-bottom: 1px solid #d9d9e9;
 }
 
@@ -298,8 +316,14 @@ a {
 }
 
 #header .bottom .all .bottom_top .search_engine i {
+  width: 5%;
   font-size: 25px;
   margin-right: 5px;
   cursor: pointer;
+}
+
+#header .bottom .all .bottom_top .search_engine span {
+  width: 5%;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
