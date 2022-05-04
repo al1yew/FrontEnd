@@ -6,12 +6,17 @@
 }
 
 @font-face {
-  font-family: myFirstFont;
+  font-family: Inter;
   src: url(../fonts/Inter/Inter-Medium.ttf);
 }
 
 @font-face {
-  font-family: myFirstFont12;
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
   src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
 }
 
@@ -23,16 +28,30 @@
   text-align: center;
   color: white;
   font-size: 12px;
-  font-family: myFirstFont;
+  font-family: Inter;
   padding: 9px;
   margin: 0;
 }
 
 #header .middle {
   padding: 9px;
+  border-bottom: 1px solid #d9d9e9;
 }
 
-#header .middle a {
+#header .middle .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .middle .all a {
+  font-family: Inter;
   text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -41,7 +60,7 @@
   font-size: 12px;
 }
 
-#header .middle a:hover {
+#header .middle .all a:hover {
   color: blue;
 }
 /*# sourceMappingURL=style.css.map */
