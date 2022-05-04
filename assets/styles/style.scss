@@ -406,9 +406,11 @@ a {
 
                     p {
                         font-size: 15px;
-                        margin-left: 15px;
+                        padding: 12px 15px;
+                        border-radius: 20px;
                         display: flex;
                         cursor: pointer;
+                        transition: 0.3s;
                         position: relative;
                         justify-content: center;
                         align-items: center;
@@ -417,57 +419,32 @@ a {
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            margin-left: 8px;
+                            margin-left: 13px;
+                            transition: 0.3s;
                         }
 
+                        &:hover i.fa-solid {
+                            transform: rotate(3.142rad);
+                            color: rgb(43, 190, 249);
+                        }
                     }
 
-                    p::before {
-                        content: '';
-                        position: absolute;
-                        top: 25px;
-                        transition: 0.3s;
-                        left: 0px;
-                        width: 0%;
-                        height: 2px;
-                        color: blue;
-                        background-color: blue;
+                    p:hover {
+                        background-color: rgb(234, 241, 245);
+                        color: #2bbef9;
                     }
 
-                    p::after {
-                        content: '';
-                        position: absolute;
-                        top: 25px;
-                        transition: 0.3s;
-                        right: 0px;
-                        width: 0%;
-                        height: 2px;
-                        color: blue;
-                        background-color: blue;
-                    }
-
-                    p:hover::before {
-                        width: 50%;
-                        transition: 0.3s;
-                    }
-
-                    p:hover::after {
-                        width: 50%;
-                        transition: 0.3s;
-                    }
                 }
             }
         }
     }
 }
+
 // &:hover {
 //     color: rgb(43, 190, 249);
 // }
 
-// &:hover i {
-//     transform: rotate(3.142rad);
-//     color: rgb(43, 190, 249);
-// }
+
 
 // i {
 //     font-size: 10px;

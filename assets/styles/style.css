@@ -473,11 +473,14 @@ a {
 
 #header .bottom .all .bottom_bottom .navigation p {
   font-size: 15px;
-  margin-left: 15px;
+  padding: 12px 15px;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -497,44 +500,19 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 8px;
-}
-
-#header .bottom .all .bottom_bottom .navigation p::before {
-  content: '';
-  position: absolute;
-  top: 25px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  left: 0px;
-  width: 0%;
-  height: 2px;
-  color: blue;
-  background-color: blue;
-}
-
-#header .bottom .all .bottom_bottom .navigation p::after {
-  content: '';
-  position: absolute;
-  top: 25px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  right: 0px;
-  width: 0%;
-  height: 2px;
-  color: blue;
-  background-color: blue;
-}
-
-#header .bottom .all .bottom_bottom .navigation p:hover::before {
-  width: 50%;
+  margin-left: 13px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-#header .bottom .all .bottom_bottom .navigation p:hover::after {
-  width: 50%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+#header .bottom .all .bottom_bottom .navigation p:hover i.fa-solid {
+  -webkit-transform: rotate(3.142rad);
+          transform: rotate(3.142rad);
+  color: #2bbef9;
+}
+
+#header .bottom .all .bottom_bottom .navigation p:hover {
+  background-color: #eaf1f5;
+  color: #2bbef9;
 }
 /*# sourceMappingURL=style.css.map */
