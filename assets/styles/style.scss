@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Inter/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: myFirstFont12;
+    src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
+}
+
+#header {
+    .top {
+        background-color: rgb(35, 58, 149);
+
+        p {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-family: myFirstFont;
+            padding: 9px;
+            margin: 0;
+        }
+    }
+    .middle{
+        padding: 9px;
+        a{
+            // text-shadow: 1px 1px 1px black;
+            text-decoration: none;
+            transition: 0.4s;
+            margin-left: 15px;
+            color: #3E445A;
+            font-size: 12px;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+}
