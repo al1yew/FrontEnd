@@ -58,6 +58,29 @@
     background-color: #FFF1EE;
 }
 
+.klbth-icon-meat:before {
+    content: '\e873';
+    font-size: 20px;
+    color: #afafb6;
+    margin-right: 7px;
+}
+
+.klbth-icon-biscuit:before {
+    content: '\e81b';
+    font-size: 20px;
+    color: #afafb6;
+    margin-right: 7px;
+}
+
+.klbth-icon-cup:before {
+    content: '\e867';
+    font-size: 20px;
+    color: #afafb6;
+    margin-right: 7px;
+}
+
+
+
 /*#endregion Icons do not open it is too big press alt z*/
 
 @font-face {
@@ -75,8 +98,14 @@
     src: url(../fonts/Dosis/Dosis-Bold.ttf);
 }
 
+@font-face {
+    font-family: DosisLight;
+    src: url(../fonts/Dosis/Dosis-Light.ttf);
+}
+
 p {
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -111,6 +140,7 @@ a {
 
             .middle_left {
                 padding: 0; //bunu sorush
+
                 a {
                     font-family: Inter;
                     text-decoration: none;
@@ -126,6 +156,7 @@ a {
             }
 
             .middle_right {
+                padding-right: 0;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -158,7 +189,6 @@ a {
                     a:hover::before {
                         width: 100%;
                         transition: 0.3s;
-
                     }
                 }
 
@@ -170,7 +200,6 @@ a {
                         cursor: pointer;
                         transition: 0.3s;
 
-                        // border: none;
                         &:hover {
                             color: rgb(43, 190, 249);
                         }
@@ -200,7 +229,7 @@ a {
 
         .all {
             .bottom_top {
-                padding: 0; 
+                padding: 0;
                 font-family: Inter;
                 display: flex;
                 justify-content: space-between;
@@ -369,14 +398,78 @@ a {
                     }
                 }
 
-                .navigation{
+                .navigation {
+                    font-family: DosisLight !important;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    
+
+                    p {
+                        font-size: 15px;
+                        margin-left: 15px;
+                        display: flex;
+                        cursor: pointer;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 8px;
+                        }
+
+                    }
+
+                    p::before {
+                        content: '';
+                        position: absolute;
+                        top: 25px;
+                        transition: 0.3s;
+                        left: 0px;
+                        width: 0%;
+                        height: 2px;
+                        color: blue;
+                        background-color: blue;
+                    }
+
+                    p::after {
+                        content: '';
+                        position: absolute;
+                        top: 25px;
+                        transition: 0.3s;
+                        right: 0px;
+                        width: 0%;
+                        height: 2px;
+                        color: blue;
+                        background-color: blue;
+                    }
+
+                    p:hover::before {
+                        width: 50%;
+                        transition: 0.3s;
+                    }
+
+                    p:hover::after {
+                        width: 50%;
+                        transition: 0.3s;
+                    }
                 }
             }
-
         }
     }
 }
+// &:hover {
+//     color: rgb(43, 190, 249);
+// }
+
+// &:hover i {
+//     transform: rotate(3.142rad);
+//     color: rgb(43, 190, 249);
+// }
+
+// i {
+//     font-size: 10px;
+//     transition: 0.3s;
+// }
