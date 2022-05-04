@@ -419,6 +419,12 @@ a {
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                        }
+
+                        i.fa-solid {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             margin-left: 13px;
                             transition: 0.3s;
                         }
@@ -433,20 +439,37 @@ a {
                         background-color: rgb(234, 241, 245);
                         color: #2bbef9;
                     }
-
                 }
             }
         }
     }
 }
 
-// &:hover {
-//     color: rgb(43, 190, 249);
-// }
+#first {
+    padding: 30px 0;
 
+    .all {
+        .top {
+            display: flex;
+            justify-content: space-between;
 
+            .slide1 {
+                .slide1_content {
+                    background-image: url(../images/slider-image-8.jpg);
+                    object-fit: cover;
+                    background-size: cover;
+                    position: relative;
+                    width: 100%;
+                    padding: 165px 50px;
+                    //slidenin icini duzelt megamenu oxu dropdown oxu duzelt modal toje nado sdelat
+                }
+            }
 
-// i {
-//     font-size: 10px;
-//     transition: 0.3s;
-// }
+            .slide2 {
+                .slide2_content {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

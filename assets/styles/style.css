@@ -500,6 +500,18 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#header .bottom .all .bottom_bottom .navigation p i.fa-solid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 13px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -514,5 +526,32 @@ a {
 #header .bottom .all .bottom_bottom .navigation p:hover {
   background-color: #eaf1f5;
   color: #2bbef9;
+}
+
+#first {
+  padding: 30px 0;
+}
+
+#first .all .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#first .all .top .slide1 .slide1_content {
+  background-image: url(../images/slider-image-8.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  padding: 165px 50px;
+}
+
+#first .all .top .slide2 .slide2_content {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
