@@ -45,16 +45,17 @@
     padding: 9px 29px 9px 9px;
     cursor: pointer;
     border-radius: 100%;
-    border: 1px solid #7A7A7A;
+    border: 1px solid #d9d9e9;
 }
 
 .klbth-icon-shopping-bag:before {
     content: '\e8b4';
     font-size: 20px;
-    padding: 9px 29px 9px 9px;
+    padding: 10px 29px 10px 10px;
+    color: rgb(237,52,15);
     cursor: pointer;
     border-radius: 100%;
-    border: 1px solid #7A7A7A;
+    background-color: #FFF1EE;
 }
 
 /*#endregion Icons do not open it is too big press alt z*/
@@ -204,7 +205,7 @@ a {
                 a {
                     img {
                         margin-right: 10px;
-                        width: 80%;
+                        width: 85%;
                         background-size: cover;
                         object-fit: cover;
                         vertical-align: bottom;
@@ -285,6 +286,17 @@ a {
                     }
                 }
 
+                .money_user{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    span{
+                        font-family: Dosis;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        padding: 0 20px;
+                    }
+                }
             }
         }
     }

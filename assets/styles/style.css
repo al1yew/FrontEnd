@@ -46,16 +46,17 @@
   padding: 9px 29px 9px 9px;
   cursor: pointer;
   border-radius: 100%;
-  border: 1px solid #7A7A7A;
+  border: 1px solid #d9d9e9;
 }
 
 .klbth-icon-shopping-bag:before {
   content: '\e8b4';
   font-size: 20px;
-  padding: 9px 29px 9px 9px;
+  padding: 10px 29px 10px 10px;
+  color: #ed340f;
   cursor: pointer;
   border-radius: 100%;
-  border: 1px solid #7A7A7A;
+  background-color: #FFF1EE;
 }
 
 /*#endregion Icons do not open it is too big press alt z*/
@@ -230,7 +231,7 @@ a {
 
 #header .bottom .all .bottom_top a img {
   margin-right: 10px;
-  width: 80%;
+  width: 85%;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
@@ -325,5 +326,24 @@ a {
 #header .bottom .all .bottom_top .search_engine span {
   width: 5%;
   font-size: 16px;
+}
+
+#header .bottom .all .bottom_top .money_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .bottom .all .bottom_top .money_user span {
+  font-family: Dosis;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0 20px;
 }
 /*# sourceMappingURL=style.css.map */
