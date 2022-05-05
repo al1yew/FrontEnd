@@ -538,6 +538,7 @@ a {
 }
 
 #first .all .top {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,6 +640,7 @@ a {
 }
 
 #first .all .bottom {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,6 +782,7 @@ a {
 
 #second .top {
   margin-bottom: 20px;
+  padding: 0;
 }
 
 #second .top h4 {
@@ -791,6 +794,21 @@ a {
 #second .top p {
   font-size: 13px;
   color: #afafb6;
+}
+
+#second .bottom {
+  border-radius: 10px;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+#second .bottom .slick-prev .slick-arrow {
+  color: red !important;
+  background-color: red !important;
+}
+
+#second .bottom .slider_card {
+  border-radius: 0;
 }
 
 #second .bottom .slider_card img {
