@@ -22,7 +22,7 @@ $('.slider1').slick({
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576, //bunu 480 idi 576 eledim 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
