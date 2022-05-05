@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat;
@@ -42,14 +41,12 @@
   background: transparent;
   color: transparent;
 } */
-
 /* .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
   opacity: 1;
 } */
-
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
   opacity: 1;
@@ -57,13 +54,14 @@
   font-weight: 100 !important;
   background-color: #666;
   border-radius: 100%;
-  box-shadow: 0px 0px 5px 2px red;
+  -webkit-box-shadow: 0px 0px 5px 2px red;
+          box-shadow: 0px 0px 5px 2px red;
 }
 
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1;
   color: #666;
   opacity: 0.75;
@@ -176,5 +174,4 @@
   color: black;
   opacity: 0.75;
 }
-
 /*# sourceMappingURL=slick-theme.css.map */
