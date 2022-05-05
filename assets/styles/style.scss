@@ -451,6 +451,7 @@ a {
     .all {
         .top {
             display: flex;
+            margin-bottom: 20px;
             justify-content: space-between;
 
             .slide1 {
@@ -460,14 +461,187 @@ a {
                     background-size: cover;
                     position: relative;
                     width: 100%;
-                    padding: 165px 50px;
-                    //slidenin icini duzelt megamenu oxu dropdown oxu duzelt modal toje nado sdelat
+                    border-radius: 10px;
+                    padding: 110px 70px;
+
+                    .first_p {
+                        font-family: Roboto;
+                        font-size: 14px;
+
+                        span {
+                            padding: 8px 10px;
+                            background: rgb(192, 228, 208);
+                            background: linear-gradient(90deg, rgba(192, 228, 208, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border-radius: 20px;
+                            color: #038E42;
+                        }
+                    }
+
+                    h1 {
+                        margin-top: 10px;
+                        font-weight: 700;
+                        font-size: 3rem;
+                    }
+
+                    .second_p {
+                        font-family: DosisLight;
+                        font-weight: 600;
+                    }
+
+                    .third_p {
+                        font-family: DosisLight;
+                        font-weight: 600;
+
+                        span {
+                            font-family: DosisLight;
+                            font-weight: 700;
+                            font-size: 2.5rem;
+                            color: red;
+                            margin-left: 5px;
+                        }
+                    }
+
+                    button {
+                        margin-top: 25px;
+                        outline: none;
+                        border: none;
+                        border-radius: 20px;
+                        background-color: rgb(43, 190, 249);
+                        color: white;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 8px 20px;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: #233A95;
+                        }
+
+                        i {
+                            margin-left: 5px;
+
+                        }
+                    }
                 }
+
             }
 
             .slide2 {
+                border-radius: 10px;
+
                 .slide2_content {
+                    border-radius: 10px;
+
                     width: 100%;
+
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .slide3 {
+                background-image: url(../images/home-banner-15.jpg);
+                object-fit: cover;
+                background-size: cover;
+                border-radius: 10px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                padding: 50px 30px;
+
+                .slide3_content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+
+                    .first_p {
+                        font-family: DosisLight;
+                        font-size: 1.75rem;
+                    }
+
+                    .second_p {
+                        font-family: Dosis;
+                        font-size: 2rem;
+                        color: rgb(62, 68, 90);
+                    }
+
+                    .third_p {
+                        color: rgb(155, 181, 212);
+                        font-size: 12px;
+                    }
+
+                    button {
+                        margin-top: 25px;
+                        outline: none;
+                        width: 50%;
+                        border: none;
+                        border-radius: 20px;
+                        background-color: rgb(35, 58, 149);
+                        color: white;
+                        padding: 8px 20px;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: rgb(43,190,249);
+                        }
+                    }
+                }
+            }
+
+            .slide4 {
+                background-image: url(../images/home-banner-16.jpg);
+                object-fit: cover;
+                background-size: cover;
+                border-radius: 10px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                padding: 50px 30px;
+
+                .slide4_content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+
+                    .first_p {
+                        font-family: DosisLight;
+                        font-size: 1.75rem;
+                    }
+
+                    .second_p {
+                        font-family: Dosis;
+                        font-size: 2rem;
+                        color: rgb(62, 68, 90);
+                    }
+
+                    .third_p {
+                        color: rgb(155, 181, 212);
+                        font-size: 12px;
+                    }
+
+                    button {
+                        margin-top: 25px;
+                        outline: none;
+                        width: 50%;
+                        border: none;
+                        border-radius: 20px;
+                        background-color: rgb(35, 58, 149);
+                        color: white;
+                        padding: 8px 20px;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: rgb(43,190,249);
+                        }
+                    }
                 }
             }
         }

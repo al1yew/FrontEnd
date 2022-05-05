@@ -689,7 +689,7 @@ progress {
   .container-md,
   .container-sm,
   .container {
-    max-width: 1200px; 
+    max-width: 1200px;
     /* 1140 deyishdim 1200 */
   }
 }
@@ -1514,6 +1514,11 @@ progress {
     width: 23.33333333%;
   }
 
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
   .col-lg-2-5 {
     flex: 0 0 auto;
     width: 20.83333333%;
@@ -1544,6 +1549,11 @@ progress {
     width: 45.8333333%;
   }
 
+  .col-lg-5-8 {
+    flex: 0 0 auto;
+    width: 48.33333%;
+  }
+
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
@@ -1553,10 +1563,12 @@ progress {
     flex: 0 0 auto;
     width: 58.33333333%;
   }
+
   .col-lg-7-5 {
     flex: 0 0 auto;
     width: 62.5%;
   }
+
   .col-lg-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
