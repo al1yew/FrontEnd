@@ -754,11 +754,98 @@ a {
                     }
                 }
             }
-
-
-
-
         }
     }
 }
 
+#third {
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .all {
+        position: relative;
+        background-color: #F8EFEA;
+        padding: 35px 30px;
+        border-radius: 10px;
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            h6 {
+                padding: 0;
+                margin: 0;
+                font-size: 22px;
+
+                span {
+                    color: rgb(0, 184, 83);
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .middle {
+            height: auto;
+
+            img {
+                position: absolute;
+                top: -45%;
+                object-fit: cover;
+                background-size: cover;
+                vertical-align: middle;
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            button {
+                border-radius: 20px !important;
+                font-size: 13px;
+                padding: 8px 15px !important;
+            }
+        }
+    }
+}
+
+#fourth {
+    .all {
+        .left {
+            width: 100% !important;
+        }
+
+        .card-body {
+
+            .up {
+                padding: 40px 35px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+
+
+
+            .ahrefs {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    color: #3E445A;
+                    font-family: Inter;
+                    font-size: 13px;
+                    transition: 0.3s;
+                    margin-bottom: 15px;
+
+                    &:hover {
+                        color: #2649d5;
+                    }
+                }
+            }
+        }
+    }
+}
