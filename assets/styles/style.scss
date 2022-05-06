@@ -34,6 +34,23 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.klbth-icon-phone-call:before {
+    content: '\e892';
+}
+
+.klbth-icon-facebook:before {
+    content: '\f09a';
+}
+
+.klbth-icon-twitter:before {
+    content: '\f099';
+}
+
+.klbth-icon-instagram:before {
+    content: '\f16d';
+}
+
+
 .klbth-icon-milk-box:before {
     content: '\e8a8';
     font-size: 25px;
@@ -120,8 +137,6 @@
     color: #afafb6;
     margin-right: 7px;
 }
-
-
 
 /*#endregion Icons do not open it is too big press alt z*/
 
@@ -1735,10 +1750,14 @@ a {
                 align-items: center;
             }
         }
+
+        .last {
+            border-right: none;
+        }
     }
 }
 
-#eleventh {
+#footer {
     background-color: rgb(247, 248, 253);
 
     .all {
@@ -1750,6 +1769,7 @@ a {
         .footer_keeper {
             display: flex;
             flex-direction: column;
+            padding: 10px;
 
             h6 {
                 margin-bottom: 14px;
@@ -1776,8 +1796,73 @@ a {
     padding: 40px 0;
 
     .all {
-        .left{
-            
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        font-family: Inter;
+
+        i {
+            display: inline;
+            padding: 8px 10px;
+            border: 0.5px solid #d9d9e9;
+            border-radius: 50%;
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+            .left_right {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                padding-left: 10px;
+
+                span {
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: black;
+
+                    &:last-child {
+                        font-family: InterLight;
+                        font-size: 11px;
+                        color: #71778E;
+                    }
+                }
+            }
+        }
+
+        .right {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .right_left {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: column;
+                font-family: Inter;
+
+                span {
+                    font-size: 14px;
+                    color: black;
+
+                    &:last-child {
+                        font-size: 12px;
+                        color: #71778E;
+                    }
+                }
+            }
+
+            .right_middle {
+
+            }
         }
     }
 }
