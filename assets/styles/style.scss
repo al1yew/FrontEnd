@@ -1791,15 +1791,15 @@ a {
     }
 }
 
-#twelfth {
+#eleventh {
     background-color: white;
-    padding: 40px 0;
 
     .all {
+        padding: 40px 0;
+        border-bottom: 0.5px solid #9b9bb4;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0;
         font-family: Inter;
 
         i {
@@ -1860,8 +1860,49 @@ a {
                 }
             }
 
-            .right_middle {
+            .right_middle {}
+        }
+    }
+}
 
+#twelfth {
+    padding: 25px 0;
+    font-family: Inter;
+    font-size: 12px;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            padding: 0;
+        }
+
+        p {
+            font-size: 12px;
+            color: #9b9bb4;
+            padding: 0;
+        }
+
+        a {
+            color: #9b9bb4;
+            transition: 0.2s;
+            font-size: 12px;
+
+            &:hover {
+                color: #9b9bb4;
+                text-decoration: underline;
+            }
+        }
+
+        .last {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                cursor: pointer;
             }
         }
     }

@@ -2084,12 +2084,13 @@ a {
   color: #2649d5;
 }
 
-#twelfth {
+#eleventh {
   background-color: white;
-  padding: 40px 0;
 }
 
-#twelfth .all {
+#eleventh .all {
+  padding: 40px 0;
+  border-bottom: 0.5px solid #9b9bb4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2099,18 +2100,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
   font-family: Inter;
 }
 
-#twelfth .all i {
+#eleventh .all i {
   display: inline;
   padding: 8px 10px;
   border: 0.5px solid #d9d9e9;
   border-radius: 50%;
 }
 
-#twelfth .all .left {
+#eleventh .all .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2123,7 +2123,7 @@ a {
   padding: 0;
 }
 
-#twelfth .all .left .left_right {
+#eleventh .all .left .left_right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2140,19 +2140,19 @@ a {
   padding-left: 10px;
 }
 
-#twelfth .all .left .left_right span {
+#eleventh .all .left .left_right span {
   font-weight: 600;
   font-size: 20px;
   color: black;
 }
 
-#twelfth .all .left .left_right span:last-child {
+#eleventh .all .left .left_right span:last-child {
   font-family: InterLight;
   font-size: 11px;
   color: #71778E;
 }
 
-#twelfth .all .right {
+#eleventh .all .right {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2165,7 +2165,7 @@ a {
           align-items: center;
 }
 
-#twelfth .all .right .right_left {
+#eleventh .all .right .right_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2182,13 +2182,69 @@ a {
   font-family: Inter;
 }
 
-#twelfth .all .right .right_left span {
+#eleventh .all .right .right_left span {
   font-size: 14px;
   color: black;
 }
 
-#twelfth .all .right .right_left span:last-child {
+#eleventh .all .right .right_left span:last-child {
   font-size: 12px;
   color: #71778E;
+}
+
+#twelfth {
+  padding: 25px 0;
+  font-family: Inter;
+  font-size: 12px;
+}
+
+#twelfth .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#twelfth .all div {
+  padding: 0;
+}
+
+#twelfth .all p {
+  font-size: 12px;
+  color: #9b9bb4;
+  padding: 0;
+}
+
+#twelfth .all a {
+  color: #9b9bb4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 12px;
+}
+
+#twelfth .all a:hover {
+  color: #9b9bb4;
+  text-decoration: underline;
+}
+
+#twelfth .all .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#twelfth .all .last img {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
