@@ -811,11 +811,49 @@ a {
     }
 }
 
+#third_fourth {
+    .fourth_head {
+        padding: 20px 0;
+
+        h6 {
+            font-family: Dosis !important;
+            font-size: 24px !important;
+        }
+
+        p {
+            font-size: 13px;
+            color: #afafb6;
+        }
+    }
+}
+
 #fourth {
     font-family: Inter;
+    margin-bottom: 40px;
 
     .all {
-        height: 95vh;
+        .fourth_head {
+            padding: 20px 0;
+
+            h6 {
+                font-family: Dosis !important;
+                font-size: 24px !important;
+            }
+
+            p {
+                font-size: 13px;
+                color: #afafb6;
+            }
+        }
+
+        border-bottom: 1px solid #d9d9e9;
+        height: 95.15vh;
+        // overflow: hidden;
+        border-right: 0.5px solid #d9d9e9;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-radius: 10px;
+        border-bottom: 0.5px solid #d9d9e9;
 
         .first {
             background-image: url(../images/category-banner-1.jpg);
@@ -900,22 +938,30 @@ a {
                 display: flex;
                 align-items: center;
                 transition: 0.3s;
-            
+
                 &:hover {
                     letter-spacing: 0.5px;
                 }
-            
+
                 a {
                     font-size: 13px;
                 }
-            
+
                 i {
                     margin-left: 10px;
                     color: #0a58cA;
                 }
             }
-            
 
+
+        }
+
+        .cetvertiy {
+            border-top-right-radius: 10px;
+        }
+
+        .posledniy {
+            border-bottom-right-radius: 10px;
         }
 
         .product {
@@ -928,9 +974,11 @@ a {
             &:hover {
                 overflow: visible;
                 z-index: 121;
+                box-shadow: 0px 0px 1.5px 1.5px #666;
             }
 
             //hover olanda nth5 child-in visibilitisi ve opacity-si olsun 1, + butun product cardin overflow-su olsun visible, ki ashagidaki cardi atmasin ashaga
+
             &:hover .hovered_btn {
                 opacity: 1 !important;
                 z-index: 12;
@@ -943,11 +991,30 @@ a {
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
 
+                &:hover {
+                    box-shadow: 0px 0px 1.5px 1.5px #666;
+
+                }
+
                 img {
                     object-fit: cover;
                     background-size: cover;
                     width: 90%;
                     margin: auto;
+                }
+
+                .korotkiy {
+                    height: 30vh;
+
+                    li {
+                        &:last-child {
+                            display: flex;
+                            justify-content: end;
+                            flex-direction: column;
+                            align-items: flex-end;
+                            height: 8vh;
+                        }
+                    }
                 }
 
                 ul {
@@ -975,7 +1042,329 @@ a {
                             padding-bottom: 8px;
                             display: flex;
                             align-items: center;
-                            
+
+                            span {
+                                font-size: 12px;
+                                color: #7A7A7A;
+                                margin-left: 5px;
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            padding-bottom: 15px;
+
+                            span {
+                                font-size: 14px;
+                                text-decoration: line-through;
+                                color: #71778E;
+                                margin-right: 10px;
+
+                                &:last-child {
+                                    font-size: 18px;
+                                    text-decoration: none;
+                                    color: red
+                                }
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            transition: 0.2s;
+                            opacity: 0;
+                            visibility: 0;
+
+                            button {
+                                width: 100%;
+                                outline: none;
+                                transition: 0.3s;
+                                border: none;
+                                padding: 5px 0px;
+                                border-radius: 20px;
+                                background-color: yellow;
+
+                                &:hover {
+                                    color: white;
+                                    background-color: blue;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+#fifth {
+    font-family: Inter;
+    margin-bottom: 40px;
+    padding: 0;
+
+    .container {
+        background-color: #FFEEF2;
+        border-radius: 15px;
+    }
+
+    .all {
+        margin: 0;
+        padding: 0;
+        padding: 20px 0;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: #FFEEF2;
+        width: 100%;
+
+        span {
+            &:nth-child(1) {
+                color: rgb(239, 23, 74);
+                font-size: 16px;
+
+                span {
+                    text-decoration: underline;
+                    font-weight: 700;
+                }
+            }
+
+            &:nth-child(2) {
+                padding: 8px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                border: 1px dashed rgb(239, 23, 74);
+                color: rgb(239, 23, 74);
+            }
+
+            &:nth-child(3) {
+                font-size: 12px;
+                color: #7A7A7A;
+            }
+        }
+    }
+}
+
+#fifth_sixth {
+    .sixth_head {
+        padding: 20px 0;
+
+        h6 {
+            font-family: Dosis !important;
+            font-size: 24px !important;
+        }
+
+        p {
+            font-size: 13px;
+            color: #afafb6;
+        }
+    }
+}
+
+#sixth {
+    font-family: Inter;
+    margin-bottom: 40px;
+
+    .all {
+
+        border-bottom: 1px solid #d9d9e9;
+        height: 95.15vh;
+        // overflow: hidden;
+        border-right: 0.5px solid #d9d9e9;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-radius: 10px;
+        border-bottom: 0.5px solid #d9d9e9;
+
+        .first {
+            background-image: url(../images/category-banner-2.jpg);
+            height: 47.5vh;
+            object-fit: cover;
+            background-size: cover;
+            vertical-align: middle;
+            border-top-left-radius: 10px;
+            padding: 35px;
+
+            p {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                font-size: 19px;
+                font-weight: 200;
+
+                span {
+                    font-size: 24px;
+                    font-weight: 500;
+
+                    &:last-child {
+                        font-size: 14px;
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            button {
+                outline: none;
+                border: none;
+                margin-top: 25px;
+                transition: 0.3s;
+                border-radius: 20px;
+                color: white;
+                background-color: rgb(37, 60, 150);
+                padding: 7px 15px;
+                font-size: 14px;
+
+                &:hover {
+                    background-color: lightblue;
+                }
+            }
+        }
+
+        .second {
+            height: 47.5vh;
+            display: flex;
+            justify-content: space-between;
+            padding: 35px;
+            flex-direction: column;
+            border-bottom-left-radius: 10px;
+            border: 0.5px solid #d9d9e9;
+
+            .up {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 80px;
+
+
+                .ahrefs {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        text-decoration: none;
+                        color: #3E445A;
+                        font-family: Inter;
+                        font-size: 13px;
+                        transition: 0.3s;
+                        margin-bottom: 15px;
+
+                        &:hover {
+                            color: #2649d5;
+                        }
+                    }
+                }
+            }
+
+            .down {
+                display: flex;
+                align-items: center;
+                transition: 0.3s;
+
+                &:hover {
+                    letter-spacing: 0.5px;
+                }
+
+                a {
+                    font-size: 13px;
+                }
+
+                i {
+                    margin-left: 10px;
+                    color: #0a58cA;
+                }
+            }
+
+
+        }
+
+        .cetvertiy {
+            border-top-right-radius: 10px;
+        }
+
+        .posledniy {
+            border-bottom-right-radius: 10px;
+        }
+
+        .product {
+            padding: 0;
+            height: 47.5vh;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                overflow: visible;
+                z-index: 121;
+                box-shadow: 0px 0px 1.5px 1.5px #666;
+            }
+
+            //hover olanda nth5 child-in visibilitisi ve opacity-si olsun 1, + butun product cardin overflow-su olsun visible, ki ashagidaki cardi atmasin ashaga
+
+            &:hover .hovered_btn {
+                opacity: 1 !important;
+                z-index: 12;
+                visibility: 1 !important;
+            }
+
+            .product_card {
+                border: 0.5px solid #d9d9e9;
+                border-radius: 0;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+                &:hover {
+                    box-shadow: 0px 0px 1.5px 1.5px #666;
+
+                }
+
+                img {
+                    object-fit: cover;
+                    background-size: cover;
+                    width: 90%;
+                    margin: auto;
+                }
+
+                .korotkiy {
+                    height: 30vh;
+
+                    li {
+                        &:last-child {
+                            display: flex;
+                            justify-content: end;
+                            flex-direction: column;
+                            align-items: flex-end;
+                            height: 8vh;
+                        }
+                    }
+                }
+
+                ul {
+                    padding: 5px 15px;
+                    font-family: Dosis;
+
+                    li {
+                        list-style: none;
+
+                        &:nth-child(2) {
+                            font-size: 10px;
+                            color: #038E42;
+                            padding: 8px 0px;
+
+                            span {
+                                color: #afafb6;
+                                font-size: 11px;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            color: yellow;
+                            font-size: 11px;
+                            padding-bottom: 8px;
+                            display: flex;
+                            align-items: center;
+
                             span {
                                 font-size: 12px;
                                 color: #7A7A7A;
