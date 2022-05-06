@@ -963,7 +963,7 @@ a {
 
 #fourth .all {
   border-bottom: 1px solid #d9d9e9;
-  height: 95.15vh;
+  height: 651px;
   border-right: 0.5px solid #d9d9e9;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -987,7 +987,7 @@ a {
 
 #fourth .all .first {
   background-image: url(../images/category-banner-1.jpg);
-  height: 47.5vh;
+  height: 325px;
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
@@ -1038,7 +1038,7 @@ a {
 }
 
 #fourth .all .second {
-  height: 47.5vh;
+  height: 325px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1122,7 +1122,7 @@ a {
 
 #fourth .all .product {
   padding: 0;
-  height: 47.5vh;
+  height: 325px;
   overflow: hidden;
   cursor: pointer;
   -webkit-transition: 0.2s;
@@ -1163,7 +1163,7 @@ a {
 }
 
 #fourth .all .product .product_card .korotkiy {
-  height: 30vh;
+  height: 195px;
 }
 
 #fourth .all .product .product_card .korotkiy li:last-child {
@@ -1344,7 +1344,7 @@ a {
 
 #sixth .all {
   border-bottom: 1px solid #d9d9e9;
-  height: 95.15vh;
+  height: 651px;
   border-right: 0.5px solid #d9d9e9;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1354,7 +1354,7 @@ a {
 
 #sixth .all .first {
   background-image: url(../images/category-banner-2.jpg);
-  height: 47.5vh;
+  height: 325px;
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
@@ -1405,7 +1405,7 @@ a {
 }
 
 #sixth .all .second {
-  height: 47.5vh;
+  height: 325px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1489,7 +1489,7 @@ a {
 
 #sixth .all .product {
   padding: 0;
-  height: 47.5vh;
+  height: 325px;
   overflow: hidden;
   cursor: pointer;
   -webkit-transition: 0.2s;
@@ -1530,7 +1530,7 @@ a {
 }
 
 #sixth .all .product .product_card .korotkiy {
-  height: 30vh;
+  height: 195px;
 }
 
 #sixth .all .product .product_card .korotkiy li:last-child {
@@ -1627,5 +1627,119 @@ a {
 #sixth .all .product .product_card ul li:nth-child(5) button:hover {
   color: white;
   background-color: blue;
+}
+
+#seventh {
+  margin-bottom: 40px;
+}
+
+#seventh .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#seventh .all div {
+  font-family: Dosis;
+  border-radius: 10px;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  padding: 40px 40px;
+  height: 218px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#seventh .all div span {
+  color: #038E42;
+}
+
+#seventh .all div .spanspan {
+  color: #7A7A7A;
+  font-size: 13px;
+}
+
+#seventh .all div button {
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  border-radius: 20px;
+  background-color: #c2c2d3;
+  color: white;
+  padding: 5px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#seventh .all div button:hover {
+  background-color: #2bbef9;
+}
+
+#seventh .all div:nth-child(1) {
+  background-image: url(../images/bacola-banner-05.jpg);
+}
+
+#seventh .all div:nth-child(2) {
+  background-image: url(../images/bacola-banner-06.jpg);
+}
+
+#seventh .all div:nth-child(3) {
+  background-image: url(../images/bacola-banner-10.jpg);
+}
+
+#eighth .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#eighth .all div {
+  cursor: pointer;
+}
+
+#eighth .all .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#eighth .all .left img {
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */

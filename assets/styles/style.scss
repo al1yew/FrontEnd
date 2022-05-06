@@ -83,7 +83,6 @@
 
 /*#endregion Icons do not open it is too big press alt z*/
 
-
 @font-face {
     font-family: Inter;
     src: url(../fonts/Inter/Inter-Medium.ttf);
@@ -847,7 +846,8 @@ a {
         }
 
         border-bottom: 1px solid #d9d9e9;
-        height: 95.15vh;
+        // height: 95.15vh;
+        height: 651px;
         // overflow: hidden;
         border-right: 0.5px solid #d9d9e9;
         border-bottom-left-radius: 10px;
@@ -857,7 +857,8 @@ a {
 
         .first {
             background-image: url(../images/category-banner-1.jpg);
-            height: 47.5vh;
+            // height: 47.5vh;
+            height: 325px;
             object-fit: cover;
             background-size: cover;
             vertical-align: middle;
@@ -901,7 +902,8 @@ a {
         }
 
         .second {
-            height: 47.5vh;
+            // height: 47.5vh;
+            height: 325px;
             display: flex;
             justify-content: space-between;
             padding: 35px;
@@ -966,7 +968,8 @@ a {
 
         .product {
             padding: 0;
-            height: 47.5vh;
+            // height: 47.5vh;
+            height: 325px;
             overflow: hidden;
             cursor: pointer;
             transition: 0.2s;
@@ -1004,7 +1007,7 @@ a {
                 }
 
                 .korotkiy {
-                    height: 30vh;
+                    height: 195px;
 
                     li {
                         &:last-child {
@@ -1169,7 +1172,8 @@ a {
     .all {
 
         border-bottom: 1px solid #d9d9e9;
-        height: 95.15vh;
+        // height: 95.15vh;
+        height: 651px;
         // overflow: hidden;
         border-right: 0.5px solid #d9d9e9;
         border-bottom-left-radius: 10px;
@@ -1179,7 +1183,8 @@ a {
 
         .first {
             background-image: url(../images/category-banner-2.jpg);
-            height: 47.5vh;
+            // height: 47.5vh;
+            height: 325px;
             object-fit: cover;
             background-size: cover;
             vertical-align: middle;
@@ -1223,7 +1228,8 @@ a {
         }
 
         .second {
-            height: 47.5vh;
+            // height: 47.5vh;
+            height: 325px;
             display: flex;
             justify-content: space-between;
             padding: 35px;
@@ -1288,7 +1294,8 @@ a {
 
         .product {
             padding: 0;
-            height: 47.5vh;
+            // height: 47.5vh;
+            height: 325px;
             overflow: hidden;
             cursor: pointer;
             transition: 0.2s;
@@ -1326,7 +1333,7 @@ a {
                 }
 
                 .korotkiy {
-                    height: 30vh;
+                    height: 195px;
 
                     li {
                         &:last-child {
@@ -1412,6 +1419,91 @@ a {
                     }
                 }
 
+            }
+        }
+    }
+}
+
+#seventh {
+    margin-bottom: 40px;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            font-family: Dosis;
+            border-radius: 10px;
+            cursor: pointer;
+            object-fit: cover;
+            background-size: cover;
+            padding: 40px 40px;
+            height: 218px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            span {
+                color: #038E42;
+            }
+
+            .spanspan {
+                color: #7A7A7A;
+                font-size: 13px;
+            }
+
+            button {
+                outline: none;
+                border: none;
+                margin-top: 15px;
+                border-radius: 20px;
+                background-color: rgb(194, 194, 211);
+                color: white;
+                padding: 5px 15px;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: rgb(43, 190, 249);
+                }
+            }
+
+            &:nth-child(1) {
+                background-image: url(../images/bacola-banner-05.jpg);
+            }
+
+            &:nth-child(2) {
+                background-image: url(../images/bacola-banner-06.jpg);
+            }
+
+            &:nth-child(3) {
+                background-image: url(../images/bacola-banner-10.jpg);
+            }
+        }
+    }
+}
+
+#eighth {
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            cursor: pointer;
+        }
+
+        .left {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 80%;
             }
         }
     }
