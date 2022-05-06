@@ -1485,9 +1485,14 @@ a {
 }
 
 #eighth {
+    margin-bottom: 150px;
+    font-family: Dosis;
 
     .all {
+        overflow: hidden;
+        height: 290px;
         display: flex;
+        border-radius: 15px;
         justify-content: space-between;
         align-items: center;
 
@@ -1496,14 +1501,120 @@ a {
         }
 
         .left {
-            display: flex;
-            justify-content: space-between;
-            padding: 25px;
-            align-items: center;
-            flex-direction: column;
+            border: 0.6px solid #afafb6;
+            height: 290px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
 
-            img {
-                width: 80%;
+            div {
+                height: 290px;
+                display: flex;
+                justify-content: space-between;
+                padding: 25px;
+                align-items: center;
+                flex-direction: column;
+
+                img {
+                    width: 100%;
+                }
+
+                span {
+                    font-size: 15px;
+                    font-weight: 600;
+
+                    &:last-child {
+                        font-size: 12px;
+                        font-weight: 100;
+                    }
+                }
+            }
+
+        }
+
+        .right {
+            padding: 0;
+            display: flex;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            justify-content: space-between;
+            height: 290px;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .eat {
+                display: flex;
+                border: 0.3px solid #afafb6;
+                height: 50%;
+                padding: 20px;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+
+                .nadpis {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 15px;
+                        font-weight: 600;
+
+                        &:last-child {
+                            font-size: 12px;
+                            font-weight: 100;
+                        }
+                    }
+                }
+
+            }
+
+            .posledniy1 {
+                border-top-right-radius: 15px;
+            }
+
+            .posledniy2 {
+                border-bottom-right-radius: 15px;
+            }
+        }
+    }
+}
+
+#nineth {
+    margin-bottom: 50px;
+    background-color: rgb(35, 58, 149);
+    padding-top: 20px;
+
+    .all {
+        font-family: Inter;
+
+        .left {
+            color: white;
+            padding: 50px;
+
+            p {
+                &:nth-child(1) {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                &:nth-child(2) {
+                    font-size: 26px;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(3) {
+                    font-size: 13px;
+                    color: #afafb6;
+                    margin-bottom: 18px;
+                }
+            }
+            .input_keeper{
+                width: 100%;
+                background-color: white;
+                display: flex;
+                align-items: center;
             }
         }
     }
