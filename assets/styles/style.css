@@ -2050,9 +2050,10 @@ a {
 }
 
 #eleventh .all .footer_keeper a {
+  font-family: Inter;
   margin-bottom: 10px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   color: #7A7A7A;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -2060,5 +2061,10 @@ a {
 
 #eleventh .all .footer_keeper a:hover {
   color: #2649d5;
+}
+
+#twelfth {
+  background-color: white;
+  padding: 40px 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1756,9 +1756,10 @@ a {
             }
 
             a {
+                font-family: Inter;
                 margin-bottom: 10px;
                 text-decoration: none;
-                font-size: 14px;
+                font-size: 13px;
                 color: #7A7A7A;
                 transition: 0.3s;
 
@@ -1766,6 +1767,17 @@ a {
                     color: #2649d5;
                 }
             }
+        }
+    }
+}
+
+#twelfth {
+    background-color: white;
+    padding: 40px 0;
+
+    .all {
+        .left{
+            
         }
     }
 }
