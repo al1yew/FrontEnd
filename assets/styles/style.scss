@@ -1751,10 +1751,14 @@ a {
             display: flex;
             flex-direction: column;
 
+            h6 {
+                margin-bottom: 14px;
+            }
+
             a {
                 margin-bottom: 10px;
                 text-decoration: none;
-                font-size: 13px;
+                font-size: 14px;
                 color: #d9d9e9;
                 transition: 0.3s;
 

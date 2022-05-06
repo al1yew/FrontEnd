@@ -2045,10 +2045,14 @@ a {
           flex-direction: column;
 }
 
+#eleventh .all .footer_keeper h6 {
+  margin-bottom: 14px;
+}
+
 #eleventh .all .footer_keeper a {
   margin-bottom: 10px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
   color: #d9d9e9;
   -webkit-transition: 0.3s;
   transition: 0.3s;
