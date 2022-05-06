@@ -34,9 +34,51 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.klbth-icon-milk-box:before {
+    content: '\e8a8';
+    font-size: 25px;
+    margin-right: 10px;
+    color: black;
+}
+
+
+.klbth-icon-delivery-truck-2:before {
+    content: '\e855';
+    font-size: 25px;
+    margin-right: 10px;
+    color: black;
+}
+
+
+.klbth-icon-discount-outline:before {
+    content: '\e891';
+    font-size: 25px;
+    margin-right: 10px;
+    color: black;
+}
+
+
+.klbth-icon-dollar:before {
+    content: '\e85c';
+    font-size: 25px;
+    margin-right: 10px;
+    color: black;
+}
+
 .klbth-icon-secure:before {
     content: '\e8b5';
     font-size: 20px;
+}
+
+.klbth-icon-mail:before {
+    content: '\e84f';
+    color: rgba(102, 102, 102, 0.531);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    align-items: center;
+    width: 5%;
 }
 
 .klbth-icon-user:before {
@@ -86,6 +128,11 @@
 @font-face {
     font-family: Inter;
     src: url(../fonts/Inter/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: InterLight;
+    src: url(../fonts/Inter/Inter-Light.ttf);
 }
 
 @font-face {
@@ -1582,21 +1629,25 @@ a {
 }
 
 #nineth {
-    margin-bottom: 50px;
+    // margin-bottom: 40px;
     background-color: rgb(35, 58, 149);
-    padding-top: 20px;
+    padding: 50px;
 
     .all {
         font-family: Inter;
 
         .left {
             color: white;
-            padding: 50px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
 
             p {
                 &:nth-child(1) {
+                    // font-weight: 100 !important;
+                    font-family: InterLight;
                     font-size: 16px;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                 }
 
                 &:nth-child(2) {
@@ -1606,15 +1657,110 @@ a {
 
                 &:nth-child(3) {
                     font-size: 13px;
+                    width: 60%;
                     color: #afafb6;
                     margin-bottom: 18px;
                 }
             }
-            .input_keeper{
-                width: 100%;
+
+            .input_keeper {
+                border-radius: 5px;
+
+                width: 80%;
                 background-color: white;
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
+                padding: 3px;
+                padding-left: 10px;
+
+                input {
+                    padding-left: 10px;
+                    width: 75%;
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                }
+
+                button {
+                    width: 20%;
+                    background-color: rgb(35, 58, 149);
+                    color: white;
+                    font-size: 13px;
+                    border: none;
+                    outline: none;
+                    border-radius: 3px;
+                    font-weight: 200;
+                    padding: 15px 7px;
+                }
+            }
+        }
+
+        .photo_relative {
+            position: relative;
+
+            img {
+                position: absolute;
+                bottom: -25%;
+            }
+        }
+    }
+}
+
+#tenth {
+    background-color: rgb(247, 248, 253);
+
+    .all {
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid #afafb6;
+        font-family: Inter;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 20px;
+            border-right: 0.5px solid #afafb6;
+
+            span {
+                font-size: 13px;
+            }
+
+            i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+#eleventh {
+    background-color: rgb(247, 248, 253);
+
+    .all {
+        font-family: Dosis;
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .footer_keeper {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                margin-bottom: 10px;
+                text-decoration: none;
+                font-size: 13px;
+                color: #d9d9e9;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #2649d5;
+                }
             }
         }
     }
