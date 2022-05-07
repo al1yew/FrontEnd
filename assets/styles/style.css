@@ -285,32 +285,141 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
-#header .middle .all .middle_right .language_currency p {
+#header .middle .all .middle_right .language_currency .lang,
+#header .middle .all .middle_right .language_currency .cur {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  padding: 0 12px;
+  border-right: 1px solid #d9d9e9;
 }
 
-#header .middle .all .middle_right .language_currency p:hover {
+#header .middle .all .middle_right .language_currency .lang:hover,
+#header .middle .all .middle_right .language_currency .cur:hover {
   color: #2bbef9;
 }
 
-#header .middle .all .middle_right .language_currency p:hover i {
+#header .middle .all .middle_right .language_currency .lang:hover i,
+#header .middle .all .middle_right .language_currency .cur:hover i {
   -webkit-transform: rotate(3.142rad);
           transform: rotate(3.142rad);
   color: #2bbef9;
 }
 
-#header .middle .all .middle_right .language_currency p i {
+#header .middle .all .middle_right .language_currency .lang i,
+#header .middle .all .middle_right .language_currency .cur i {
   font-size: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-#header .middle .all .middle_right .language_currency p:last-child {
-  border-right: 1px solid #d9d9e9;
+#header .middle .all .middle_right .language_currency .lang .currencies,
+#header .middle .all .middle_right .language_currency .cur .currencies {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px 18px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+}
+
+#header .middle .all .middle_right .language_currency .lang .currencies span,
+#header .middle .all .middle_right .language_currency .cur .currencies span {
+  font-size: 12px;
+  color: black;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#header .middle .all .middle_right .language_currency .lang .currencies span:last-child,
+#header .middle .all .middle_right .language_currency .cur .currencies span:last-child {
+  margin: 0;
+}
+
+#header .middle .all .middle_right .language_currency .lang .currencies span:hover,
+#header .middle .all .middle_right .language_currency .cur .currencies span:hover {
+  color: #2bbef9;
+}
+
+#header .middle .all .middle_right .language_currency .lang .languages,
+#header .middle .all .middle_right .language_currency .cur .languages {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px 14px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+}
+
+#header .middle .all .middle_right .language_currency .lang .languages span,
+#header .middle .all .middle_right .language_currency .cur .languages span {
+  font-size: 12px;
+  color: black;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#header .middle .all .middle_right .language_currency .lang .languages span:last-child,
+#header .middle .all .middle_right .language_currency .cur .languages span:last-child {
+  margin: 0;
+}
+
+#header .middle .all .middle_right .language_currency .lang .languages span:hover,
+#header .middle .all .middle_right .language_currency .cur .languages span:hover {
+  color: #2bbef9;
+}
+
+#header .middle .all .middle_right .language_currency .lang:hover .languages {
+  opacity: 1;
+  visibility: visible;
+  padding-top: 15px;
+  z-index: 1212;
+}
+
+#header .middle .all .middle_right .language_currency .cur:hover .currencies {
+  opacity: 1;
+  z-index: 1212;
+  visibility: visible;
+  padding-top: 15px;
 }
 
 #header .bottom {
