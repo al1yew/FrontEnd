@@ -34,6 +34,65 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.klbth-icon-apple-juice:before {
+    content: '\e823';
+    color: #3e445a;
+    cursor: pointer;
+    margin-right: 10px;
+
+    &:hover {
+        color: #2649d5 !important;
+    }
+}
+
+.klbth-icon-boiled-egg:before {
+    content: '\e809';
+    color: #3e445a;
+    margin-right: 10px;
+
+    &:hover {
+        color: #2649d5 !important;
+    }
+
+    cursor: pointer;
+}
+
+.klbth-icon-snowflake:before {
+    content: '\e880';
+    cursor: pointer;
+
+    &:hover {
+        color: #2649d5 !important;
+    }
+
+    color: #3e445a;
+    margin-right: 10px;
+}
+
+.klbth-icon-candy:before {
+    cursor: pointer;
+    content: '\e828';
+
+    &:hover {
+        color: #2649d5 !important;
+    }
+
+    color: #3e445a;
+    margin-right: 10px;
+}
+
+.klbth-icon-vegan:before {
+    content: '\e813';
+    color: #3e445a;
+
+    &:hover {
+        color: #2649d5 !important;
+    }
+
+    cursor: pointer;
+    margin-right: 10px;
+}
+
 .klbth-icon-phone-call:before {
     content: '\e892';
 }
@@ -120,22 +179,22 @@
 .klbth-icon-meat:before {
     content: '\e873';
     font-size: 20px;
-    color: #afafb6;
-    margin-right: 7px;
+    margin-right: 10px;
+    color: #3e445a;
 }
 
 .klbth-icon-biscuit:before {
     content: '\e81b';
     font-size: 20px;
-    color: #afafb6;
-    margin-right: 7px;
+    margin-right: 10px;
+    color: #3e445a;
 }
 
 .klbth-icon-cup:before {
     content: '\e867';
     font-size: 20px;
-    color: #afafb6;
-    margin-right: 7px;
+    color: #3e445a;
+    margin-right: 10px;
 }
 
 /*#endregion Icons do not open it is too big press alt z*/
@@ -180,6 +239,7 @@ a {
 }
 
 #header {
+    z-index: 55;
 
     .top {
         font-family: Inter;
@@ -508,10 +568,13 @@ a {
                         }
 
                         .bag_div {
+                            opacity: 0;
+                            visibility: hidden;
                             background-color: white;
+                            transition: 0.4s;
                             z-index: 1234;
                             padding: 20px 35px;
-                            box-shadow: 0px 0px 5px 1px grey;
+                            box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.459);
                             border-radius: 5px;
                             position: absolute;
                             width: 300px;
@@ -519,13 +582,6 @@ a {
                             right: -10px;
 
                             .image {
-
-                                p {
-                                    text-align: center;
-                                    font-size: 15px;
-                                    padding-bottom: 30px;
-                                    border-bottom: 0.5px solid #9b9bb4;
-                                }
 
                                 margin: 10px auto;
                                 padding: 20px;
@@ -545,13 +601,26 @@ a {
                                 }
                             }
 
-                            p {
-                                font-size: 12px;
+                            .firstp {
+                                text-align: center;
+                                font-size: 14px;
+                                padding-bottom: 45px;
+                                border-bottom: 0.5px solid #9b9bb4;
+                            }
+
+                            .secondp {
+                                font-size: 11px;
                                 color: grey;
+                                margin-top: 20px;
                                 text-align: center;
                                 width: 100%;
                             }
 
+                        }
+
+                        &:hover .bag_div {
+                            opacity: 1;
+                            visibility: visible;
                         }
                     }
 
@@ -598,6 +667,83 @@ a {
                             padding: 2px 5px;
                             background-color: rgb(237, 238, 245);
                             transform: translateX(-50%);
+                        }
+                    }
+
+                    .categories_all {
+                        position: absolute;
+                        border-top: 1px solid #d9d9e9;
+                        background-color: white;
+                        box-shadow: 0px 3px 5px 1px grey;
+                        z-index: 23;
+                        top: 85px;
+                        left: 0px;
+                        width: 100%;
+
+                        .top1 {
+                            padding: 20px 10px;
+
+                            p {
+                                font-family: InterLight;
+                                padding: 0;
+                                font-size: 13px;
+                                padding: 10px 0;
+                                display: flex;
+                                justify-content: baseline;
+                                align-items: center;
+                                width: 100%;
+                                cursor: pointer;
+                                font-weight: 700;
+                                align-items: center;
+                                color: #3e445a;
+                                transition: 0.3s;
+    
+                                &:last-child {
+                                    padding-bottom: 0;
+                                }
+    
+                                i {
+                                    display: flex;
+                                    width: 17%;
+                                    justify-content: baseline;
+                                    align-items: center;
+                                    color: #3e445a !important;
+    
+                                    &:nth-child(2) {
+                                        color: #3e445a;
+                                        width: 4%;
+                                        font-size: 10px;
+                                    }
+                                }
+    
+                                &:hover {
+                                    color: #2649d5;
+                                }
+                            }
+                        }
+
+                        .middle1{
+                            width: 100%;
+                            height: 0.5px;
+                            margin: 5px 0;
+                            background-color: #bdbdbd87;
+                        }
+
+                        .bottom1{
+                            padding: 20px 20px;
+
+                            p{
+                                font-family: InterLight;
+                                padding: 0;
+                                font-size: 13px;
+                                padding: 10px 0;
+                                width: 100%;
+                                cursor: pointer;
+                                font-weight: 700;
+                                align-items: center;
+                                color: #3e445a;
+                                transition: 0.3s;
+                            }
                         }
                     }
                 }
