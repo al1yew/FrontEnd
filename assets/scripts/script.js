@@ -65,6 +65,7 @@ $(document).ready(function () {
     location.onclick = function (e) {
       // console.log(e.target); yoxladim
       set_location.innerHTML = location.innerHTML;
+      $('#modal_location').fadeOut(300);
     }
   }
 

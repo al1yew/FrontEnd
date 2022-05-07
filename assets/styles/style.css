@@ -983,6 +983,7 @@ a {
 }
 
 #second .bottom .slider_card {
+  cursor: pointer;
   border-radius: 0;
 }
 
@@ -1139,11 +1140,7 @@ a {
 #fourth .all {
   border-bottom: 1px solid #d9d9e9;
   height: 651px;
-  border-right: 0.5px solid #d9d9e9;
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-radius: 10px;
-  border-bottom: 0.5px solid #d9d9e9;
 }
 
 #fourth .all .fourth_head {
@@ -1288,11 +1285,13 @@ a {
 }
 
 #fourth .all .cetvertiy {
-  border-top-right-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #fourth .all .posledniy {
-  border-bottom-right-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #fourth .all .product {
@@ -1307,8 +1306,6 @@ a {
 #fourth .all .product:hover {
   overflow: visible;
   z-index: 121;
-  -webkit-box-shadow: 0px 0px 1.5px 1.5px #666;
-          box-shadow: 0px 0px 1.5px 1.5px #666;
 }
 
 #fourth .all .product:hover .hovered_btn {
@@ -1318,15 +1315,14 @@ a {
 }
 
 #fourth .all .product .product_card {
-  border: 0.5px solid #d9d9e9;
   border-radius: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #fourth .all .product .product_card:hover {
-  -webkit-box-shadow: 0px 0px 1.5px 1.5px #666;
-          box-shadow: 0px 0px 1.5px 1.5px #666;
+  -webkit-box-shadow: 0px 0px 0.4px 0.4px #666;
+          box-shadow: 0px 0px 0.4px 0.4px #666;
 }
 
 #fourth .all .product .product_card img {
@@ -1339,6 +1335,8 @@ a {
 
 #fourth .all .product .product_card .korotkiy {
   height: 195px;
+  padding-bottom: 0;
+  margin-bottom: 18px;
 }
 
 #fourth .all .product .product_card .korotkiy li:last-child {
@@ -1355,7 +1353,8 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 8vh;
+  height: 8.5vh;
+  margin: 0;
 }
 
 #fourth .all .product .product_card ul {
@@ -1415,8 +1414,8 @@ a {
 }
 
 #fourth .all .product .product_card ul li:nth-child(5) {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   opacity: 0;
   visibility: 0;
 }
@@ -1424,8 +1423,8 @@ a {
 #fourth .all .product .product_card ul li:nth-child(5) button {
   width: 100%;
   outline: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   border: none;
   padding: 5px 0px;
   border-radius: 20px;
@@ -1520,11 +1519,7 @@ a {
 #sixth .all {
   border-bottom: 1px solid #d9d9e9;
   height: 651px;
-  border-right: 0.5px solid #d9d9e9;
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-radius: 10px;
-  border-bottom: 0.5px solid #d9d9e9;
 }
 
 #sixth .all .first {
@@ -1655,11 +1650,13 @@ a {
 }
 
 #sixth .all .cetvertiy {
-  border-top-right-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #sixth .all .posledniy {
-  border-bottom-right-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #sixth .all .product {
@@ -1674,8 +1671,6 @@ a {
 #sixth .all .product:hover {
   overflow: visible;
   z-index: 121;
-  -webkit-box-shadow: 0px 0px 1.5px 1.5px #666;
-          box-shadow: 0px 0px 1.5px 1.5px #666;
 }
 
 #sixth .all .product:hover .hovered_btn {
@@ -1685,15 +1680,14 @@ a {
 }
 
 #sixth .all .product .product_card {
-  border: 0.5px solid #d9d9e9;
   border-radius: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #sixth .all .product .product_card:hover {
-  -webkit-box-shadow: 0px 0px 1.5px 1.5px #666;
-          box-shadow: 0px 0px 1.5px 1.5px #666;
+  -webkit-box-shadow: 0px 0px 0.4px 0.4px #666;
+          box-shadow: 0px 0px 0.4px 0.4px #666;
 }
 
 #sixth .all .product .product_card img {
@@ -1706,6 +1700,8 @@ a {
 
 #sixth .all .product .product_card .korotkiy {
   height: 195px;
+  padding-bottom: 0;
+  margin-bottom: 18px;
 }
 
 #sixth .all .product .product_card .korotkiy li:last-child {
@@ -1722,7 +1718,8 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 8vh;
+  height: 8.5vh;
+  margin: 0;
 }
 
 #sixth .all .product .product_card ul {
@@ -1782,8 +1779,8 @@ a {
 }
 
 #sixth .all .product .product_card ul li:nth-child(5) {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   opacity: 0;
   visibility: 0;
 }
@@ -1791,8 +1788,8 @@ a {
 #sixth .all .product .product_card ul li:nth-child(5) button {
   width: 100%;
   outline: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   border: none;
   padding: 5px 0px;
   border-radius: 20px;
