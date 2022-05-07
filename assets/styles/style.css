@@ -2356,4 +2356,126 @@ a {
 #twelfth .all .last img {
   cursor: pointer;
 }
+
+#modal_location {
+  background-image: url(../images/16.jpg);
+  height: 100vh;
+  font-family: Inter;
+}
+
+#modal_location .overlay {
+  height: 100%;
+  background-color: #afafb67b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modal_location .overlay .location_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#modal_location .overlay .location_div .top {
+  position: relative;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#modal_location .overlay .location_div .top h5 {
+  padding: 0;
+  margin: 0;
+}
+
+#modal_location .overlay .location_div .top p {
+  margin: 10px 0;
+  font-size: 13px;
+  color: #9b9bb4;
+}
+
+#modal_location .overlay .location_div .top .inputarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f4f7;
+  padding: 8px;
+  border-radius: 10px;
+  border: 0.5px solid #9b9bb4;
+  width: 100%;
+}
+
+#modal_location .overlay .location_div .top .inputarea i {
+  width: 10%;
+  color: #233A95;
+  font-size: 20px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#modal_location .overlay .location_div .top .inputarea i:hover {
+  -webkit-transform: rotate(6.28rad);
+          transform: rotate(6.28rad);
+}
+
+#modal_location .overlay .location_div .top .inputarea input {
+  outline: none;
+  background-color: #f3f4f7;
+  border: none;
+  padding: 5px;
+  width: 89%;
+}
+
+#modal_location .overlay .location_div .top .inputarea input::-webkit-search-cancel-button {
+  position: relative;
+  right: 5px;
+  font-size: 25px;
+}
+
+#modal_location .overlay .location_div .top span {
+  font-size: 16px;
+  position: absolute;
+  cursor: pointer;
+  top: -7px;
+  right: -35px;
+}
 /*# sourceMappingURL=style.css.map */

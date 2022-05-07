@@ -1,3 +1,4 @@
+
 // #region slider1 slick
 $('.slider1').slick({
   dots: true,
@@ -38,6 +39,24 @@ $('.slider1').slick({
 
 //#region select location
 
+$(document).ready(function () {
 
+  $('#location_search').focus();
+
+  $('#close_location').click(function () {
+    $('#modal_location').hide();
+  })
+  // nado dat im transition procitat jquery
+  $('#overlay').click(function () {
+    $('#modal_location').hide();
+  })
+
+  $("#location").click(function () {
+
+
+
+
+  })
+});
 
 //#endregion select location

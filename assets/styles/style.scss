@@ -1989,3 +1989,94 @@ a {
         }
     }
 }
+
+#modal_location {
+    background-image: url(../images/16.jpg);
+    height: 100vh;
+    font-family: Inter;
+
+    .overlay {
+        height: 100%;
+        background-color: #afafb67b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .location_div {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+
+            .top {
+                position: relative;
+                height: 25%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h5 {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                p {
+                    margin: 10px 0;
+                    font-size: 13px;
+                    color: #9b9bb4;
+                }
+
+                .inputarea {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: rgb(243, 244, 247);
+                    padding: 8px;
+                    border-radius: 10px;
+                    border: 0.5px solid #9b9bb4;
+                    width: 100%;
+
+                    i {
+                        width: 10%;
+                        color: #233A95;
+                        font-size: 20px;
+                        transition: 0.35s;
+                        margin-right: 8px;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: rotate(2*3.14rad);
+                        }
+                    }
+
+                    input {
+                        outline: none;
+                        background-color: rgb(243, 244, 247);
+                        border: none;
+                        padding: 5px;
+                        width: 89%;
+
+                        &::-webkit-search-cancel-button {
+                            position: relative;
+                            right: 5px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                span {
+                    font-size: 16px;
+                    position: absolute;
+                    cursor: pointer;
+                    top: -7px;
+                    right: -35px;
+                }
+            }
+        }
+
+    }
+}
