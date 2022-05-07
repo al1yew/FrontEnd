@@ -588,7 +588,49 @@ a {
 }
 
 #header .bottom .all .bottom_top .money_user .bag .bag_div {
+  background-color: white;
+  z-index: 1234;
+  padding: 20px 35px;
+  -webkit-box-shadow: 0px 0px 5px 1px grey;
+          box-shadow: 0px 0px 5px 1px grey;
+  border-radius: 5px;
   position: absolute;
+  width: 300px;
+  top: 50px;
+  right: -10px;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .image {
+  margin: 10px auto;
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #e9ecef;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .image p {
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 30px;
+  border-bottom: 0.5px solid #9b9bb4;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .image svg {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 24%;
+  left: 14%;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div p {
+  font-size: 12px;
+  color: grey;
+  text-align: center;
+  width: 100%;
 }
 
 #header .bottom .all .bottom_bottom {
