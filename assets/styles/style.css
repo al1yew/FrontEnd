@@ -559,27 +559,36 @@ a {
           align-items: center;
 }
 
-#header .bottom .all .bottom_top .money_user .money {
+#header .bottom .all .bottom_top .money_user .bag {
+  position: relative;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .money {
   font-family: Dosis;
   font-weight: 600;
   font-size: 1.25rem;
   padding: 0 20px;
+  cursor: pointer;
 }
 
-#header .bottom .all .bottom_top .money_user .bag_icon {
+#header .bottom .all .bottom_top .money_user .bag .bag_icon {
   position: relative;
 }
 
-#header .bottom .all .bottom_top .money_user .amount {
+#header .bottom .all .bottom_top .money_user .bag .amount {
   position: absolute;
-  top: -4px;
-  right: -4px;
+  top: -14px;
+  right: -8px;
   font-size: 12px;
   font-style: normal !important;
   color: white;
   padding: 0px 5px;
   background-color: red;
   border-radius: 100%;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div {
+  position: absolute;
 }
 
 #header .bottom .all .bottom_bottom {

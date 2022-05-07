@@ -480,28 +480,39 @@ a {
                     justify-content: space-between;
                     align-items: center;
 
-                    .money {
-                        font-family: Dosis;
-                        font-weight: 600;
-                        font-size: 1.25rem;
-                        padding: 0 20px;
-                    }
-
-                    .bag_icon {
+                    .bag {
                         position: relative;
+
+                        .money {
+                            font-family: Dosis;
+                            font-weight: 600;
+                            font-size: 1.25rem;
+                            padding: 0 20px;
+                            cursor: pointer;
+                        }
+
+                        .bag_icon {
+                            position: relative;
+                        }
+
+                        .amount {
+                            position: absolute;
+                            top: -14px;
+                            right: -8px;
+                            font-size: 12px;
+                            font-style: normal !important;
+                            color: white;
+                            padding: 0px 5px;
+                            background-color: red;
+                            border-radius: 100%;
+                        }
+
+                        .bag_div {
+                            position: absolute;
+                            
+                        }
                     }
 
-                    .amount {
-                        position: absolute;
-                        top: -4px;
-                        right: -4px;
-                        font-size: 12px;
-                        font-style: normal !important;
-                        color: white;
-                        padding: 0px 5px;
-                        background-color: red;
-                        border-radius: 100%;
-                    }
                 }
             }
 
@@ -2138,4 +2149,3 @@ a {
         }
     }
 }
-
