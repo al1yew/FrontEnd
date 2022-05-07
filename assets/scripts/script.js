@@ -60,7 +60,8 @@ $(document).ready(function () {
   })
 
   let locations = document.querySelectorAll('.locations');
-  let set_location = document.querySelector('#set_location')
+  let set_location = document.querySelector('#set_location');
+
   for (let location of locations) {
     location.onclick = function (e) {
       // console.log(e.target); yoxladim
@@ -76,3 +77,29 @@ $(document).ready(function () {
 
 //#endregion select location
 
+//#region categories
+$(document).ready(function () {
+
+  $("#categories").click(function () {
+    $('#categories_all').slideToggle();
+  })
+
+  // let continued = document.getElementById('continued');
+  // let continued1 = document.getElementById('continued1');
+  // let categ2 = document.getElementById('categories_all2');
+  // let categ3 = document.getElementById('categories_all3');
+
+  // // continued.hover() = function() {
+  // //   categ2.classList.toggle('non-active');
+  // // }
+
+  // $('#continued').hover(function() {
+  //   categ2.classList.toggle('non-active');
+
+  // })
+
+});
+
+
+
+//#endregion categories
