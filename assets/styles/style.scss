@@ -755,7 +755,7 @@ a {
                             padding-bottom: 10px;
                             transition: 0.3s;
 
-                            &:hover{
+                            &:hover {
                                 color: #2bbef9;
                             }
                         }
@@ -807,7 +807,8 @@ a {
                     justify-content: space-between;
                     align-items: center;
 
-                    p {
+                    p,
+                    .megamenu1keeper {
                         font-size: 15px;
                         padding: 12px 15px;
                         border-radius: 20px;
@@ -838,10 +839,124 @@ a {
                         }
                     }
 
+                    .megamenu2keeper {
+                        cursor: pointer;
+                        transition: 0.3s;
+                        padding: 12px 15px;
+                        border-radius: 20px;
+
+                    }
+
                     p:hover {
                         background-color: rgb(234, 241, 245);
                         color: #2bbef9;
                     }
+
+                    .megamenu1keeper:hover {
+                        background-color: rgb(234, 241, 245);
+                        color: #2bbef9;
+                    }
+
+                    .megamenu2keeper:hover {
+                        background-color: rgb(234, 241, 245);
+                        color: #2bbef9;
+                    }
+
+                    .megamenu1keeper:hover .megamenu1 {
+                        opacity: 1;
+                        visibility: visible;
+                        padding: 13px 10px;
+                    }
+
+                    .megamenu1 {
+                        opacity: 0;
+                        border-bottom-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        visibility: hidden;
+                        position: absolute;
+                        top: 145%;
+                        box-shadow: 0px 3px 5px 1px grey;
+                        background-color: white;
+                        transition: 0.3s;
+                        z-index: 24123;
+                        padding: 10px 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100px;
+
+                        p {
+                            width: 100%;
+                            padding: 5px 0;
+                            font-size: 14px;
+                            color: #3E445A;
+                        }
+
+                        p:hover {
+                            background-color: white;
+                        }
+                    }
+
+                    .megamenu2keeper:hover .megamenu2 {
+                        opacity: 1;
+                        visibility: visible;
+                        padding: 13px 10px;
+                    }
+
+                    .megamenu2 {
+                        background-color: white;
+                        opacity: 0;
+                        border-bottom-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        visibility: hidden;
+                        position: absolute;
+                        top: 130%;
+                        left: 0;
+                        padding: 10px;
+                        box-shadow: 0px 3px 5px 1px grey;
+                        transition: 0.3s;
+                        z-index: 24123;
+                        padding: 20px 10px;
+                        display: flex;
+                        align-items: center;
+                        // justify-content: space-between;
+                        width: 100%;
+
+                        .all {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            // align-items: center;
+
+                            .footer_keeper {
+                                font-family: Inter;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 10px;
+
+                                h6 {
+                                    margin-bottom: 14px;
+                                    color: #233A95;
+                                }
+
+                                a {
+                                    font-family: InterLight;
+                                    font-weight: 600;
+                                    margin-bottom: 10px;
+                                    text-decoration: none;
+                                    font-size: 13px;
+                                    color: #7A7A7A;
+                                    transition: 0.3s;
+
+                                    &:hover {
+                                        color: #2649d5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
                 }
             }
         }
