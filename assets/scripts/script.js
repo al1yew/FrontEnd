@@ -5,7 +5,7 @@ $('.slider1').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 5,
-  slidesToScroll: 4,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
@@ -81,7 +81,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
   $("#categories").click(function () {
-    $('#categories_all').slideToggle();
+    $('#all_categories').slideToggle(220);
   })
 
   // let continued = document.getElementById('continued');
