@@ -15,9 +15,41 @@
 </head>
 
 <body>
-    <section>
-        <a href="try.html">qwertyuiop</a>
+
+    <section id="modal_location" style="display: none;">
+        <div class="col-lg-3-8 location_div">
+            <div class="top">
+
+                <h5>Choose your Delivery Location</h5>
+                <p>Enter your address and we will specify the offer for your area.</p>
+
+                <div class="inputarea">
+                    <i class="fas fa-search"></i>
+                    <input id="location_search" onfocus="" placeholder="Search your area" type="search">
+                </div>
+
+                <span id="close_location">X</span>
+            </div>
+
+            <div class="bottom">
+                <p><span class="locations">Select a location</span> <span>Clear all</span></p>
+                <p><span class="locations">Baku</span> <span>Min: $100</span></p>
+                <p><span class="locations">Alabama</span> <span>Min: $120</span></p>
+                <p><span class="locations">Alaska</span> <span>Min: $110</span></p>
+                <p><span class="locations">Arizona</span> <span>Min: $90</span></p>
+                <p><span class="locations">California</span> <span>Min: $140</span></p>
+                <p><span class="locations">Colorado</span> <span>Min: $150</span></p>
+                <p><span class="locations">Florida</span> <span>Min: $110</span></p>
+                <p><span class="locations">Georgia</span> <span>Min: $60</span></p>
+                <p><span class="locations">Kanzas</span> <span>Min: $80</span></p>
+                <p><span class="locations">Minnesota</span> <span>Min: $180</span></p>
+                <p><span class="locations">New York</span> <span>Min: $210</span></p>
+                <p><span class="locations">Washington</span> <span>Min: $130</span></p>
+            </div>
+
+        </div>
     </section>
+
     <header id="header">
 
         <div class="top">
@@ -96,7 +128,7 @@
                             <div class="select_location" id="location">
                                 <div class="col-lg-10">
                                     <p>Your Location</p>
-                                    <p>Select a Location</p>
+                                    <p id="set_location">Select a Location</p>
                                 </div>
                                 <div class="col-lg-2 asd">
                                     <i class="fa-solid fa-angle-down"></i>

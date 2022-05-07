@@ -43,20 +43,35 @@ $(document).ready(function () {
 
   $('#location_search').focus();
 
-  $('#close_location').click(function () {
-    $('#modal_location').hide();
-  })
-  // nado dat im transition procitat jquery
-  $('#overlay').click(function () {
-    $('#modal_location').hide();
-  })
-
   $("#location").click(function () {
-
-
-
-
+    $('#modal_location').fadeIn(300);
   })
+
+  var modal = document.getElementById('modal_location');
+
+  window.onclick = function (e) {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  $('#close_location').click(function () {
+    $('#modal_location').fadeOut(300);
+  })
+
+  let locations = document.querySelectorAll('.locations');
+  let set_location = document.querySelector('#set_location')
+  for (let location of locations) {
+    location.onclick = function (e) {
+      // console.log(e.target); yoxladim
+      set_location.innerHTML = location.innerHTML;
+    }
+  }
+
+
+  $('set_location')
+
 });
 
 //#endregion select location
+
