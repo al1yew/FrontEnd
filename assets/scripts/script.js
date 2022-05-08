@@ -62,7 +62,7 @@ $(document).ready(function () {
   let locations = document.querySelectorAll('.locations');
   let set_location = document.querySelector('#set_location');
   let locals = document.querySelectorAll('.local');
-//sheherin adini saxlayan <p> uchun
+  //sheherin adini saxlayan <p> uchun
   for (let local of locals) {
     local.onclick = function (e) {
 
@@ -106,4 +106,21 @@ $(document).ready(function () {
 
 //#endregion categories
 
-//
+
+
+
+//#reigon login js
+
+$(document).ready(function () {
+
+
+
+
+
+
+
+
+
+});
+
+//#endreigon login js
