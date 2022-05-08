@@ -106,21 +106,74 @@ $(document).ready(function () {
 
 //#endregion categories
 
+//#region login js
+
+
+// let log_name = document.getElementById('login_username');
+// let log_pass = document.getElementById('login_password');
+// let reg_name = document.getElementById('reg_username');
+// let reg_pass = document.getElementById('reg_password');
+
+// let login = document.getElementById('login');
+// let register = document.getElementById('register');
+
+// login.onclick = function () {
+
+//   console.log(log_name.value)
+
+
+// }
 
 
 
-//#reigon login js
 
 $(document).ready(function () {
+  let lon = $('#login_username');
+  let lop = $("#login_password");
+  let ren = $("#reg_username");
+  let rep = $("#reg_password");
+
+  $('#login').click(function () {
+
+    if (lon.val().length < 8 && lop.val().length < 8) {
+      // $('#error').removeClass('d-none');
+      $('#error').slideDown(200);
+      $('#error_p').html('Your Login and Password must contain at least 8 characters!')
+    }
+    else {
+      // $('#error').addClass('d-none');
+      $('#error').slideUp(200);
+    }
+
+    // lon.val().length < 9 && lop.val().length < 9 ? console.log('nenorm') : console.log('norm')
 
 
+  })
+
+  $('#register').click(function () {
+
+    if (ren.val().length < 8 && rep.val().length < 8) {
+      // $('#error').removeClass('d-none');
+      $('#error').slideDown(200);
+      $('#error_p').html('Your Login and Password must contain at least 8 characters!')
+    }
+    else {
+      // $('#error').addClass('d-none');
+      $('#error').slideUp(200);
+    }
+
+    // lon.val().length < 9 && lop.val().length < 9 ? console.log('nenorm') : console.log('norm')
 
 
-
-
+  })
 
 
 
 });
 
-//#endreigon login js
+
+
+
+
+
+//#endregion login js

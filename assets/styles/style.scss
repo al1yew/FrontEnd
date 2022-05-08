@@ -6,6 +6,8 @@
 
 @import 'login';
 
+@import 'contact';
+
 /*#region Icons do not open it is too big press alt z*/
 @font-face {
     font-family: 'klbtheme';
@@ -416,7 +418,7 @@ a {
     }
 
     .bottom {
-        padding: 20px 0;
+        padding: 10px 0;
         border-bottom: 1px solid #d9d9e9;
 
         .all {
@@ -623,7 +625,7 @@ a {
                     font-weight: 700;
                     display: none;
                     position: absolute;
-                    top: 132%;
+                    top: 117%;
                     left: 0%;
                     z-index: 12121;
                     background-color: white;
@@ -700,7 +702,7 @@ a {
                         .leftmenu {
                             opacity: 0;
                             visibility: hidden;
-                            transition: 0ş3s;
+                            transition: 0.3s;
                             position: absolute;
                             width: 100%;
                             top: -20px;
@@ -816,49 +818,212 @@ a {
                     justify-content: space-between;
                     align-items: center;
 
-                    p,
-                    .megamenu1keeper {
-                        font-size: 15px;
+                    .nav_p {
                         padding: 12px 15px;
                         border-radius: 20px;
+                        font-size: 15px;
                         display: flex;
                         cursor: pointer;
                         transition: 0.3s;
-                        position: relative;
                         justify-content: center;
                         align-items: center;
+                        color: #3e445a;
 
-                        i {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
+                        &:hover {
+                            color: rgb(43, 190, 249);
+                            background-color: rgb(234, 248, 255);
                         }
+                    }
 
-                        i.fa-solid {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            margin-left: 13px;
-                            transition: 0.3s;
-                        }
+                    .megamenu1keeper {
+                        font-size: 15px;
+                        // padding: 12px 15px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: 0.3s;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
                         &:hover i.fa-solid {
                             transform: rotate(3.142rad);
                             color: rgb(43, 190, 249);
                         }
+
+                        &:hover p {
+                            color: rgb(43, 190, 249);
+                        }
+
+                        a {
+                            padding: 12px 15px;
+                            font-size: 15px;
+                            color: #212529;
+
+                            p {
+                                padding: 0;
+                                cursor: pointer;
+                                transition: 0.3s;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            i {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-left: 13px;
+                                transition: 0.3s;
+                            }
+                        }
+
+                        .megamenu1 {
+                            opacity: 0;
+                            visibility: hidden;
+                            border-bottom-right-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                            box-shadow: 0px 3px 5px 1px grey;
+                            background-color: white;
+                            position: absolute;
+                            top: 125%;
+                            width: 100px;
+                            transition: 0.3s;
+                            z-index: 24123;
+                            padding: 10px 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .all {
+                                p {
+                                    width: 100%;
+                                    cursor: pointer;
+                                    transition: 0.3s;
+                                    padding: 5px 0;
+                                    font-size: 14px;
+                                    color: #3E445A;
+
+                                    &:hover {
+                                        color: #2bbef9;
+                                    }
+                                }
+                            }
+
+                        }
                     }
 
                     .megamenu2keeper {
+                        font-size: 15px;
+                        // padding: 12px 15px;
+                        border-radius: 20px;
                         cursor: pointer;
                         transition: 0.3s;
-                        padding: 12px 15px;
-                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
+                        &:hover i.fa-solid {
+                            transform: rotate(3.142rad);
+                            color: rgb(43, 190, 249);
+                        }
+
+                        &:hover p {
+                            color: rgb(43, 190, 249);
+                        }
+
+                        a {
+                            padding: 12px 15px;
+                            font-size: 15px;
+                            color: #212529;
+
+                            p {
+                                padding: 0;
+                                cursor: pointer;
+                                transition: 0.3s;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            i {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-left: 13px;
+                                transition: 0.3s;
+                            }
+                        }
+
+                        .megamenu2 {
+                            background-color: white;
+                            opacity: 0;
+                            visibility: hidden;
+                            border-bottom-right-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                            position: absolute;
+                            top: 117%;
+                            left: 0;
+                            padding: 16px;
+                            box-shadow: 0px 3px 5px 1px grey;
+                            transition: 0.1s;
+                            z-index: 24123;
+                            padding: 20px 10px;
+                            display: flex;
+                            align-items: center;
+                            // justify-content: space-between;
+                            width: 100%;
+
+                            .all {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                // align-items: center;
+
+                                .footer_keeper {
+                                    font-family: Inter;
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 10px;
+
+                                    h6 {
+                                        margin-bottom: 14px;
+                                        color: #233A95;
+                                        font-size: 15px !important;
+                                    }
+
+                                    a {
+                                        font-family: InterLight;
+                                        font-weight: 600;
+                                        margin: 0;
+                                        padding: 0;
+                                        padding-bottom: 10px;
+                                        text-decoration: none;
+                                        font-size: 12px;
+                                        color: #7A7A7A;
+                                        transition: 0.3s;
+
+                                        &:hover {
+                                            color: #2649d5;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
 
-                    p:hover {
-                        background-color: rgb(234, 241, 245);
-                        color: #2bbef9;
+
+
+                    .megamenu1keeper:hover .megamenu1 {
+                        opacity: 1;
+                        visibility: visible;
+                        padding: 13px 10px;
+                    }
+
+                    .megamenu2keeper:hover .megamenu2 {
+                        opacity: 1;
+                        visibility: visible;
+                        padding: 20px 10px;
                     }
 
                     .megamenu1keeper:hover {
@@ -870,102 +1035,6 @@ a {
                         background-color: rgb(234, 241, 245);
                         color: #2bbef9;
                     }
-
-                    .megamenu1keeper:hover .megamenu1 {
-                        opacity: 1;
-                        visibility: visible;
-                        padding: 13px 10px;
-                    }
-
-                    .megamenu1 {
-                        opacity: 0;
-                        border-bottom-right-radius: 5px;
-                        border-bottom-left-radius: 5px;
-                        visibility: hidden;
-                        position: absolute;
-                        top: 145%;
-                        box-shadow: 0px 3px 5px 1px grey;
-                        background-color: white;
-                        transition: 0.3s;
-                        z-index: 24123;
-                        padding: 10px 10px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100px;
-
-                        p {
-                            width: 100%;
-                            padding: 5px 0;
-                            font-size: 14px;
-                            color: #3E445A;
-                        }
-
-                        p:hover {
-                            background-color: white;
-                        }
-                    }
-
-                    .megamenu2keeper:hover .megamenu2 {
-                        opacity: 1;
-                        visibility: visible;
-                        padding: 13px 10px;
-                    }
-
-                    .megamenu2 {
-                        background-color: white;
-                        opacity: 0;
-                        border-bottom-right-radius: 5px;
-                        border-bottom-left-radius: 5px;
-                        visibility: hidden;
-                        position: absolute;
-                        top: 130%;
-                        left: 0;
-                        padding: 10px;
-                        box-shadow: 0px 3px 5px 1px grey;
-                        transition: 0.3s;
-                        z-index: 24123;
-                        padding: 20px 10px;
-                        display: flex;
-                        align-items: center;
-                        // justify-content: space-between;
-                        width: 100%;
-
-                        .all {
-                            width: 100%;
-                            display: flex;
-                            justify-content: space-between;
-                            // align-items: center;
-
-                            .footer_keeper {
-                                font-family: Inter;
-                                display: flex;
-                                flex-direction: column;
-                                padding: 10px;
-
-                                h6 {
-                                    margin-bottom: 14px;
-                                    color: #233A95;
-                                }
-
-                                a {
-                                    font-family: InterLight;
-                                    font-weight: 600;
-                                    margin-bottom: 10px;
-                                    text-decoration: none;
-                                    font-size: 13px;
-                                    color: #7A7A7A;
-                                    transition: 0.3s;
-
-                                    &:hover {
-                                        color: #2649d5;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-
                 }
             }
         }
