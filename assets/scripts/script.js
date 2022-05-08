@@ -135,7 +135,7 @@ $(document).ready(function () {
 
   $('#login').click(function () {
 
-    if (lon.val().length < 8 && lop.val().length < 8) {
+    if (lon.val().length < 8 || lop.val().length < 8) {
       // $('#error').removeClass('d-none');
       $('#error').slideDown(200);
       $('#error_p').html('Your Login and Password must contain at least 8 characters!')
@@ -146,13 +146,11 @@ $(document).ready(function () {
     }
 
     // lon.val().length < 9 && lop.val().length < 9 ? console.log('nenorm') : console.log('norm')
-
-
   })
 
   $('#register').click(function () {
 
-    if (ren.val().length < 8 && rep.val().length < 8) {
+    if (ren.val().length < 8 || rep.val().length < 8) {
       // $('#error').removeClass('d-none');
       $('#error').slideDown(200);
       $('#error_p').html('Your Login and Password must contain at least 8 characters!')
