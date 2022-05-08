@@ -166,12 +166,16 @@ $(document).ready(function () {
       }
     }
 
-    if ($('#inp_n').val().length > 0 && $('#inp_s').val().length > 0 && $('#inp_su').val().length > 0) {
-      $('#bye').css('display', 'block');
-    }
-    else {
-      $('#bye').css('display', 'none');
-    }
+    // if ($('#inp_n').val().length > 0 && $('#inp_s').val().length > 0 && $('#inp_su').val().length > 0) {
+    //   $('#bye').css('display', 'block');
+    // }
+    // else {
+    //   $('#bye').css('display', 'none');
+    // }
+
+    //yashayiiiiiiiishhhhh
+    
+    $('#inp_n').val().length > 0 && $('#inp_s').val().length > 0 && $('#inp_su').val().length > 0 ? $('#bye').css('display', 'block') : $('#bye').css('display', 'none');
 
   })
 });
