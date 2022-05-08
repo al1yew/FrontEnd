@@ -62,7 +62,7 @@ $(document).ready(function () {
   let locations = document.querySelectorAll('.locations');
   let set_location = document.querySelector('#set_location');
   let locals = document.querySelectorAll('.local');
-
+//sheherin adini saxlayan <p> uchun
   for (let local of locals) {
     local.onclick = function (e) {
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     }
   }
-
+  //sheherin adi uchun span uchun
   for (let location of locations) {
     location.onclick = function (e) {
       set_location.innerHTML = e.target.innerHTML;
