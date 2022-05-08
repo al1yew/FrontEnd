@@ -461,6 +461,127 @@
   display: none;
 }
 
+#firstabout {
+  background-image: url(../images/about-header.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+}
+
+#firstabout .all {
+  font-family: Inter;
+  padding: 250px 0;
+  color: white;
+}
+
+#firstabout .all p {
+  text-align: center;
+  font-size: 70px !important;
+}
+
+#firstabout .all h6 {
+  text-align: center;
+}
+
+#secondabout {
+  margin: 40px 0;
+}
+
+#secondabout .all {
+  font-family: Inter;
+}
+
+#secondabout .all .top {
+  color: #202435;
+}
+
+#secondabout .all .top p {
+  font-size: 14px;
+  margin-bottom: 40px;
+  font-family: InterLight;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#secondabout .all .top p:first-child {
+  margin-top: 40px;
+}
+
+#secondabout .all .top p:last-child {
+  padding-left: 50px;
+}
+
+#secondabout .all .top h2 {
+  width: 60%;
+  margin-bottom: 40px;
+  padding-left: 50px;
+}
+
+#secondabout .all .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+#secondabout .all .middle .right {
+  color: #202435;
+  padding: 50px;
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#secondabout .all .middle .right h6 {
+  margin-bottom: 30px;
+}
+
+#secondabout .all .middle .right h2 {
+  margin-bottom: 30px;
+}
+
+#secondabout .all .middle .right p {
+  font-family: InterLight;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#secondabout .all .middle .right p:last-child {
+  padding-top: 20px;
+}
+
+#secondabout .all .middle .textmiddle {
+  position: absolute;
+  padding: 50px 30px 50px 70px;
+  bottom: -10%;
+  left: 10%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#secondabout .all .middle .textmiddle p {
+  font-family: InterLight;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#secondabout .all .bottom p {
+  font-family: InterLight;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 /*#region Icons do not open it is too big press alt z*/
 @font-face {
   font-family: 'klbtheme';
