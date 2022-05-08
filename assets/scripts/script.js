@@ -159,14 +159,20 @@ $(document).ready(function () {
 
     for (let input of inputs) {
       if (input.value.length < 1) {
-        $('#bye').css('display', 'none');
         input.nextElementSibling.style.display = 'block';
       }
       else {
-        $('#bye').css('display', 'block');
         input.nextElementSibling.style.display = 'none';
       }
     }
+
+    if ($('#inp_n').val().length > 0 && $('#inp_s').val().length > 0 && $('#inp_su').val().length > 0) {
+      $('#bye').css('display', 'block');
+    }
+    else {
+      $('#bye').css('display', 'none');
+    }
+
   })
 });
 
