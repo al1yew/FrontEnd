@@ -126,15 +126,13 @@
     font-size: 20px;
 }
 
+.klbth-icon-location:before {
+    content: '\e800';
+
+}
+
 .klbth-icon-mail:before {
     content: '\e84f';
-    color: rgba(102, 102, 102, 0.531);
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    padding-left: 10px;
-    align-items: center;
-    width: 5%;
 }
 
 .klbth-icon-user:before {
@@ -2652,7 +2650,6 @@ a {
 
             .input_keeper {
                 border-radius: 5px;
-
                 width: 80%;
                 background-color: white;
                 display: flex;
@@ -2660,6 +2657,18 @@ a {
                 justify-content: space-between;
                 padding: 3px;
                 padding-left: 10px;
+
+                i {
+                    &::before {
+                        color: rgba(102, 102, 102, 0.531);
+                        font-size: 18px;
+                        display: flex;
+                        justify-content: center;
+                        padding-left: 10px;
+                        align-items: center;
+                        width: 5%;
+                    }
+                }
 
                 input {
                     padding-left: 10px;

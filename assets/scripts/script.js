@@ -108,25 +108,6 @@ $(document).ready(function () {
 
 //#region login js
 
-
-// let log_name = document.getElementById('login_username');
-// let log_pass = document.getElementById('login_password');
-// let reg_name = document.getElementById('reg_username');
-// let reg_pass = document.getElementById('reg_password');
-
-// let login = document.getElementById('login');
-// let register = document.getElementById('register');
-
-// login.onclick = function () {
-
-//   console.log(log_name.value)
-
-
-// }
-
-
-
-
 $(document).ready(function () {
   let lon = $('#login_username');
   let lop = $("#login_password");
@@ -162,16 +143,31 @@ $(document).ready(function () {
 
     // lon.val().length < 9 && lop.val().length < 9 ? console.log('nenorm') : console.log('norm')
 
-
   })
-
-
-
 });
 
-
-
-
-
-
 //#endregion login js
+
+//         
+//#region contact
+
+$(document).ready(function () {
+
+  let inputs = document.querySelectorAll('.requiredinputfield')
+
+  $('#send_message').click(function () {
+
+    for (let input of inputs) {
+      if (input.value.length < 1) {
+        $('#bye').css('display', 'none');
+        input.nextElementSibling.style.display = 'block';
+      }
+      else {
+        $('#bye').css('display', 'block');
+        input.nextElementSibling.style.display = 'none';
+      }
+    }
+  })
+});
+
+//#endregion contact

@@ -184,6 +184,283 @@
   font-size: 18px;
 }
 
+#contactfirst .all {
+  font-family: Inter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#contactfirst .all .locationss {
+  margin-top: 20px !important;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactfirst .all .locationss a {
+  text-decoration: none;
+  color: blue;
+  font-size: 14px;
+}
+
+#contactfirst .all .locationss i {
+  font-size: 12px;
+  color: grey;
+  margin: 0px 10px;
+}
+
+#contactfirst .all .locationss span {
+  color: grey;
+  font-size: 14px;
+}
+
+#contactfirst .all .head {
+  margin: 30px 0;
+}
+
+#contactfirst .all .head h1 {
+  text-align: center;
+}
+
+#contactfirst .all .head p {
+  text-align: center;
+  color: #202435;
+  font-size: 14px;
+}
+
+#contactfirst .all .kartocka {
+  padding: 35px;
+  text-align: center;
+  background-color: #f3f3f6;
+  border-radius: 5px;
+}
+
+#contactfirst .all .kartocka i {
+  margin: 10px auto;
+  color: black;
+  font-size: 40px;
+}
+
+#contactfirst .all .kartocka i::before {
+  color: blue;
+}
+
+#contactfirst .all .kartocka p {
+  color: #202435;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+#contactfirst .all .kartocka p:last-child {
+  font-size: 13px;
+}
+
+#contactsecond {
+  margin: 50px 0;
+  font-family: Inter;
+}
+
+#contactsecond .all {
+  -webkit-box-shadow: 0px 0px 50px 1px #b5b5b5;
+          box-shadow: 0px 0px 50px 1px #b5b5b5;
+  border-radius: 3px;
+  padding: 100px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactsecond .all .budadiv {
+  padding-bottom: 70px;
+  border-bottom: 1px solid #a8a8a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactsecond .all .budadiv h2 {
+  text-align: center;
+}
+
+#contactsecond .all .budadiv p {
+  font-family: InterLight;
+  width: 90%;
+  text-align: center;
+  font-size: 15px;
+}
+
+#contactsecond .all .inputarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contactsecond .all .inputarea .inputcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0;
+}
+
+#contactsecond .all .inputarea .inputcard label {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+#contactsecond .all .inputarea .inputcard input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: #e6e6e6;
+}
+
+#contactsecond .all .inputarea .inputcard p {
+  font-size: 16px;
+  display: none;
+  font-family: InterLight;
+  margin: 10px 0;
+  color: red;
+}
+
+#contactsecond .all .inputarea .subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#contactsecond .all .inputarea .subject p {
+  font-size: 16px;
+  display: none;
+  margin: 10px 0;
+  font-family: InterLight;
+  color: red;
+}
+
+#contactsecond .all .inputarea .subject label {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+#contactsecond .all .inputarea .subject input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: #e6e6e6;
+}
+
+#contactsecond .all .inputarea .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#contactsecond .all .inputarea .message label {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+#contactsecond .all .inputarea .message textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: #e6e6e6;
+}
+
+#contactsecond .all .inputarea button {
+  padding: 10px 15px;
+  border-radius: 7px;
+  background-color: blue;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+#contactsecond .all .inputarea h5 {
+  font-family: Inter;
+  color: green;
+  display: none;
+}
+
 /*#region Icons do not open it is too big press alt z*/
 @font-face {
   font-family: 'klbtheme';
@@ -298,21 +575,12 @@
   font-size: 20px;
 }
 
+.klbth-icon-location:before {
+  content: '\e800';
+}
+
 .klbth-icon-mail:before {
   content: '\e84f';
-  color: rgba(102, 102, 102, 0.531);
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 5%;
 }
 
 .klbth-icon-user:before {
@@ -3255,6 +3523,22 @@ a {
           justify-content: space-between;
   padding: 3px;
   padding-left: 10px;
+}
+
+#nineth .all .left .input_keeper i::before {
+  color: rgba(102, 102, 102, 0.531);
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5%;
 }
 
 #nineth .all .left .input_keeper input {
