@@ -5,7 +5,7 @@ $('.slider1').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 5,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
@@ -61,15 +61,32 @@ $(document).ready(function () {
 
   let locations = document.querySelectorAll('.locations');
   let set_location = document.querySelector('#set_location');
+  let locals = document.querySelectorAll('.local');
+
+  for (let local of locals) {
+    local.onclick = function (e) {
+
+      // console.log(e.target.firstChild); 
+
+      // console.log(e.target.children[0])
+
+      // set_location.innerHTML = e.target.firstChild.textContent;
+
+      set_location.innerHTML = e.target.children[0].innerHTML;
+
+      $('#modal_location').fadeOut(300);
+
+    }
+  }
 
   for (let location of locations) {
     location.onclick = function (e) {
-      // console.log(e.target); yoxladim
-      set_location.innerHTML = location.innerHTML;
+      set_location.innerHTML = e.target.innerHTML;
       $('#modal_location').fadeOut(300);
     }
   }
 
+  //bunu storage versem sheher ilishsin qalsin orda
 
   $('set_location')
 

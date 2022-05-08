@@ -1288,7 +1288,9 @@ a {
 #modal_location .location_div .bottom p span:nth-child(1) {
   font-size: 14px;
   color: black;
-  width: 40%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #modal_location .location_div .bottom p span:nth-child(2) {
@@ -1587,6 +1589,8 @@ a {
 #second .bottom .slider_card {
   cursor: pointer;
   border-radius: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 #second .bottom .slider_card img {
@@ -1654,6 +1658,96 @@ a {
 #second .bottom .slider_card ul li:nth-child(5) button:hover {
   color: white;
   background-color: blue;
+}
+
+#second .bottom .slider_card .percentage {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  background-color: #2bbef9;
+  padding: 4px 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+#second .bottom .slider_card .recommend {
+  position: absolute;
+  top: 40px;
+  background-color: #71778e;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 10px;
+  left: 10px;
+}
+
+#second .bottom .slider_card .size {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-box-shadow: 0px 0px 4px 1px grey;
+          box-shadow: 0px 0px 4px 1px grey;
+  border-radius: 100%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#second .bottom .slider_card .size:hover {
+  background-color: #233A95;
+}
+
+#second .bottom .slider_card .size:hover svg {
+  background-color: #233A95;
+}
+
+#second .bottom .slider_card .size svg {
+  background-color: white;
+  height: 25.3px;
+  width: 25.3px;
+  padding: 3px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#second .bottom .slider_card .heart {
+  position: absolute;
+  cursor: pointer;
+  top: 60px;
+  right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 6px 10px;
+  color: grey;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px 1px grey;
+          box-shadow: 0px 0px 4px 1px grey;
+  border-radius: 100%;
+}
+
+#second .bottom .slider_card .heart:hover {
+  background-color: #233A95;
+}
+
+#second .bottom .slider_card:hover .size {
+  right: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#second .bottom .slider_card:hover .heart {
+  right: 10px;
+  opacity: 1;
+  visibility: visible;
 }
 
 #third {
@@ -1903,6 +1997,7 @@ a {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  position: relative;
 }
 
 #fourth .all .product:hover {
@@ -2036,6 +2131,72 @@ a {
 #fourth .all .product .product_card ul li:nth-child(5) button:hover {
   color: white;
   background-color: blue;
+}
+
+#fourth .all .product .size {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-box-shadow: 0px 0px 4px 1px grey;
+          box-shadow: 0px 0px 4px 1px grey;
+  border-radius: 100%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#fourth .all .product .size:hover {
+  background-color: #233A95;
+}
+
+#fourth .all .product .size:hover svg {
+  background-color: #233A95;
+}
+
+#fourth .all .product .size svg {
+  background-color: white;
+  height: 25.3px;
+  width: 25.3px;
+  padding: 3px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#fourth .all .product .heart {
+  position: absolute;
+  cursor: pointer;
+  top: 60px;
+  right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 6px 10px;
+  color: grey;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px 1px grey;
+          box-shadow: 0px 0px 4px 1px grey;
+  border-radius: 100%;
+}
+
+#fourth .all .product .heart:hover {
+  background-color: #233A95;
+}
+
+#fourth .all .product:hover .size {
+  right: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#fourth .all .product:hover .heart {
+  right: 10px;
+  opacity: 1;
+  visibility: visible;
 }
 
 #fifth {
@@ -2401,6 +2562,72 @@ a {
 #sixth .all .product .product_card ul li:nth-child(5) button:hover {
   color: white;
   background-color: blue;
+}
+
+#sixth .all .product .size {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-box-shadow: 0px 0px 4px 1px grey;
+          box-shadow: 0px 0px 4px 1px grey;
+  border-radius: 100%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#sixth .all .product .size:hover {
+  background-color: #233A95;
+}
+
+#sixth .all .product .size:hover svg {
+  background-color: #233A95;
+}
+
+#sixth .all .product .size svg {
+  background-color: white;
+  height: 25.3px;
+  width: 25.3px;
+  padding: 3px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#sixth .all .product .heart {
+  position: absolute;
+  cursor: pointer;
+  top: 60px;
+  right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 6px 10px;
+  color: grey;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px 1px grey;
+          box-shadow: 0px 0px 4px 1px grey;
+  border-radius: 100%;
+}
+
+#sixth .all .product .heart:hover {
+  background-color: #233A95;
+}
+
+#sixth .all .product:hover .size {
+  right: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#sixth .all .product:hover .heart {
+  right: 10px;
+  opacity: 1;
+  visibility: visible;
 }
 
 #seventh {

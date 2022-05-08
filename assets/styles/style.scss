@@ -1083,7 +1083,7 @@ a {
                     &:nth-child(1) {
                         font-size: 14px;
                         color: black;
-                        width: 40%;
+                        width: fit-content;
                     }
 
                     &:nth-child(2) {
@@ -1343,6 +1343,8 @@ a {
         .slider_card {
             cursor: pointer;
             border-radius: 0;
+            position: relative;
+            overflow: hidden;
 
             img {
                 object-fit: cover;
@@ -1409,6 +1411,94 @@ a {
                         }
                     }
                 }
+            }
+
+            .percentage {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                font-size: 12px;
+                background-color: rgb(43, 190, 249);
+                padding: 4px 10px;
+                cursor: pointer;
+                color: white;
+                border-radius: 4px;
+            }
+
+            .recommend {
+                position: absolute;
+                top: 40px;
+                background-color: rgb(113, 119, 142);
+                border-radius: 4px;
+                padding: 5px 10px;
+                cursor: pointer;
+                color: white;
+                font-size: 10px;
+                left: 10px;
+            }
+
+            .size {
+                position: absolute;
+                top: 10px;
+                // right: -100px;
+                right: 7px;
+                opacity: 0;
+                visibility: hidden;
+                box-shadow: 0px 0px 4px 1px grey;
+                border-radius: 100%;
+                background-color: white;
+                padding: 5px;
+                border-radius: 50%;
+                transition: 0.1s;
+
+                &:hover {
+                    background-color: #233A95;
+                }
+
+                &:hover svg {
+                    background-color: #233A95;
+                }
+
+                svg {
+                    background-color: white;
+                    height: 25.3px;
+                    width: 25.3px;
+                    padding: 3px;
+                    transition: 0.1s;
+
+                }
+            }
+
+            .heart {
+                position: absolute;
+                cursor: pointer;
+                top: 60px;
+                // right: -100px;
+                right: 7px;
+                opacity: 0;
+                visibility: hidden;
+                padding: 6px 10px;
+                color: grey;
+                transition: 0.2s;
+                background-color: white;
+                box-shadow: 0px 0px 4px 1px grey;
+                border-radius: 100%;
+
+                &:hover {
+                    background-color: #233A95;
+                }
+            }
+
+            &:hover .size {
+                right: 10px;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &:hover .heart {
+                right: 10px;
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
@@ -1630,6 +1720,7 @@ a {
             overflow: hidden;
             cursor: pointer;
             transition: 0.2s;
+            position: relative;
 
             &:hover {
                 overflow: visible;
@@ -1752,6 +1843,70 @@ a {
                     }
                 }
 
+            }
+
+            .size {
+                position: absolute;
+                top: 10px;
+                // right: -100px;
+                right: 7px;
+                opacity: 0;
+                visibility: hidden;
+                box-shadow: 0px 0px 4px 1px grey;
+                border-radius: 100%;
+                background-color: white;
+                padding: 5px;
+                border-radius: 50%;
+                transition: 0.1s;
+
+                &:hover {
+                    background-color: #233A95;
+                }
+
+                &:hover svg {
+                    background-color: #233A95;
+                }
+
+                svg {
+                    background-color: white;
+                    height: 25.3px;
+                    width: 25.3px;
+                    padding: 3px;
+                    transition: 0.1s;
+
+                }
+            }
+
+            .heart {
+                position: absolute;
+                cursor: pointer;
+                top: 60px;
+                // right: -100px;
+                right: 7px;
+                opacity: 0;
+                visibility: hidden;
+                padding: 6px 10px;
+                color: grey;
+                transition: 0.2s;
+                background-color: white;
+                box-shadow: 0px 0px 4px 1px grey;
+                border-radius: 100%;
+
+                &:hover {
+                    background-color: #233A95;
+                }
+            }
+
+            &:hover .size {
+                right: 10px;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &:hover .heart {
+                right: 10px;
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
@@ -2081,6 +2236,70 @@ a {
                     }
                 }
 
+            }
+
+            .size {
+                position: absolute;
+                top: 10px;
+                // right: -100px;
+                right: 7px;
+                opacity: 0;
+                visibility: hidden;
+                box-shadow: 0px 0px 4px 1px grey;
+                border-radius: 100%;
+                background-color: white;
+                padding: 5px;
+                border-radius: 50%;
+                transition: 0.1s;
+
+                &:hover {
+                    background-color: #233A95;
+                }
+
+                &:hover svg {
+                    background-color: #233A95;
+                }
+
+                svg {
+                    background-color: white;
+                    height: 25.3px;
+                    width: 25.3px;
+                    padding: 3px;
+                    transition: 0.1s;
+
+                }
+            }
+
+            .heart {
+                position: absolute;
+                cursor: pointer;
+                top: 60px;
+                // right: -100px;
+                right: 7px;
+                opacity: 0;
+                visibility: hidden;
+                padding: 6px 10px;
+                color: grey;
+                transition: 0.2s;
+                background-color: white;
+                box-shadow: 0px 0px 4px 1px grey;
+                border-radius: 100%;
+
+                &:hover {
+                    background-color: #233A95;
+                }
+            }
+
+            &:hover .size {
+                right: 10px;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &:hover .heart {
+                right: 10px;
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
@@ -2505,4 +2724,3 @@ a {
         }
     }
 }
-
