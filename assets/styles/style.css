@@ -1087,6 +1087,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-bottom: 1px solid #d9d9e9;
 }
 
 #all_content .all .right .bottom .product {
@@ -1111,9 +1112,7 @@
 }
 
 #all_content .all .right .bottom .product .product_card {
-  border-radius: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border: 0.5px solid #d5d5d5;
 }
 
 #all_content .all .right .bottom .product .product_card:hover {
