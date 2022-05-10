@@ -185,16 +185,6 @@ $(document).ready(function () {
 
 //#endregion contact
 
-//#region input range
-
-$(document).ready(function () {
-
-
-});
-
-
-//#endregion input range
-
 //#region sorting
 
 $(document).ready(function () {
@@ -207,7 +197,7 @@ $(document).ready(function () {
     $('#sortdata').toggle();
   })
 
- //qiraga basanda baglansin
+  //qiraga basanda baglansin
 
 });
 

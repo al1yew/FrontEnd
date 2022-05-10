@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    
+
     <section id="modal_location" style="display: none;">
         <div class="col-lg-3-8 location_div">
             <div class="top">
@@ -507,6 +507,39 @@
                     <div class="middle">
 
                         <p>FILTER BY PRICE</p>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="slider-range"></div>
+                            </div>
+                        </div>
+
+                        <div class="row slider-labels pt-3">
+
+                            <div class="col-lg-6">
+                                <strong>Price:</strong>
+                                <span id="slider-range-value1"></span>
+                                <span>-</span>
+                                <span id="slider-range-value2"></span>
+                            </div>
+
+                            <div class="col-lg-2 filterbtn">
+                                <a href="">Filter</a>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form>
+                                    <input type="hidden" name="min-value" value="">
+                                    <input type="hidden" name="max-value" value="">
+                                </form>
+                            </div>
+                        </div>
+
+
+
 
                     </div>
 
@@ -1375,7 +1408,15 @@
     </section>
 
 
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
     <script src="./assets/scripts/jquery.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1383,6 +1424,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./assets/slick/slick/slick.min.js"></script>
     <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/input_range.js"></script>
 
 </body>
 
