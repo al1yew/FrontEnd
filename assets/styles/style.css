@@ -582,6 +582,109 @@
   font-weight: 600;
 }
 
+#whereiam {
+  margin: 20px 0;
+}
+
+#whereiam .all {
+  font-family: Inter;
+}
+
+#whereiam .all .locationss {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#whereiam .all .locationss a {
+  text-decoration: none;
+  color: blue;
+  font-size: 14px;
+}
+
+#whereiam .all .locationss i {
+  font-size: 12px;
+  color: grey;
+  margin: 0px 10px;
+}
+
+#whereiam .all .locationss span {
+  color: grey;
+  font-size: 14px;
+}
+
+#all_content {
+  font-family: Inter;
+}
+
+#all_content .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#all_content .all .left {
+  padding: 15px;
+  color: #71778e;
+}
+
+#all_content .all .left .top .section_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#all_content .all .left .top .section_item input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+}
+
+#all_content .all .left .top .section_item label {
+  width: 90%;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#all_content .all .left .top .section_item span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-size: 14px;
+}
+
 /*#region Icons do not open it is too big press alt z*/
 @font-face {
   font-family: 'klbtheme';
