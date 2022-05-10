@@ -338,7 +338,7 @@
 
                                 .datas {
                                     position: absolute;
-                                    top: 90%;
+                                    top: 120%;
                                     right: 5%;
                                     box-shadow: 0px 3px 5px 1px grey;
                                     background-color: white;
@@ -346,8 +346,8 @@
                                     border-bottom-left-radius: 7px;
                                     border-bottom-right-radius: 7px;
                                     display: flex;
-                                    justify-content: flex-start;
-                                    align-items: flex-start;
+                                    justify-content: center;
+                                    align-items: center;
                                     flex-direction: column;
                                     width: 90%;
 
@@ -355,6 +355,10 @@
                                         display: inline;
                                         margin-bottom: 7px;
                                         transition: 0.3s;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: column;
                                         cursor: pointer;
                                         color: rgb(99, 99, 99);
 
@@ -375,6 +379,215 @@
                         }
                     }
                 }
+            }
+
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                // align-items: ;
+                flex-wrap: wrap;
+
+                .product {
+                    padding: 0;
+                    // height: 47.5vh;
+                    height: 325px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    position: relative;
+        
+                    &:hover {
+                        overflow: visible;
+                        z-index: 121;
+                        // box-shadow: 0px 0px 0.4px 0.4px #666;
+                    }
+        
+                    //hover olanda nth5 child-in visibilitisi ve opacity-si olsun 1, + butun product cardin overflow-su olsun visible, ki ashagidaki cardi atmasin ashaga
+        
+                    &:hover .hovered_btn {
+                        opacity: 1 !important;
+                        z-index: 12;
+                        visibility: 1 !important;
+                    }
+        
+                    .product_card {
+                        // border: 0.5px solid #d9d9e9;
+                        border-radius: 0;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+        
+                        &:hover {
+                            box-shadow: 0px 0px 0.4px 0.4px #666;
+                        }
+        
+                        img {
+                            object-fit: cover;
+                            background-size: cover;
+                            width: 90%;
+                            margin: auto;
+                        }
+        
+                        .korotkiy {
+                            height: 195px;
+                            padding-bottom: 0;
+                            margin-bottom: 18px;
+        
+                            li {
+                                &:last-child {
+                                    display: flex;
+                                    justify-content: end;
+                                    flex-direction: column;
+                                    align-items: flex-end;
+                                    height: 8.5vh;
+                                    margin: 0;
+                                }
+                            }
+                        }
+        
+                        ul {
+                            padding: 5px 15px;
+                            font-family: Dosis;
+        
+                            li {
+                                list-style: none;
+        
+                                &:nth-child(2) {
+                                    font-size: 10px;
+                                    color: #038E42;
+                                    padding: 8px 0px;
+        
+                                    span {
+                                        color: #afafb6;
+                                        font-size: 11px;
+                                        margin-right: 10px;
+                                    }
+                                }
+        
+                                &:nth-child(3) {
+                                    color: yellow;
+                                    font-size: 11px;
+                                    padding-bottom: 8px;
+                                    display: flex;
+                                    align-items: center;
+        
+                                    span {
+                                        font-size: 12px;
+                                        color: #7A7A7A;
+                                        margin-left: 5px;
+                                    }
+                                }
+        
+                                &:nth-child(4) {
+                                    padding-bottom: 15px;
+        
+                                    span {
+                                        font-size: 14px;
+                                        text-decoration: line-through;
+                                        color: #71778E;
+                                        margin-right: 10px;
+        
+                                        &:last-child {
+                                            font-size: 18px;
+                                            text-decoration: none;
+                                            color: red
+                                        }
+                                    }
+                                }
+        
+                                &:nth-child(5) {
+                                    transition: 0.3s;
+                                    opacity: 0;
+                                    visibility: 0;
+        
+                                    button {
+                                        width: 100%;
+                                        outline: none;
+                                        transition: 0.2s;
+                                        border: none;
+                                        padding: 5px 0px;
+                                        border-radius: 20px;
+                                        background-color: yellow;
+        
+                                        &:hover {
+                                            color: white;
+                                            background-color: blue;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+        
+                    }
+        
+                    .size {
+                        position: absolute;
+                        top: 10px;
+                        // right: -100px;
+                        right: 7px;
+                        opacity: 0;
+                        visibility: hidden;
+                        box-shadow: 0px 0px 4px 1px grey;
+                        border-radius: 100%;
+                        background-color: white;
+                        padding: 5px;
+                        border-radius: 50%;
+                        transition: 0.1s;
+        
+                        &:hover {
+                            background-color: #233A95;
+                        }
+        
+                        &:hover svg {
+                            background-color: #233A95;
+                        }
+        
+                        svg {
+                            background-color: white;
+                            height: 25.3px;
+                            width: 25.3px;
+                            padding: 3px;
+                            transition: 0.1s;
+        
+                        }
+                    }
+        
+                    .heart {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 60px;
+                        // right: -100px;
+                        right: 7px;
+                        opacity: 0;
+                        visibility: hidden;
+                        padding: 6px 10px;
+                        color: grey;
+                        transition: 0.2s;
+                        background-color: white;
+                        box-shadow: 0px 0px 4px 1px grey;
+                        border-radius: 100%;
+        
+                        &:hover {
+                            background-color: #233A95;
+                        }
+                    }
+        
+                    &:hover .size {
+                        right: 10px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+        
+                    &:hover .heart {
+                        right: 10px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+
+
+
+
             }
 
         }

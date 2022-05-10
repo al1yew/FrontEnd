@@ -49,11 +49,15 @@ $(document).ready(function () {
 
   var modal = document.getElementById('modal_location');
 
-  window.onclick = function (e) {
+  document.onclick = function (e) {
+
+    console.log(e.target)
+
     if (e.target == modal) {
       modal.style.display = "none";
     }
   }
+
 
   $('#close_location').click(function () {
     $('#modal_location').fadeOut(300);
@@ -191,7 +195,6 @@ $(document).ready(function () {
 
 //#endregion input range
 
-
 //#region sorting
 
 $(document).ready(function () {
@@ -204,14 +207,7 @@ $(document).ready(function () {
     $('#sortdata').toggle();
   })
 
-  var datas = document.getElementById('sortdata');
-
-  window.onclick = function (e) {
-    if (e.target == datas) {
-      datas.style.display = "none";
-    }
-  }
-
+ //qiraga basanda baglansin
 
 });
 
