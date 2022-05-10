@@ -1725,6 +1725,11 @@ a {
     margin-bottom: 40px;
 
     .all {
+        border-bottom: 1px solid #d9d9e9;
+        height: 651px;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #d9d9e9;
+        border-radius: 5px;
 
         .fourth_head {
             padding: 20px 0;
@@ -1740,23 +1745,13 @@ a {
             }
         }
 
-        border-bottom: 1px solid #d9d9e9;
-        // height: 95.15vh;
-        height: 651px;
-        // overflow: hidden;
-        // border-bottom-left-radius: 10px;
-        // border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        // border-bottom: 0.5px solid #d9d9e9;
-
         .first {
             background-image: url(../images/category-banner-1.jpg);
-            // height: 47.5vh;
             height: 325px;
             object-fit: cover;
             background-size: cover;
             vertical-align: middle;
-            border-top-left-radius: 10px;
+            border-top-left-radius: 5px;
             padding: 35px;
 
             p {
@@ -1797,13 +1792,12 @@ a {
         }
 
         .second {
-            // height: 47.5vh;
             height: 325px;
             display: flex;
             justify-content: space-between;
             padding: 35px;
             flex-direction: column;
-            border-bottom-left-radius: 10px;
+            border-bottom-left-radius: 5px;
             border: 0.5px solid #d9d9e9;
 
             .up {
@@ -1851,33 +1845,35 @@ a {
             }
         }
 
-        .cetvertiy {
-            // border-top-right-radius: 10px;
-            transition: 0.2s;
-        }
-
-        .posledniy {
-            // border-bottom-right-radius: 5px;
-            transition: 0.2s;
-        }
-
-        .radiuslutop {
+        .radiuslutop-sag {
             border-top-right-radius: 5px;
+        }
+
+        .radiuslutop-sol {
+            border-top-left-radius: 5px;
+        }
+
+        .radiuslubottom-sag {
+            border-bottom-right-radius: 5px;
+        }
+
+        .radiuslubottom-sol {
+            border-bottom-left-radius: 5px;
         }
 
         .product {
             padding: 0;
-            // height: 47.5vh;
             height: 325px;
             overflow: hidden;
             cursor: pointer;
             transition: 0.2s;
             position: relative;
+            background-color: white;
+
 
             &:hover {
                 overflow: visible;
                 z-index: 121;
-                // box-shadow: 0px 0px 0.4px 0.4px #666;
             }
 
             //hover olanda nth5 child-in visibilitisi ve opacity-si olsun 1, + butun product cardin overflow-su olsun visible, ki ashagidaki cardi atmasin ashaga
@@ -1889,11 +1885,6 @@ a {
             }
 
             .product_card {
-                // border: 0.5px solid #d9d9e9;
-                // border-radius: 0;
-                // border-bottom-left-radius: 5px;
-                // border-bottom-right-radius: 5px;
-                border: 0.5px solid #d5d5d5;
                 background-color: white;
                 border: 0.5px solid #d5d5d5;
 
@@ -1907,6 +1898,7 @@ a {
                     background-size: cover;
                     width: 90%;
                     margin: auto;
+                    vertical-align: middle;
                 }
 
                 .korotkiy {
@@ -2166,22 +2158,18 @@ a {
     .all {
 
         border-bottom: 1px solid #d9d9e9;
-        // height: 95.15vh;
         height: 651px;
-        // overflow: hidden;
-        // border-bottom-left-radius: 10px;
-        // border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        // border-bottom: 0.5px solid #d9d9e9;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #d9d9e9;
+        border-radius: 5px;
 
         .first {
             background-image: url(../images/category-banner-2.jpg);
-            // height: 47.5vh;
             height: 325px;
             object-fit: cover;
             background-size: cover;
             vertical-align: middle;
-            border-top-left-radius: 10px;
+            border-top-left-radius: 5px;
             padding: 35px;
 
             p {
@@ -2221,14 +2209,14 @@ a {
         }
 
         .second {
-            // height: 47.5vh;
+
             height: 325px;
             display: flex;
             justify-content: space-between;
             padding: 35px;
             flex-direction: column;
-            border-bottom-left-radius: 10px;
-            border: 0.5px solid #d9d9e9;
+            border-bottom-left-radius: 5px;
+            border: 0.5px solid #e8e8e8;
 
             .up {
                 display: flex;
@@ -2277,28 +2265,35 @@ a {
 
         }
 
-        .cetvertiy {
-            // border-top-right-radius: 10px;
-            transition: 0.2s;
+        .radiuslutop-sag {
+            border-top-right-radius: 5px;
         }
 
-        .posledniy {
-            // border-bottom-right-radius: 5px;
-            transition: 0.2s;
+        .radiuslutop-sol {
+            border-top-left-radius: 5px;
+        }
+
+        .radiuslubottom-sag {
+            border-bottom-right-radius: 5px;
+        }
+
+        .radiuslubottom-sol {
+            border-bottom-left-radius: 5px;
         }
 
         .product {
             padding: 0;
-            // height: 47.5vh;
             height: 325px;
             overflow: hidden;
             cursor: pointer;
             transition: 0.2s;
+            position: relative;
+            background-color: white;
+
 
             &:hover {
                 overflow: visible;
                 z-index: 121;
-                // box-shadow: 0px 0px 0.4px 0.4px #666;
             }
 
             //hover olanda nth5 child-in visibilitisi ve opacity-si olsun 1, + butun product cardin overflow-su olsun visible, ki ashagidaki cardi atmasin ashaga
@@ -2310,11 +2305,6 @@ a {
             }
 
             .product_card {
-                // border: 0.5px solid #d9d9e9;
-                // border-radius: 0;
-                // border-bottom-left-radius: 5px;
-                // border-bottom-right-radius: 5px;
-                border: 0.5px solid #d5d5d5;
                 background-color: white;
                 border: 0.5px solid #d5d5d5;
 
@@ -2328,6 +2318,7 @@ a {
                     background-size: cover;
                     width: 90%;
                     margin: auto;
+                    vertical-align: middle;
                 }
 
                 .korotkiy {
@@ -2419,7 +2410,6 @@ a {
                         }
                     }
                 }
-
             }
 
             .size {

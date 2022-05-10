@@ -623,6 +623,7 @@
 
 #all_content {
   font-family: Inter;
+  margin-bottom: 120px;
 }
 
 #all_content .all {
@@ -1088,6 +1089,23 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-bottom: 1px solid #d9d9e9;
+  border-radius: 5px;
+}
+
+#all_content .all .right .bottom .radiuslutop-sag {
+  border-top-right-radius: 5px;
+}
+
+#all_content .all .right .bottom .radiuslutop-sol {
+  border-top-left-radius: 5px;
+}
+
+#all_content .all .right .bottom .radiuslubottom-sag {
+  border-bottom-right-radius: 5px;
+}
+
+#all_content .all .right .bottom .radiuslubottom-sol {
+  border-bottom-left-radius: 5px;
 }
 
 #all_content .all .right .bottom .product {
@@ -1115,7 +1133,6 @@
 #all_content .all .right .bottom .product .product_card {
   border: 0.5px solid #d5d5d5;
   background-color: white;
-  border: 0.5px solid #d5d5d5;
 }
 
 #all_content .all .right .bottom .product .product_card:hover {
@@ -1130,6 +1147,7 @@
   background-size: cover;
   width: 90%;
   margin: auto;
+  vertical-align: middle;
 }
 
 #all_content .all .right .bottom .product .product_card .korotkiy {
@@ -3294,7 +3312,10 @@ a {
 #fourth .all {
   border-bottom: 1px solid #d9d9e9;
   height: 651px;
-  border-bottom-left-radius: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #d9d9e9;
+  border-radius: 5px;
 }
 
 #fourth .all .fourth_head {
@@ -3318,7 +3339,7 @@ a {
      object-fit: cover;
   background-size: cover;
   vertical-align: middle;
-  border-top-left-radius: 10px;
+  border-top-left-radius: 5px;
   padding: 35px;
 }
 
@@ -3376,7 +3397,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 5px;
   border: 0.5px solid #d9d9e9;
 }
 
@@ -3438,18 +3459,20 @@ a {
   color: #0a58cA;
 }
 
-#fourth .all .cetvertiy {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-#fourth .all .posledniy {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-#fourth .all .radiuslutop {
+#fourth .all .radiuslutop-sag {
   border-top-right-radius: 5px;
+}
+
+#fourth .all .radiuslutop-sol {
+  border-top-left-radius: 5px;
+}
+
+#fourth .all .radiuslubottom-sag {
+  border-bottom-right-radius: 5px;
+}
+
+#fourth .all .radiuslubottom-sol {
+  border-bottom-left-radius: 5px;
 }
 
 #fourth .all .product {
@@ -3460,6 +3483,7 @@ a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
+  background-color: white;
 }
 
 #fourth .all .product:hover {
@@ -3474,7 +3498,6 @@ a {
 }
 
 #fourth .all .product .product_card {
-  border: 0.5px solid #d5d5d5;
   background-color: white;
   border: 0.5px solid #d5d5d5;
 }
@@ -3491,6 +3514,7 @@ a {
   background-size: cover;
   width: 90%;
   margin: auto;
+  vertical-align: middle;
 }
 
 #fourth .all .product .product_card .korotkiy {
@@ -3775,7 +3799,10 @@ a {
 #sixth .all {
   border-bottom: 1px solid #d9d9e9;
   height: 651px;
-  border-bottom-left-radius: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #d9d9e9;
+  border-radius: 5px;
 }
 
 #sixth .all .first {
@@ -3785,7 +3812,7 @@ a {
      object-fit: cover;
   background-size: cover;
   vertical-align: middle;
-  border-top-left-radius: 10px;
+  border-top-left-radius: 5px;
   padding: 35px;
 }
 
@@ -3843,8 +3870,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom-left-radius: 10px;
-  border: 0.5px solid #d9d9e9;
+  border-bottom-left-radius: 5px;
+  border: 0.5px solid #e8e8e8;
 }
 
 #sixth .all .second .up {
@@ -3905,14 +3932,20 @@ a {
   color: #0a58cA;
 }
 
-#sixth .all .cetvertiy {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+#sixth .all .radiuslutop-sag {
+  border-top-right-radius: 5px;
 }
 
-#sixth .all .posledniy {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+#sixth .all .radiuslutop-sol {
+  border-top-left-radius: 5px;
+}
+
+#sixth .all .radiuslubottom-sag {
+  border-bottom-right-radius: 5px;
+}
+
+#sixth .all .radiuslubottom-sol {
+  border-bottom-left-radius: 5px;
 }
 
 #sixth .all .product {
@@ -3922,6 +3955,8 @@ a {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  position: relative;
+  background-color: white;
 }
 
 #sixth .all .product:hover {
@@ -3936,7 +3971,6 @@ a {
 }
 
 #sixth .all .product .product_card {
-  border: 0.5px solid #d5d5d5;
   background-color: white;
   border: 0.5px solid #d5d5d5;
 }
@@ -3953,6 +3987,7 @@ a {
   background-size: cover;
   width: 90%;
   margin: auto;
+  vertical-align: middle;
 }
 
 #sixth .all .product .product_card .korotkiy {
