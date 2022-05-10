@@ -148,7 +148,6 @@ $(document).ready(function () {
 
 //#endregion login js
 
-//         
 //#region contact
 
 $(document).ready(function () {
@@ -174,10 +173,47 @@ $(document).ready(function () {
     // }
 
     //yashayiiiiiiiishhhhh
-    
+
     $('#inp_n').val().length > 0 && $('#inp_s').val().length > 0 && $('#inp_su').val().length > 0 ? $('#bye').css('display', 'block') : $('#bye').css('display', 'none');
 
   })
 });
 
 //#endregion contact
+
+//#region input range
+
+$(document).ready(function () {
+
+
+});
+
+
+//#endregion input range
+
+
+//#region sorting
+
+$(document).ready(function () {
+
+  $("#sortby").click(function () {
+    $('#sortingdiv').toggle();
+  })
+
+  $("#datasort").click(function () {
+    $('#sortdata').toggle();
+  })
+
+  var datas = document.getElementById('sortdata');
+
+  window.onclick = function (e) {
+    if (e.target == datas) {
+      datas.style.display = "none";
+    }
+  }
+
+
+});
+
+
+//#endregion sorting

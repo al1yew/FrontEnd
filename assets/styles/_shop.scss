@@ -2,10 +2,9 @@
     margin: 20px 0;
 
     .all {
-        font-family: Inter;
+        font-family: Dosis;
 
         .locationss {
-            // margin-top: 20px !important;
             padding: 0;
             display: flex;
             justify-content: flex-start;
@@ -38,13 +37,22 @@
     .all {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
 
         .left {
             padding: 15px;
             color: #71778e;
 
             .top {
+                margin: 20px 0;
+
+                p {
+                    padding: 0;
+                    color: black;
+                    font-family: Dosis;
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+
                 .section_item {
                     display: flex;
                     align-items: center;
@@ -70,6 +78,301 @@
                         align-items: center;
                         color: black;
                         font-size: 14px;
+                    }
+                }
+            }
+
+            .middle {
+
+                p {
+                    padding: 0;
+                    color: black;
+                    font-family: Dosis;
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .middle2 {
+                margin: 20px 0;
+
+                p {
+                    padding: 0;
+                    color: black;
+                    font-family: Dosis;
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+
+                .status_item {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    padding-bottom: 10px;
+
+                    input {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 15px;
+                    }
+
+                    label {
+                        width: 90%;
+                        font-size: 13px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+            }
+
+            .bottom {
+                margin: 20px 0;
+
+                p {
+                    padding: 0;
+                    color: black;
+                    font-family: Dosis;
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+
+                .section_brand {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    padding-bottom: 10px;
+
+                    input {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 15px;
+                    }
+
+                    label {
+                        width: 90%;
+                        font-size: 13px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    span {
+                        display: flex;
+                        margin-right: 20px;
+                        align-items: center;
+                        color: black;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+            .bottom_img {
+                background-image: url(../images/sidebar-banner.gif);
+                background-size: cover;
+                width: 100%;
+                object-fit: cover;
+                // max-width: 100%;
+                height: 370px;
+                vertical-align: middle;
+                padding-right: 20px;
+            }
+
+        }
+
+        .right {
+            padding: 15px;
+
+            .top {
+                margin-top: 25px;
+                object-fit: cover;
+                background-size: cover;
+                // background-image: 100%;
+                // height: 100%;
+                border-radius: 5px;
+                width: 100%;
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+
+                .content {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: black;
+                    transform: translate(-50%, -50%);
+
+                    h4 {
+                        font-family: InterLight;
+                    }
+
+                    h3 {
+                        font-weight: 600;
+
+                        span {
+                            color: green;
+                        }
+                    }
+
+                    p {
+                        font-size: 12px;
+                        color: grey;
+                    }
+                }
+            }
+
+            .middle {
+                background-color: rgb(247, 248, 253);
+                margin: 10px 0;
+                padding: 0px 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 10px;
+                width: 100%;
+
+                .left {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    i {
+                        margin: 0 8px;
+                        cursor: pointer;
+                        color: grey;
+
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+
+                    .first {
+                        width: 100%;
+                        padding-right: 10px;
+                        border-right: 0.5px solid grey;
+
+                        span {
+                            width: 100%;
+                            font-size: 13px;
+                            color: grey;
+                            display: flex;
+                            color: black;
+                            justify-content: center;
+                            align-items: center;
+                            // position: relative;
+                            cursor: pointer;
+
+                            .sortingdiv {
+                                display: none;
+
+                                .sorting {
+                                    position: absolute;
+                                    top: 90%;
+                                    left: 5%;
+                                    box-shadow: 0px 3px 5px 1px grey;
+                                    background-color: white;
+                                    padding: 20px;
+                                    border-bottom-left-radius: 7px;
+                                    border-bottom-right-radius: 7px;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    width: 90%;
+
+                                    span {
+                                        display: inline;
+                                        margin-bottom: 7px;
+                                        transition: 0.3s;
+                                        cursor: pointer;
+                                        color: rgb(99, 99, 99);
+
+                                        &:last-child {
+                                            margin: 0;
+                                        }
+
+                                        &:hover {
+                                            color: blue;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        i {
+                            margin-left: 8px;
+                        }
+                    }
+
+                    .second {
+                        width: 70%;
+                        padding: 10px 0px 10px 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+
+                        span {
+                            width: 100%;
+                            font-size: 13px;
+                            color: grey;
+
+                            display: flex;
+                            color: black;
+                            justify-content: center;
+                            align-items: center;
+                            // position: relative;
+                            cursor: pointer;
+
+                            .sortdata {
+                                display: none;
+
+                                .datas {
+                                    position: absolute;
+                                    top: 90%;
+                                    right: 5%;
+                                    box-shadow: 0px 3px 5px 1px grey;
+                                    background-color: white;
+                                    padding: 20px;
+                                    border-bottom-left-radius: 7px;
+                                    border-bottom-right-radius: 7px;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    width: 90%;
+
+                                    span {
+                                        display: inline;
+                                        margin-bottom: 7px;
+                                        transition: 0.3s;
+                                        cursor: pointer;
+                                        color: rgb(99, 99, 99);
+
+                                        &:last-child {
+                                            margin: 0;
+                                        }
+
+                                        &:hover {
+                                            color: blue;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        i {
+                            margin-left: 8px;
+                        }
                     }
                 }
             }

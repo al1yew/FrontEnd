@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="./assets/slick/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/styles/">
     <title>Bacola – Grocery Market and Food</title>
 </head>
 
@@ -459,6 +460,7 @@
 
                 <div class="left col-lg-3">
                     <div class="top">
+                        <p> PRODUCT CATEGORIES</p>
                         <div class="section_item">
                             <input type="checkbox">
                             <label for="">Beverages</label>
@@ -501,28 +503,151 @@
                             <span>+</span>
                         </div>
                     </div>
-                    
+
                     <div class="middle">
-                        <input type="range" min="0.00" max="10000.00" step="0.01"/>
+
+                        <p>FILTER BY PRICE</p>
+
+                    </div>
+
+                    <div class="middle2">
+
+                        <p>PRODUCT STATUS</p>
+
+                        <div class="status_item">
+                            <input type="checkbox">
+                            <label for="">In Stock</label>
+                        </div>
+
+                        <div class="status_item">
+                            <input type="checkbox">
+                            <label for="">On Sale</label>
+                        </div>
+
+                    </div>
+
+                    <div class="bottom">
+                        <p>BRANDS</p>
+
+                        <div class="section_brand">
+                            <input type="checkbox">
+                            <label for="">Frito Lay</label>
+                            <span>(7)</span>
+                        </div>
+                        <div class="section_brand">
+                            <input type="checkbox">
+                            <label for="">Nespresso</label>
+                            <span>(3)</span>
+                        </div>
+                        <div class="section_brand">
+                            <input type="checkbox">
+                            <label for="">Oreo</label>
+                            <span>(6)</span>
+                        </div>
+                        <div class="section_brand">
+                            <input type="checkbox">
+                            <label for="">Quaker</label>
+                            <span>(8)</span>
+                        </div>
+                        <div class="section_brand">
+                            <input type="checkbox">
+                            <label for="">Welch's</label>
+                            <span>(11)</span>
+                        </div>
+                    </div>
+
+                    <div class="bottom_img">
+
+                    </div>
+
+                </div>
+
+                <div class="right col-lg-9">
+
+                    <div class="top">
+                        <img src="assets/images/bacola-banner-18.jpg" alt="">
+
+                        <div class="content">
+
+                            <h4>
+                                Organic Meals Prepared
+                            </h4>
+
+                            <h3>
+                                Delivered to <span>your Home</span>
+                            </h3>
+
+                            <p>
+                                Fully prepared & delivered nationwide
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="middle">
+
+                        <div class="left col-lg-1">
+                            <i class="klbth-icon-list-grid listkimi"></i>
+                            <i class="klbth-icon-2-grid ikikimi"></i>
+                            <i class="klbth-icon-3-grid uckimi"></i>
+                            <i class="klbth-icon-4-grid dordkimi"></i>
+                        </div>
+
+                        <div class="right col-lg-3-5">
+
+                            <div class="first" id="sortby">
+                                <span>
+                                    Sort By Latest
+                                    <i class="fa-solid fa-angle-down"></i>
+
+                                    <div class="sortingdiv" id="sortingdiv">
+                                        <div class="sorting sorting1" id="sorting">
+                                            <span>Sort By Popularity</span>
+                                            <span>Sort by average range </span>
+                                            <span>Sort by Latest</span>
+                                            <span>Sort By price: Low to High</span>
+                                            <span>Sort By price: High to Low</span>
+                                        </div>
+                                    </div>
+
+                                </span>
+                            </div>
+
+                            <div class="second" id="datasort">
+                                <span>
+                                    Show
+                                    <span>12</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+
+                                    <div class="sortdata" id="sortdata">
+                                        <div class="datas">
+                                            <span>12</span>
+                                            <span>24 </span>
+                                            <span>36</span>
+                                            <span>48</span>
+                                        </div>
+                                    </div>
+
+
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bottom">
+
+                    </div>
+
+                    <div class="nums">
+
                     </div>
                 </div>
-                
+
             </div>
 
-            <div class="right col-lg-9">
-                <div class="top">
 
-                </div>
-                <div class="middle">
-
-                </div>
-                <div class="bottom">
-
-                </div>
-                <div class="nums">
-
-                </div>
-            </div>
         </div>
         </div>
     </section>
@@ -766,6 +891,12 @@
             </div>
         </div>
     </section>
+
+
+    <script type="module">
+        import noUiSlider from 'nouislider/dist/nouislider.mjs';
+    </script>
+
 
     <script src="./assets/scripts/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

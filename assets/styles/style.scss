@@ -12,6 +12,8 @@
 
 @import 'shop';
 
+
+
 /*#region Icons do not open it is too big press alt z*/
 @font-face {
     font-family: 'klbtheme';
@@ -41,6 +43,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.klbth-icon-2-grid:before{content:'\e802';}
+
+.klbth-icon-3-grid:before{content:'\e803';}
+
+.klbth-icon-4-grid:before{content:'\e801';}
+
+.klbth-icon-list-grid:before{content:'\e805';}
 
 .klbth-icon-apple-juice:before {
     content: '\e823';
