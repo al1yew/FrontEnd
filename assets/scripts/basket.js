@@ -24,8 +24,9 @@ for (let btntoadd of addtocartbtn) {
         let prod_cost = this.parentElement.previousElementSibling.children[0].children[1];
         // console.log(prod_cost) prines mne cenu ura
 
-
         
+
+
     })
 
 }
