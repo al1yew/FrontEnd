@@ -51,7 +51,7 @@ $(document).ready(function () {
 
   document.onclick = function (e) {
 
-    console.log(e.target)
+    // console.log(e.target)
 
     if (e.target == modal) {
       modal.style.display = "none";
@@ -204,4 +204,7 @@ $(document).ready(function () {
 
 
 //#endregion sorting
+
+
+
 
