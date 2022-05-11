@@ -282,15 +282,18 @@
                     display: flex;
                     align-items: center;
                     width: 100%;
+                    cursor: pointer;
                     padding-bottom: 10px;
 
                     input {
                         display: flex;
+                        cursor: pointer;
                         align-items: center;
                         margin-right: 15px;
                     }
 
                     label {
+                        cursor: pointer;
                         width: 90%;
                         font-size: 13px;
                         display: flex;
@@ -313,11 +316,13 @@
 
                 .section_brand {
                     display: flex;
+                    cursor: pointer;
                     align-items: center;
                     width: 100%;
                     padding-bottom: 10px;
 
                     input {
+                        cursor: pointer;
                         display: flex;
                         align-items: center;
                         margin-right: 15px;
@@ -325,6 +330,7 @@
 
                     label {
                         width: 90%;
+                        cursor: pointer;
                         font-size: 13px;
                         display: flex;
                         align-items: center;
@@ -333,6 +339,7 @@
                     span {
                         display: flex;
                         margin-right: 20px;
+                        cursor: pointer;
                         align-items: center;
                         color: black;
                         font-size: 14px;
@@ -756,7 +763,7 @@
                         visibility: hidden;
                         padding: 6px 10px;
                         color: grey;
-                        transition: 0.2s;
+                        transition: 0.3s;
                         background-color: white;
                         box-shadow: 0px 0px 4px 1px grey;
                         border-radius: 100%;
@@ -777,6 +784,36 @@
                         opacity: 1;
                         visibility: visible;
                     }
+                }
+            }
+
+            .blue {
+                background-color: blue !important;
+                color: white;
+            }
+
+            .nums {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+
+                span {
+                    padding: 5px 12px;
+                    margin: 0 5px;
+                    background-color: rgb(222, 222, 222);
+                    border-radius: 100%;
+                    transition: 0.2s;
+
+                    &:hover {
+                        background-color: blue;
+                        color: white;
+                    }
+                }
+
+                .arr {
+                    background-color: white;
+                    padding: 5px 8px;
                 }
             }
         }

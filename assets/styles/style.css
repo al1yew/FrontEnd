@@ -889,6 +889,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  cursor: pointer;
   padding-bottom: 10px;
 }
 
@@ -896,6 +897,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -903,6 +905,7 @@
 }
 
 #all_content .all .left .middle2 .status_item label {
+  cursor: pointer;
   width: 90%;
   font-size: 13px;
   display: -webkit-box;
@@ -929,6 +932,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -937,6 +941,7 @@
 }
 
 #all_content .all .left .bottom .section_brand input {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -948,6 +953,7 @@
 
 #all_content .all .left .bottom .section_brand label {
   width: 90%;
+  cursor: pointer;
   font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,6 +968,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-right: 20px;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1465,8 +1472,8 @@
   visibility: hidden;
   padding: 6px 10px;
   color: grey;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: white;
   -webkit-box-shadow: 0px 0px 4px 1px grey;
           box-shadow: 0px 0px 4px 1px grey;
@@ -1487,6 +1494,43 @@
   right: 10px;
   opacity: 1;
   visibility: visible;
+}
+
+#all_content .all .right .blue {
+  background-color: blue !important;
+  color: white;
+}
+
+#all_content .all .right .nums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+#all_content .all .right .nums span {
+  padding: 5px 12px;
+  margin: 0 5px;
+  background-color: #dedede;
+  border-radius: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#all_content .all .right .nums span:hover {
+  background-color: blue;
+  color: white;
+}
+
+#all_content .all .right .nums .arr {
+  background-color: white;
+  padding: 5px 8px;
 }
 
 /*#region Icons do not open it is too big press alt z*/
@@ -3342,8 +3386,8 @@ a {
   visibility: hidden;
   padding: 6px 10px;
   color: grey;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: white;
   -webkit-box-shadow: 0px 0px 4px 1px grey;
           box-shadow: 0px 0px 4px 1px grey;
@@ -4305,8 +4349,8 @@ a {
   visibility: hidden;
   padding: 6px 10px;
   color: grey;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: white;
   -webkit-box-shadow: 0px 0px 4px 1px grey;
           box-shadow: 0px 0px 4px 1px grey;
