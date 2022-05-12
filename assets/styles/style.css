@@ -2193,25 +2193,13 @@
 
 #prodreview .all .review .person_rev .right {
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 #prodreview .all .review .person_rev .right .rating_prod {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 12px;
 }
 
 #prodreview .all .review .person_rev .right .rating_prod i {
@@ -2225,6 +2213,19 @@
 }
 
 #prodreview .all .review .person_rev .right .nameof {
+  margin-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#prodreview .all .review .person_rev .right .nameof span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2244,7 +2245,162 @@
 
 #prodreview .all .review .person_rev .right .nameof span:nth-child(2) {
   font-size: 14px;
+  margin-left: 3px;
   color: #71778E;
+}
+
+#prodreview .all .review .person_rev .right p {
+  font-family: InterLight;
+  font-weight: 600;
+  font-size: 13px;
+  color: black;
+}
+
+#prodreview .all .add_review {
+  padding: 0;
+  font-family: InterLight;
+}
+
+#prodreview .all .add_review h5 {
+  padding-bottom: 15px;
+  font-family: Inter;
+  border-bottom: 0.5px solid #c8c8c8;
+}
+
+#prodreview .all .add_review p {
+  font-size: 13px;
+  color: #202334;
+  margin-bottom: 15px;
+}
+
+#prodreview .all .add_review p:nth-child(1) {
+  margin-top: 15px;
+}
+
+#prodreview .all .add_review .ratingkeeper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#prodreview .all .add_review .ratingkeeper div {
+  padding: 0 10px;
+  cursor: pointer;
+  border-right: 0.1px solid #c8c8c8;
+}
+
+#prodreview .all .add_review .ratingkeeper div:hover i {
+  color: yellow;
+}
+
+#prodreview .all .add_review .ratingkeeper div i {
+  color: #c8c8c8;
+  font-size: 12px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#prodreview .all .add_review .ratingkeeper div:nth-child(1) {
+  border-left: none;
+  padding-left: 0;
+}
+
+#prodreview .all .add_review .ratingkeeper div:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+#prodreview .all .add_review form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#prodreview .all .add_review form .inputkeeper {
+  width: 100%;
+}
+
+#prodreview .all .add_review form .mutleq {
+  display: none;
+  margin: 10px 0;
+  color: red;
+}
+
+#prodreview .all .add_review form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f3f4f7;
+  border: none;
+  outline: none;
+  height: 200px;
+}
+
+#prodreview .all .add_review form label {
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+#prodreview .all .add_review form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f3f4f7;
+  border: none;
+  margin-top: 15px;
+  outline: none;
+}
+
+#prodreview .all .add_review form .inputcheckbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#prodreview .all .add_review form .inputcheckbox #review {
+  width: 1%;
+}
+
+#prodreview .all .add_review form .inputcheckbox label {
+  width: 98%;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#prodreview .all .add_review form button {
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
+  font-weight: 600;
+  background-color: #233a95;
 }
 
 /*#region Icons do not open it is too big press alt z*/
