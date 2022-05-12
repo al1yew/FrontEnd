@@ -113,6 +113,22 @@
     content: '\f16d';
 }
 
+.klbth-icon-pinterest:before {
+    content: '\f231';
+}
+
+.klbth-icon-linkedin:before {
+    content: '\f0e1';
+}
+
+.klbth-icon-reddit:before {
+    content: '\f1a1';
+}
+
+.klbth-icon-whatsapp:before {
+    content: '\f232';
+}
+
 
 .klbth-icon-milk-box:before {
     content: '\e8a8';
@@ -544,14 +560,14 @@ a {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    
-                    .userikon{
+
+                    .userikon {
                         color: black;
                     }
 
                     .bag {
                         position: relative;
-                        
+
                         .money {
                             font-family: Dosis;
                             font-weight: 600;

@@ -56,13 +56,13 @@
 
             .head_prod {
                 display: flex;
-                justify-content: flex-start;
+                // justify-content: flex-start;
                 align-items: center;
 
                 .brands_name {
                     font-family: InterLight;
                     padding-right: 10px;
-                    border-right: 0.5px solid rgb(196, 196, 196);
+                    border-right: 1px solid rgb(196, 196, 196);
 
                     span {
                         font-size: 12px;
@@ -73,14 +73,13 @@
 
                         &:last-child {
                             color: black;
-                            font-size: 12.5px;
                         }
                     }
                 }
 
                 .rating_prod {
                     padding: 0 10px;
-                    border-right: 0.5px solid rgb(196, 196, 196);
+                    border-right: 1px solid rgb(196, 196, 196);
 
                     i {
                         color: yellow;
@@ -99,10 +98,14 @@
                 }
 
                 .num_prod {
-                    padding-left: 10px;
+                    padding: 0 10px;
                     font-family: InterLight;
                     font-weight: 500;
                     font-size: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 4px;
 
                     span {
                         &:first-child {
@@ -122,7 +125,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
 
             .left {
                 position: relative;
@@ -164,10 +166,13 @@
 
                 li {
                     list-style: none;
-                    padding-bottom: 10px;
+                    padding-bottom: 15px;
                 }
 
                 ul {
+                    margin: 0;
+                    padding: 0;
+
                     li {
                         &:nth-child(1) {
                             font-family: DosisLight;
@@ -196,13 +201,185 @@
                         &:nth-child(2) {
                             span {
                                 background-color: rgb(229, 248, 237);
-                                color: green;
+                                color: rgb(0, 190, 168);
                                 padding: 5px 7px;
                                 border-radius: 15px;
                                 font-family: Dosis;
-                                font-size: 11px;
+                                font-size: 12.5px;
                             }
                         }
+
+                        &:nth-child(3) {
+                            p {
+                                font-size: 13px;
+                                color: black;
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .counter {}
+
+                            button {
+                                padding: 10px 40px;
+                                border-radius: 20px;
+                                background-color: rgb(35, 58, 149);
+                                transition: 0.3s;
+                                color: white;
+                                font-size: 13px;
+                                border: none;
+                                font-weight: 600;
+                                outline: none;
+
+                                &:hover {
+                                    background-color: rgb(61, 81, 161);
+                                }
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+
+                            span {
+                                text-decoration: none;
+                                padding: 8px 10px;
+                                border: 0.5px solid rgb(189, 189, 189);
+                                color: grey;
+                                border-radius: 25px;
+                                margin-right: 20px;
+                                display: flex;
+                                justify-content: center;
+                                cursor: pointer;
+                                font-size: 11px;
+                                align-items: center;
+
+                                i {
+                                    margin-right: 10px;
+                                    color: grey;
+                                }
+
+                                &:last-child {
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        &:nth-child(6) {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            padding-bottom: 20px;
+                            border-bottom: 0.5px solid rgb(196, 196, 196);
+
+                            span {
+                                margin-bottom: 10px;
+                                font-size: 12px;
+
+                                i {
+                                    color: green;
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+
+                        &:nth-child(7) {
+                            padding-top: 15px;
+
+                            p {
+                                font-family: InterLight;
+                                font-weight: 500;
+                                font-size: 12px;
+                                color: #959595;
+
+                                a {
+                                    text-decoration: none;
+                                    transition: 0.2s;
+                                    color: rgb(72, 72, 72);
+
+                                    &:hover {
+                                        color: blue;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .social_media_prod {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-top: 20px;
+
+                    i {
+                        padding: 7px 9px;
+                        border-radius: 100%;
+                        margin: 0px 4px;
+                        color: white;
+                        margin-left: 0;
+                        transition: 0.3s;
+                        cursor: pointer;
+
+                        &:hover::before {
+                            filter: brightness(0.7);
+                        }
+                    }
+
+                    .klbth-icon-facebook {
+                        background-color: rgb(59, 89, 152);
+                    }
+
+                    .klbth-icon-twitter {
+                        background-color: rgb(29, 161, 242);
+                    }
+
+                    .klbth-icon-pinterest {
+                        background-color: rgb(230, 0, 35);
+                    }
+
+                    .klbth-icon-linkedin {
+                        background-color: rgb(0, 119, 181);
+                    }
+
+                    .klbth-icon-reddit {
+                        background-color: rgb(255, 69, 0);
+                    }
+
+                    .klbth-icon-whatsapp {
+                        background-color: rgb(37, 211, 102);
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                font-family: InterLight;
+                flex-direction: column;
+
+                .covidinfo {
+                    font-size: 13px;
+                    background-color: #ffeef2;
+                    margin-bottom: 15px;
+                    color: #be123c;
+                    padding: 10px 20px;
+                }
+
+                .desc {
+                    flex-direction: column;
+                    display: flex;
+
+                    p {
+                        i::before {
+                            font-size: 12px;
+                        }//tut nado dokoncit
                     }
                 }
             }
