@@ -1662,8 +1662,14 @@
   font-size: 14px;
 }
 
+.body_product {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
 #productinfo {
   background-color: #f4f4f4;
+  margin-bottom: 40px;
 }
 
 #productinfo .all {
@@ -1673,6 +1679,7 @@
 }
 
 #productinfo .all .top {
+  padding: 0;
   font-family: Inter;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1777,9 +1784,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0;
 }
 
 #productinfo .all .bottom .left {
@@ -2055,11 +2060,13 @@
 }
 
 #productinfo .all .bottom .right .covidinfo {
-  font-size: 13px;
+  font-size: 12px;
   background-color: #ffeef2;
   margin-bottom: 15px;
   color: #be123c;
   padding: 10px 20px;
+  text-align: center;
+  border-radius: 7px;
 }
 
 #productinfo .all .bottom .right .desc {
@@ -2070,10 +2077,174 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 25px;
+  background-color: #f7f8fd;
+  border-radius: 7px;
 }
 
-#productinfo .all .bottom .right .desc p i::before {
+#productinfo .all .bottom .right .desc div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+#productinfo .all .bottom .right .desc div p {
   font-size: 12px;
+  color: black;
+  font-weight: 500;
+}
+
+#productinfo .all .bottom .right .desc div i {
+  font-size: 18px;
+  color: black;
+  margin-right: 20px;
+}
+
+#productinfo .all .bottom .right .desc div:last-child {
+  margin-bottom: 0;
+}
+
+#prodreview .all {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#prodreview .all .tabmenu {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid #d8d8d8;
+}
+
+#prodreview .all .tabmenu .tabclick {
+  font-size: 16px;
+  padding: 0 20px;
+  cursor: pointer;
+  padding-top: 0;
+  color: #c8c8c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-family: DosisLight;
+  font-weight: 600;
+}
+
+#prodreview .all .tabmenu .tabclick:first-child {
+  padding: 0;
+  padding-right: 20px;
+}
+
+#prodreview .all .review {
+  padding: 20px 0;
+}
+
+#prodreview .all .review .review_head_p {
+  font-family: DosisLight;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+#prodreview .all .review .person_rev {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#prodreview .all .review .person_rev .left {
+  width: 7%;
+}
+
+#prodreview .all .review .person_rev .left img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+#prodreview .all .review .person_rev .right {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#prodreview .all .review .person_rev .right .rating_prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#prodreview .all .review .person_rev .right .rating_prod i {
+  color: yellow;
+  font-size: 12px;
+  margin: 0 2px;
+}
+
+#prodreview .all .review .person_rev .right .rating_prod .greyy {
+  color: grey;
+}
+
+#prodreview .all .review .person_rev .right .nameof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#prodreview .all .review .person_rev .right .nameof span:nth-child(1) {
+  font-size: 15px;
+  color: black;
+  font-family: Dosis;
+}
+
+#prodreview .all .review .person_rev .right .nameof span:nth-child(2) {
+  font-size: 14px;
+  color: #71778E;
 }
 
 /*#region Icons do not open it is too big press alt z*/
