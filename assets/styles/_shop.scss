@@ -691,6 +691,15 @@
                                     padding-bottom: 15px;
 
                                     span {
+
+                                        &:nth-child(2) {
+                                            padding: 0;
+                                            margin: 0;
+                                            font-size: 18px;
+                                            text-decoration: none;
+                                            color: red
+                                        }
+
                                         font-size: 14px;
                                         text-decoration: line-through;
                                         color: #71778E;

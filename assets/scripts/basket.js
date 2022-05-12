@@ -23,7 +23,7 @@ for (let btntoadd of addtocartbtn) {
 
         let prod_name = this.parentElement.parentElement.children[0].innerHTML
 
-        let prod_cost = this.parentElement.previousElementSibling.children[0].children[1];
+        let prod_cost = this.parentElement.previousElementSibling.children[0].children[2];
         //butun melumatlari goturdum
 
         // amma diyesen hec lazim olmadi // let prod_count = 1; //bunu mecbur verdik cunki objectin icindeki Count-a not defined deyir, onu burda yaradirig ve 1 veririk ki, produktu elave edende onsuzda 1 den bashlayir
@@ -60,23 +60,7 @@ for (let btntoadd of addtocartbtn) {
 
 
 
-//#region shopping cartin ustundeki span
 
-//isteyirem ki shop cartin ustundeki span regemi deyishsin, ozumuzden funksiya yazirig ve ozumuz cagiririg ki melumati ozu otursun, ve her deyishiklikden sonra bunu cagiriram ki yoxlasin, mehsul eynididse spani artirmasin
-
-
-function CountBasketLength() {
-    let shopcart = JSON.parse(localStorage.getItem('shopcart'));
-    let cartcount = shopcart.length;
-    document.querySelector('#cartcount').innerHTML = cartcount;
-
-}
-
-CountBasketLength();
-
-//cagiriram mutleq metodu cunki ozu ozune ishlemir, ve butun etodlarda cagiracam onu ki reload-suz ishlesin
-
-//#endregion shopping cartin ustundeki span
 
 
 
@@ -87,9 +71,9 @@ let shopcart = JSON.parse(localStorage.getItem('shopcart'));
 //basketimizi cagirdig, parse eledik
 
 if (shopcart.length === 0) {
-    //nado udalit tot divk otoriy ya sozdam v cert html, esli basket ne soderjit nikakix tovarov. ya emu inline dam d-none, i poka basket length raven 0, on budet u mena display none, a kak tolko basket length budet ne 0, on classlist remove sdelayet d-none
+    //nado udalit tot div kotoriy ya sozdam v cart html, esli basket ne soderjit nikakix tovarov. ya emu inline dam d-none, i poka basket length raven 0, on budet u mena display none, a kak tolko basket length budet ne 0, on classlist remove sdelayet d-none
 }
-else{
+else {
     //nado add classslist sdelat d-none
     //takje tut nado sozdat ogromniy designed div, v kotoriy kak v to do list v kotoriy budut dobavlatsa vse nashi tovari. dla etogo mi nash basket zasunem v for, i dla kajdogo elementa budem sozdavat div, i vnutr p, span, h6 zad, budem delat set hemin let basket_item naprimer of basket-in . name, .price, .count itd eto krc rekord nomer 2 pod konec posle 38 minuti
     //console logom proveru prineset li on mne kak list moi tovari v console

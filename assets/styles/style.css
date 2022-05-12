@@ -1409,6 +1409,14 @@
   margin-right: 10px;
 }
 
+#all_content .all .right .bottom .product .product_card ul li:nth-child(4) span:nth-child(2) {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: red;
+}
+
 #all_content .all .right .bottom .product .product_card ul li:nth-child(4) span:last-child {
   font-size: 18px;
   text-decoration: none;
@@ -3289,11 +3297,18 @@ a {
   color: yellow;
   font-size: 11px;
   padding-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #second .bottom .slider_card ul li:nth-child(3) span {
   font-size: 12px;
   color: #7A7A7A;
+  margin-left: 5px;
 }
 
 #second .bottom .slider_card ul li:nth-child(4) {
@@ -3305,6 +3320,14 @@ a {
   text-decoration: line-through;
   color: #71778E;
   margin-right: 10px;
+}
+
+#second .bottom .slider_card ul li:nth-child(4) span:nth-child(2) {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: red;
 }
 
 #second .bottom .slider_card ul li:nth-child(4) span:last-child {
@@ -3814,6 +3837,14 @@ a {
   margin-right: 10px;
 }
 
+#fourth .all .product .product_card ul li:nth-child(4) span:nth-child(2) {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: red;
+}
+
 #fourth .all .product .product_card ul li:nth-child(4) span:last-child {
   font-size: 18px;
   text-decoration: none;
@@ -4285,6 +4316,14 @@ a {
   text-decoration: line-through;
   color: #71778E;
   margin-right: 10px;
+}
+
+#sixth .all .product .product_card ul li:nth-child(4) span:nth-child(2) {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: red;
 }
 
 #sixth .all .product .product_card ul li:nth-child(4) span:last-child {
@@ -4949,224 +4988,5 @@ a {
 
 #twelfth .all .last img {
   cursor: pointer;
-}
-
-.product {
-  padding: 0;
-  height: 325px;
-  overflow: hidden;
-  cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  position: relative;
-  background-color: white;
-}
-
-.product:hover {
-  overflow: visible;
-  z-index: 121;
-}
-
-.product:hover .hovered_btn {
-  opacity: 1 !important;
-  z-index: 12;
-  visibility: 1 !important;
-}
-
-.product .product_card {
-  background-color: white;
-  border: 0.5px solid #d5d5d5;
-}
-
-.product .product_card:hover {
-  -webkit-box-shadow: 0px 0px 0.4px 0.4px #666;
-          box-shadow: 0px 0px 0.4px 0.4px #666;
-  border-radius: 5px;
-}
-
-.product .product_card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: cover;
-  width: 90%;
-  margin: auto;
-  vertical-align: middle;
-}
-
-.product .product_card .korotkiy {
-  height: 195px;
-  padding-bottom: 0;
-  margin-bottom: 18px;
-}
-
-.product .product_card .korotkiy li:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 8.5vh;
-  margin: 0;
-}
-
-.product .product_card ul {
-  padding: 5px 15px;
-  font-family: Dosis;
-}
-
-.product .product_card ul li {
-  list-style: none;
-}
-
-.product .product_card ul li:nth-child(2) {
-  font-size: 10px;
-  color: #038E42;
-  padding: 8px 0px;
-}
-
-.product .product_card ul li:nth-child(2) span {
-  color: #afafb6;
-  font-size: 11px;
-  margin-right: 10px;
-}
-
-.product .product_card ul li:nth-child(3) {
-  color: yellow;
-  font-size: 11px;
-  padding-bottom: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.product .product_card ul li:nth-child(3) span {
-  font-size: 12px;
-  color: #7A7A7A;
-  margin-left: 5px;
-}
-
-.product .product_card ul li:nth-child(4) {
-  padding-bottom: 15px;
-}
-
-.product .product_card ul li:nth-child(4) span {
-  font-size: 14px;
-  text-decoration: line-through;
-  color: #71778E;
-  margin-right: 10px;
-}
-
-.product .product_card ul li:nth-child(4) span:first-child {
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  text-decoration: none;
-  color: red;
-}
-
-.product .product_card ul li:nth-child(4) span:last-child {
-  font-size: 18px;
-  text-decoration: none;
-  color: red;
-}
-
-.product .product_card ul li:nth-child(5) {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  opacity: 0;
-  visibility: 0;
-}
-
-.product .product_card ul li:nth-child(5) button {
-  width: 100%;
-  outline: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  border: none;
-  padding: 5px 0px;
-  border-radius: 20px;
-  background-color: yellow;
-}
-
-.product .product_card ul li:nth-child(5) button:hover {
-  color: white;
-  background-color: blue;
-}
-
-.product .size {
-  position: absolute;
-  top: 10px;
-  right: 7px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-box-shadow: 0px 0px 4px 1px grey;
-          box-shadow: 0px 0px 4px 1px grey;
-  border-radius: 100%;
-  background-color: white;
-  padding: 5px;
-  border-radius: 50%;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-.product .size:hover {
-  background-color: #233A95;
-}
-
-.product .size:hover svg {
-  background-color: #233A95;
-}
-
-.product .size svg {
-  background-color: white;
-  height: 25.3px;
-  width: 25.3px;
-  padding: 3px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-.product .heart {
-  position: absolute;
-  cursor: pointer;
-  top: 60px;
-  right: 7px;
-  opacity: 0;
-  visibility: hidden;
-  padding: 6px 10px;
-  color: grey;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 4px 1px grey;
-          box-shadow: 0px 0px 4px 1px grey;
-  border-radius: 100%;
-}
-
-.product .heart:hover {
-  background-color: #233A95;
-}
-
-.product:hover .size {
-  right: 10px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.product:hover .heart {
-  right: 10px;
-  opacity: 1;
-  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */

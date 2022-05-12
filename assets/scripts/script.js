@@ -205,6 +205,22 @@ $(document).ready(function () {
 
 //#endregion sorting
 
+//#region shopping cartin ustundeki span
+
+//isteyirem ki shop cartin ustundeki span regemi deyishsin, ozumuzden funksiya yazirig ve ozumuz cagiririg ki melumati ozu otursun, ve her deyishiklikden sonra bunu cagiriram ki yoxlasin, mehsul eynididse spani artirmasin
+
+
+function CountBasketLength() {
+  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+  let cartcount = shopcart.length;
+  document.querySelector('#cartcount').innerHTML = cartcount;
+}
+
+CountBasketLength();
+
+//cagiriram mutleq metodu cunki ozu ozune ishlemir, ve butun etodlarda cagiracam onu ki reload-suz ishlesin
+
+//#endregion shopping cartin ustundeki span
 
 
 
