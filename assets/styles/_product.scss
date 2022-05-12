@@ -37,6 +37,175 @@
     .all {
         background-color: white;
         border-radius: 10px;
+        padding: 30px;
 
+        .top {
+            font-family: Inter;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            p {
+                margin: 0;
+                padding: 0;
+                font-size: 24px;
+                font-weight: 500;
+                padding-bottom: 15px;
+            }
+
+            .head_prod {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .brands_name {
+                    font-family: InterLight;
+                    padding-right: 10px;
+                    border-right: 0.5px solid rgb(196, 196, 196);
+
+                    span {
+                        font-size: 12px;
+
+                        &:first-child {
+                            color: #9b9bb4;
+                        }
+
+                        &:last-child {
+                            color: black;
+                            font-size: 12.5px;
+                        }
+                    }
+                }
+
+                .rating_prod {
+                    padding: 0 10px;
+                    border-right: 0.5px solid rgb(196, 196, 196);
+
+                    i {
+                        color: yellow;
+                        font-size: 12px;
+                    }
+
+                    .greyy {
+                        color: rgb(196, 196, 196);
+                    }
+
+                    span {
+                        font-size: 12px;
+                        font-family: InterLight;
+                        font-weight: 500;
+                    }
+                }
+
+                .num_prod {
+                    padding-left: 10px;
+                    font-family: InterLight;
+                    font-weight: 500;
+                    font-size: 12px;
+
+                    span {
+                        &:first-child {
+                            color: #9b9bb4;
+                        }
+
+                        &:last-child {
+                            color: black;
+                            font-size: 12.5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .left {
+                position: relative;
+                cursor: pointer;
+
+                .percentofproduct {
+                    position: absolute;
+                    top: 5%;
+                    font-family: Dosis;
+                    left: 5%;
+                    padding: 4px 10px;
+                    color: white;
+                    font-size: 13px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    background-color: rgb(43, 190, 249);
+                }
+
+                .playvideo {
+                    padding: 10px 16px;
+                    color: black;
+                    transition: 0.3s;
+                    position: absolute;
+                    bottom: 5%;
+                    cursor: pointer;
+                    left: 5%;
+                    background-color: white;
+                    border-radius: 100%;
+                    box-shadow: 0px 0px 3px 1px grey;
+
+                    &:hover {
+                        background-color: grey;
+                    }
+                }
+            }
+
+            .middle {
+                font-family: InterLight;
+
+                li {
+                    list-style: none;
+                    padding-bottom: 10px;
+                }
+
+                ul {
+                    li {
+                        &:nth-child(1) {
+                            font-family: DosisLight;
+                            font-weight: 700;
+
+                            span {
+                                &:nth-child(1) {
+                                    text-decoration: line-through;
+                                    color: #c2c2d3;
+                                    font-size: 19px;
+                                }
+
+                                &:nth-child(2) {
+                                    color: red;
+                                    font-size: 22px;
+                                    padding-left: 10px;
+                                }
+
+                                &:nth-child(3) {
+                                    color: red;
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            span {
+                                background-color: rgb(229, 248, 237);
+                                color: green;
+                                padding: 5px 7px;
+                                border-radius: 15px;
+                                font-family: Dosis;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

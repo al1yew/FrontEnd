@@ -1669,6 +1669,188 @@
 #productinfo .all {
   background-color: white;
   border-radius: 10px;
+  padding: 30px;
+}
+
+#productinfo .all .top {
+  font-family: Inter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#productinfo .all .top p {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#productinfo .all .top .head_prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#productinfo .all .top .head_prod .brands_name {
+  font-family: InterLight;
+  padding-right: 10px;
+  border-right: 0.5px solid #c4c4c4;
+}
+
+#productinfo .all .top .head_prod .brands_name span {
+  font-size: 12px;
+}
+
+#productinfo .all .top .head_prod .brands_name span:first-child {
+  color: #9b9bb4;
+}
+
+#productinfo .all .top .head_prod .brands_name span:last-child {
+  color: black;
+  font-size: 12.5px;
+}
+
+#productinfo .all .top .head_prod .rating_prod {
+  padding: 0 10px;
+  border-right: 0.5px solid #c4c4c4;
+}
+
+#productinfo .all .top .head_prod .rating_prod i {
+  color: yellow;
+  font-size: 12px;
+}
+
+#productinfo .all .top .head_prod .rating_prod .greyy {
+  color: #c4c4c4;
+}
+
+#productinfo .all .top .head_prod .rating_prod span {
+  font-size: 12px;
+  font-family: InterLight;
+  font-weight: 500;
+}
+
+#productinfo .all .top .head_prod .num_prod {
+  padding-left: 10px;
+  font-family: InterLight;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#productinfo .all .top .head_prod .num_prod span:first-child {
+  color: #9b9bb4;
+}
+
+#productinfo .all .top .head_prod .num_prod span:last-child {
+  color: black;
+  font-size: 12.5px;
+}
+
+#productinfo .all .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#productinfo .all .bottom .left {
+  position: relative;
+  cursor: pointer;
+}
+
+#productinfo .all .bottom .left .percentofproduct {
+  position: absolute;
+  top: 5%;
+  font-family: Dosis;
+  left: 5%;
+  padding: 4px 10px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #2bbef9;
+}
+
+#productinfo .all .bottom .left .playvideo {
+  padding: 10px 16px;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 5%;
+  cursor: pointer;
+  left: 5%;
+  background-color: white;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 3px 1px grey;
+          box-shadow: 0px 0px 3px 1px grey;
+}
+
+#productinfo .all .bottom .left .playvideo:hover {
+  background-color: grey;
+}
+
+#productinfo .all .bottom .middle {
+  font-family: InterLight;
+}
+
+#productinfo .all .bottom .middle li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(1) {
+  font-family: DosisLight;
+  font-weight: 700;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(1) span:nth-child(1) {
+  text-decoration: line-through;
+  color: #c2c2d3;
+  font-size: 19px;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(1) span:nth-child(2) {
+  color: red;
+  font-size: 22px;
+  padding-left: 10px;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(1) span:nth-child(3) {
+  color: red;
+  font-size: 22px;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(2) span {
+  background-color: #e5f8ed;
+  color: green;
+  padding: 5px 7px;
+  border-radius: 15px;
+  font-family: Dosis;
+  font-size: 11px;
 }
 
 /*#region Icons do not open it is too big press alt z*/
