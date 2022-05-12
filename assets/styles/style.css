@@ -1550,6 +1550,127 @@
   padding: 5px 8px;
 }
 
+#contentbasket {
+  height: 85vh;
+}
+
+#contentbasket .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contentbasket .all .bag_div_big {
+  background-color: white;
+  padding: 20px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contentbasket .all .bag_div_big .image {
+  margin: 10px auto;
+  width: 170px;
+  height: 170px;
+  background-color: #e9ecef;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#contentbasket .all .bag_div_big .image svg {
+  width: 90px;
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 90px;
+}
+
+#contentbasket .all .bag_div_big .firstp {
+  text-align: center;
+  color: red;
+  padding-bottom: 45px;
+  font-family: Dosis;
+  font-size: 18px;
+}
+
+#contentbasket .all .bag_div_big .gotoshop {
+  padding: 15px 30px;
+  border-radius: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+}
+
+#contentbasket .all .bag_div_big .gotoshop:hover {
+  background-color: darkblue;
+}
+
+#locationinpages {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+}
+
+#locationinpages .all {
+  font-family: Dosis;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#locationinpages .all .alllocations a {
+  text-decoration: none;
+  color: blue;
+  font-size: 14px;
+}
+
+#locationinpages .all .alllocations i {
+  font-size: 12px;
+  color: grey;
+  margin: 0px 10px;
+}
+
+#locationinpages .all .alllocations span {
+  color: grey;
+  font-size: 14px;
+}
+
+#productinfo {
+  background-color: #f4f4f4;
+}
+
+#productinfo .all {
+  background-color: white;
+  border-radius: 10px;
+}
+
 /*#region Icons do not open it is too big press alt z*/
 @font-face {
   font-family: 'klbtheme';
