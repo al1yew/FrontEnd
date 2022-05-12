@@ -223,16 +223,28 @@ CountBasketLength();
 //#endregion shopping cartin ustundeki span
 
 
-
 //#region product html contact
 
 $(document).ready(function () {
 
-  let 
+  let prod_inputs = document.querySelectorAll('.inputfield1');
 
+  $('#send_message_product').click(function () {
+    console.log('dsdasda')
+    for (let inp1 of prod_inputs) {
+      if (inp1.value.length < 1) {
+        inp1.nextElementSibling.style.display = 'block';
+      }
+      else {
+        inp1.nextElementSibling.style.display = 'none';
+      }
+    }
 
+  });
 
 });
 
 
 //#endregion product html contact
+
+

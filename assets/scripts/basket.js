@@ -19,7 +19,7 @@ for (let btntoadd of addtocartbtn) {
         let shopcart = JSON.parse(localStorage.getItem('shopcart'));
 
         let prod_id = this.parentElement.parentElement.parentElement.parentElement.id
-        console.log(prod_id)
+        // console.log(prod_id)
         let prod_img_src = this.parentElement.parentElement.parentElement.children[0].src;
 
         let prod_name = this.parentElement.parentElement.children[0].innerHTML

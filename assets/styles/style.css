@@ -2315,7 +2315,7 @@
   padding-right: 0;
 }
 
-#prodreview .all .add_review form {
+#prodreview .all .add_review .formkeeper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2332,17 +2332,17 @@
           align-items: flex-start;
 }
 
-#prodreview .all .add_review form .inputkeeper {
+#prodreview .all .add_review .formkeeper .inputkeeper {
   width: 100%;
 }
 
-#prodreview .all .add_review form .mutleq {
+#prodreview .all .add_review .formkeeper .mutleq {
   display: none;
   margin: 10px 0;
   color: red;
 }
 
-#prodreview .all .add_review form textarea {
+#prodreview .all .add_review .formkeeper textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
@@ -2352,12 +2352,12 @@
   height: 200px;
 }
 
-#prodreview .all .add_review form label {
+#prodreview .all .add_review .formkeeper label {
   font-size: 13px;
   margin-top: 15px;
 }
 
-#prodreview .all .add_review form input {
+#prodreview .all .add_review .formkeeper input {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
@@ -2367,7 +2367,7 @@
   outline: none;
 }
 
-#prodreview .all .add_review form .inputcheckbox {
+#prodreview .all .add_review .formkeeper .inputcheckbox {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2380,18 +2380,18 @@
           align-items: center;
 }
 
-#prodreview .all .add_review form .inputcheckbox #review {
+#prodreview .all .add_review .formkeeper .inputcheckbox #review {
   width: 1%;
 }
 
-#prodreview .all .add_review form .inputcheckbox label {
+#prodreview .all .add_review .formkeeper .inputcheckbox label {
   width: 98%;
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
 }
 
-#prodreview .all .add_review form button {
+#prodreview .all .add_review .formkeeper button {
   border: none;
   outline: none;
   padding: 10px 25px;
