@@ -2153,6 +2153,10 @@ a {
           align-items: center;
 }
 
+#header .bottom .all .bottom_top .money_user .userikon {
+  color: black;
+}
+
 #header .bottom .all .bottom_top .money_user .bag {
   position: relative;
 }
@@ -2163,6 +2167,7 @@ a {
   font-size: 1.25rem;
   padding: 0 20px;
   cursor: pointer;
+  color: black;
 }
 
 #header .bottom .all .bottom_top .money_user .bag .bag_icon {

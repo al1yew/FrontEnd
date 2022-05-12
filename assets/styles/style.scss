@@ -12,6 +12,9 @@
 
 @import 'shop';
 
+@import 'basket';
+
+
 /*#region Icons do not open it is too big press alt z*/
 @font-face {
     font-family: 'klbtheme';
@@ -540,16 +543,21 @@ a {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    
+                    .userikon{
+                        color: black;
+                    }
 
                     .bag {
                         position: relative;
-
+                        
                         .money {
                             font-family: Dosis;
                             font-weight: 600;
                             font-size: 1.25rem;
                             padding: 0 20px;
                             cursor: pointer;
+                            color: black;
                         }
 
                         .bag_icon {
@@ -1485,8 +1493,6 @@ a {
                         color: #038E42;
                         padding: 8px 0px;
                     }
-
-
 
                     &:nth-child(3) {
                         color: yellow;
