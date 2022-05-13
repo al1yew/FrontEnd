@@ -222,7 +222,6 @@ CountBasketLength();
 
 //#endregion shopping cartin ustundeki span
 
-
 //#region product html contact
 
 $(document).ready(function () {
@@ -247,4 +246,15 @@ $(document).ready(function () {
 
 //#endregion product html contact
 
+//#region tabmenu toggle
 
+let tabclicks = document.querySelectorAll('.tabclick');
+
+for (let tab of tabclicks) {
+  tab.onclick = function () {
+    
+  }
+}
+
+
+//#endregion tabmenu toggle
