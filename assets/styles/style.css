@@ -3592,17 +3592,47 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0;
+  border-bottom: 0.5px solid #dee2e6;
 }
 
-#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_bottom .subtotal_bag_div span {
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_bottom .subtotal_bag_div .subsub {
   color: grey;
   font-size: 14.5px;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_bottom .subtotal_bag_div .dollar1 span {
+  font-size: 18px !important;
+  color: red;
+  font-family: Dosis;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_bottom button {
+  margin: 10px 0;
+  width: 100%;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0;
+  background-color: #ed174a;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_bottom .secondp_ {
+  font-size: 11px;
+  color: grey;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 16px;
+  padding-top: 10px;
+  border-top: 0.5px solid #dee2e6;
 }
 
 #header .bottom .all .bottom_top .money_user .bag:hover .bag_div {

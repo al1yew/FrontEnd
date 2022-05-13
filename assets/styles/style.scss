@@ -714,18 +714,50 @@ a {
 
                                     .subtotal_bag_div {
                                         display: flex;
+                                        width: 100%;
                                         justify-content: space-between;
                                         align-items: center;
-                                        
-                                        span {
+                                        padding: 10px 0;
+                                        border-bottom: 0.5px solid #dee2e6;
+
+                                        .subsub {
                                             color: grey;
                                             font-size: 14.5px;
-
                                         }
+
+                                        .dollar1 {
+
+                                            span {
+                                                font-size: 18px !important;
+                                                color: red;
+                                                font-family: Dosis;
+                                            }
+                                        }
+                                    }
+
+                                    button {
+                                        margin: 10px 0;
+                                        width: 100%;
+                                        color: white;
+                                        outline: none;
+                                        border: none;
+                                        border-radius: 5px;
+                                        padding: 15px 0;
+                                        background-color: rgb(237, 23, 74);
+                                    }
+
+                                    .secondp_ {
+                                        font-size: 11px;
+                                        color: grey;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                        padding: 0 16px;
+                                        padding-top: 10px;
+                                        border-top: 0.5px solid #dee2e6;
+
                                     }
                                 }
                             }
-
                         }
 
                         &:hover .bag_div {
