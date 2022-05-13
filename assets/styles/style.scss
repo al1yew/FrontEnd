@@ -2057,6 +2057,31 @@ a {
                                     background-color: blue;
                                 }
                             }
+
+                            .top_counter {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                border-radius: 20px;
+                                border: 0.5px solid #dee2e6;
+
+                                #decrease {
+                                    border-top-left-radius: 20px;
+                                    border-bottom-left-radius: 20px;
+                                    background-color: rgb(182, 182, 182);
+                                }
+
+                                #increase {
+                                    border-top-right-radius: 20px;
+                                    border-bottom-right-radius: 20px;
+                                }
+
+                                button {
+                                    width: 20%;
+                                    border-radius: 0;
+                                }
+                            }
                         }
                     }
                 }
@@ -2485,6 +2510,31 @@ a {
                                 &:hover {
                                     color: white;
                                     background-color: blue;
+                                }
+                            }
+
+                            .top_counter {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                border-radius: 20px;
+                                border: 0.5px solid #dee2e6;
+
+                                #decrease {
+                                    border-top-left-radius: 20px;
+                                    border-bottom-left-radius: 20px;
+                                    background-color: rgb(182, 182, 182);
+                                }
+
+                                #increase {
+                                    border-top-right-radius: 20px;
+                                    border-bottom-right-radius: 20px;
+                                }
+
+                                button {
+                                    width: 20%;
+                                    border-radius: 0;
                                 }
                             }
                         }
