@@ -133,9 +133,12 @@
             justify-content: space-between;
             padding: 0;
 
-            .left {
+            .left123 {
                 position: relative;
                 cursor: pointer;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
 
                 .percentofproduct {
                     position: absolute;
@@ -143,6 +146,7 @@
                     font-family: Dosis;
                     left: 5%;
                     padding: 4px 10px;
+                    z-index: 123;
                     color: white;
                     font-size: 13px;
                     cursor: pointer;
@@ -228,7 +232,52 @@
                             justify-content: space-between;
                             align-items: center;
 
-                            .counter {}
+                            .counter {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+
+                                .top_counter {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+
+                                    span {
+                                        font-size: 20px;
+                                        font-family: Dosis;
+                                        color: black;
+                                        padding: 0 25px;
+                                    }
+
+                                    button {
+                                        color: black;
+                                        background-color: rgb(237, 238, 245);
+                                        transition: 0.3s;
+                                        font-size: 18px;
+                                        padding: 8px 15px;
+                                        border-radius: 100%;
+
+                                        &:first-child {
+                                            padding: 8px 17px;
+                                        }
+
+                                        &:hover {
+                                            background-color: rgb(254, 206, 9);
+                                        }
+                                    }
+                                }
+
+                                .bottom_counter {
+                                    span {
+                                        font-size: 10px;
+                                        text-align: center;
+                                        color: red;
+                                        display: none;
+                                    }
+                                }
+
+                            }
 
                             button {
                                 padding: 10px 40px;
@@ -659,5 +708,38 @@
             }
         }
 
+        .description_p {
+            padding: 0;
+            padding-top: 30px;
+
+            span {
+                padding: 10px;
+                display: block;
+            }
+        }
+
+        .additional_spans {
+            padding: 0;
+            margin-top: 30px;
+            display: flex;
+
+            span {
+                padding: 8px;
+                display: block;
+                border: 0.5px solid rgb(200, 200, 200);
+
+                &:first-child {
+                    width: 30%;
+                }
+
+                &:last-child {
+                    width: 70%;
+                }
+            }
+        }
+
+        .chosen {
+            color: black !important;
+        }
     }
 }

@@ -1486,6 +1486,7 @@ a {
         }
 
         .slider_card {
+            color: black;
             cursor: pointer;
             border-radius: 0;
             position: relative;
@@ -1564,6 +1565,30 @@ a {
                             &:hover {
                                 color: white;
                                 background-color: blue;
+                            }
+                        }
+
+                        .top_counter {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-radius: 20px;
+                            border: 0.5px solid #dee2e6;
+
+                            #decrease {
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                                background-color: rgb(182, 182, 182);
+                            }
+
+                            #increase {
+                                border-top-right-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                            }
+
+                            button {
+                                width: 20%;
+                                border-radius: 0;
                             }
                         }
                     }
@@ -1899,6 +1924,7 @@ a {
         .product {
             padding: 0;
             height: 325px;
+            color: black;
             overflow: hidden;
             cursor: pointer;
             transition: 0.2s;
@@ -2331,6 +2357,7 @@ a {
             overflow: hidden;
             cursor: pointer;
             transition: 0.2s;
+            color: white;
             position: relative;
             background-color: white;
 

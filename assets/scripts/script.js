@@ -92,7 +92,6 @@ $(document).ready(function () {
 
   //bunu storage versem sheher ilishsin qalsin orda
 
-  $('set_location')
 
 });
 
@@ -198,6 +197,7 @@ $(document).ready(function () {
     $('#sortdata').toggle();
   })
 
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   //qiraga basanda baglansin
 
 });
@@ -249,12 +249,80 @@ $(document).ready(function () {
 //#region tabmenu toggle
 
 let tabclicks = document.querySelectorAll('.tabclick');
+let tab_contents = document.querySelectorAll('.tab_content');
 
 for (let tab of tabclicks) {
+
   tab.onclick = function () {
-    
+    tab.classList.add('chosen');
+
+    for (let cont of tab_contents) {
+
+      if (tab.id == cont.id) {
+        cont.classList.remove('d-none');
+      }
+      else {
+        cont.classList.add('d-none');
+      }
+    }
   }
 }
 
 
 //#endregion tabmenu toggle
+
+//#region counter
+
+let result_counter = document.querySelector('#result_count').innerHTML;
+
+let parsed_count = Number(result_counter);
+
+
+$('#increase').click(function () {
+  if (parsed_count < 10) {
+    parsed_count++;
+    document.getElementById('result_count').innerHTML = parsed_count;
+    $('#max10').css('display', 'none');
+  }
+  else {
+    $('#max10').css('display', 'block');
+  }
+})
+
+$('#decrease').click(function () {
+  $('#max10').css('display', 'none');
+
+  if (parsed_count > 1) {
+    parsed_count--;
+    document.getElementById('result_count').innerHTML = parsed_count;
+  }
+  else {
+    document.getElementById('result_count').innerHTML = 1;
+  }
+
+})
+
+
+//#endregion counter
+
+//#region photo producthtml slider
+
+// $('.left123').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.slider-nav'
+// });
+// $('.slider-nav').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.slider-for',
+//   dots: true,
+//   centerMode: true,
+//   focusOnSelect: true
+// });
+
+//#endregion photo producthtml slider
+
+//#region

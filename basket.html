@@ -458,7 +458,7 @@
 
 
 
-    <section id="contentbasket">
+    <section class="d-none" id="contentbasket">
         <div class="container">
             <div class="row all">
 
@@ -499,6 +499,7 @@
                 </div>
 
 
+
             </div>
         </div>
     </section>
@@ -506,7 +507,111 @@
 
     <!-- burda productlari yaradacam ve jsnan atacam bura -->
 
+    <section id="prod_in_cart">
+        <div class="container">
+            <div class="row all">
 
+                <div class="col-lg-9 left">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="product-img col-lg-1-5">Image</th>
+                                <th class="product-name col-lg-6">Product</th>
+                                <th class="product-price col-lg-1">Price</th>
+                                <th class="product-quantity col-lg-2">Quantity</th>
+                                <th class="product-subtotal col-lg-1">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-lg-1">
+                                    <img class="img-fluid" src="assets/images/product-image-60-600x540.jpg" alt="">
+                                </td>
+                                <td class="col-lg-6">
+                                    Lorem, ipsum dolor elit. Eius, ipsa?
+                                </td>
+                                <td class="col-lg-1">
+                                    100$
+                                </td>
+                                <td class="col-lg-2">
+                                    <div class="top_counter col-lg-12">
+                                        <button id="decrease">
+                                            -
+                                        </button>
+
+                                        <span id="result_count">
+                                            1
+                                        </span>
+
+                                        <button id="increase">
+                                            +
+                                        </button>
+                                    </div>
+
+                                    <div class="bottom_counter">
+                                        <span id="max10">You can add max 10</span>
+                                    </div>
+                                </td>
+                                <td class="col-lg-1">
+                                    1000$
+                                </td>
+                                <td class="col-lg-0-5">
+                                    X
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="bottom">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 right">
+                    <ul>
+                        <li>Cart Totals</li>
+                        <li>
+                            <span>Subtotal</span>
+                            <span>$$$-5$</span>
+                        </li>
+                        <li>
+                            <div class="left_li col-lg-6">
+                                Shipping
+                            </div>
+                            <div class="right_li col-lg-6">
+                                <div class="inputkeeper">
+                                    <label for="flat">Flat rate: <span id="flat_rate">$5.00</span></label>
+                                    <input name="checkout" id="flat" type="radio" checked>
+                                </div>
+                                <div class="inputkeeper">
+                                    <label for="free">Free shipping</label>
+                                    <input name="checkout" id="free" type="radio">
+                                </div>
+                                <div class="inputkeeper">
+                                    <label for="pickup">Local pickup</label>
+                                    <input name="checkout" id="pickup" type="radio">
+                                </div>
+                                <span class="shipngto">Shipping to <span>Baku</span></span>
+                                <a href="index.html">
+                                    Change Address
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Total:</span>
+                            <span id="basket_result_cost">$$$$$$$</span>
+                        </li>
+                        <li>
+                            <button>
+                                Proceed To Checkout
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

@@ -1626,6 +1626,265 @@
   background-color: darkblue;
 }
 
+#prod_in_cart {
+  padding: 40px 0;
+}
+
+#prod_in_cart .all {
+  font-family: Inter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#prod_in_cart .all .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#prod_in_cart .all .left table {
+  width: 100%;
+}
+
+#prod_in_cart .all .left table thead tr th {
+  font-size: 14px;
+  padding: 20px 0;
+  font-weight: 400;
+  color: #a4a4a4;
+  text-align: center;
+}
+
+#prod_in_cart .all .left table tbody tr {
+  display: table-row;
+}
+
+#prod_in_cart .all .left table tbody tr td {
+  border-top: 0.5px solid #dee2e6;
+  border-bottom: 0.5px solid #dee2e6;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#prod_in_cart .all .left table tbody tr td:nth-child(3) {
+  color: #71778E;
+}
+
+#prod_in_cart .all .left table tbody tr td:nth-child(4) .top_counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#prod_in_cart .all .left table tbody tr td:nth-child(4) .top_counter span {
+  font-size: 14px;
+  font-family: Dosis;
+  color: black;
+  padding: 0 10px;
+}
+
+#prod_in_cart .all .left table tbody tr td:nth-child(4) .top_counter button {
+  color: black;
+  background-color: #edeef5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  padding: 3px 10px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+}
+
+#prod_in_cart .all .left table tbody tr td:nth-child(4) .top_counter button:first-child {
+  padding: 3px 12px;
+}
+
+#prod_in_cart .all .left table tbody tr td:nth-child(4) .top_counter button:hover {
+  background-color: #fece09;
+}
+
+#prod_in_cart .all .left table tbody tr td:nth-child(4) .bottom_counter span {
+  font-size: 10px;
+  text-align: center;
+  color: red;
+  display: none;
+}
+
+#prod_in_cart .all .left table tbody tr td:nth-child(5) {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+}
+
+#prod_in_cart .all .left table tbody tr td:nth-child(6) {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#prod_in_cart .all .right {
+  border: 0.5px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#prod_in_cart .all .right li {
+  list-style: none;
+}
+
+#prod_in_cart .all .right ul {
+  padding: 0;
+  margin: 0;
+  font-family: Inter;
+}
+
+#prod_in_cart .all .right ul li {
+  padding: 12px 0;
+  color: black;
+}
+
+#prod_in_cart .all .right ul li:nth-child(1) {
+  padding-top: 0;
+  border-bottom: 0.5px solid #dee2e6;
+  font-family: Dosis;
+  font-size: 18px;
+}
+
+#prod_in_cart .all .right ul li:nth-child(2) {
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.5px solid #dee2e6;
+}
+
+#prod_in_cart .all .right ul li:nth-child(2) span:last-child {
+  font-family: InterLight;
+}
+
+#prod_in_cart .all .right ul li:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.5px solid #dee2e6;
+}
+
+#prod_in_cart .all .right ul li:nth-child(3) .left_li {
+  font-size: 13px;
+}
+
+#prod_in_cart .all .right ul li:nth-child(3) .right_li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: InterLight;
+  font-weight: 550;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 14px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#prod_in_cart .all .right ul li:nth-child(3) .right_li #flat_rate {
+  color: red;
+}
+
+#prod_in_cart .all .right ul li:nth-child(3) .right_li label {
+  padding: 5px 0;
+}
+
+#prod_in_cart .all .right ul li:nth-child(3) .right_li .shipngto {
+  padding: 5px 0;
+}
+
+#prod_in_cart .all .right ul li:nth-child(3) .right_li .shipngto span {
+  font-weight: 700;
+}
+
+#prod_in_cart .all .right ul li:nth-child(3) .right_li a {
+  padding: 5px 0;
+  text-decoration: none;
+  color: #52c4ea;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#prod_in_cart .all .right ul li:nth-child(3) .right_li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+#prod_in_cart .all .right ul li:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  border-bottom: 0.5px solid #dee2e6;
+}
+
+#prod_in_cart .all .right ul li:nth-child(4) span:nth-child(1) {
+  font-weight: 600;
+}
+
+#prod_in_cart .all .right ul li:nth-child(4) span:nth-child(2) {
+  font-size: 20px;
+}
+
+#prod_in_cart .all .right ul li:nth-child(5) {
+  width: 100%;
+  padding-bottom: 0;
+}
+
+#prod_in_cart .all .right ul li:nth-child(5) button {
+  width: 100%;
+  color: white;
+  font-size: 13px;
+  padding: 18px 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #ed174a;
+}
+
 #locationinpages {
   background-color: #f4f4f4;
   padding: 20px 0;
@@ -1787,17 +2046,18 @@
   padding: 0;
 }
 
-#productinfo .all .bottom .left {
+#productinfo .all .bottom .left123 {
   position: relative;
   cursor: pointer;
 }
 
-#productinfo .all .bottom .left .percentofproduct {
+#productinfo .all .bottom .left123 .percentofproduct {
   position: absolute;
   top: 5%;
   font-family: Dosis;
   left: 5%;
   padding: 4px 10px;
+  z-index: 123;
   color: white;
   font-size: 13px;
   cursor: pointer;
@@ -1805,7 +2065,7 @@
   background-color: #2bbef9;
 }
 
-#productinfo .all .bottom .left .playvideo {
+#productinfo .all .bottom .left123 .playvideo {
   padding: 10px 16px;
   color: black;
   -webkit-transition: 0.3s;
@@ -1820,7 +2080,7 @@
           box-shadow: 0px 0px 3px 1px grey;
 }
 
-#productinfo .all .bottom .left .playvideo:hover {
+#productinfo .all .bottom .left123 .playvideo:hover {
   background-color: grey;
 }
 
@@ -1884,6 +2144,66 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(4) .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(4) .counter .top_counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(4) .counter .top_counter span {
+  font-size: 20px;
+  font-family: Dosis;
+  color: black;
+  padding: 0 25px;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(4) .counter .top_counter button {
+  color: black;
+  background-color: #edeef5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 100%;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(4) .counter .top_counter button:first-child {
+  padding: 8px 17px;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(4) .counter .top_counter button:hover {
+  background-color: #fece09;
+}
+
+#productinfo .all .bottom .middle ul li:nth-child(4) .counter .bottom_counter span {
+  font-size: 10px;
+  text-align: center;
+  color: red;
+  display: none;
 }
 
 #productinfo .all .bottom .middle ul li:nth-child(4) button {
@@ -2401,6 +2721,42 @@
   margin-top: 15px;
   font-weight: 600;
   background-color: #233a95;
+}
+
+#prodreview .all .description_p {
+  padding: 0;
+  padding-top: 30px;
+}
+
+#prodreview .all .description_p span {
+  padding: 10px;
+  display: block;
+}
+
+#prodreview .all .additional_spans {
+  padding: 0;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#prodreview .all .additional_spans span {
+  padding: 8px;
+  display: block;
+  border: 0.5px solid #c8c8c8;
+}
+
+#prodreview .all .additional_spans span:first-child {
+  width: 30%;
+}
+
+#prodreview .all .additional_spans span:last-child {
+  width: 70%;
+}
+
+#prodreview .all .chosen {
+  color: black !important;
 }
 
 /*#region Icons do not open it is too big press alt z*/
@@ -4138,6 +4494,7 @@ a {
 }
 
 #second .bottom .slider_card {
+  color: black;
   cursor: pointer;
   border-radius: 0;
   position: relative;
@@ -4224,6 +4581,36 @@ a {
 #second .bottom .slider_card ul li:nth-child(5) button:hover {
   color: white;
   background-color: blue;
+}
+
+#second .bottom .slider_card ul li:nth-child(5) .top_counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 0.5px solid #dee2e6;
+}
+
+#second .bottom .slider_card ul li:nth-child(5) .top_counter #decrease {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #b6b6b6;
+}
+
+#second .bottom .slider_card ul li:nth-child(5) .top_counter #increase {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#second .bottom .slider_card ul li:nth-child(5) .top_counter button {
+  width: 20%;
+  border-radius: 0;
 }
 
 #second .bottom .slider_card .percentage {
@@ -4598,6 +4985,7 @@ a {
 #fourth .all .product {
   padding: 0;
   height: 325px;
+  color: black;
   overflow: hidden;
   cursor: pointer;
   -webkit-transition: 0.2s;
@@ -5083,6 +5471,7 @@ a {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  color: white;
   position: relative;
   background-color: white;
 }
