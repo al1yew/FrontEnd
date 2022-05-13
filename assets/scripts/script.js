@@ -325,4 +325,73 @@ $('#decrease').click(function () {
 
 //#endregion photo producthtml slider
 
-//#region
+//#region product html datalari getirmek
+
+// let products_for_producthtml = document.querySelectorAll('.product_html');
+
+// for (let product of products_for_producthtml) {
+
+//   product.onclick = function () {
+
+//     let product_photo_html = this.children[0].children[0];
+//     let product_id_html = this.id;
+//     let product_price_html = this.children[0].children[5].children[3].children[2].innerHTML
+
+//     let product_page_img = document.getElementById('product_page_image');
+//     console.log(product_page_img)
+
+//   }
+// }
+
+//burda umumiyyetle set etmek olmayacaq, local storageye atmag lazimdi butun produktlari, sonra da id-ile yoxlamaq hansina klik olunub, onu da getirmek product.htmla
+
+
+
+
+//#endregion product html datalari getirmek
+
+//#region bag_div click olunmasin
+
+let bag_div = document.querySelector('.bag_div');
+
+bag_div.onclick = function (e) {
+  e.preventDefault()
+}
+
+//#endregion bag_div click olunmasin
+
+//#region bag div and its max height
+
+let bag_div1 = document.querySelector('.bag_div');
+
+if (bag_div1.clientHeight > 300) {
+  bag_div1.classList.add('overflowscroll');
+}
+else {
+  bag_div1.classList.remove('overflowscroll');
+}
+
+//#eregion bag div and its max heigth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

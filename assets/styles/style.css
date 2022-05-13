@@ -3442,6 +3442,10 @@ a {
   border-radius: 100%;
 }
 
+#header .bottom .all .bottom_top .money_user .bag .overflowscroll {
+  overflow-y: scroll;
+}
+
 #header .bottom .all .bottom_top .money_user .bag .bag_div {
   opacity: 0;
   visibility: hidden;
@@ -3449,7 +3453,7 @@ a {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   z-index: 1234;
-  padding: 20px 35px;
+  padding: 15px 15px;
   -webkit-box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.459);
           box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.459);
   border-radius: 5px;
@@ -3457,9 +3461,11 @@ a {
   width: 300px;
   top: 50px;
   right: -10px;
+  overflow-y: scroll;
+  max-height: 300px;
 }
 
-#header .bottom .all .bottom_top .money_user .bag .bag_div .image {
+#header .bottom .all .bottom_top .money_user .bag .bag_div .pustoy .image {
   margin: 10px auto;
   padding: 20px;
   width: 60px;
@@ -3470,7 +3476,7 @@ a {
   overflow: hidden;
 }
 
-#header .bottom .all .bottom_top .money_user .bag .bag_div .image svg {
+#header .bottom .all .bottom_top .money_user .bag .bag_div .pustoy .image svg {
   position: absolute;
   width: 45px;
   height: 45px;
@@ -3478,19 +3484,125 @@ a {
   left: 14%;
 }
 
-#header .bottom .all .bottom_top .money_user .bag .bag_div .firstp {
+#header .bottom .all .bottom_top .money_user .bag .bag_div .pustoy .firstp {
   text-align: center;
   font-size: 14px;
   padding-bottom: 45px;
   border-bottom: 0.5px solid #9b9bb4;
 }
 
-#header .bottom .all .bottom_top .money_user .bag .bag_div .secondp {
+#header .bottom .all .bottom_top .money_user .bag .bag_div .pustoy .secondp {
   font-size: 11px;
   color: grey;
   margin-top: 20px;
   text-align: center;
   width: 100%;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy {
+  font-family: Inter;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_top .product_bag_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  border-top: 0.5px solid #dee2e6;
+  border-bottom: 0.5px solid #dee2e6;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_top .product_bag_div .left img {
+  width: 100%;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_top .product_bag_div .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_top .product_bag_div .right .top {
+  font-size: 13px;
+  color: black;
+  background-color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_top .product_bag_div .right .top:hover {
+  color: blue;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_top .product_bag_div .right .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_top .product_bag_div .right .bottom span {
+  font-size: 13.5px;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_top .product_bag_div .right .bottom span:nth-child(2) {
+  margin: 0px 8px;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_bottom .subtotal_bag_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .bottom .all .bottom_top .money_user .bag .bag_div .polniy .polniy_bottom .subtotal_bag_div span {
+  color: grey;
+  font-size: 14.5px;
 }
 
 #header .bottom .all .bottom_top .money_user .bag:hover .bag_div {
@@ -5051,7 +5163,7 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
-  width: 90%;
+  width: 100%;
   margin: auto;
   vertical-align: middle;
 }
@@ -5533,7 +5645,7 @@ a {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  color: white;
+  color: black;
   position: relative;
   background-color: white;
 }
@@ -5564,7 +5676,7 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
-  width: 90%;
+  width: 100%;
   margin: auto;
   vertical-align: middle;
 }

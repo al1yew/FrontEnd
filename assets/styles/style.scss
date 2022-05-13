@@ -593,53 +593,137 @@ a {
                             border-radius: 100%;
                         }
 
+                        .overflowscroll {
+                            overflow-y: scroll;
+                        }
+
                         .bag_div {
                             opacity: 0;
                             visibility: hidden;
                             background-color: white;
                             transition: 0.4s;
                             z-index: 1234;
-                            padding: 20px 35px;
+                            padding: 15px 15px;
                             box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.459);
                             border-radius: 5px;
                             position: absolute;
                             width: 300px;
                             top: 50px;
                             right: -10px;
+                            overflow-y: scroll;
+                            max-height: 300px;
+                            // height: 300px;
 
-                            .image {
+                            .pustoy {
+                                .image {
 
-                                margin: 10px auto;
-                                padding: 20px;
-                                width: 60px;
-                                height: 60px;
-                                background-color: rgb(233, 236, 239);
-                                border-radius: 100%;
-                                position: relative;
-                                overflow: hidden;
+                                    margin: 10px auto;
+                                    padding: 20px;
+                                    width: 60px;
+                                    height: 60px;
+                                    background-color: rgb(233, 236, 239);
+                                    border-radius: 100%;
+                                    position: relative;
+                                    overflow: hidden;
 
-                                svg {
-                                    position: absolute;
-                                    width: 45px;
-                                    height: 45px;
-                                    top: 24%;
-                                    left: 14%;
+                                    svg {
+                                        position: absolute;
+                                        width: 45px;
+                                        height: 45px;
+                                        top: 24%;
+                                        left: 14%;
+                                    }
+                                }
+
+                                .firstp {
+                                    text-align: center;
+                                    font-size: 14px;
+                                    padding-bottom: 45px;
+                                    border-bottom: 0.5px solid #9b9bb4;
+                                }
+
+                                .secondp {
+                                    font-size: 11px;
+                                    color: grey;
+                                    margin-top: 20px;
+                                    text-align: center;
+                                    width: 100%;
                                 }
                             }
 
-                            .firstp {
-                                text-align: center;
-                                font-size: 14px;
-                                padding-bottom: 45px;
-                                border-bottom: 0.5px solid #9b9bb4;
-                            }
+                            .polniy {
+                                font-family: Inter;
 
-                            .secondp {
-                                font-size: 11px;
-                                color: grey;
-                                margin-top: 20px;
-                                text-align: center;
-                                width: 100%;
+                                .polniy_top {
+                                    .product_bag_div {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        padding: 10px 0;
+                                        border-top: 0.5px solid #dee2e6;
+                                        border-bottom: 0.5px solid #dee2e6;
+
+
+                                        .left {
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        .right {
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+
+                                            .top {
+                                                font-size: 13px;
+                                                color: black;
+                                                background-color: white;
+                                                transition: 0.3s;
+
+                                                &:hover {
+                                                    color: blue;
+                                                }
+                                            }
+
+                                            .bottom {
+                                                display: flex;
+                                                background-color: white;
+                                                border: none;
+                                                justify-content: center;
+                                                align-items: flex-start;
+
+                                                span {
+                                                    font-size: 13.5px;
+
+                                                    &:nth-child(2) {
+                                                        margin: 0px 8px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .polniy_bottom {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+
+                                    .subtotal_bag_div {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        
+                                        span {
+                                            color: grey;
+                                            font-size: 14.5px;
+
+                                        }
+                                    }
+                                }
                             }
 
                         }
@@ -1957,7 +2041,7 @@ a {
                 img {
                     object-fit: cover;
                     background-size: cover;
-                    width: 90%;
+                    width: 100%;
                     margin: auto;
                     vertical-align: middle;
                 }
@@ -2382,7 +2466,7 @@ a {
             overflow: hidden;
             cursor: pointer;
             transition: 0.2s;
-            color: white;
+            color: black;
             position: relative;
             background-color: white;
 
@@ -2412,7 +2496,7 @@ a {
                 img {
                     object-fit: cover;
                     background-size: cover;
-                    width: 90%;
+                    width: 100%;
                     margin: auto;
                     vertical-align: middle;
                 }
