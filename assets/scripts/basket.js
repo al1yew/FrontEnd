@@ -75,7 +75,9 @@ $(document).ready(function () {
                         <img class="img-fluid" src="${product.Src}">
                     </td>
                     <td class="col-lg-6">
-                        ${product.Name}
+                        <span>
+                            ${product.Name}
+                        </span>
                     </td>
                     <td class="col-lg-1">
                         ${product.Price}$
@@ -213,17 +215,14 @@ $(document).ready(function () {
 
     for (let d_btn of delete_btns) {
         d_btn.onclick = function (e) {
-            // console.log(e.target.parentElement.parentElement)
-            // shopcart.splice(e.target.parentElement.parentElement, 1);
-            // console.log(e.target.parentElement.parentElement);
-            // localStorage.setItem('shopcart', JSON.stringify(shopcart));
-            // location.reload();
-            // console.log(e.target.parentElement.parentElement.children[0].children[0].src)
 
-            
-
-
-
+            for (let product of shopcart) {
+                if (product.Name.trim() == e.target.parentElement.parentElement.children[1].children[0].innerHTML.trim()) {
+                    shopcart.splice(product, 1);
+                    localStorage.setItem('shopcart', JSON.stringify(shopcart));
+                    location.reload();
+                }
+            }
 
         }
     }
