@@ -3419,15 +3419,23 @@ a {
 
 #header .bottom .all .bottom_top .money_user .bag {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header .bottom .all .bottom_top .money_user .bag .money {
   font-family: Dosis;
   font-weight: 600;
   font-size: 1.25rem;
+  width: 95px;
   cursor: pointer;
-  margin: 0 15px;
-  width: 100%;
   color: black;
 }
 
@@ -3437,8 +3445,8 @@ a {
 
 #header .bottom .all .bottom_top .money_user .bag .amount {
   position: absolute;
-  top: -14px;
-  right: -8px;
+  top: -8px;
+  right: -5px;
   font-size: 12px;
   font-style: normal !important;
   color: white;

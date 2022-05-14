@@ -146,7 +146,6 @@ $(document).ready(function () {
         filled_basket.classList.add('d-none');
         little_empty_basket.classList.remove('d-none');
         little_filled_basket.classList.add('d-none');
-
     }
 
 
@@ -161,41 +160,57 @@ $(document).ready(function () {
 //#region totali hesablayirig
 
 $(document).ready(function () {
-    //headerda subtotallarin idsini ver, 555 ctrl f
     // i takje dosisnan olan 0.00$ hisseni
 
     let shopcart = JSON.parse(localStorage.getItem('shopcart'));
     let total = 0;
     let subtotal_inner = document.querySelector('#subtotal_right_countprice');
-    let flat_rate = document.querySelector('#flat');
+    let subtotal_inner_big_basket = document.querySelector('#subtotal_right_countprice1');
     let basket_result_cost = document.querySelector('#basket_result_cost');
     let total_header_cost = document.querySelector('#total_header_cost');
-    
-    console.log(basket_result_cost)
-    console.log(subtotal_inner)
-    console.log(subtotal_inner)
 
     for (let product of shopcart) {
         total += product.Price * product.Count
     }
 
-    subtotal_inner.innerHTML = total;
-    
-    total_header_cost.innerHTML = `$ ${total}`
+    subtotal_inner.innerHTML = Math.round(total * 100) / 100;
 
-    basket_result_cost.innerHTML = `$${total}`
+    total_header_cost.innerHTML = `$${Math.round(total * 100) / 100}`;
+
+    basket_result_cost.innerHTML = `$${Math.round(total * 100) / 100 + 5}`;
+
+    subtotal_inner_big_basket.innerHTML = `$${Math.round(total * 100) / 100}`;
+
+    if (total == 0) {
+        document.getElementById('subtotal_right_countprice').innerHTML = '$0.00';
+        document.getElementById('total_header_cost').innerHTML = '$0.00';
+        document.getElementById('subtotal_right_countprice1').innerHTML = '$0.00';
+        document.querySelector('#basket_result_cost'), innerHTML = '$0.00';
+    }
 
 
 });
 
 
-
-
-
-
-
-
 //#endregion totali hesablayirig
+
+
+
+
+
+
+
+
+
+
+//#region balaca basketi refresh edirik
+
+// function updateDiv() {
+//     $("#polniy_basket").load(window.location.href + " #here");
+// }
+
+//#endregion balaca basketi refresh edirik 
+
 
 
 

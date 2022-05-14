@@ -146,17 +146,20 @@
                         <div class="col-lg-1-8 money_user">
                             <a class="userikon" style="text-decoration: none; color:#666;" href="login.html"><i
                                     class="klbth-icon-user"></i></a>
+
                             <a href="basket.html" class="bag">
-                                <span class="money">
+
+                                <span class="money" id="total_header_cost">
                                     $0.00
                                 </span>
+
                                 <i class="klbth-icon-shopping-bag bag_icon">
                                     <span id="cartcount" class="amount">0</span>
                                 </i>
 
                                 <div class="bag_div">
 
-                                    <div id="pustoy_basket" class="pustoy d-none">
+                                    <div id="pustoy_basket" class="pustoy">
                                         <div class="image">
                                             <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 280.028 280.028" width="280.028" height="80.028">
@@ -196,15 +199,13 @@
 
                                         <div class="polniy_bottom">
 
-                                            <div class="subtotal_bag_div">
+                                            <div class="subtotal_bag_div" id="subtotal_bag_div">
                                                 <span class="subsub">Subtotal</span>
                                                 <span class="dollar1">
                                                     <span>$</span>
-                                                    <span>555</span>
+                                                    <span id="subtotal_right_countprice"></span>
                                                 </span>
                                             </div>
-                                            <!-- bu niyese dagidir alemi -->
-                                            <!-- <a class="viewcart_" href="basket.html">View Cart</a> -->
                                             <button class="checkout_">Checkout</button>
                                             <p class="secondp_">We reduce shipping prices to only 2.49 €!</p>
 

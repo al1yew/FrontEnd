@@ -449,6 +449,79 @@ $(document).ready(function () {
 
 
 
+//#region yoxlayirig basket boshdu ya yox ve yigirig baskete
+
+$(document).ready(function () {
+
+  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+  let little_filled_basket = document.querySelector('#polniy_basket')
+  let little_empty_basket = document.querySelector('#pustoy_basket')
+
+  //basketimizi cagirdig, parse eledik
+  // bosh olanda yaradilan sectionu basket boshdursa gostereceyik
+
+  if (shopcart.length != 0) {
+
+    little_empty_basket.classList.add('d-none');
+    little_filled_basket.classList.remove('d-none');
+
+
+    let pr_small = '';
+    let small_basket_inner = document.querySelector('#small_basket_innner');
+
+    for (let product of shopcart) {
+
+      pr_small +=
+        `
+              <div class="product_bag_div">
+
+                  <div class="left col-lg-3">
+                      <img src="${product.Src}">
+                      <span id="remove_prod_basket" class="remove_x_small_basket">
+                          x
+                      </span>
+                  </div>
+
+                  <div class="right col-lg-9">
+
+                      <div class="top">
+                          ${product.Name}
+                      </div>
+
+                      <div class="bottom">
+                          <span>${product.Count} pcs.</span>
+                          <span>x</span>
+                          <span>${product.Price}$</span>
+                      </div>
+
+                  </div>
+
+              </div>
+          `
+      small_basket_inner.innerHTML = pr_small;
+    }
+
+  }
+  else {
+    little_empty_basket.classList.remove('d-none');
+    little_filled_basket.classList.add('d-none');
+  }
+  // updateDiv();
+});
+
+
+//#endregion yoxlayirig basket boshdu ya yox
+
+
+
+
+//#region balaca basketi refresh edirik
+
+// function updateDiv() {
+//   $("#polniy_basket").load(window.location.href + " #here");
+// }
+
+//#endregion balaca basketi refresh edirik 
 
 
 
@@ -456,4 +529,31 @@ $(document).ready(function () {
 
 
 
+//#region totali hesablayirig
 
+$(document).ready(function () {
+  //headerda subtotallarin idsini ver, 555 ctrl f
+  // i takje dosisnan olan 0.00$ hisseni
+
+  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+  let total = 0;
+  let subtotal_inner = document.querySelector('#subtotal_right_countprice');
+  let total_header_cost = document.querySelector('#total_header_cost');
+  // let flat_rate = document.querySelector('#flat');
+
+  for (let product of shopcart) {
+    total += product.Price * product.Count
+  }
+
+  subtotal_inner.innerHTML = Math.round(total * 100) / 100;
+
+  total_header_cost.innerHTML = `$${Math.round(total * 100) / 100}`;
+
+  if (total == 0) {
+    document.getElementById('subtotal_right_countprice').innerHTML = '$0.00';
+    document.getElementById('total_header_cost').innerHTML = '$0.00';
+  }
+});
+
+
+//#endregion totali hesablayirig
