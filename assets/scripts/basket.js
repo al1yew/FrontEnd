@@ -149,15 +149,6 @@ $(document).ready(function () {
 
     }
 
-    //nado add classslist sdelat d-none
-    //takje tut nado sozdat ogromniy designed div, v kotoriy kak v to do list v kotoriy budut dobavlatsa vse nashi tovari. dla etogo mi nash basket zasunem v for, i dla kajdogo elementa budem sozdavat div, i vnutr p, span, h6 zad, budem delat set hemin let basket_item naprimer of basket-in . name, .price, .count itd eto krc rekord nomer 2 pod konec posle 38 minuti
-    //console logom proveru prineset li on mne kak list moi tovari v console
-    //uchuncu rekord 10cu deqiqeden, mene oz counterim lazimdi burda maragli olsun
-    //refreshe bax kodda ve clear all a bax
-    //delete iconlari nece edirik, butun delete iconlari saliram fora, deyirem ki hansina klik olunsa, funksiya bash versin. Saliram basketi fora, dyirem ki basketin icindeki butun elementlerin icinde axtar. Neyi? delete buttona click olunan elementin id-sinin basketin icinde olanini, ve onu sil ordan.
-    //nayti mojno s pomoshyu find metoda, mi tam vibirayem bukvu lubuyu, i govorim shto idi ishi, smotri naverhu
-    //v skobke find posledniy id (kotoriy sboku sprava) eto id kotoriy prinadlejit nashemu elementu, knpku kotorogo mi najali
-    //
 
 
 });
@@ -167,6 +158,44 @@ $(document).ready(function () {
 
 
 
+//#region totali hesablayirig
+
+$(document).ready(function () {
+    //headerda subtotallarin idsini ver, 555 ctrl f
+    // i takje dosisnan olan 0.00$ hisseni
+
+    let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+    let total = 0;
+    let subtotal_inner = document.querySelector('#subtotal_right_countprice');
+    let flat_rate = document.querySelector('#flat');
+    let basket_result_cost = document.querySelector('#basket_result_cost');
+    let total_header_cost = document.querySelector('#total_header_cost');
+    
+    console.log(basket_result_cost)
+    console.log(subtotal_inner)
+    console.log(subtotal_inner)
+
+    for (let product of shopcart) {
+        total += product.Price * product.Count
+    }
+
+    subtotal_inner.innerHTML = total;
+    
+    total_header_cost.innerHTML = `$ ${total}`
+
+    basket_result_cost.innerHTML = `$${total}`
+
+
+});
+
+
+
+
+
+
+
+
+//#endregion totali hesablayirig
 
 
 
