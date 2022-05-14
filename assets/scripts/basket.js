@@ -210,25 +210,20 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-
     let delete_btns = document.querySelectorAll('.remove_prod_basket');
 
     for (let d_btn of delete_btns) {
         d_btn.onclick = function (e) {
 
-            for (let product of shopcart) {
-                if (product.Name.trim() == e.target.parentElement.parentElement.children[1].children[0].innerHTML.trim()) {
-                    shopcart.splice(product, 1);
+            for (let i = 0; i < shopcart.length; i++) {
+                if (e.target.parentElement.parentElement.children[1].children[0].innerText.trim() == shopcart[i].Name.trim()) {
+                    shopcart.splice(i, 1);
                     localStorage.setItem('shopcart', JSON.stringify(shopcart));
                     location.reload();
                 }
             }
-
         }
     }
-
-
-
 })
 
 

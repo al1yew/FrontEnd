@@ -455,6 +455,47 @@ function AddToLittleBasket() {
 
 
 
+//#region delete item 
+
+// let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+
+$(document).ready(function () {
+
+  let delete_btns1 = document.querySelectorAll('.remove_prod_basket');
+  console.log(document.querySelectorAll('.remove_prod_basket'));
+
+  for (let d_btn of delete_btns1) {
+
+    console.log('alaslal')
+
+    d_btn.onclick = function (e) {
+
+      console.log('alaslal')
+
+      for (let i = 0; i < shopcart.length; i++) {
+
+        console.log('alaslal')
+
+        if (e.target.parentElement.parentElement.children[1].children[0].innerText.trim() == shopcart[i].Name.trim()) {
+          shopcart.splice(i, 1);
+          localStorage.setItem('shopcart', JSON.stringify(shopcart));
+          location.reload();
+        }
+      }
+    }
+  }
+})
+
+
+
+//#endregion delete item 
+
+
+
+
+
+
+
 
 //#region yoxlayirig basket boshdu ya yox ve yigirig baskete
 
