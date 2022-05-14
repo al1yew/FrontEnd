@@ -655,6 +655,19 @@ a {
                                 font-family: Inter;
 
                                 .polniy_top {
+
+                                    .remove_x_small_basket {
+                                        position: absolute;
+                                        top: -20%;
+                                        border-radius: 100%;
+                                        font-size: 10px;
+                                        left: 10%;
+                                        color: white;
+                                        background-color: red;
+                                        padding: 1px 6px;
+                                        cursor: pointer;
+                                    }
+
                                     .product_bag_div {
                                         display: flex;
                                         justify-content: space-between;
@@ -665,6 +678,8 @@ a {
 
 
                                         .left {
+                                            position: relative;
+
                                             img {
                                                 width: 100%;
                                             }

@@ -60,7 +60,7 @@
 
 
 #prod_in_cart {
-    padding: 40px 0;
+    padding-bottom: 40px;
 
     .all {
         font-family: Inter;
@@ -271,10 +271,11 @@
                         }
                     }
 
-                    &:nth-child(5){
+                    &:nth-child(5) {
                         width: 100%;
                         padding-bottom: 0;
-                        button{
+
+                        button {
                             width: 100%;
                             color: white;
                             font-size: 13px;
@@ -282,7 +283,7 @@
                             border: none;
                             outline: none;
                             border-radius: 5px;
-                            background-color: rgb(237,23,74);
+                            background-color: rgb(237, 23, 74);
                         }
                     }
                 }
