@@ -41,11 +41,8 @@ for (let btntoadd of addtocartbtn) {
             });
         }
         else {
-            prodexists.Count += 1;
+            prodexists.Count++;
         }
-
-
-        // console.log(shopcart) ISHLEDIIIIIIIII
 
         localStorage.setItem('shopcart', JSON.stringify(shopcart));
         CountBasketLength();
@@ -87,11 +84,16 @@ CountBasketLength();
 //#region yoxlayirig basket boshdu ya yox
 
 let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+let empty_basket = document.querySelector('#contentbasket');
+let filled_basket = document.querySelector('#prod_in_cart');
 
 //basketimizi cagirdig, parse eledik
+// bosh olanda yaradilan sectionu basket boshdursa gostereceyik
 
 if (shopcart.length === 0) {
-    //nado udalit tot div kotoriy ya sozdam v cart html, esli basket ne soderjit nikakix tovarov. ya emu inline dam d-none, i poka basket length raven 0, on budet u mena display none, a kak tolko basket length budet ne 0, on classlist remove sdelayet d-none
+    empty_basket.classList.remove('d-none');
+    filled_basket.classList.add('d-none');
+    
 }
 else {
     //nado add classslist sdelat d-none
