@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 
 
-
+let shopcart = JSON.parse(localStorage.getItem('shopcart'));
 
 
 
@@ -102,8 +102,10 @@ $(document).ready(function () {
                     <td class="col-lg-1">
                         ${Math.round((product.Price * product.Count) * 100) / 100}$
                     </td>
-                    <td id="remove_prod_basket" class="col-lg-0-5">
-                        X
+                    <td id="remove_prod_basket" class="col-lg-0-5 remove_prod_basket">
+                        <span>
+                            X
+                        </span>
                     </td>
                 </tr>
             `
@@ -114,7 +116,7 @@ $(document).ready(function () {
 
                     <div class="left col-lg-3">
                         <img src="${product.Src}">
-                        <span id="remove_prod_basket" class="remove_x_small_basket">
+                        <span id="remove_prod_basket" class="remove_x_small_basket remove_prod_basket">
                             x
                         </span>
                     </div>
@@ -159,8 +161,9 @@ $(document).ready(function () {
 
 //#region totali hesablayirig
 
+
+
 $(document).ready(function () {
-    // i takje dosisnan olan 0.00$ hisseni
 
     let shopcart = JSON.parse(localStorage.getItem('shopcart'));
     let total = 0;
@@ -187,9 +190,13 @@ $(document).ready(function () {
         document.getElementById('subtotal_right_countprice1').innerHTML = '$0.00';
         document.querySelector('#basket_result_cost'), innerHTML = '$0.00';
     }
-
-
 });
+
+
+
+
+
+
 
 
 //#endregion totali hesablayirig
@@ -197,19 +204,40 @@ $(document).ready(function () {
 
 
 
+//#region delete item 
+
+$(document).ready(function () {
+
+
+    let delete_btns = document.querySelectorAll('.remove_prod_basket');
+
+    for (let d_btn of delete_btns) {
+        d_btn.onclick = function (e) {
+            // console.log(e.target.parentElement.parentElement)
+            // shopcart.splice(e.target.parentElement.parentElement, 1);
+            // console.log(e.target.parentElement.parentElement);
+            // localStorage.setItem('shopcart', JSON.stringify(shopcart));
+            // location.reload();
+            // console.log(e.target.parentElement.parentElement.children[0].children[0].src)
+
+            
 
 
 
 
+        }
+    }
 
 
-//#region balaca basketi refresh edirik
 
-// function updateDiv() {
-//     $("#polniy_basket").load(window.location.href + " #here");
-// }
+})
 
-//#endregion balaca basketi refresh edirik 
+
+
+//#endregion delete item 
+
+
+
 
 
 

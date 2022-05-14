@@ -51,13 +51,10 @@ $(document).ready(function () {
 
   document.onclick = function (e) {
 
-    // console.log(e.target)
-
     if (e.target == modal) {
       modal.style.display = "none";
     }
   }
-
 
   $('#close_location').click(function () {
     $('#modal_location').fadeOut(300);
@@ -69,12 +66,6 @@ $(document).ready(function () {
   //sheherin adini saxlayan <p> uchun
   for (let local of locals) {
     local.onclick = function (e) {
-
-      // console.log(e.target.firstChild); 
-
-      // console.log(e.target.children[0])
-
-      // set_location.innerHTML = e.target.firstChild.textContent;
 
       set_location.innerHTML = e.target.children[0].innerHTML;
 
@@ -120,31 +111,24 @@ $(document).ready(function () {
   $('#login').click(function () {
 
     if (lon.val().length < 8 || lop.val().length < 8) {
-      // $('#error').removeClass('d-none');
       $('#error').slideDown(200);
       $('#error_p').html('Your Login and Password must contain at least 8 characters!')
     }
     else {
-      // $('#error').addClass('d-none');
       $('#error').slideUp(200);
     }
 
-    // lon.val().length < 9 && lop.val().length < 9 ? console.log('nenorm') : console.log('norm')
   })
 
   $('#register').click(function () {
 
     if (ren.val().length < 8 || rep.val().length < 8) {
-      // $('#error').removeClass('d-none');
       $('#error').slideDown(200);
       $('#error_p').html('Your Login and Password must contain at least 8 characters!')
     }
     else {
-      // $('#error').addClass('d-none');
       $('#error').slideUp(200);
     }
-
-    // lon.val().length < 9 && lop.val().length < 9 ? console.log('nenorm') : console.log('norm')
 
   })
 });
@@ -254,6 +238,57 @@ for (let tab of tabclicks) {
 
 //#endregion tabmenu toggle
 
+//#region photo producthtml slider
+
+//burda elemek lazimdi ki, hansi image click olunsa, onun src-sini gotursun set elesin boyuk img-nin srcsinin yerine. Amma evvelce boyuyunkunu '' elemek lazimdi
+
+//#endregion photo producthtml slider
+
+//#region product html datalari getirmek
+
+
+
+//burda umumiyyetle set etmek olmayacaq, local storageye atmag lazimdi butun produktlari, sonra da id-ile yoxlamaq hansina klik olunub, onu da getirmek product.htmla
+
+//gerek shekilleri salim fora, hansina klik olunsa onun melumatlarini atim storage-ya, ve product.html acilanda hemin melumatlari set edim muvafiq yerlere
+
+
+
+//#endregion product html datalari getirmek
+
+//#region bag_div click olunmasin
+
+let bag_div = document.querySelector('.bag_div');
+
+bag_div.onclick = function (e) {
+  e.preventDefault()
+}
+
+//#endregion bag_div click olunmasin
+
+//#region bag div and its max height
+
+let bag_div1 = document.querySelector('.bag_div');
+
+if (bag_div1.clientHeight > 300) {
+  bag_div1.classList.add('overflowscroll');
+}
+else {
+  bag_div1.classList.remove('overflowscroll');
+}
+
+//#endregion bag div and its max heigth
+
+//#region shopping cartin ustundeki span
+
+function CountBasketLength() {
+  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+  let cartcount = shopcart.length;
+  document.querySelector('#cartcount').innerHTML = cartcount;
+}
+
+//#endregion shopping cartin ustundeki span
+
 //#region counter
 
 // let result_counter = document.querySelector('#result_count').innerHTML;
@@ -288,101 +323,12 @@ for (let tab of tabclicks) {
 
 //#endregion counter
 
-//#region photo producthtml slider
-
-// $('.left123').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.slider-nav'
-// });
-// $('.slider-nav').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   asNavFor: '.slider-for',
-//   dots: true,
-//   centerMode: true,
-//   focusOnSelect: true
-// });
-
-//#endregion photo producthtml slider
-
-//#region product html datalari getirmek
-
-// let products_for_producthtml = document.querySelectorAll('.product_html');
-
-// for (let product of products_for_producthtml) {
-
-//   product.onclick = function () {
-
-//     let product_photo_html = this.children[0].children[0];
-//     let product_id_html = this.id;
-//     let product_price_html = this.children[0].children[5].children[3].children[2].innerHTML
-
-//     let product_page_img = document.getElementById('product_page_image');
-//     console.log(product_page_img)
-
-//   }
-// }
-
-//burda umumiyyetle set etmek olmayacaq, local storageye atmag lazimdi butun produktlari, sonra da id-ile yoxlamaq hansina klik olunub, onu da getirmek product.htmla
-
-
-
-
-//#endregion product html datalari getirmek
-
-//#region bag_div click olunmasin
-
-let bag_div = document.querySelector('.bag_div');
-
-bag_div.onclick = function (e) {
-  e.preventDefault()
-}
-
-//#endregion bag_div click olunmasin
-
-//#region bag div and its max height
-
-let bag_div1 = document.querySelector('.bag_div');
-
-if (bag_div1.clientHeight > 300) {
-  bag_div1.classList.add('overflowscroll');
-}
-else {
-  bag_div1.classList.remove('overflowscroll');
-}
-
-//#endregion bag div and its max heigth
-
-
-//#region shopping cartin ustundeki span
-
-//isteyirem ki shop cartin ustundeki span regemi deyishsin, ozumuzden funksiya yazirig ve ozumuz cagiririg ki melumati ozu otursun, ve her deyishiklikden sonra bunu cagiriram ki yoxlasin, mehsul eynididse spani artirmasin
-
-
-function CountBasketLength() {
-  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
-  let cartcount = shopcart.length;
-  document.querySelector('#cartcount').innerHTML = cartcount;
-}
-
-
-//cagiriram mutleq metodu cunki ozu ozune ishlemir, ve butun etodlarda cagiracam onu ki reload-suz ishlesin
-
-//#endregion shopping cartin ustundeki span
-
-
-
-
-
-
-
-
 
 
 //#region add to basket
+
+
+
 $(document).ready(function () {
 
   if (localStorage.getItem('shopcart') === null) {
@@ -390,7 +336,6 @@ $(document).ready(function () {
   }
   CountBasketLength();
 
-  // localStorage.setItem('shopcart', JSON.stringify([]));
   // birinci basketi yaratdim, array kimi. Sonra dedim ki productlar for-a salinsin, hansina klik olunsa onun datasini getirsin.
 
   let addtocartbtn = document.querySelectorAll('.addtocart');
@@ -399,20 +344,21 @@ $(document).ready(function () {
 
     btntoadd.addEventListener('click', function () {
 
-      //basketimizi getirdim, parse eledim. S-S qaydasi yani ki Set-Stringify, baskete nese gonderende set edirik stringify ile, getirende ise parse edirik.
 
       let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+      //basketimizi getirdim, parse eledim. S-S qaydasi yani ki Set-Stringify, baskete nese gonderende set edirik stringify ile, getirende ise parse edirik.
 
       let prod_id = this.parentElement.parentElement.parentElement.parentElement.id
-      // console.log(prod_id)
       let prod_img_src = this.parentElement.parentElement.parentElement.children[0].children[0].src;
 
       let prod_name = this.parentElement.parentElement.children[0].innerHTML
 
       let prod_cost = this.parentElement.previousElementSibling.children[2].innerHTML;
+
       //butun melumatlari goturdum
 
       let prodexists = shopcart.find(x => x.Id == prod_id);
+      //burda deyirikki, shopkartda X axtarsin, hansi X? id-si bizim almaq istediyimiz produktun id-sine. Tapmasa, elave ede biler, tekrarcilig olmasin deye, eyni produktlar almasinlar.
 
       if (prodexists == undefined) {
         shopcart.push({
@@ -425,33 +371,30 @@ $(document).ready(function () {
       }
       else {
         prodexists.Count++;
-      }
+      }//dedik ki bes eyni id-li mehsul tapilsa, onda countunu artirsin
 
       localStorage.setItem('shopcart', JSON.stringify(shopcart));
+      //set edirik obratno v nash basket
       CountBasketLength();
+
       //set eliyen kimi getsin spanin icindeki regemi deyishsin
+      CountBasketCost();
+
+      //set olunan kimi de avtomatik refresh elesin balaca basketi
+      AddToLittleBasket();
     })
-
   }
-
-
-
-
 });
-
-
-
-
 
 //#endregion add to basket
 
 
 
 
+//#region countbasket kimi burda da balaca baskete add edirem, ki ozu refreshsiz add elesin, fuksiya ozu ashagidadir
 
-//#region yoxlayirig basket boshdu ya yox ve yigirig baskete
 
-$(document).ready(function () {
+function AddToLittleBasket() {
 
   let shopcart = JSON.parse(localStorage.getItem('shopcart'));
   let little_filled_basket = document.querySelector('#polniy_basket')
@@ -465,7 +408,6 @@ $(document).ready(function () {
     little_empty_basket.classList.add('d-none');
     little_filled_basket.classList.remove('d-none');
 
-
     let pr_small = '';
     let small_basket_inner = document.querySelector('#small_basket_innner');
 
@@ -477,7 +419,7 @@ $(document).ready(function () {
 
                   <div class="left col-lg-3">
                       <img src="${product.Src}">
-                      <span id="remove_prod_basket" class="remove_x_small_basket">
+                      <span id="remove_prod_basket" class="remove_x_small_basket remove_prod_basket">
                           x
                       </span>
                   </div>
@@ -506,7 +448,71 @@ $(document).ready(function () {
     little_empty_basket.classList.remove('d-none');
     little_filled_basket.classList.add('d-none');
   }
-  // updateDiv();
+
+}
+
+//#endregion countbasket kimi burda da balaca baskete add edirem, ki ozu refreshsiz add elesin, fuksiya ozu ashagidadir
+
+
+
+
+//#region yoxlayirig basket boshdu ya yox ve yigirig baskete
+
+$(document).ready(function () {
+
+  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+  let little_filled_basket = document.querySelector('#polniy_basket')
+  let little_empty_basket = document.querySelector('#pustoy_basket')
+
+  //basketimizi cagirdig, parse eledik
+  // bosh olanda yaradilan sectionu basket boshdursa gostereceyik
+
+  if (shopcart.length != 0) {
+
+    little_empty_basket.classList.add('d-none');
+    little_filled_basket.classList.remove('d-none');
+
+    let pr_small = '';
+    let small_basket_inner = document.querySelector('#small_basket_innner');
+
+    for (let product of shopcart) {
+
+      pr_small +=
+        `
+              <div class="product_bag_div">
+
+                  <div class="left col-lg-3">
+                      <img src="${product.Src}">
+                      <span id="remove_prod_basket" class="remove_x_small_basket remove_prod_basket">
+                          x
+                      </span>
+                  </div>
+
+                  <div class="right col-lg-9">
+
+                      <div class="top">
+                          ${product.Name}
+                      </div>
+
+                      <div class="bottom">
+                          <span>${product.Count} pcs.</span>
+                          <span>x</span>
+                          <span>${product.Price}$</span>
+                      </div>
+
+                  </div>
+
+              </div>
+          `
+      small_basket_inner.innerHTML = pr_small;
+    }
+
+  }
+  else {
+    little_empty_basket.classList.remove('d-none');
+    little_filled_basket.classList.add('d-none');
+  }
+
 });
 
 
@@ -515,31 +521,39 @@ $(document).ready(function () {
 
 
 
-//#region balaca basketi refresh edirik
+//#region CountBasketCost hemin funksiyadi, prosto bilmirem niye ozu ozunu cagirmir, funksiya ozu ashagidakidi
 
-// function updateDiv() {
-//   $("#polniy_basket").load(window.location.href + " #here");
-// }
+function CountBasketCost() {
+  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+  let total = 0;
+  let subtotal_inner = document.querySelector('#subtotal_right_countprice');
+  let total_header_cost = document.querySelector('#total_header_cost');
 
-//#endregion balaca basketi refresh edirik 
+  for (let product of shopcart) {
+    total += product.Price * product.Count
+  }
+
+  subtotal_inner.innerHTML = Math.round(total * 100) / 100;
+
+  total_header_cost.innerHTML = `$${Math.round(total * 100) / 100}`;
+
+  if (total == 0) {
+    document.getElementById('subtotal_right_countprice').innerHTML = '$0.00';
+    document.getElementById('total_header_cost').innerHTML = '$0.00';
+  }
+}
 
 
-
-
-
+//#endregion CountBasketCost hemin funksiyadi, prosto bilmirem niye ozu ozunu cagirmir, funksiya ozu ashagidakidi
 
 
 //#region totali hesablayirig
 
 $(document).ready(function () {
-  //headerda subtotallarin idsini ver, 555 ctrl f
-  // i takje dosisnan olan 0.00$ hisseni
-
   let shopcart = JSON.parse(localStorage.getItem('shopcart'));
   let total = 0;
   let subtotal_inner = document.querySelector('#subtotal_right_countprice');
   let total_header_cost = document.querySelector('#total_header_cost');
-  // let flat_rate = document.querySelector('#flat');
 
   for (let product of shopcart) {
     total += product.Price * product.Count
@@ -557,3 +571,15 @@ $(document).ready(function () {
 
 
 //#endregion totali hesablayirig
+
+
+
+
+
+
+
+
+
+
+
+
