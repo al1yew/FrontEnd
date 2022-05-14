@@ -205,23 +205,6 @@ $(document).ready(function () {
 
 //#endregion sorting
 
-//#region shopping cartin ustundeki span
-
-//isteyirem ki shop cartin ustundeki span regemi deyishsin, ozumuzden funksiya yazirig ve ozumuz cagiririg ki melumati ozu otursun, ve her deyishiklikden sonra bunu cagiriram ki yoxlasin, mehsul eynididse spani artirmasin
-
-
-function CountBasketLength() {
-  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
-  let cartcount = shopcart.length;
-  document.querySelector('#cartcount').innerHTML = cartcount;
-}
-
-CountBasketLength();
-
-//cagiriram mutleq metodu cunki ozu ozune ishlemir, ve butun etodlarda cagiracam onu ki reload-suz ishlesin
-
-//#endregion shopping cartin ustundeki span
-
 //#region product html contact
 
 $(document).ready(function () {
@@ -273,34 +256,34 @@ for (let tab of tabclicks) {
 
 //#region counter
 
-let result_counter = document.querySelector('#result_count').innerHTML;
+// let result_counter = document.querySelector('#result_count').innerHTML;
 
-let parsed_count = Number(result_counter);
+// let parsed_count = Number(result_counter);
 
 
-$('#increase').click(function () {
-  if (parsed_count < 10) {
-    parsed_count++;
-    document.getElementById('result_count').innerHTML = parsed_count;
-    $('#max10').css('display', 'none');
-  }
-  else {
-    $('#max10').css('display', 'block');
-  }
-})
+// $('#increase').click(function () {
+//   if (parsed_count < 10) {
+//     parsed_count++;
+//     document.getElementById('result_count').innerHTML = parsed_count;
+//     $('#max10').css('display', 'none');
+//   }
+//   else {
+//     $('#max10').css('display', 'block');
+//   }
+// })
 
-$('#decrease').click(function () {
-  $('#max10').css('display', 'none');
+// $('#decrease').click(function () {
+//   $('#max10').css('display', 'none');
 
-  if (parsed_count > 1) {
-    parsed_count--;
-    document.getElementById('result_count').innerHTML = parsed_count;
-  }
-  else {
-    document.getElementById('result_count').innerHTML = 1;
-  }
+//   if (parsed_count > 1) {
+//     parsed_count--;
+//     document.getElementById('result_count').innerHTML = parsed_count;
+//   }
+//   else {
+//     document.getElementById('result_count').innerHTML = 1;
+//   }
 
-})
+// })
 
 
 //#endregion counter
@@ -371,7 +354,24 @@ else {
   bag_div1.classList.remove('overflowscroll');
 }
 
-//#eregion bag div and its max heigth
+//#endregion bag div and its max heigth
+
+
+//#region shopping cartin ustundeki span
+
+//isteyirem ki shop cartin ustundeki span regemi deyishsin, ozumuzden funksiya yazirig ve ozumuz cagiririg ki melumati ozu otursun, ve her deyishiklikden sonra bunu cagiriram ki yoxlasin, mehsul eynididse spani artirmasin
+
+
+function CountBasketLength() {
+  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+  let cartcount = shopcart.length;
+  document.querySelector('#cartcount').innerHTML = cartcount;
+}
+
+
+//cagiriram mutleq metodu cunki ozu ozune ishlemir, ve butun etodlarda cagiracam onu ki reload-suz ishlesin
+
+//#endregion shopping cartin ustundeki span
 
 
 
@@ -382,6 +382,68 @@ else {
 
 
 
+//#region add to basket
+$(document).ready(function () {
+
+  if (localStorage.getItem('shopcart') === null) {
+    localStorage.setItem('shopcart', JSON.stringify([])); //local storagede arrayimizi yaratdiq
+  }
+  CountBasketLength();
+
+  // localStorage.setItem('shopcart', JSON.stringify([]));
+  // birinci basketi yaratdim, array kimi. Sonra dedim ki productlar for-a salinsin, hansina klik olunsa onun datasini getirsin.
+
+  let addtocartbtn = document.querySelectorAll('.addtocart');
+
+  for (let btntoadd of addtocartbtn) {
+
+    btntoadd.addEventListener('click', function () {
+
+      //basketimizi getirdim, parse eledim. S-S qaydasi yani ki Set-Stringify, baskete nese gonderende set edirik stringify ile, getirende ise parse edirik.
+
+      let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+
+      let prod_id = this.parentElement.parentElement.parentElement.parentElement.id
+      // console.log(prod_id)
+      let prod_img_src = this.parentElement.parentElement.parentElement.children[0].children[0].src;
+
+      let prod_name = this.parentElement.parentElement.children[0].innerHTML
+
+      let prod_cost = this.parentElement.previousElementSibling.children[2].innerHTML;
+      //butun melumatlari goturdum
+
+      let prodexists = shopcart.find(x => x.Id == prod_id);
+
+      if (prodexists == undefined) {
+        shopcart.push({
+          Id: prod_id,
+          Name: prod_name,
+          Src: prod_img_src,
+          Price: prod_cost,
+          Count: 1
+        });
+      }
+      else {
+        prodexists.Count++;
+      }
+
+      localStorage.setItem('shopcart', JSON.stringify(shopcart));
+      CountBasketLength();
+      //set eliyen kimi getsin spanin icindeki regemi deyishsin
+    })
+
+  }
+
+
+
+
+});
+
+
+
+
+
+//#endregion add to basket
 
 
 

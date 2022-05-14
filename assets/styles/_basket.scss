@@ -99,6 +99,10 @@
                             font-size: 14px;
                             text-align: center;
 
+                            &:nth-child(2){
+                                text-align: start;
+                            }
+                            
                             &:nth-child(3) {
                                 color: #71778E;
                             }
