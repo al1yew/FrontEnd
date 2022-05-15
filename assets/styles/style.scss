@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    transition: 0.5s
+}
+
 @import 'login';
 
 @import 'contact';

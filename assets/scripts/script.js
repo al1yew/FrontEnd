@@ -341,6 +341,13 @@ $(document).ready(function () {
       }//dedik ki bes eyni id-li mehsul tapilsa, onda countunu artirsin
 
       localStorage.setItem('shopcart', JSON.stringify(shopcart));
+
+      document.body.style.opacity = '0'
+      setTimeout(() => {
+        location.reload();
+        document.body.style.opacity = '1'
+      }, 500);
+
       //set edirik obratno v nash basket
       CountBasketLength();
 
@@ -450,7 +457,7 @@ $(document).ready(function () {
 
       pr_small +=
         `
-              <div class="product_bag_div">
+              <div class="product_bag_div" id="${product.Id}">
 
                   <div class="left col-lg-3">
                       <img src="${product.Src}">
@@ -553,26 +560,42 @@ let shopcart = JSON.parse(localStorage.getItem('shopcart'));
 
 let delete_btns1 = document.querySelectorAll('.remove_prod_basket');
 
-for (let d_btn of delete_btns1) {
+let products_in_small_basket = document.querySelectorAll('.product_bag_div');
 
-  d_btn.onclick = function (e) {
+for (let a = 0; a < shopcart.length; a++) {
+  console.log(shopcart[a]);
 
-    for (let i = 0; i < shopcart.length; i++) {
+  for (let b = 0; b < products_in_small_basket.length; b++) {
+    console.log(products_in_small_basket[b]);
 
-      if (e.target.parentElement.parentElement.children[1].children[0].innerText.trim() == shopcart[i].Name.trim()) {
-        shopcart.splice(i, 1);
-        localStorage.setItem('shopcart', JSON.stringify(shopcart));
+    if (shopcart[a].Id == products_in_small_basket[b].id) {
 
-        location.reload();
-        // CountBasketLength();
-        // CountBasketCost();
-        // AddToLittleBasket();
-        //how to reload only this div
-      }
+      console.log(products_in_small_basket[b]);
 
     }
   }
 }
+
+// for (let d_btn of delete_btns1) {
+
+//   d_btn.onclick = function () {
+
+//     for (let i = 0; i < shopcart.length; i++) {
+
+//       if () {
+//         shopcart.splice(i, 1);
+//         localStorage.setItem('shopcart', JSON.stringify(shopcart));
+
+//         location.reload();
+//         // CountBasketLength();
+//         // CountBasketCost();
+//         // AddToLittleBasket();
+//         //how to reload only this div
+//       }
+
+//     }
+//   }
+// }
 //#endregion delete item 
 
 //#region counter
@@ -583,57 +606,60 @@ let products_html = document.querySelectorAll('.product_html');
 
 let addtocartbtns = document.querySelectorAll('.addtocart');
 
-for (let prodd of shopcart) {
+for (let i = 0; i < shopcart.length; i++) {
 
   for (let prod_html of products_html) {
 
-    if (prodd.Id == prod_html.id) {
+    if (shopcart[i].Id == prod_html.id) {
 
       prod_html.children[0].children[4].children[4].children[0].style.display = 'none';
 
       prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
 
-      prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
+      prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart[i].Count;
 
       prod_html.children[0].children[4].children[4].children[1].children[0].onclick = function () {
 
-        prodd.Count--;
+        shopcart[i].Count--;
 
-        prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
+        prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart[i].Count;
 
-        //set elemek lazimdi shopkarta
-        //hamsinda set elemek lazimdi locala!!!!!!
+        document.body.style.opacity = '0'
+        setTimeout(() => {
+          location.reload();
+          document.body.style.opacity = '1'
+        }, 1000);
 
-        if (prodd.Count == 0) {
+        if (shopcart[i].Count < 1) {
           prod_html.children[0].children[4].children[4].children[1].classList.add('d-none');
           prod_html.children[0].children[4].children[4].children[0].style.display = 'block';
+          shopcart.splice(i, 1);
+          localStorage.setItem('shopcart', JSON.stringify(shopcart));
+
+          document.body.style.opacity = '0'
+          setTimeout(() => {
+            location.reload();
+            document.body.style.opacity = '1'
+          }, 1000);
         }
-        else {
-          prod_html.children[0].children[4].childrePun[4].children[0].style.display = 'none';
-          prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
-        }
+
         localStorage.setItem('shopcart', JSON.stringify(shopcart));
 
       }
 
       prod_html.children[0].children[4].children[4].children[1].children[2].onclick = function () {
 
-        prodd.Count++;
+        shopcart[i].Count++;
 
-        prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
+        prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart[i].Count;
 
         localStorage.setItem('shopcart', JSON.stringify(shopcart));
 
-        //set elemek lazimdi shopkarta
-        //hamsinda set elemek lazimdi locala!!!!!!
-
-        // if (prodd.Count > 10) {
-        //   prodd.Count = 10;
-        //   prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = 10;
-        // }
-        // else {
-
-        // }
+        document.body.style.opacity = '0'
+        setTimeout(function () {
+          window.location.href = window.location;
+          document.body.style.opacity = '1'
+        }, 1500);
 
       }
 
@@ -641,75 +667,5 @@ for (let prodd of shopcart) {
 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let result_counter = document.querySelector('#result_count').innerHTML;
-
-// let parsed_count = Number(result_counter);
-
-
-// $('#increase').click(function () {
-//   if (parsed_count < 10) {
-//     parsed_count++;
-//     document.getElementById('result_count').innerHTML = parsed_count;
-//     $('#max10').css('display', 'none');
-//   }
-//   else {
-//     $('#max10').css('display', 'block');
-//   }
-// })
-
-// $('#decrease').click(function () {
-//   $('#max10').css('display', 'none');
-
-//   if (parsed_count > 1) {
-//     parsed_count--;
-//     document.getElementById('result_count').innerHTML = parsed_count;
-//   }
-//   else {
-//     document.getElementById('result_count').innerHTML = 1;
-//   }
-
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //#endregion counter

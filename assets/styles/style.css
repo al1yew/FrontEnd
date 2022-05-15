@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+body {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 #logindiv {
   width: 100%;
   font-family: Dosis;

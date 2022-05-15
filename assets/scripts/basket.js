@@ -68,7 +68,7 @@ $(document).ready(function () {
         for (let product of shopcart) {
             pr_big +=
                 `
-                <tr class="basket_item">
+                <tr class="basket_item" id= "${product.Id}">
                     <td class="col-lg-1">
                         <img class="img-fluid" src="${product.Src}">
                     </td>
@@ -112,7 +112,7 @@ $(document).ready(function () {
 
             pr_small +=
                 `
-                <div class="product_bag_div">
+                <div class="product_bag_div" id="${product.Id}">
 
                     <div class="left col-lg-3">
                         <img src="${product.Src}">
@@ -236,154 +236,142 @@ $(document).ready(function () {
 
 
 
-
-
-
 //#region counter
 
-let prod_basket_item = document.querySelectorAll('.basket_item');
+$(document).ready(function () {
 
-for(let lcl_itm of shopcart1){
-    
-}
+    let basket_items = document.querySelectorAll('.basket_item')
 
+    for (let m = 0; m < shopcart1.length; m++) {
 
+        for (let k = 0; k < basket_items.length; k++) {
 
+            if (shopcart1[m].Id == basket_items[k].id) {
 
+                //console.log(basket_items[k].children[3].children[0].children[0]);
+                basket_items[k].children[3].children[0].children[0].onclick = function () {
 
-let prod_inc_dec = document.querySelectorAll('.top_counter')
+                    shopcart1[m].Count--;
 
-let products_html = document.querySelectorAll('.product_html');
+                    basket_items[k].children[3].children[0].children[1].innerHTML = `${shopcart1.Count}`;
 
-let addtocartbtns = document.querySelectorAll('.addtocart');
+                    document.body.style.opacity = '0'
+                    setTimeout(() => {
+                        location.reload();
+                        document.body.style.opacity = '1'
+                    }, 2500);
 
-for (let prodd of shopcart) {
+                    if (shopcart1[m].Count < 1) {
+                        shopcart1.splice(m, 1);
+                        localStorage.setItem('shopcart', JSON.stringify(shopcart1));
 
-    for (let prod_html of products_html) {
+                        document.body.style.opacity = '0'
+                        setTimeout(() => {
+                            location.reload();
+                            document.body.style.opacity = '1'
+                        }, 2500);
+                    }
 
-        if (prodd.Id == prod_html.id) {
-
-            prod_html.children[0].children[4].children[4].children[0].style.display = 'none';
-
-            prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
-
-            prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
-
-            prod_html.children[0].children[4].children[4].children[1].children[0].onclick = function () {
-
-                prodd.Count--;
-
-                prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
-
-                //set elemek lazimdi shopkarta
-                //hamsinda set elemek lazimdi locala!!!!!!
-
-                if (prodd.Count == 0) {
-                    prod_html.children[0].children[4].children[4].children[1].classList.add('d-none');
-                    prod_html.children[0].children[4].children[4].children[0].style.display = 'block';
+                    localStorage.setItem('shopcart', JSON.stringify(shopcart1));
                 }
-                else {
-                    prod_html.children[0].children[4].childrePun[4].children[0].style.display = 'none';
-                    prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
+
+                basket_items[k].children[3].children[0].children[2].onclick = function () {
+
+                    shopcart1[m].Count++;
+
+                    basket_items[k].children[3].children[0].children[1].innerHTML = `${shopcart1.Count}`;
+                    localStorage.setItem('shopcart', JSON.stringify(shopcart1));
+
+                    // document.body.style.opacity = '0'
+                    // setTimeout(() => {
+                    location.reload();
+                    // document.body.style.opacity = '1'
+                    // }, 2500);
+
                 }
-                localStorage.setItem('shopcart', JSON.stringify(shopcart));
 
             }
-
-            prod_html.children[0].children[4].children[4].children[1].children[2].onclick = function () {
-
-                prodd.Count++;
-
-                prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
-
-                localStorage.setItem('shopcart', JSON.stringify(shopcart));
-
-                //set elemek lazimdi shopkarta
-                //hamsinda set elemek lazimdi locala!!!!!!
-
-                // if (prodd.Count > 10) {
-                //   prodd.Count = 10;
-                //   prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = 10;
-                // }
-                // else {
-
-                // }
-
-            }
-
         }
 
+
     }
-}
 
 
 
+})
 
 
+// let basket_items = document.querySelector('.basket_item');
+// console.log(basket_items)
 
+// // for (let m = 0; m < shopcart1.length; m++) {
+// //     for (let k = 0; k < basket_items.length; k++) {
+// //         console.log(basket_items[k].children[3].children[0].children[0])
+// //     }
+// // }
 
+// for (let i = 0; i < shopcart1.length; i++) {
 
+//     for (let prod_html of products_html) {
 
+//         if (shopcart1[i].Id == prod_html.id) {
 
+//             prod_html.children[0].children[4].children[4].children[0].style.display = 'none';
 
+//             prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
 
+//             prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart1[i].Count;
 
+//             prod_html.children[0].children[4].children[4].children[1].children[0].onclick = function () {
 
+//                 shopcart1[i].Count--;
 
+//                 prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart1[i].Count;
 
-// let result_counter = document.querySelector('#result_count').innerHTML;
+//                 document.body.style.opacity = '0'
+//                 setTimeout(() => {
+//                     location.reload();
+//                     document.body.style.opacity = '1'
+//                 }, 1000);
 
-// let parsed_count = Number(result_counter);
+//                 if (shopcart1[i].Count == 0) {
+//                     prod_html.children[0].children[4].children[4].children[1].classList.add('d-none');
+//                     prod_html.children[0].children[4].children[4].children[0].style.display = 'block';
+//                     shopcart1.splice(i, 1);
+//                     localStorage.setItem('shopcart', JSON.stringify(shopcart1));
 
+//                     document.body.style.opacity = '0'
+//                     setTimeout(() => {
+//                         location.reload();
+//                         document.body.style.opacity = '1'
+//                     }, 1000);
+//                 }
 
-// $('#increase').click(function () {
-//   if (parsed_count < 10) {
-//     parsed_count++;
-//     document.getElementById('result_count').innerHTML = parsed_count;
-//     $('#max10').css('display', 'none');
-//   }
-//   else {
-//     $('#max10').css('display', 'block');
-//   }
-// })
+//                 localStorage.setItem('shopcart', JSON.stringify(shopcart1));
 
-// $('#decrease').click(function () {
-//   $('#max10').css('display', 'none');
+//             }
 
-//   if (parsed_count > 1) {
-//     parsed_count--;
-//     document.getElementById('result_count').innerHTML = parsed_count;
-//   }
-//   else {
-//     document.getElementById('result_count').innerHTML = 1;
-//   }
+//             prod_html.children[0].children[4].children[4].children[1].children[2].onclick = function () {
 
-// })
+//                 shopcart1[i].Count++;
 
+//                 prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart1[i].Count;
 
+//                 localStorage.setItem('shopcart', JSON.stringify(shopcart1));
 
+//                 document.body.style.opacity = '0'
+//                 setTimeout(function () {
+//                     window.location.href = window.location;
+//                     document.body.style.opacity = '1'
+//                 }, 1500);
 
+//             }
 
+//         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//     }
+// }
 
 //#endregion counter
+
+
