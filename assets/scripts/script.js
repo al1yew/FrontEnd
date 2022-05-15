@@ -551,75 +551,142 @@ $(document).ready(function () {
 
 let shopcart = JSON.parse(localStorage.getItem('shopcart'));
 
-$(document).ready(function () {
+let delete_btns1 = document.querySelectorAll('.remove_prod_basket');
 
-  let delete_btns1 = document.querySelectorAll('.remove_prod_basket');
+for (let d_btn of delete_btns1) {
 
-  for (let d_btn of delete_btns1) {
+  d_btn.onclick = function (e) {
 
-    d_btn.onclick = function (e) {
+    for (let i = 0; i < shopcart.length; i++) {
 
-      for (let i = 0; i < shopcart.length; i++) {
+      if (e.target.parentElement.parentElement.children[1].children[0].innerText.trim() == shopcart[i].Name.trim()) {
+        shopcart.splice(i, 1);
+        localStorage.setItem('shopcart', JSON.stringify(shopcart));
 
-        if (e.target.parentElement.parentElement.children[1].children[0].innerText.trim() == shopcart[i].Name.trim()) {
-          shopcart.splice(i, 1);
-          localStorage.setItem('shopcart', JSON.stringify(shopcart));
-
-          location.reload();
-          // CountBasketLength();
-          // CountBasketCost();
-          // AddToLittleBasket();
-          //how to reload only this div
-        }
-
+        location.reload();
+        // CountBasketLength();
+        // CountBasketCost();
+        // AddToLittleBasket();
+        //how to reload only this div
       }
+
     }
   }
-})
-
-
-
+}
 //#endregion delete item 
-
-
-
-
-
-
-
-
-
 
 //#region counter
 
-let result_counter = document.querySelector('#result_count').innerHTML;
+//shopcarti yuxarida cagirmisham
 
-let parsed_count = Number(result_counter);
+let prod_inc_dec = document.querySelectorAll('.top_counter')
+
+// let inc_btn = document.querySelectorAll('.increase');
+
+// let dec_btn = document.querySelectorAll('.decrease');
+
+let products_html = document.querySelectorAll('.product_html');
+
+let addtocartbtns = document.querySelectorAll('.addtocart');
+
+for (let prodd of shopcart) {
+
+  for (let prod_html of products_html) {
+
+    if (prodd.Id == prod_html.id) {
+
+      // console.log(prod_html.children[0].children[4].children[4].children[0])
+
+      prod_html.children[0].children[4].children[4].children[0].style.display = 'none';
+
+      prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
+
+      // console.log(prodd.Count)
+      // console.log(prodd.Id)
+
+      prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
+
+      prod_html.children[0].children[4].children[4].children[1].children[1].click = function () {
+        prodd.Count--;
+
+        prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
+        
+        console.log('salam')
+      }
 
 
-$('#increase').click(function () {
-  if (parsed_count < 10) {
-    parsed_count++;
-    document.getElementById('result_count').innerHTML = parsed_count;
-    $('#max10').css('display', 'none');
+    }
   }
-  else {
-    $('#max10').css('display', 'block');
-  }
-})
+}
 
-$('#decrease').click(function () {
-  $('#max10').css('display', 'none');
 
-  if (parsed_count > 1) {
-    parsed_count--;
-    document.getElementById('result_count').innerHTML = parsed_count;
-  }
-  else {
-    document.getElementById('result_count').innerHTML = 1;
-  }
 
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let result_counter = document.querySelector('#result_count').innerHTML;
+
+// let parsed_count = Number(result_counter);
+
+
+// $('#increase').click(function () {
+//   if (parsed_count < 10) {
+//     parsed_count++;
+//     document.getElementById('result_count').innerHTML = parsed_count;
+//     $('#max10').css('display', 'none');
+//   }
+//   else {
+//     $('#max10').css('display', 'block');
+//   }
+// })
+
+// $('#decrease').click(function () {
+//   $('#max10').css('display', 'none');
+
+//   if (parsed_count > 1) {
+//     parsed_count--;
+//     document.getElementById('result_count').innerHTML = parsed_count;
+//   }
+//   else {
+//     document.getElementById('result_count').innerHTML = 1;
+//   }
+
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //#endregion counter

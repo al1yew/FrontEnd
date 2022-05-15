@@ -1448,6 +1448,7 @@
 }
 
 #all_content .all .right .bottom .product .product_card ul li:nth-child(5) .top_counter {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
