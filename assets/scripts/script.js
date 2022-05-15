@@ -310,7 +310,7 @@ $(document).ready(function () {
   for (let btntoadd of addtocartbtn) {
 
     btntoadd.addEventListener('click', function () {
-
+      let reload_ = document.getElementById('reload_');
 
       let shopcart = JSON.parse(localStorage.getItem('shopcart'));
       //basketimizi getirdim, parse eledim. S-S qaydasi yani ki Set-Stringify, baskete nese gonderende set edirik stringify ile, getirende ise parse edirik.
@@ -338,15 +338,22 @@ $(document).ready(function () {
       }
       else {
         prodexists.Count++;
-      }//dedik ki bes eyni id-li mehsul tapilsa, onda countunu artirsin
+      }
+
+      //dedik ki bes eyni id-li mehsul tapilsa, onda countunu artirsin
 
       localStorage.setItem('shopcart', JSON.stringify(shopcart));
+      //hemishe set eliyirik obratno
 
-      document.body.style.opacity = '0'
       setTimeout(() => {
+
         location.reload();
-        document.body.style.opacity = '1'
+        reload_.classList.remove('d-none');
+        return false;
+
       }, 500);
+
+      reload_.classList.add('d-none');
 
       //set edirik obratno v nash basket
       CountBasketLength();
@@ -563,8 +570,6 @@ $(document).ready(function () {
 
   let shopcart = JSON.parse(localStorage.getItem('shopcart'));
 
-  let delete_btns1 = document.querySelectorAll('.remove_prod_basket');
-
   let prod_sm_bs = document.querySelectorAll('.product_bag_div');
 
   for (let a = 0; a < shopcart.length; a++) {
@@ -572,7 +577,21 @@ $(document).ready(function () {
     for (let b = 0; b < prod_sm_bs.length; b++) {
 
       if (shopcart[a].Id == prod_sm_bs[b].id) {
-        console.log('salam')
+
+        prod_sm_bs[b].children[0].children[1].onclick = function () {
+          shopcart.splice(a, 1);
+          localStorage.setItem('shopcart', JSON.stringify(shopcart));
+          setTimeout(() => {
+
+            location.reload();
+            reload_.classList.remove('d-none');
+            return false;
+
+          }, 500);
+
+          reload_.classList.add('d-none');
+        }
+
       }
 
     }
@@ -581,27 +600,10 @@ $(document).ready(function () {
 })
 
 
-// for (let d_btn of delete_btns1) {
-
-//   d_btn.onclick = function () {
-
-//     for (let i = 0; i < shopcart.length; i++) {
-
-//       if () {
-//         shopcart.splice(i, 1);
-//         localStorage.setItem('shopcart', JSON.stringify(shopcart));
-
-//         location.reload();
-//         // CountBasketLength();
-//         // CountBasketCost();
-//         // AddToLittleBasket();
-//         //how to reload only this div
-//       }
-
-//     }
-//   }
-// }
 //#endregion delete item 
+
+
+
 
 //#region counter
 
@@ -629,11 +631,15 @@ for (let i = 0; i < shopcart.length; i++) {
 
         prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart[i].Count;
 
-        document.body.style.opacity = '0'
         setTimeout(() => {
+
           location.reload();
-          document.body.style.opacity = '1'
-        }, 1000);
+          reload_.classList.remove('d-none');
+          return false;
+
+        }, 500);
+
+        reload_.classList.add('d-none');
 
         if (shopcart[i].Count < 1) {
           prod_html.children[0].children[4].children[4].children[1].classList.add('d-none');
@@ -641,11 +647,15 @@ for (let i = 0; i < shopcart.length; i++) {
           shopcart.splice(i, 1);
           localStorage.setItem('shopcart', JSON.stringify(shopcart));
 
-          document.body.style.opacity = '0'
           setTimeout(() => {
+
             location.reload();
-            document.body.style.opacity = '1'
-          }, 1000);
+            reload_.classList.remove('d-none');
+            return false;
+
+          }, 500);
+
+          reload_.classList.add('d-none');
         }
 
         localStorage.setItem('shopcart', JSON.stringify(shopcart));
@@ -660,11 +670,15 @@ for (let i = 0; i < shopcart.length; i++) {
 
         localStorage.setItem('shopcart', JSON.stringify(shopcart));
 
-        document.body.style.opacity = '0'
-        setTimeout(function () {
-          window.location.href = window.location;
-          document.body.style.opacity = '1'
-        }, 1500);
+        setTimeout(() => {
+
+          location.reload();
+          reload_.classList.remove('d-none');
+          return false;
+
+        }, 500);
+
+        reload_.classList.add('d-none');
 
       }
 

@@ -221,7 +221,15 @@ $(document).ready(function () {
                 if (e.target.parentElement.parentElement.children[1].children[0].innerText.trim() == shopcart[i].Name.trim()) {
                     shopcart1.splice(i, 1);
                     localStorage.setItem('shopcart', JSON.stringify(shopcart1));
-                    location.reload();
+                    setTimeout(() => {
+
+                        location.reload();
+                        reload_.classList.remove('d-none');
+                        return false;
+
+                    }, 500);
+
+                    reload_.classList.add('d-none');
                 }
             }
         }
@@ -255,21 +263,29 @@ $(document).ready(function () {
 
                     basket_items[k].children[3].children[0].children[1].innerHTML = `${shopcart1.Count}`;
 
-                    document.body.style.opacity = '0'
                     setTimeout(() => {
+
                         location.reload();
-                        document.body.style.opacity = '1'
-                    }, 2500);
+                        reload_.classList.remove('d-none');
+                        return false;
+
+                    }, 500);
+
+                    reload_.classList.add('d-none');
 
                     if (shopcart1[m].Count < 1) {
                         shopcart1.splice(m, 1);
                         localStorage.setItem('shopcart', JSON.stringify(shopcart1));
 
-                        document.body.style.opacity = '0'
                         setTimeout(() => {
+
                             location.reload();
-                            document.body.style.opacity = '1'
-                        }, 2500);
+                            reload_.classList.remove('d-none');
+                            return false;
+
+                        }, 500);
+
+                        reload_.classList.add('d-none');
                     }
 
                     localStorage.setItem('shopcart', JSON.stringify(shopcart1));
@@ -279,98 +295,25 @@ $(document).ready(function () {
 
                     shopcart1[m].Count++;
 
-                    basket_items[k].children[3].children[0].children[1].innerHTML = `${shopcart1.Count}`;
-                    localStorage.setItem('shopcart', JSON.stringify(shopcart1));
-
-                    // document.body.style.opacity = '0'
-                    // setTimeout(() => {
                     location.reload();
-                    // document.body.style.opacity = '1'
-                    // }, 2500);
+                    localStorage.setItem('shopcart', JSON.stringify(shopcart1));
+                    basket_items[k].children[3].children[0].children[1].innerHTML = `${shopcart1.Count}`;
+
+                    setTimeout(() => {
+
+                        location.reload();
+                        reload_.classList.remove('d-none');
+                        return false;
+
+                    }, 500);
+
+                    reload_.classList.add('d-none');
 
                 }
-
             }
         }
-
-
     }
-
-
-
 })
-
-
-// let basket_items = document.querySelector('.basket_item');
-// console.log(basket_items)
-
-// // for (let m = 0; m < shopcart1.length; m++) {
-// //     for (let k = 0; k < basket_items.length; k++) {
-// //         console.log(basket_items[k].children[3].children[0].children[0])
-// //     }
-// // }
-
-// for (let i = 0; i < shopcart1.length; i++) {
-
-//     for (let prod_html of products_html) {
-
-//         if (shopcart1[i].Id == prod_html.id) {
-
-//             prod_html.children[0].children[4].children[4].children[0].style.display = 'none';
-
-//             prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
-
-//             prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart1[i].Count;
-
-//             prod_html.children[0].children[4].children[4].children[1].children[0].onclick = function () {
-
-//                 shopcart1[i].Count--;
-
-//                 prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart1[i].Count;
-
-//                 document.body.style.opacity = '0'
-//                 setTimeout(() => {
-//                     location.reload();
-//                     document.body.style.opacity = '1'
-//                 }, 1000);
-
-//                 if (shopcart1[i].Count == 0) {
-//                     prod_html.children[0].children[4].children[4].children[1].classList.add('d-none');
-//                     prod_html.children[0].children[4].children[4].children[0].style.display = 'block';
-//                     shopcart1.splice(i, 1);
-//                     localStorage.setItem('shopcart', JSON.stringify(shopcart1));
-
-//                     document.body.style.opacity = '0'
-//                     setTimeout(() => {
-//                         location.reload();
-//                         document.body.style.opacity = '1'
-//                     }, 1000);
-//                 }
-
-//                 localStorage.setItem('shopcart', JSON.stringify(shopcart1));
-
-//             }
-
-//             prod_html.children[0].children[4].children[4].children[1].children[2].onclick = function () {
-
-//                 shopcart1[i].Count++;
-
-//                 prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = shopcart1[i].Count;
-
-//                 localStorage.setItem('shopcart', JSON.stringify(shopcart1));
-
-//                 document.body.style.opacity = '0'
-//                 setTimeout(function () {
-//                     window.location.href = window.location;
-//                     document.body.style.opacity = '1'
-//                 }, 1500);
-
-//             }
-
-//         }
-
-//     }
-// }
 
 //#endregion counter
 
