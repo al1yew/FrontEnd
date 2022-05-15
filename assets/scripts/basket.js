@@ -68,7 +68,7 @@ $(document).ready(function () {
         for (let product of shopcart) {
             pr_big +=
                 `
-                <tr>
+                <tr class="basket_item">
                     <td class="col-lg-1">
                         <img class="img-fluid" src="${product.Src}">
                     </td>
@@ -235,7 +235,94 @@ $(document).ready(function () {
 
 
 
+
+
+
+
 //#region counter
+
+let prod_basket_item = document.querySelectorAll('.basket_item');
+
+
+let prod_inc_dec = document.querySelectorAll('.top_counter')
+
+let products_html = document.querySelectorAll('.product_html');
+
+let addtocartbtns = document.querySelectorAll('.addtocart');
+
+for (let prodd of shopcart) {
+
+    for (let prod_html of products_html) {
+
+        if (prodd.Id == prod_html.id) {
+
+            prod_html.children[0].children[4].children[4].children[0].style.display = 'none';
+
+            prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
+
+            prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
+
+            prod_html.children[0].children[4].children[4].children[1].children[0].onclick = function () {
+
+                prodd.Count--;
+
+                prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
+
+                //set elemek lazimdi shopkarta
+                //hamsinda set elemek lazimdi locala!!!!!!
+
+                if (prodd.Count == 0) {
+                    prod_html.children[0].children[4].children[4].children[1].classList.add('d-none');
+                    prod_html.children[0].children[4].children[4].children[0].style.display = 'block';
+                }
+                else {
+                    prod_html.children[0].children[4].childrePun[4].children[0].style.display = 'none';
+                    prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
+                }
+                localStorage.setItem('shopcart', JSON.stringify(shopcart));
+
+            }
+
+            prod_html.children[0].children[4].children[4].children[1].children[2].onclick = function () {
+
+                prodd.Count++;
+
+                prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
+
+                localStorage.setItem('shopcart', JSON.stringify(shopcart));
+
+                //set elemek lazimdi shopkarta
+                //hamsinda set elemek lazimdi locala!!!!!!
+
+                // if (prodd.Count > 10) {
+                //   prodd.Count = 10;
+                //   prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = 10;
+                // }
+                // else {
+
+                // }
+
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let result_counter = document.querySelector('#result_count').innerHTML;
 
@@ -253,6 +340,16 @@ $(document).ready(function () {
 //   }
 // })
 
+// $('#decrease').click(function () {
+//   $('#max10').css('display', 'none');
+
+//   if (parsed_count > 1) {
+//     parsed_count--;
+//     document.getElementById('result_count').innerHTML = parsed_count;
+//   }
+//   else {
+//     document.getElementById('result_count').innerHTML = 1;
+//   }
 
 // })
 
@@ -270,7 +367,16 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 //#endregion counter
-
-
-
