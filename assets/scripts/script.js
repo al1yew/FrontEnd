@@ -556,25 +556,30 @@ $(document).ready(function () {
 
 //#region delete item 
 
+
 let shopcart = JSON.parse(localStorage.getItem('shopcart'));
 
-let delete_btns1 = document.querySelectorAll('.remove_prod_basket');
+$(document).ready(function () {
 
-let products_in_small_basket = document.querySelectorAll('.product_bag_div');
+  let shopcart = JSON.parse(localStorage.getItem('shopcart'));
 
-for (let a = 0; a < shopcart.length; a++) {
-  console.log(shopcart[a]);
+  let delete_btns1 = document.querySelectorAll('.remove_prod_basket');
 
-  for (let b = 0; b < products_in_small_basket.length; b++) {
-    console.log(products_in_small_basket[b]);
+  let prod_sm_bs = document.querySelectorAll('.product_bag_div');
 
-    if (shopcart[a].Id == products_in_small_basket[b].id) {
+  for (let a = 0; a < shopcart.length; a++) {
 
-      console.log(products_in_small_basket[b]);
+    for (let b = 0; b < prod_sm_bs.length; b++) {
+
+      if (shopcart[a].Id == prod_sm_bs[b].id) {
+        console.log('salam')
+      }
 
     }
   }
-}
+
+})
+
 
 // for (let d_btn of delete_btns1) {
 
