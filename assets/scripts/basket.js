@@ -8,8 +8,6 @@ bag_div112345.onclick = function (e) {
 
 //#endregion bag_div1 click olunmasin
 
-
-
 //#region shopping cartin ustundeki span
 
 //isteyirem ki shop cartin ustundeki span regemi deyishsin, ozumuzden funksiya yazirig ve ozumuz cagiririg ki melumati ozu otursun, ve her deyishiklikden sonra bunu cagiriram ki yoxlasin, mehsul eynididse spani artirmasin
@@ -35,7 +33,7 @@ $(document).ready(function () {
 
 
 
-let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+// let shopcart = JSON.parse(localStorage.getItem('shopcart'));
 
 
 
@@ -208,6 +206,10 @@ $(document).ready(function () {
 
 //#region delete item 
 
+
+
+let shopcart1 = JSON.parse(localStorage.getItem('shopcart'));
+
 $(document).ready(function () {
 
     let delete_btns = document.querySelectorAll('.remove_prod_basket');
@@ -215,10 +217,10 @@ $(document).ready(function () {
     for (let d_btn of delete_btns) {
         d_btn.onclick = function (e) {
 
-            for (let i = 0; i < shopcart.length; i++) {
+            for (let i = 0; i < shopcart1.length; i++) {
                 if (e.target.parentElement.parentElement.children[1].children[0].innerText.trim() == shopcart[i].Name.trim()) {
-                    shopcart.splice(i, 1);
-                    localStorage.setItem('shopcart', JSON.stringify(shopcart));
+                    shopcart1.splice(i, 1);
+                    localStorage.setItem('shopcart', JSON.stringify(shopcart1));
                     location.reload();
                 }
             }
@@ -231,6 +233,35 @@ $(document).ready(function () {
 //#endregion delete item 
 
 
+
+let result_counter = document.querySelector('#result_count').innerHTML;
+
+let parsed_count = Number(result_counter);
+
+
+$('#increase').click(function () {
+    if (parsed_count < 10) {
+        parsed_count++;
+        document.getElementById('result_count').innerHTML = parsed_count;
+        $('#max10').css('display', 'none');
+    }
+    else {
+        $('#max10').css('display', 'block');
+    }
+})
+
+$('#decrease').click(function () {
+    $('#max10').css('display', 'none');
+
+    if (parsed_count > 1) {
+        parsed_count--;
+        document.getElementById('result_count').innerHTML = parsed_count;
+    }
+    else {
+        document.getElementById('result_count').innerHTML = 1;
+    }
+
+})
 
 
 

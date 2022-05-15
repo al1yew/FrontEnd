@@ -289,39 +289,6 @@ function CountBasketLength() {
 
 //#endregion shopping cartin ustundeki span
 
-//#region counter
-
-// let result_counter = document.querySelector('#result_count').innerHTML;
-
-// let parsed_count = Number(result_counter);
-
-
-// $('#increase').click(function () {
-//   if (parsed_count < 10) {
-//     parsed_count++;
-//     document.getElementById('result_count').innerHTML = parsed_count;
-//     $('#max10').css('display', 'none');
-//   }
-//   else {
-//     $('#max10').css('display', 'block');
-//   }
-// })
-
-// $('#decrease').click(function () {
-//   $('#max10').css('display', 'none');
-
-//   if (parsed_count > 1) {
-//     parsed_count--;
-//     document.getElementById('result_count').innerHTML = parsed_count;
-//   }
-//   else {
-//     document.getElementById('result_count').innerHTML = 1;
-//   }
-
-// })
-
-
-//#endregion counter
 
 
 
@@ -455,43 +422,6 @@ function AddToLittleBasket() {
 
 
 
-//#region delete item 
-
-// let shopcart = JSON.parse(localStorage.getItem('shopcart'));
-
-$(document).ready(function () {
-
-  let delete_btns1 = document.querySelectorAll('.remove_prod_basket');
-  console.log(document.querySelectorAll('.remove_prod_basket'));
-
-  for (let d_btn of delete_btns1) {
-
-    console.log('alaslal')
-
-    d_btn.onclick = function (e) {
-
-      console.log('alaslal')
-
-      for (let i = 0; i < shopcart.length; i++) {
-
-        console.log('alaslal')
-
-        if (e.target.parentElement.parentElement.children[1].children[0].innerText.trim() == shopcart[i].Name.trim()) {
-          shopcart.splice(i, 1);
-          localStorage.setItem('shopcart', JSON.stringify(shopcart));
-          location.reload();
-        }
-      }
-    }
-  }
-})
-
-
-
-//#endregion delete item 
-
-
-
 
 
 
@@ -617,6 +547,39 @@ $(document).ready(function () {
 
 
 
+//#region delete item 
+
+let shopcart = JSON.parse(localStorage.getItem('shopcart'));
+
+$(document).ready(function () {
+
+  let delete_btns1 = document.querySelectorAll('.remove_prod_basket');
+
+  for (let d_btn of delete_btns1) {
+
+    d_btn.onclick = function (e) {
+
+      for (let i = 0; i < shopcart.length; i++) {
+
+        if (e.target.parentElement.parentElement.children[1].children[0].innerText.trim() == shopcart[i].Name.trim()) {
+          shopcart.splice(i, 1);
+          localStorage.setItem('shopcart', JSON.stringify(shopcart));
+
+          location.reload();
+          // CountBasketLength();
+          // CountBasketCost();
+          // AddToLittleBasket();
+          //how to reload only this div
+        }
+
+      }
+    }
+  }
+})
+
+
+
+//#endregion delete item 
 
 
 
@@ -624,3 +587,39 @@ $(document).ready(function () {
 
 
 
+
+
+
+//#region counter
+
+let result_counter = document.querySelector('#result_count').innerHTML;
+
+let parsed_count = Number(result_counter);
+
+
+$('#increase').click(function () {
+  if (parsed_count < 10) {
+    parsed_count++;
+    document.getElementById('result_count').innerHTML = parsed_count;
+    $('#max10').css('display', 'none');
+  }
+  else {
+    $('#max10').css('display', 'block');
+  }
+})
+
+$('#decrease').click(function () {
+  $('#max10').css('display', 'none');
+
+  if (parsed_count > 1) {
+    parsed_count--;
+    document.getElementById('result_count').innerHTML = parsed_count;
+  }
+  else {
+    document.getElementById('result_count').innerHTML = 1;
+  }
+
+})
+
+
+//#endregion counter
