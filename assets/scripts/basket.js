@@ -202,13 +202,13 @@ $(document).ready(function () {
 //#endregion totali hesablayirig
 
 
+let shopcart1 = JSON.parse(localStorage.getItem('shopcart'));
 
 
 //#region delete item 
 
 
 
-let shopcart1 = JSON.parse(localStorage.getItem('shopcart'));
 
 $(document).ready(function () {
 
@@ -242,6 +242,13 @@ $(document).ready(function () {
 //#region counter
 
 let prod_basket_item = document.querySelectorAll('.basket_item');
+
+for(let lcl_itm of shopcart1){
+    
+}
+
+
+
 
 
 let prod_inc_dec = document.querySelectorAll('.top_counter')
