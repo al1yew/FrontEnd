@@ -577,13 +577,7 @@ for (let d_btn of delete_btns1) {
 
 //#region counter
 
-//shopcarti yuxarida cagirmisham
-
 let prod_inc_dec = document.querySelectorAll('.top_counter')
-
-// let inc_btn = document.querySelectorAll('.increase');
-
-// let dec_btn = document.querySelectorAll('.decrease');
 
 let products_html = document.querySelectorAll('.product_html');
 
@@ -595,27 +589,56 @@ for (let prodd of shopcart) {
 
     if (prodd.Id == prod_html.id) {
 
-      // console.log(prod_html.children[0].children[4].children[4].children[0])
-
       prod_html.children[0].children[4].children[4].children[0].style.display = 'none';
 
       prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
 
-      // console.log(prodd.Count)
-      // console.log(prodd.Id)
-
       prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
 
-      prod_html.children[0].children[4].children[4].children[1].children[1].click = function () {
+      prod_html.children[0].children[4].children[4].children[1].children[0].onclick = function () {
+
         prodd.Count--;
 
         prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
-        
-        console.log('salam')
+
+        //set elemek lazimdi shopkarta
+        //hamsinda set elemek lazimdi locala!!!!!!
+
+        if (prodd.Count == 0) {
+          prod_html.children[0].children[4].children[4].children[1].classList.add('d-none');
+          prod_html.children[0].children[4].children[4].children[0].style.display = 'block';
+        }
+        else {
+          prod_html.children[0].children[4].childrePun[4].children[0].style.display = 'none';
+          prod_html.children[0].children[4].children[4].children[1].classList.remove('d-none');
+        }
+        localStorage.setItem('shopcart', JSON.stringify(shopcart));
+
       }
 
+      prod_html.children[0].children[4].children[4].children[1].children[2].onclick = function () {
+
+        prodd.Count++;
+
+        prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = prodd.Count;
+
+        localStorage.setItem('shopcart', JSON.stringify(shopcart));
+
+        //set elemek lazimdi shopkarta
+        //hamsinda set elemek lazimdi locala!!!!!!
+
+        // if (prodd.Count > 10) {
+        //   prodd.Count = 10;
+        //   prod_html.children[0].children[4].children[4].children[1].children[1].innerHTML = 10;
+        // }
+        // else {
+
+        // }
+
+      }
 
     }
+
   }
 }
 

@@ -253,16 +253,6 @@ $(document).ready(function () {
 //   }
 // })
 
-// $('#decrease').click(function () {
-//   $('#max10').css('display', 'none');
-
-//   if (parsed_count > 1) {
-//     parsed_count--;
-//     document.getElementById('result_count').innerHTML = parsed_count;
-//   }
-//   else {
-//     document.getElementById('result_count').innerHTML = 1;
-//   }
 
 // })
 

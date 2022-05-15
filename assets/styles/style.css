@@ -4701,6 +4701,7 @@ a {
   border-radius: 0;
   position: relative;
   overflow: hidden;
+  height: 400px;
 }
 
 #second .bottom .slider_card img {
