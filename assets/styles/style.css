@@ -6258,7 +6258,7 @@ a {
   color: #2bbef9;
 }
 
-#modal_location {
+.modal_location {
   height: 100vh;
   font-family: Inter;
   position: fixed;
@@ -6280,7 +6280,7 @@ a {
   background-color: #afafb67b;
 }
 
-#modal_location .location_div {
+.modal_location .location_div {
   height: 75%;
   z-index: 123456;
   display: -webkit-box;
@@ -6301,7 +6301,7 @@ a {
   border-radius: 10px;
 }
 
-#modal_location .location_div .top {
+.modal_location .location_div .top {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6319,18 +6319,18 @@ a {
           align-items: flex-start;
 }
 
-#modal_location .location_div .top h5 {
+.modal_location .location_div .top h5 {
   padding: 0;
   margin: 0;
 }
 
-#modal_location .location_div .top p {
+.modal_location .location_div .top p {
   margin: 10px 0;
   font-size: 13px;
   color: #9b9bb4;
 }
 
-#modal_location .location_div .top .inputarea {
+.modal_location .location_div .top .inputarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6346,7 +6346,7 @@ a {
   width: 100%;
 }
 
-#modal_location .location_div .top .inputarea i {
+.modal_location .location_div .top .inputarea i {
   width: 8%;
   color: #233A95;
   font-size: 20px;
@@ -6356,12 +6356,12 @@ a {
   cursor: pointer;
 }
 
-#modal_location .location_div .top .inputarea i:hover {
+.modal_location .location_div .top .inputarea i:hover {
   -webkit-transform: rotate(6.28rad);
           transform: rotate(6.28rad);
 }
 
-#modal_location .location_div .top .inputarea input {
+.modal_location .location_div .top .inputarea input {
   outline: none;
   background-color: #f3f4f7;
   border: none;
@@ -6369,13 +6369,13 @@ a {
   width: 92%;
 }
 
-#modal_location .location_div .top .inputarea input::-webkit-search-cancel-button {
+.modal_location .location_div .top .inputarea input::-webkit-search-cancel-button {
   position: relative;
   right: 5px;
   font-size: 25px;
 }
 
-#modal_location .location_div .top span {
+.modal_location .location_div .top span {
   font-size: 16px;
   position: absolute;
   cursor: pointer;
@@ -6386,11 +6386,11 @@ a {
   color: #7A7A7A;
 }
 
-#modal_location .location_div .top span:hover {
+.modal_location .location_div .top span:hover {
   color: red;
 }
 
-#modal_location .location_div .bottom {
+.modal_location .location_div .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6409,7 +6409,7 @@ a {
   width: 100%;
 }
 
-#modal_location .location_div .bottom p {
+.modal_location .location_div .bottom p {
   padding: 15px 0;
   width: 100%;
   -webkit-box-align: start;
@@ -6425,7 +6425,7 @@ a {
   border-bottom: 0.5px solid #9b9bb4;
 }
 
-#modal_location .location_div .bottom p span:nth-child(1) {
+.modal_location .location_div .bottom p span:nth-child(1) {
   font-size: 14px;
   color: black;
   width: -webkit-fit-content;
@@ -6433,7 +6433,7 @@ a {
   width: fit-content;
 }
 
-#modal_location .location_div .bottom p span:nth-child(2) {
+.modal_location .location_div .bottom p span:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

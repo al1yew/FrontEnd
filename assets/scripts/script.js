@@ -42,23 +42,25 @@ $('.slider1').slick({
 
 $(document).ready(function () {
 
-  $('#location_search').focus();
+  $('.location_search').focus();
 
-  $("#location").click(function () {
-    $('#modal_location').fadeIn(300);
+  $(".location").click(function () {
+    $('.modal_location').fadeIn(300);
   })
 
-  var modal = document.getElementById('modal_location');
+  let modals = document.querySelectorAll('.modal_location');
 
   document.onclick = function (e) {
-
-    if (e.target == modal) {
-      modal.style.display = "none";
+    for (let modal of modals) {
+      if (e.target == modal) {
+        modal.style.display = "none";
+      }
     }
+
   }
 
-  $('#close_location').click(function () {
-    $('#modal_location').fadeOut(300);
+  $('.close_location').click(function () {
+    $('.modal_location').fadeOut(300);
   })
 
   let locations = document.querySelectorAll('.locations');
@@ -70,7 +72,7 @@ $(document).ready(function () {
 
       set_location.innerHTML = e.target.children[0].innerHTML;
 
-      $('#modal_location').fadeOut(300);
+      $('.modal_location').fadeOut(300);
 
     }
   }
@@ -78,7 +80,7 @@ $(document).ready(function () {
   for (let location of locations) {
     location.onclick = function (e) {
       set_location.innerHTML = e.target.innerHTML;
-      $('#modal_location').fadeOut(300);
+      $('.modal_location').fadeOut(300);
     }
   }
 
@@ -93,8 +95,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  $("#categories").click(function () {
-    $('#all_categories').slideToggle(220);
+  $(".categories_").click(function () {
+    $('.all_categories_').slideToggle(220);
   })
 
 });
@@ -104,31 +106,31 @@ $(document).ready(function () {
 //#region login js
 
 $(document).ready(function () {
-  let lon = $('#login_username');
-  let lop = $("#login_password");
-  let ren = $("#reg_username");
-  let rep = $("#reg_password");
+  let lon = $('.login_username');
+  let lop = $(".login_password");
+  let ren = $(".reg_username");
+  let rep = $(".reg_password");
 
-  $('#login').click(function () {
+  $('.login').click(function () {
 
     if (lon.val().length < 8 || lop.val().length < 8) {
-      $('#error').slideDown(200);
-      $('#error_p').html('Your Login and Password must contain at least 8 characters!')
+      $('.error1').slideDown(200);
+      $('.error_p').html('Your Login and Password must contain at least 8 characters!')
     }
     else {
-      $('#error').slideUp(200);
+      $('.error1').slideUp(200);
     }
 
   })
 
-  $('#register').click(function () {
+  $('.register').click(function () {
 
     if (ren.val().length < 8 || rep.val().length < 8) {
-      $('#error').slideDown(200);
-      $('#error_p').html('Your Login and Password must contain at least 8 characters!')
+      $('.error1').slideDown(200);
+      $('.error_p').html('Your Login and Password must contain at least 8 characters!')
     }
     else {
-      $('#error').slideUp(200);
+      $('.error1').slideUp(200);
     }
 
   })
@@ -142,7 +144,7 @@ $(document).ready(function () {
 
   let inputs = document.querySelectorAll('.requiredinputfield')
 
-  $('#send_message').click(function () {
+  $('.send_message').click(function () {
 
     for (let input of inputs) {
       if (input.value.length < 1) {
@@ -162,7 +164,7 @@ $(document).ready(function () {
 
     //yashayiiiiiiiishhhhh
 
-    $('#inp_n').val().length > 0 && $('#inp_s').val().length > 0 && $('#inp_su').val().length > 0 ? $('#bye').css('display', 'block') : $('#bye').css('display', 'none');
+    $('.inp_n').val().length > 0 && $('.inp_s').val().length > 0 && $('.inp_su').val().length > 0 ? $('.bye').css('display', 'block') : $('.bye').css('display', 'none');
 
   })
 });
@@ -171,15 +173,14 @@ $(document).ready(function () {
 
 //#region sorting
 
-
 $(document).ready(function () {
 
-  $("#sortby").click(function () {
-    $('#sortingdiv').toggle();
+  $(".sortby").click(function () {
+    $('.sortingdiv').toggle();
   })
 
-  $("#datasort").click(function () {
-    $('#sortdata').toggle();
+  $(".datasort").click(function () {
+    $('.sortdata').toggle();
   })
 
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -196,8 +197,7 @@ $(document).ready(function () {
 
   let prod_inputs = document.querySelectorAll('.inputfield1');
 
-  $('#send_message_product').click(function () {
-    console.log('dsdasda')
+  $('.send_message_product').click(function () {
     for (let inp1 of prod_inputs) {
       if (inp1.value.length < 1) {
         inp1.nextElementSibling.style.display = 'block';
@@ -222,7 +222,6 @@ let tab_contents = document.querySelectorAll('.tab_content');
 for (let tab of tabclicks) {
 
   tab.onclick = function () {
-    tab.classList.add('chosen');
 
     for (let cont of tab_contents) {
 
@@ -233,6 +232,16 @@ for (let tab of tabclicks) {
         cont.classList.add('d-none');
       }
     }
+
+    // if (tab.classList.contains('tabclick1')) {
+    //   tab.classList.add('chosen');
+    // }
+    // else if (tab.classList.contains('tabclick2')) {
+    //   tab.classList.add('chosen');
+    // }
+    // else if (tab.classList.contains('tabclick3')) {
+    //   tab.classList.add('chosen');
+    // }
   }
 }
 
@@ -285,7 +294,7 @@ else {
 function CountBasketLength() {
   let shopcart = JSON.parse(localStorage.getItem('shopcart'));
   let cartcount = shopcart.length;
-  document.querySelector('#cartcount').innerHTML = cartcount;
+  document.querySelector('.cartcount').innerHTML = cartcount;
 }
 
 //#endregion shopping cartin ustundeki span
@@ -311,6 +320,7 @@ $(document).ready(function () {
   for (let btntoadd of addtocartbtn) {
 
     btntoadd.addEventListener('click', function () {
+      
       let reload_ = document.getElementById('reload_');
 
       let shopcart = JSON.parse(localStorage.getItem('shopcart'));
@@ -676,9 +686,9 @@ for (let i = 0; i < shopcart.length; i++) {
           location.reload();
           reload_.classList.remove('d-none');
           return false;
-
+  
         }, 500);
-
+  
         reload_.classList.add('d-none');
 
       }

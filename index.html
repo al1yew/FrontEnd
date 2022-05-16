@@ -21,12 +21,12 @@
 <body>
     <section id="comp">
 
-        <div class="loader_keeper d-none" id="reload_">
+        <div class="loader_keeper d-none reload_" id="reload_">
             <div class="loader "></div>
         </div>
 
 
-        <section id="modal_location" style="display: none;">
+        <section class="modal_location" style="display: none;">
             <div class="col-lg-3-8 location_div">
                 <div class="top">
 
@@ -35,10 +35,10 @@
 
                     <div class="inputarea">
                         <i class="fas fa-search"></i>
-                        <input id="location_search" onfocus="" placeholder="Search your area" type="search">
+                        <input class="location_search" onfocus="" placeholder="Search your area" type="search">
                     </div>
 
-                    <span id="close_location">X</span>
+                    <span class="close_location">X</span>
                 </div>
 
                 <div class="bottom">
@@ -135,7 +135,7 @@
                             </div>
 
                             <div class="col-lg-2">
-                                <div class="select_location" id="location">
+                                <div class="select_location location">
                                     <div class="col-lg-10">
                                         <p>Your Location</p>
                                         <p id="set_location">Select a Location</p>
@@ -163,7 +163,7 @@
                                     </span>
 
                                     <i class="klbth-icon-shopping-bag bag_icon">
-                                        <span id="cartcount" class="amount">0</span>
+                                        <span id="cartcount" class="amount cartcount">0</span>
                                     </i>
 
                                     <div class="bag_div">
@@ -231,7 +231,7 @@
                         <div class="bottom_bottom">
 
                             <div class="col-lg-2 categories">
-                                <div id="categories">
+                                <div id="categories" class="categories_">
                                     <i class="fas fa-bars"></i>
                                     <p>
                                         ALL CATEGORIES
@@ -241,7 +241,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-2-7" id="all_categories">
+                            <div class="col-lg-2-7 all_categories_" id="all_categories">
 
                                 <div class="continued" id="continued">
 
@@ -2796,7 +2796,7 @@
                             </span>
 
                             <i class="klbth-icon-shopping-bag col-5 bag_icon">
-                                <span id="cartcount" class="amount">0</span>
+                                <span id="cartcount" class="amount cartcount">0</span>
                             </i>
                         </a>
                     </div>
