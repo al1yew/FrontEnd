@@ -615,12 +615,23 @@ a {
                         justify-content: space-between;
                         align-items: center;
 
+                        .monmon {
+                            display: block;
+                            width: 50%;
+                            margin-right: 28px;
+                        }
+
                         .money {
                             font-family: Dosis;
                             font-weight: 600;
                             font-size: 1.25rem;
                             width: 95px;
                             cursor: pointer;
+                            color: black;
+                        }
+
+                        a {
+                            text-decoration: none;
                             color: black;
                         }
 

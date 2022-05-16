@@ -3035,6 +3035,11 @@ body {
     margin: 0;
     position: relative;
   }
+  #phone_header .all .right .bag .bag_icon .monmon {
+    display: block;
+    width: 50%;
+    margin-right: 28px;
+  }
   #phone_header .all .right .bag .bag_icon::before {
     padding: 0;
     margin: 0;
@@ -3055,6 +3060,7 @@ body {
     border-radius: 100%;
   }
   #phone_header .all .right .bag .bag_div {
+    display: none;
     background-color: white;
     z-index: 1234;
     padding: 15px 15px;
@@ -6031,12 +6037,23 @@ a {
           align-items: center;
 }
 
+#header .bottom .all .bottom_top .money_user .bag .monmon {
+  display: block;
+  width: 50%;
+  margin-right: 28px;
+}
+
 #header .bottom .all .bottom_top .money_user .bag .money {
   font-family: Dosis;
   font-weight: 600;
   font-size: 1.25rem;
   width: 95px;
   cursor: pointer;
+  color: black;
+}
+
+#header .bottom .all .bottom_top .money_user .bag a {
+  text-decoration: none;
   color: black;
 }
 

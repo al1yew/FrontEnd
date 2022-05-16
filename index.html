@@ -154,11 +154,13 @@
                             <a class="userikon" style="text-decoration: none; color:#666;" href="login.html"><i
                                     class="klbth-icon-user"></i></a>
 
-                            <a href="basket.html" class="bag">
+                            <div class="bag">
 
-                                <span class="money total_header_cost" id="total_header_cost">
-                                    $0.00
-                                </span>
+                                <a href="basket.html" class="monmon">
+                                    <span class="money total_header_cost col-5" id="total_header_cost">
+                                        $0.00
+                                    </span>
+                                </a>
 
                                 <i class="klbth-icon-shopping-bag bag_icon">
                                     <span id="cartcount" class="amount cartcount">0</span>
@@ -214,16 +216,15 @@
                                                         class="subtotal_right_countprice"></span>
                                                 </span>
                                             </div>
-                                            <span class="view_cart_a" id="view_cart_a">
-                                                View Your Cart
-                                            </span>
+
+                                            <a href="basket.html" class="view_cart_a">View Your Cart</a>
                                             <button class="checkout_">Checkout</button>
                                             <p class="secondp_">We reduce shipping prices to only 2.49 €!</p>
 
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
 
                         </div>
 
@@ -497,17 +498,19 @@
                 </div>
 
                 <div class="col-3 right">
-                    <a href="basket.html" class="bag">
+                    <div class="bag">
 
-                        <span class="money total_header_cost col-5" id="total_header_cost">
-                            $0.00
-                        </span>
+                        <a href="basket.html" class="monmon">
+                            <span class="money total_header_cost col-5" id="total_header_cost">
+                                $0.00
+                            </span>
+                        </a>
 
                         <i class="klbth-icon-shopping-bag col-5 bag_icon">
                             <span id="cartcount" class="amount cartcount">0</span>
                         </i>
 
-                        <div class="bag_div">
+                        <div class="bag_div d-none">
 
                             <div id="pustoy_basket" class="pustoy_basket pustoy">
                                 <div class="image">
@@ -557,16 +560,17 @@
                                                 class="subtotal_right_countprice"></span>
                                         </span>
                                     </div>
-                                    <span class="view_cart_a" id="view_cart_a">
+                                    <!-- <span class="view_cart_a" id="view_cart_a">
                                         View Your Cart
-                                    </span>
+                                    </span> -->
+                                    <a href="basket.html" class="view_cart_a">View Your Cart</a>
                                     <button class="checkout_">Checkout</button>
                                     <p class="secondp_">We reduce shipping prices to only 2.49 €!</p>
 
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
             </div>

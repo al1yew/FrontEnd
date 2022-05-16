@@ -160,6 +160,12 @@
                         margin: 0;
                         position: relative;
 
+                        .monmon {
+                            display: block;
+                            width: 50%;
+                            margin-right: 28px;
+                        }
+
                         &::before {
                             padding: 0;
                             margin: 0;
@@ -183,6 +189,7 @@
                     }
 
                     .bag_div {
+                        display: none;
                         background-color: white;
                         z-index: 1234;
                         padding: 15px 15px;

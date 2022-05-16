@@ -261,12 +261,12 @@ for (let tab of tabclicks) {
 
 //#region bag_div click olunmasin
 
-let bag_div = document.querySelectorAll('.bag_div');
-for (let bag_div1 of bag_div) {
-  bag_div1.onclick = function (e) {
-    e.preventDefault()
-  }
-}
+// let bag_div = document.querySelectorAll('.bag_div');
+// for (let bag_div1 of bag_div) {
+//   bag_div1.onclick = function (e) {
+//     e.preventDefault()
+//   }
+// }
 
 
 //#endregion bag_div click olunmasin
@@ -820,25 +820,41 @@ $('#refresh').click(function () {
 
 
 
-//#region open close small basket
+//#region open small basket in phone
+
 
 $(document).ready(function () {
 
-  let viewcart = document.querySelectorAll('.view_cart_a');
+  // let bag_icons = querySelectorAll('.bag_icon');
+  // 
+  // for (let bag_icon of bag_icons) {
+  //   bag_icon.onclick = function () {
+  //     $('.bag_div').fadeToggle(300);
+  //     console.log(bag_icon)
+  //   }
+  // }
 
-  for (let cartcart of viewcart) {
-    cartcart.onclick = function () {
-      window.location.assign("http://127.0.0.1:5500/basket.html");
-    }
-  }
+
+  $(".bag_icon").click(function () {
+    $('.bag_div').toggle();
+  })
+
+
+
+
+
+
 
 })
 
-//#endregion open close small basket
 
 
 
 
+
+
+
+//#endregion open small basket in phone
 
 
 
