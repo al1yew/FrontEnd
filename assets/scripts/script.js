@@ -27,7 +27,8 @@ $('.slider1').slick({
       breakpoint: 576, //bunu 480 idi 576 eledim 
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: false
       }
     }
     // You can unslick at a given breakpoint now by adding:
