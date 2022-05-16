@@ -237,7 +237,7 @@ for (let tab of tabclicks) {
     }
   }
 }
-
+//rengi deyishmir mentigi axtar
 
 //#endregion tabmenu toggle
 
@@ -261,11 +261,13 @@ for (let tab of tabclicks) {
 
 //#region bag_div click olunmasin
 
-let bag_div = document.querySelector('.bag_div');
-
-bag_div.onclick = function (e) {
-  e.preventDefault()
+let bag_div = document.querySelectorAll('.bag_div');
+for (let bag_div1 of bag_div) {
+  bag_div1.onclick = function (e) {
+    e.preventDefault()
+  }
 }
+
 
 //#endregion bag_div click olunmasin
 
@@ -287,7 +289,11 @@ else {
 function CountBasketLength() {
   let shopcart = JSON.parse(localStorage.getItem('shopcart'));
   let cartcount = shopcart.length;
-  document.querySelector('#cartcount').innerHTML = cartcount;
+
+  for (let cart_in of document.querySelectorAll('.cartcount')) {
+    cart_in.innerHTML = cartcount
+  }
+
 }
 
 //#endregion shopping cartin ustundeki span
@@ -381,19 +387,27 @@ $(document).ready(function () {
 function AddToLittleBasket() {
 
   let shopcart = JSON.parse(localStorage.getItem('shopcart'));
-  let little_filled_basket = document.querySelector('#polniy_basket')
-  let little_empty_basket = document.querySelector('#pustoy_basket')
+  let little_filled_basket = document.querySelectorAll('.polniy_basket')
+  let little_empty_basket = document.querySelectorAll('.pustoy_basket')
 
   //basketimizi cagirdig, parse eledik
   // bosh olanda yaradilan sectionu basket boshdursa gostereceyik
 
   if (shopcart.length != 0) {
 
-    little_empty_basket.classList.add('d-none');
-    little_filled_basket.classList.remove('d-none');
+    for (let bsk_empty of little_empty_basket) {
+      bsk_empty.classList.add('d-none');
+    }
+
+    for (let bsk_filled of little_filled_basket) {
+      bsk_filled.classList.remove('d-none');
+    }
+
+    // little_empty_basket.classList.add('d-none');
+    // little_filled_basket.classList.remove('d-none');
 
     let pr_small = '';
-    let small_basket_inner = document.querySelector('#small_basket_innner');
+    let small_basket_inner = document.querySelectorAll('.small_basket_innner');
 
     for (let product of shopcart) {
 
@@ -424,13 +438,28 @@ function AddToLittleBasket() {
 
               </div>
           `
-      small_basket_inner.innerHTML = pr_small;
+
+
+      for (let small_bsk_inner of small_basket_inner) {
+        small_bsk_inner.innerHTML = pr_small;
+      }
+
+      // small_basket_inner.innerHTML = pr_small;
     }
 
   }
   else {
-    little_empty_basket.classList.remove('d-none');
-    little_filled_basket.classList.add('d-none');
+
+    for (let bsk_empty of little_empty_basket) {
+      bsk_empty.classList.remove('d-none');
+    }
+
+    for (let bsk_filled of little_filled_basket) {
+      bsk_filled.classList.add('d-none');
+    }
+
+    // little_empty_basket.classList.remove('d-none');
+    // little_filled_basket.classList.add('d-none');
   }
 
 }
@@ -449,19 +478,27 @@ function AddToLittleBasket() {
 $(document).ready(function () {
 
   let shopcart = JSON.parse(localStorage.getItem('shopcart'));
-  let little_filled_basket = document.querySelector('#polniy_basket')
-  let little_empty_basket = document.querySelector('#pustoy_basket')
+  let little_filled_basket = document.querySelectorAll('.polniy_basket')
+  let little_empty_basket = document.querySelectorAll('.pustoy_basket')
 
   //basketimizi cagirdig, parse eledik
   // bosh olanda yaradilan sectionu basket boshdursa gostereceyik
 
   if (shopcart.length != 0) {
 
-    little_empty_basket.classList.add('d-none');
-    little_filled_basket.classList.remove('d-none');
+    for (let bsk_empty of little_empty_basket) {
+      bsk_empty.classList.add('d-none');
+    }
+
+    for (let bsk_filled of little_filled_basket) {
+      bsk_filled.classList.remove('d-none');
+    }
+
+    // little_empty_basket.classList.add('d-none');
+    // little_filled_basket.classList.remove('d-none');
 
     let pr_small = '';
-    let small_basket_inner = document.querySelector('#small_basket_innner');
+    let small_basket_inner = document.querySelectorAll('.small_basket_innner');
 
     for (let product of shopcart) {
 
@@ -492,13 +529,29 @@ $(document).ready(function () {
 
               </div>
           `
-      small_basket_inner.innerHTML = pr_small;
+
+
+      for (let small_bsk_inner of small_basket_inner) {
+        small_bsk_inner.innerHTML = pr_small;
+      }
+
+      // small_basket_inner.innerHTML = pr_small;
     }
 
   }
   else {
-    little_empty_basket.classList.remove('d-none');
-    little_filled_basket.classList.add('d-none');
+
+    for (let bsk_empty of little_empty_basket) {
+      bsk_empty.classList.remove('d-none');
+    }
+
+    for (let bsk_filled of little_filled_basket) {
+      bsk_filled.classList.add('d-none');
+    }
+
+    // little_empty_basket.classList.remove('d-none');
+    // little_filled_basket.classList.add('d-none');
+
   }
 
 });
@@ -514,21 +567,38 @@ $(document).ready(function () {
 function CountBasketCost() {
   let shopcart = JSON.parse(localStorage.getItem('shopcart'));
   let total = 0;
-  let subtotal_inner = document.querySelector('#subtotal_right_countprice');
-  let total_header_cost = document.querySelector('#total_header_cost');
+  let subtotal_inner = document.querySelectorAll('.subtotal_right_countprice');
+  let total_header_cost = document.querySelectorAll('.total_header_cost');
 
   for (let product of shopcart) {
     total += product.Price * product.Count
   }
 
-  subtotal_inner.innerHTML = Math.round(total * 100) / 100;
+  for (let each_cost of subtotal_inner) {
+    each_cost.innerHTML = Math.round(total * 100) / 100;
+  }
+  // subtotal_inner.innerHTML = Math.round(total * 100) / 100;
 
-  total_header_cost.innerHTML = `$${Math.round(total * 100) / 100}`;
+  for (let each_cost_header of total_header_cost) {
+    each_cost_header.innerHTML = `$${Math.round(total * 100) / 100}`;
+  }
+
+  // total_header_cost.innerHTML = `$${Math.round(total * 100) / 100}`;
 
   if (total == 0) {
-    document.getElementById('subtotal_right_countprice').innerHTML = '$0.00';
-    document.getElementById('total_header_cost').innerHTML = '$0.00';
+    // document.querySelectorAll('.subtotal_right_countprice').innerHTML = '$0.00';
+    // document.querySelectorAll('.total_header_cost').innerHTML = '$0.00';
+
+    for (let subsubsub of document.querySelectorAll('.subtotal_right_countprice')) {
+      subsubsub.innerHTML = '$0.00';
+    }
+
+    for (let subtotal_right of document.querySelectorAll('.total_header_cost')) {
+      subtotal_right.innerHTML = '$0.00';
+    }
+
   }
+
 }
 
 
@@ -540,26 +610,40 @@ function CountBasketCost() {
 $(document).ready(function () {
   let shopcart = JSON.parse(localStorage.getItem('shopcart'));
   let total = 0;
-  let subtotal_inner = document.querySelector('#subtotal_right_countprice');
-  let total_header_cost = document.querySelector('#total_header_cost');
+  let subtotal_inner = document.querySelectorAll('.subtotal_right_countprice');
+  let total_header_cost = document.querySelectorAll('.total_header_cost');
 
   for (let product of shopcart) {
     total += product.Price * product.Count
   }
 
-  subtotal_inner.innerHTML = Math.round(total * 100) / 100;
+  for (let each_cost of subtotal_inner) {
+    each_cost.innerHTML = Math.round(total * 100) / 100;
+  }
+  // subtotal_inner.innerHTML = Math.round(total * 100) / 100;
 
-  total_header_cost.innerHTML = `$${Math.round(total * 100) / 100}`;
+  for (let each_cost_header of total_header_cost) {
+    each_cost_header.innerHTML = `$${Math.round(total * 100) / 100}`;
+  }
+
+  // total_header_cost.innerHTML = `$${Math.round(total * 100) / 100}`;
 
   if (total == 0) {
-    document.getElementById('subtotal_right_countprice').innerHTML = '$0.00';
-    document.getElementById('total_header_cost').innerHTML = '$0.00';
+    // document.querySelectorAll('.subtotal_right_countprice').innerHTML = '$0.00';
+    // document.querySelectorAll('.total_header_cost').innerHTML = '$0.00';
+
+    for (let subsubsub of document.querySelectorAll('.subtotal_right_countprice')) {
+      subsubsub.innerHTML = '$0.00';
+    }
+
+    for (let subtotal_right of document.querySelectorAll('.total_header_cost')) {
+      subtotal_right.innerHTML = '$0.00';
+    }
+
   }
 });
 
-
 //#endregion totali hesablayirig
-
 
 
 
@@ -584,6 +668,7 @@ $(document).ready(function () {
         prod_sm_bs[b].children[0].children[1].onclick = function () {
           shopcart.splice(a, 1);
           localStorage.setItem('shopcart', JSON.stringify(shopcart));
+
           setTimeout(() => {
 
             location.reload();
@@ -735,6 +820,21 @@ $('#refresh').click(function () {
 
 
 
+//#region open close small basket
+
+$(document).ready(function () {
+
+  let viewcart = document.querySelectorAll('.view_cart_a');
+
+  for (let cartcart of viewcart) {
+    cartcart.onclick = function () {
+      window.location.assign("http://127.0.0.1:5500/basket.html");
+    }
+  }
+
+})
+
+//#endregion open close small basket
 
 
 

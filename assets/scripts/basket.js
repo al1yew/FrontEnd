@@ -17,8 +17,12 @@ $(document).ready(function () {
     function CountBasketLength() {
         let shopcart = JSON.parse(localStorage.getItem('shopcart'));
         let cartcount = shopcart.length;
-        document.querySelector('#cartcount').innerHTML = cartcount;
-    }
+      
+        for (let cart_in of document.querySelectorAll('.cartcount')) {
+          cart_in.innerHTML = cartcount
+        }
+        
+      }
 
     CountBasketLength();
 
