@@ -2897,10 +2897,40 @@ body {
   #phone_second {
     display: none;
   }
+  #phone_third {
+    display: none;
+  }
   #phone_third_fourth {
     display: none;
   }
   #phone_fourth {
+    display: none;
+  }
+  #phone_fifth {
+    display: none;
+  }
+  #phone_sixth {
+    display: none;
+  }
+  #phone_seventh {
+    display: none;
+  }
+  #phone_eighth {
+    display: none;
+  }
+  #phone_nineth {
+    display: none;
+  }
+  #phone_tenth {
+    display: none;
+  }
+  #phone_third_fourth {
+    display: none;
+  }
+  #phone_fifth_sixth {
+    display: none;
+  }
+  #phone_footer {
     display: none;
   }
 }
@@ -3262,6 +3292,9 @@ body {
     padding: 8px 20px;
   }
   #second {
+    display: none;
+  }
+  #footer {
     display: none;
   }
   #phone_second {
@@ -3869,7 +3902,7 @@ body {
     border-bottom-right-radius: 20px;
   }
   #phone_fourth .all .products .product .product_card ul li:nth-child(5) .top_counter button {
-    width: 10%;
+    width: 20%;
     border-radius: 0;
   }
   #phone_fourth .all .products .product .size {
@@ -4286,7 +4319,7 @@ body {
     border-bottom-right-radius: 20px;
   }
   #phone_sixth .all .products .product .product_card ul li:nth-child(5) .top_counter button {
-    width: 10%;
+    width: 20%;
     border-radius: 0;
   }
   #phone_sixth .all .products .product .size {
@@ -4499,23 +4532,30 @@ body {
     display: none;
   }
   #phone_nineth {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 0 10px;
     font-family: Inter;
     background-color: #233a95;
-    height: 450px;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+  }
+  #phone_nineth .photo_relative img {
+    position: absolute;
+    bottom: -2%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
   }
   #phone_nineth .all {
     padding: 25px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -4523,14 +4563,16 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     border-radius: 10px;
+    overflow: hidden;
   }
   #phone_nineth .all .top {
     padding: 0;
   }
   #phone_nineth .all .top p {
+    padding: 0;
     color: white;
     font-family: InterLight;
-    text-align: center;
+    margin-bottom: 10px;
   }
   #phone_nineth .all .top p:nth-child(1) {
     font-size: 16px;
@@ -4540,6 +4582,314 @@ body {
   }
   #phone_nineth .all .top p:nth-child(3) {
     font-size: 13px;
+  }
+  #phone_nineth .all .top .middle {
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3px;
+    padding-left: 10px;
+  }
+  #phone_nineth .all .top .middle i::before {
+    color: rgba(102, 102, 102, 0.531);
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 5%;
+  }
+  #phone_nineth .all .top .middle input {
+    padding-left: 10px;
+    width: 75%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+  #phone_nineth .all .top .middle button {
+    width: 20%;
+    background-color: #233a95;
+    color: white;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-weight: 200;
+    padding: 15px 7px;
+  }
+  #tenth {
+    display: none;
+  }
+  #phone_tenth {
+    font-family: Dosis;
+  }
+  #phone_tenth .all {
+    padding: 0 10px;
+    font-family: Inter;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #phone_tenth .all div {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  #phone_footer {
+    padding: 20px 0;
+    background-color: #f7f8fd;
+    font-family: Dosis;
+    margin: 30px 0;
+  }
+  #phone_footer .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #phone_footer .all .footer_keeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  #phone_footer .all .footer_keeper h6 {
+    margin-bottom: 14px;
+  }
+  #phone_footer .all .footer_keeper a {
+    font-family: Inter;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #7A7A7A;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #phone_footer .all .footer_keeper a:hover {
+    color: #2649d5;
+  }
+  #phone_footer .all .footer_keeper1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  #phone_footer .all .footer_keeper1 h6 {
+    margin-bottom: 14px;
+  }
+  #phone_footer .all .footer_keeper1 a {
+    font-family: Inter;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #7A7A7A;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #phone_footer .all .footer_keeper1 a:hover {
+    color: #2649d5;
+  }
+  #eleventh {
+    display: none;
+  }
+  #phone_eleventh {
+    font-family: Inter;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+  #phone_eleventh .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 10px;
+    border-bottom: 0.5px solid #9b9bb4;
+  }
+  #phone_eleventh .all i {
+    display: inline;
+    padding: 8px 10px;
+    border: 0.5px solid #d9d9e9;
+    border-radius: 50%;
+  }
+  #phone_eleventh .all .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  #phone_eleventh .all .left .left_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10px;
+  }
+  #phone_eleventh .all .left .left_right span {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+  }
+  #phone_eleventh .all .left .left_right span:last-child {
+    font-family: InterLight;
+    font-size: 11px;
+    color: #71778E;
+  }
+  #phone_eleventh .all .right {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #phone_eleventh .all .right .right_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: Inter;
+  }
+  #phone_eleventh .all .right .right_left span {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  #phone_eleventh .all .right .right_left span:last-child {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #71778E;
+  }
+  #phone_eleventh .all .right .right_right {
+    margin: 20px 0;
+  }
+  #twelfth {
+    display: none;
+  }
+  #phone_twelfth {
+    padding: 25px 0;
+    font-family: Inter;
+    font-size: 12px;
+  }
+  #phone_twelfth .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px;
+  }
+  #phone_twelfth .all div {
+    padding: 0;
+    margin: 10px 0;
+  }
+  #phone_twelfth .all p {
+    font-size: 12px;
+    color: #9b9bb4;
+    padding: 0;
+  }
+  #phone_twelfth .all a {
+    color: #9b9bb4;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    font-size: 12px;
+  }
+  #phone_twelfth .all .privacy_ph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
