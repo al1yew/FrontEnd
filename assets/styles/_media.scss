@@ -847,15 +847,27 @@
 
                 .product {
                     padding: 0;
-                    height: 400px;
+                    height: 380px;
                     color: black;
                     position: relative;
                     background-color: white;
 
                     .product_card {
                         background-color: white;
-                        height: 400px;
+                        height: 380px;
                         border: 0.5px solid #d5d5d5;
+
+                        .korotkiy {
+                            li {
+                                &:nth-child(3) {
+                                    padding-bottom: 10px;
+                                }
+
+                                &:nth-child(5) {
+                                    padding-top: 24px;
+                                }
+                            }
+                        }
 
                         img {
                             object-fit: cover;
@@ -869,8 +881,14 @@
                             padding: 5px 15px;
                             font-family: Dosis;
 
+
+
                             li {
                                 list-style: none;
+
+                                &:nth-child(1) {
+                                    font-size: 18px;
+                                }
 
                                 &:nth-child(2) {
                                     font-size: 10px;
@@ -906,18 +924,18 @@
                                         &:nth-child(2) {
                                             padding: 0;
                                             margin: 0;
-                                            font-size: 18px;
+                                            font-size: 20px;
                                             text-decoration: none;
                                             color: red
                                         }
 
-                                        font-size: 14px;
+                                        font-size: 13px;
                                         text-decoration: line-through;
                                         color: #71778E;
                                         margin-right: 10px;
 
                                         &:last-child {
-                                            font-size: 18px;
+                                            font-size: 20px;
                                             text-decoration: none;
                                             color: red
                                         }
@@ -925,22 +943,20 @@
                                 }
 
                                 &:nth-child(5) {
-                                    transition: 0.3s;
+                                    // transition: 0.3s;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    align-items: flex-end;
 
                                     button {
                                         width: 100%;
                                         outline: none;
-                                        transition: 0.2s;
                                         border: none;
+                                        // transition: 0.2s;
                                         padding: 5px 0px;
                                         border-radius: 20px;
-
-                                        background-color: rgb(255, 205, 0);
-
-                                        &:hover {
-                                            color: white;
-                                            background-color: blue;
-                                        }
+                                        color: white;
+                                        background-color: rgb(35, 58, 149);
                                     }
 
                                     .top_counter {
@@ -1021,6 +1037,113 @@
                 }
             }
 
+        }
+    }
+
+    #fifth {
+        display: none;
+    }
+
+    #phone_fifth {
+        font-family: InterLight;
+        padding: 0;
+        margin-bottom: 20px;
+
+        .all {
+            padding: 0 10px;
+
+            .all1 {
+                padding: 20px;
+                background-color: #FFEEF2;
+                margin-bottom: 20px;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 10px;
+
+                span {
+                    &:nth-child(1) {
+                        color: rgb(239, 23, 74);
+                        font-size: 16px;
+                        text-align: center;
+                        width: 100%;
+
+                        span {
+                            text-decoration: underline;
+                            font-weight: 700;
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        margin: 15px 0;
+                        padding: 8px 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 20px;
+                        border: 1px dashed rgb(239, 23, 74);
+                        color: rgb(239, 23, 74);
+                    }
+
+                    &:nth-child(3) {
+                        font-size: 12px;
+                        width: 100%;
+                        color: #7A7A7A;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+    }
+    #fifth_sixth{
+        display: none;
+    }
+
+    #phone_fifth_sixth {
+        .all {
+            padding: 0 10px;
+            font-family: InterLight;
+            font-weight: 600;
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                padding: 0;
+
+                .top_left {
+                    padding: 0;
+
+                    h5 {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    p {
+                        font-size: 8px;
+                        color: rgb(154, 154, 154);
+                    }
+                }
+
+                .top_right {
+                    button {
+                        outline: none;
+                        padding: 5px 18px;
+                        cursor: pointer;
+                        font-size: 11px;
+                        color: rgba(128, 128, 128, 0.612);
+                        background-color: white;
+                        border-radius: 15px;
+                        border: 0.5px solid #9b9bb4;
+                    }
+                }
+            }
         }
     }
 }
