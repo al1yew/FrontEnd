@@ -48,12 +48,6 @@
         }
     }
 
-    .photo_relative {
-        img {
-            display: none;
-        }
-    }
-
     #phone_header {
         font-family: Inter;
         box-shadow: 0px 3px 5px 1px rgb(206, 206, 206);
@@ -1528,7 +1522,116 @@
     }
 
     #phone_eighth {
-        
+        margin-bottom: 40px;
+        padding: 0 10px;
+        font-family: Inter;
+
+        .all {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border: 0.5px solid #e0e0e0;
+            border-radius: 10px;
+
+
+            .eat1 {
+                border-bottom: 0.5px solid #e0e0e0;
+                padding-bottom: 20px;
+
+                img {
+                    width: 100%;
+                }
+
+                p {
+                    text-align: center;
+
+                    &:nth-child(2) {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    &:nth-child(1) {
+                        font-size: 10px;
+                        color: grey;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .eats {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .eat {
+                    img {
+                        width: 100%;
+                    }
+
+                    p {
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    span {
+                        text-align: center;
+                        width: 100%;
+
+                        &:nth-child(1) {
+                            font-weight: 600;
+                            font-size: 14px;
+                            margin-top: 10px;
+
+                        }
+
+                        &:nth-child(2) {
+                            color: grey;
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                .nadpis {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+
+                    p {
+                        width: 100%;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
     }
 
+    #nineth {
+        display: none;
+    }
+
+    #phone_nineth {
+        margin-bottom: 40px;
+        padding: 0 10px;
+        font-family: Inter;
+        background-color: rgb(35, 58, 149);
+
+        .all {
+            padding: 25px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            border-radius: 10px;
+
+            .top {
+                padding: 0;
+            }
+        }
+    }
 }

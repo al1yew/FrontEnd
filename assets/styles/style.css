@@ -2926,9 +2926,6 @@ body {
   .slick-prev::before {
     border-radius: 0 !important;
   }
-  .photo_relative img {
-    display: none;
-  }
   #phone_header {
     font-family: Inter;
     -webkit-box-shadow: 0px 3px 5px 1px #cecece;
@@ -4405,6 +4402,129 @@ body {
   }
   #eighth {
     display: none;
+  }
+  #phone_eighth {
+    margin-bottom: 40px;
+    padding: 0 10px;
+    font-family: Inter;
+  }
+  #phone_eighth .all {
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 0.5px solid #e0e0e0;
+    border-radius: 10px;
+  }
+  #phone_eighth .all .eat1 {
+    border-bottom: 0.5px solid #e0e0e0;
+    padding-bottom: 20px;
+  }
+  #phone_eighth .all .eat1 img {
+    width: 100%;
+  }
+  #phone_eighth .all .eat1 p {
+    text-align: center;
+  }
+  #phone_eighth .all .eat1 p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  #phone_eighth .all .eat1 p:nth-child(1) {
+    font-size: 10px;
+    color: grey;
+    margin-top: 10px;
+  }
+  #phone_eighth .all .eats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #phone_eighth .all .eats .eat img {
+    width: 100%;
+  }
+  #phone_eighth .all .eats .eat p {
+    text-align: center;
+    width: 100%;
+  }
+  #phone_eighth .all .eats .eat span {
+    text-align: center;
+    width: 100%;
+  }
+  #phone_eighth .all .eats .eat span:nth-child(1) {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  #phone_eighth .all .eats .eat span:nth-child(2) {
+    color: grey;
+    font-size: 10px;
+  }
+  #phone_eighth .all .eats .nadpis {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #phone_eighth .all .eats .nadpis p {
+    width: 100%;
+    font-size: 14px;
+  }
+  #nineth {
+    display: none;
+  }
+  #phone_nineth {
+    margin-bottom: 40px;
+    padding: 0 10px;
+    font-family: Inter;
+    background-color: #233a95;
+  }
+  #phone_nineth .all {
+    padding: 25px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 10px;
+  }
+  #phone_nineth .all .top {
+    padding: 0;
   }
 }
 
