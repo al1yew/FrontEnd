@@ -3211,3 +3211,36 @@ a {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//phone 
+
+
+
+@media (max-width: 576px) {
+    #header {
+        display: none;
+    }
+
+    #phone_header {
+        .all {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+}
