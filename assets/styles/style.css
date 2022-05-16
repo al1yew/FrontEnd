@@ -4503,6 +4503,7 @@ body {
     padding: 0 10px;
     font-family: Inter;
     background-color: #233a95;
+    height: 450px;
   }
   #phone_nineth .all {
     padding: 25px 0;
@@ -4525,6 +4526,20 @@ body {
   }
   #phone_nineth .all .top {
     padding: 0;
+  }
+  #phone_nineth .all .top p {
+    color: white;
+    font-family: InterLight;
+    text-align: center;
+  }
+  #phone_nineth .all .top p:nth-child(1) {
+    font-size: 16px;
+  }
+  #phone_nineth .all .top p:nth-child(2) {
+    font-size: 26px;
+  }
+  #phone_nineth .all .top p:nth-child(3) {
+    font-size: 13px;
   }
 }
 
