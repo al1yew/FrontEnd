@@ -53,6 +53,8 @@ body {
 
 @import 'product';
 
+@import 'media';
+
 /*#region Icons do not open it is too big press alt z*/
 @font-face {
     font-family: 'klbtheme';
@@ -81,6 +83,11 @@ body {
     line-height: 1em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+
+.klbth-icon-menu-thin:before {
+    content: '\e8b2';
 }
 
 .klbth-icon-2-grid:before {
@@ -3212,35 +3219,3 @@ a {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//phone 
-
-
-
-@media (max-width: 576px) {
-    #header {
-        display: none;
-    }
-
-    #phone_header {
-        .all {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-    }
-}

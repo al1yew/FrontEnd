@@ -2887,6 +2887,355 @@ body {
   color: black !important;
 }
 
+@media (min-width: 1100px) {
+  #phone_header {
+    display: none;
+  }
+  #phone_first {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  #header {
+    display: none;
+  }
+  .slick-next {
+    right: 30px !important;
+  }
+  .photo_relative img {
+    display: none;
+  }
+  #phone_header {
+    font-family: Inter;
+    -webkit-box-shadow: 0px 3px 5px 1px #cecece;
+            box-shadow: 0px 3px 5px 1px #cecece;
+  }
+  #phone_header a {
+    text-decoration: none;
+    color: black;
+  }
+  #phone_header .covid_mob_keeper .covid_mob {
+    padding: 9px 0;
+    background-color: #233a95;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+  }
+  #phone_header .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0;
+  }
+  #phone_header .all .left {
+    color: #20244f;
+  }
+  #phone_header .all .left i {
+    font-size: 22px;
+  }
+  #phone_header .all .left i::before {
+    font-weight: 600;
+  }
+  #phone_header .all .middle {
+    color: #20244f;
+  }
+  #phone_header .all .middle img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #phone_header .all .right {
+    color: #20244f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: DosisLight;
+    font-weight: 700;
+  }
+  #phone_header .all .right .bag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #phone_header .all .right .bag .bag_icon {
+    padding: 0 10px;
+    margin: 0;
+    position: relative;
+  }
+  #phone_header .all .right .bag .bag_icon::before {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: #20244f;
+    font-size: 25px;
+  }
+  #phone_header .all .right .bag .bag_icon .amount {
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    text-align: center;
+    font-size: 10px;
+    background-color: red;
+    font-family: InterLight;
+    color: white;
+    padding: 0px 6px;
+    border-radius: 100%;
+  }
+  #first {
+    display: none;
+  }
+  #phone_first {
+    padding: 0 10px;
+  }
+  #phone_first .all .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #phone_first .all .top .slide1 {
+    padding: 20px 20px;
+    background-image: url(../images/slider-image-8.jpg);
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin: 20px 0;
+  }
+  #phone_first .all .top .slide1 .slide1_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #phone_first .all .top .slide1 .slide1_content .first_p {
+    font-family: InterLight;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  #phone_first .all .top .slide1 .slide1_content .first_p span {
+    padding: 5px 7px;
+    background: #c0e4d0;
+    background: -webkit-gradient(linear, left top, right top, from(#c0e4d0), to(white));
+    background: linear-gradient(90deg, #c0e4d0 0%, white 100%);
+    border-radius: 20px;
+    color: #038E42;
+  }
+  #phone_first .all .top .slide1 .slide1_content h5 {
+    margin-top: 25px;
+    font-family: Inter;
+    font-weight: 700;
+  }
+  #phone_first .all .top .slide1 .slide1_content .second_p {
+    font-family: DosisLight;
+    font-weight: 600;
+  }
+  #phone_first .all .top .slide1 .slide1_content .third_p {
+    font-family: DosisLight;
+    font-weight: 600;
+  }
+  #phone_first .all .top .slide1 .slide1_content .third_p span {
+    font-family: DosisLight;
+    font-weight: 700;
+    font-size: 2rem;
+    color: red;
+    margin-left: 5px;
+  }
+  #phone_first .all .top .slide1 .slide1_content button {
+    margin-top: 25px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #2bbef9;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 8px 20px;
+  }
+  #phone_first .all .top .slide1 .slide1_content button i {
+    margin-left: 5px;
+  }
+  #phone_first .all .top .slide2 {
+    margin: 20px 0;
+  }
+  #phone_first .all .top .slide2 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  #phone_first .all .bottom .slide3 {
+    background-image: url(../images/home-banner-15.jpg);
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 20px;
+    margin: 20px 0;
+  }
+  #phone_first .all .bottom .slide3 .slide3_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #phone_first .all .bottom .slide3 .slide3_content .first_p {
+    font-family: InterLight;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #phone_first .all .bottom .slide3 .slide3_content .second_p {
+    font-family: DosisLight;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  #phone_first .all .bottom .slide3 .slide3_content .third_p {
+    font-family: DosisLight;
+    font-weight: 600;
+  }
+  #phone_first .all .bottom .slide3 .slide3_content button {
+    margin-top: 25px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #2bbef9;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 8px 20px;
+  }
+  #phone_first .all .bottom .slide4 {
+    background-image: url(../images/home-banner-16.jpg);
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 20px;
+    margin: 20px 0;
+  }
+  #phone_first .all .bottom .slide4 .slide4_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #phone_first .all .bottom .slide4 .slide4_content .first_p {
+    font-family: InterLight;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #phone_first .all .bottom .slide4 .slide4_content .second_p {
+    font-family: DosisLight;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  #phone_first .all .bottom .slide4 .slide4_content .third_p {
+    font-family: DosisLight;
+    font-weight: 600;
+  }
+  #phone_first .all .bottom .slide4 .slide4_content button {
+    margin-top: 25px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #2bbef9;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 8px 20px;
+  }
+}
+
 /*#region Icons do not open it is too big press alt z*/
 @font-face {
   font-family: 'klbtheme';
@@ -2915,6 +3264,10 @@ body {
   line-height: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.klbth-icon-menu-thin:before {
+  content: '\e8b2';
 }
 
 .klbth-icon-2-grid:before {
@@ -6608,22 +6961,5 @@ a {
 
 #twelfth .all .last img {
   cursor: pointer;
-}
-
-@media (max-width: 576px) {
-  #header {
-    display: none;
-  }
-  #phone_header .all {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 /*# sourceMappingURL=style.css.map */
