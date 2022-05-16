@@ -318,3 +318,22 @@ $(document).ready(function () {
 //#endregion counter
 
 
+
+//#region clear all
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#eregion clear all
