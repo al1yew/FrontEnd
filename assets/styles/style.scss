@@ -1954,6 +1954,7 @@ a {
     }
 }
 @media (min-width: 1100px){
+    
     #fourth {
         font-family: Inter;
         margin-bottom: 40px;
@@ -2422,364 +2423,366 @@ a {
     }
 }
 
-#sixth {
-    font-family: Inter;
-    margin-bottom: 40px;
-
-    .all {
-
-        border-bottom: 1px solid #d9d9e9;
-        height: 651px;
-        flex-wrap: wrap;
-        border-bottom: 1px solid #d9d9e9;
-        border-radius: 5px;
-
-        .first {
-            background-image: url(../images/category-banner-2.jpg);
-            height: 325px;
-            object-fit: cover;
-            background-size: cover;
-            vertical-align: middle;
-            border-top-left-radius: 5px;
-            padding: 35px;
-
-            p {
-                display: flex;
-                flex-direction: column;
-                padding: 0;
-                margin: 0;
-                font-size: 19px;
-                font-weight: 200;
-
-                span {
-                    font-size: 24px;
-                    font-weight: 500;
-
-                    &:last-child {
-                        font-size: 14px;
-                        font-weight: 200;
-                    }
-                }
-            }
-
-            button {
-                outline: none;
-                border: none;
-                margin-top: 25px;
-                transition: 0.3s;
-                border-radius: 20px;
-                color: white;
-                background-color: rgb(37, 60, 150);
-                padding: 7px 15px;
-                font-size: 14px;
-
-                &:hover {
-                    background-color: lightblue;
-                }
-            }
-        }
-
-        .second {
-
-            height: 325px;
-            display: flex;
-            justify-content: space-between;
-            padding: 35px;
-            flex-direction: column;
-            border-bottom-left-radius: 5px;
-            border: 0.5px solid #e8e8e8;
-
-            .up {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 80px;
-
-
-                .ahrefs {
+@media(min-width: 1050px){
+    #sixth {
+        font-family: Inter;
+        margin-bottom: 40px;
+    
+        .all {
+    
+            border-bottom: 1px solid #d9d9e9;
+            height: 651px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #d9d9e9;
+            border-radius: 5px;
+    
+            .first {
+                background-image: url(../images/category-banner-2.jpg);
+                height: 325px;
+                object-fit: cover;
+                background-size: cover;
+                vertical-align: middle;
+                border-top-left-radius: 5px;
+                padding: 35px;
+    
+                p {
                     display: flex;
                     flex-direction: column;
-
-                    a {
-                        text-decoration: none;
-                        color: #3E445A;
-                        font-family: Inter;
-                        font-size: 13px;
-                        transition: 0.3s;
-                        margin-bottom: 15px;
-
-                        &:hover {
-                            color: #2649d5;
-                        }
-                    }
-                }
-            }
-
-            .down {
-                display: flex;
-                align-items: center;
-                transition: 0.3s;
-
-                &:hover {
-                    letter-spacing: 0.5px;
-                }
-
-                a {
-                    font-size: 13px;
-                }
-
-                i {
-                    margin-left: 10px;
-                    color: #0a58cA;
-                }
-            }
-
-
-        }
-
-        .radiuslutop-sag {
-            border-top-right-radius: 5px;
-        }
-
-        .radiuslutop-sol {
-            border-top-left-radius: 5px;
-        }
-
-        .radiuslubottom-sag {
-            border-bottom-right-radius: 5px;
-        }
-
-        .radiuslubottom-sol {
-            border-bottom-left-radius: 5px;
-        }
-
-        .product {
-            padding: 0;
-            height: 325px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: 0.2s;
-            color: black;
-            position: relative;
-            background-color: white;
-
-
-            &:hover {
-                overflow: visible;
-                z-index: 121;
-            }
-
-            //hover olanda nth5 child-in visibilitisi ve opacity-si olsun 1, + butun product cardin overflow-su olsun visible, ki ashagidaki cardi atmasin ashaga
-
-            &:hover .hovered_btn {
-                opacity: 1 !important;
-                z-index: 12;
-                visibility: 1 !important;
-            }
-
-            .product_card {
-                background-color: white;
-                border: 0.5px solid #d5d5d5;
-
-                &:hover {
-                    box-shadow: 0px 0px 0.4px 0.4px #666;
-                    border-radius: 5px;
-                }
-
-                img {
-                    object-fit: cover;
-                    background-size: cover;
-                    width: 100%;
-                    margin: auto;
-                    vertical-align: middle;
-                }
-
-                .korotkiy {
-                    height: 195px;
-                    padding-bottom: 0;
-                    margin-bottom: 18px;
-
-                    li {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 19px;
+                    font-weight: 200;
+    
+                    span {
+                        font-size: 24px;
+                        font-weight: 500;
+    
                         &:last-child {
-                            display: flex;
-                            justify-content: end;
-                            flex-direction: column;
-                            align-items: flex-end;
-                            height: 8.5vh;
-                            margin: 0;
+                            font-size: 14px;
+                            font-weight: 200;
                         }
                     }
                 }
-
-                ul {
-                    padding: 5px 15px;
-                    font-family: Dosis;
-
-                    li {
-                        list-style: none;
-
-                        &:nth-child(2) {
-                            font-size: 10px;
-                            color: #038E42;
-                            padding: 8px 0px;
-
-                            span {
-                                color: #afafb6;
-                                font-size: 11px;
-                                margin-right: 10px;
-                            }
-                        }
-
-                        &:nth-child(3) {
-                            color: yellow;
-                            font-size: 11px;
-                            padding-bottom: 8px;
-                            display: flex;
-                            align-items: center;
-
-                            span {
-                                font-size: 12px;
-                                color: #7A7A7A;
-                                margin-left: 5px;
-                            }
-                        }
-
-                        &:nth-child(4) {
-                            padding-bottom: 15px;
-
-                            span {
-
-                                &:nth-child(2) {
-                                    padding: 0;
-                                    margin: 0;
-                                    font-size: 18px;
-                                    text-decoration: none;
-                                    color: red
-                                }
-
-                                font-size: 14px;
-                                text-decoration: line-through;
-                                color: #71778E;
-                                margin-right: 10px;
-
-                                &:last-child {
-                                    font-size: 18px;
-                                    text-decoration: none;
-                                    color: red
-                                }
-                            }
-                        }
-
-                        &:nth-child(5) {
+    
+                button {
+                    outline: none;
+                    border: none;
+                    margin-top: 25px;
+                    transition: 0.3s;
+                    border-radius: 20px;
+                    color: white;
+                    background-color: rgb(37, 60, 150);
+                    padding: 7px 15px;
+                    font-size: 14px;
+    
+                    &:hover {
+                        background-color: lightblue;
+                    }
+                }
+            }
+    
+            .second {
+    
+                height: 325px;
+                display: flex;
+                justify-content: space-between;
+                padding: 35px;
+                flex-direction: column;
+                border-bottom-left-radius: 5px;
+                border: 0.5px solid #e8e8e8;
+    
+                .up {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 80px;
+    
+    
+                    .ahrefs {
+                        display: flex;
+                        flex-direction: column;
+    
+                        a {
+                            text-decoration: none;
+                            color: #3E445A;
+                            font-family: Inter;
+                            font-size: 13px;
                             transition: 0.3s;
-                            opacity: 0;
-                            visibility: 0;
-
-                            button {
-                                width: 100%;
-                                outline: none;
-                                transition: 0.2s;
-                                border: none;
-                                padding: 5px 0px;
-                                border-radius: 20px;
-                                background-color: yellow;
-
-                                &:hover {
-                                    color: white;
-                                    background-color: blue;
+                            margin-bottom: 15px;
+    
+                            &:hover {
+                                color: #2649d5;
+                            }
+                        }
+                    }
+                }
+    
+                .down {
+                    display: flex;
+                    align-items: center;
+                    transition: 0.3s;
+    
+                    &:hover {
+                        letter-spacing: 0.5px;
+                    }
+    
+                    a {
+                        font-size: 13px;
+                    }
+    
+                    i {
+                        margin-left: 10px;
+                        color: #0a58cA;
+                    }
+                }
+    
+    
+            }
+    
+            .radiuslutop-sag {
+                border-top-right-radius: 5px;
+            }
+    
+            .radiuslutop-sol {
+                border-top-left-radius: 5px;
+            }
+    
+            .radiuslubottom-sag {
+                border-bottom-right-radius: 5px;
+            }
+    
+            .radiuslubottom-sol {
+                border-bottom-left-radius: 5px;
+            }
+    
+            .product {
+                padding: 0;
+                height: 325px;
+                overflow: hidden;
+                cursor: pointer;
+                transition: 0.2s;
+                color: black;
+                position: relative;
+                background-color: white;
+    
+    
+                &:hover {
+                    overflow: visible;
+                    z-index: 121;
+                }
+    
+                //hover olanda nth5 child-in visibilitisi ve opacity-si olsun 1, + butun product cardin overflow-su olsun visible, ki ashagidaki cardi atmasin ashaga
+    
+                &:hover .hovered_btn {
+                    opacity: 1 !important;
+                    z-index: 12;
+                    visibility: 1 !important;
+                }
+    
+                .product_card {
+                    background-color: white;
+                    border: 0.5px solid #d5d5d5;
+    
+                    &:hover {
+                        box-shadow: 0px 0px 0.4px 0.4px #666;
+                        border-radius: 5px;
+                    }
+    
+                    img {
+                        object-fit: cover;
+                        background-size: cover;
+                        width: 100%;
+                        margin: auto;
+                        vertical-align: middle;
+                    }
+    
+                    .korotkiy {
+                        height: 195px;
+                        padding-bottom: 0;
+                        margin-bottom: 18px;
+    
+                        li {
+                            &:last-child {
+                                display: flex;
+                                justify-content: end;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                height: 8.5vh;
+                                margin: 0;
+                            }
+                        }
+                    }
+    
+                    ul {
+                        padding: 5px 15px;
+                        font-family: Dosis;
+    
+                        li {
+                            list-style: none;
+    
+                            &:nth-child(2) {
+                                font-size: 10px;
+                                color: #038E42;
+                                padding: 8px 0px;
+    
+                                span {
+                                    color: #afafb6;
+                                    font-size: 11px;
+                                    margin-right: 10px;
                                 }
                             }
-
-                            .top_counter {
-                                width: 100%;
+    
+                            &:nth-child(3) {
+                                color: yellow;
+                                font-size: 11px;
+                                padding-bottom: 8px;
                                 display: flex;
-                                justify-content: space-between;
                                 align-items: center;
-                                border-radius: 20px;
-                                border: 0.5px solid #dee2e6;
-
-                                #decrease {
-                                    border-top-left-radius: 20px;
-                                    border-bottom-left-radius: 20px;
-                                    background-color: rgb(182, 182, 182);
+    
+                                span {
+                                    font-size: 12px;
+                                    color: #7A7A7A;
+                                    margin-left: 5px;
                                 }
-
-                                #increase {
-                                    border-top-right-radius: 20px;
-                                    border-bottom-right-radius: 20px;
+                            }
+    
+                            &:nth-child(4) {
+                                padding-bottom: 15px;
+    
+                                span {
+    
+                                    &:nth-child(2) {
+                                        padding: 0;
+                                        margin: 0;
+                                        font-size: 18px;
+                                        text-decoration: none;
+                                        color: red
+                                    }
+    
+                                    font-size: 14px;
+                                    text-decoration: line-through;
+                                    color: #71778E;
+                                    margin-right: 10px;
+    
+                                    &:last-child {
+                                        font-size: 18px;
+                                        text-decoration: none;
+                                        color: red
+                                    }
                                 }
-
+                            }
+    
+                            &:nth-child(5) {
+                                transition: 0.3s;
+                                opacity: 0;
+                                visibility: 0;
+    
                                 button {
-                                    width: 20%;
-                                    border-radius: 0;
+                                    width: 100%;
+                                    outline: none;
+                                    transition: 0.2s;
+                                    border: none;
+                                    padding: 5px 0px;
+                                    border-radius: 20px;
+                                    background-color: yellow;
+    
+                                    &:hover {
+                                        color: white;
+                                        background-color: blue;
+                                    }
+                                }
+    
+                                .top_counter {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-radius: 20px;
+                                    border: 0.5px solid #dee2e6;
+    
+                                    #decrease {
+                                        border-top-left-radius: 20px;
+                                        border-bottom-left-radius: 20px;
+                                        background-color: rgb(182, 182, 182);
+                                    }
+    
+                                    #increase {
+                                        border-top-right-radius: 20px;
+                                        border-bottom-right-radius: 20px;
+                                    }
+    
+                                    button {
+                                        width: 20%;
+                                        border-radius: 0;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
-
-            .size {
-                position: absolute;
-                top: 10px;
-                // right: -100px;
-                right: 7px;
-                opacity: 0;
-                visibility: hidden;
-                box-shadow: 0px 0px 4px 1px grey;
-                border-radius: 100%;
-                background-color: white;
-                padding: 5px;
-                border-radius: 50%;
-                transition: 0.1s;
-
-                &:hover {
-                    background-color: #233A95;
-                }
-
-                &:hover svg {
-                    background-color: #233A95;
-                }
-
-                svg {
+    
+                .size {
+                    position: absolute;
+                    top: 10px;
+                    // right: -100px;
+                    right: 7px;
+                    opacity: 0;
+                    visibility: hidden;
+                    box-shadow: 0px 0px 4px 1px grey;
+                    border-radius: 100%;
                     background-color: white;
-                    height: 25.3px;
-                    width: 25.3px;
-                    padding: 3px;
+                    padding: 5px;
+                    border-radius: 50%;
                     transition: 0.1s;
-
+    
+                    &:hover {
+                        background-color: #233A95;
+                    }
+    
+                    &:hover svg {
+                        background-color: #233A95;
+                    }
+    
+                    svg {
+                        background-color: white;
+                        height: 25.3px;
+                        width: 25.3px;
+                        padding: 3px;
+                        transition: 0.1s;
+    
+                    }
                 }
-            }
-
-            .heart {
-                position: absolute;
-                cursor: pointer;
-                top: 60px;
-                // right: -100px;
-                right: 7px;
-                opacity: 0;
-                visibility: hidden;
-                padding: 6px 10px;
-                color: grey;
-                transition: 0.3s;
-                background-color: white;
-                box-shadow: 0px 0px 4px 1px grey;
-                border-radius: 100%;
-
-                &:hover {
-                    background-color: #233A95;
+    
+                .heart {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 60px;
+                    // right: -100px;
+                    right: 7px;
+                    opacity: 0;
+                    visibility: hidden;
+                    padding: 6px 10px;
+                    color: grey;
+                    transition: 0.3s;
+                    background-color: white;
+                    box-shadow: 0px 0px 4px 1px grey;
+                    border-radius: 100%;
+    
+                    &:hover {
+                        background-color: #233A95;
+                    }
                 }
-            }
-
-            &:hover .size {
-                right: 10px;
-                opacity: 1;
-                visibility: visible;
-            }
-
-            &:hover .heart {
-                right: 10px;
-                opacity: 1;
-                visibility: visible;
+    
+                &:hover .size {
+                    right: 10px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+    
+                &:hover .heart {
+                    right: 10px;
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
         }
     }
