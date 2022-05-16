@@ -1,67 +1,11 @@
 @media (min-width: 1100px) {
-
-    #phone_header {
-        display: none;
-    }
-
-    #phone_first {
-        display: none;
-    }
-
-    #phone_second {
-        display: none;
-    }
-
-    #phone_third {
-        display: none;
-    }
-
-    #phone_third_fourth {
-        display: none;
-    }
-
-    #phone_fourth {
-        display: none;
-    }
-
-    #phone_fifth {
-        display: none;
-    }
-
-    #phone_sixth {
-        display: none;
-    }
-
-    #phone_seventh {
-        display: none;
-    }
-
-    #phone_eighth {
-        display: none;
-    }
-
-    #phone_nineth {
-        display: none;
-    }
-
-    #phone_tenth {
-        display: none;
-    }
-
-    #phone_third_fourth {
-        display: none;
-    }
-
-    #phone_fifth_sixth {
-        display: none;
-    }
-
-    #phone_footer {
+    #phone {
         display: none;
     }
 }
 
 @media (max-width: 576px) {
+    
     #header {
         display: none;
     }
@@ -1868,7 +1812,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 padding: 0;
-                // margin-bottom: 20px;
+                margin-bottom: 20px;
 
                 .left_right {
                     display: flex;
