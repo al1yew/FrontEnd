@@ -836,7 +836,7 @@ $(document).ready(function () {
 
 
   $(".bag_icon").click(function () {
-    $('.bag_div').toggle();
+    $('#bag_div_ph').fadeToggle(100);
   })
 
 
