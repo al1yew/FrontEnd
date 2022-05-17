@@ -17,12 +17,12 @@ $(document).ready(function () {
     function CountBasketLength() {
         let shopcart = JSON.parse(localStorage.getItem('shopcart'));
         let cartcount = shopcart.length;
-      
+
         for (let cart_in of document.querySelectorAll('.cartcount')) {
-          cart_in.innerHTML = cartcount
+            cart_in.innerHTML = cartcount
         }
-        
-      }
+
+    }
 
     CountBasketLength();
 
@@ -299,7 +299,6 @@ $(document).ready(function () {
 
                     shopcart1[m].Count++;
 
-                    location.reload();
                     localStorage.setItem('shopcart', JSON.stringify(shopcart1));
                     basket_items[k].children[3].children[0].children[1].innerHTML = `${shopcart1.Count}`;
 
@@ -313,6 +312,7 @@ $(document).ready(function () {
 
                     reload_.classList.add('d-none');
 
+
                 }
             }
         }
@@ -323,21 +323,45 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
 //#region clear all
 
+$('#clearall').click(function () {
+
+    localStorage.setItem('shopcart', JSON.stringify([]))
+    setTimeout(() => {
+
+        location.reload();
+        reload_.classList.remove('d-none');
+        return false;
+
+    }, 500);
+
+    reload_.classList.add('d-none');
+
+})
+
+//#endregion refresh page
 
 
+//#region clear all
 
+$('#refresh').click(function () {
 
+    setTimeout(() => {
 
+        location.reload();
+        reload_.classList.remove('d-none');
+        return false;
 
+    }, 500);
 
+    reload_.classList.add('d-none');
 
+})
 
-
-
-
-
-
-
-//#eregion clear all
+  //#endregion refresh page

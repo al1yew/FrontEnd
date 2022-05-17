@@ -842,45 +842,6 @@ for (let i = 0; i < shopcart.length; i++) {
 
 
 
-//#region clear all
-
-$('#clearall').click(function () {
-
-  localStorage.setItem('shopcart', JSON.stringify([]))
-  setTimeout(() => {
-
-    location.reload();
-    reload_.classList.remove('d-none');
-    return false;
-
-  }, 500);
-
-  reload_.classList.add('d-none');
-
-})
-
-//#endregion refresh page
-
-
-//#region clear all
-
-$('#refresh').click(function () {
-
-  setTimeout(() => {
-
-    location.reload();
-    reload_.classList.remove('d-none');
-    return false;
-
-  }, 500);
-
-  reload_.classList.add('d-none');
-
-})
-
-//#endregion refresh page
-
-
 
 
 //#region open small basket in phone
