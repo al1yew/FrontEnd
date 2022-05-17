@@ -22,8 +22,9 @@
     <div class="loader_keeper d-none" id="reload_">
         <div class="loader "></div>
     </div>
-    <section id="modal_location" style="display: none;">
-        <div class="col-lg-3-8 location_div">
+
+    <section class="modal_location" style="display: none;">
+        <div class="col-lg-3-8 col-10 location_div">
             <div class="top">
 
                 <h5>Choose your Delivery Location</h5>
@@ -31,10 +32,10 @@
 
                 <div class="inputarea">
                     <i class="fas fa-search"></i>
-                    <input id="location_search" onfocus="" placeholder="Search your area" type="search">
+                    <input class="location_search" onfocus="" placeholder="Search your area" type="search">
                 </div>
 
-                <span id="close_location">X</span>
+                <span class="close_location">X</span>
             </div>
 
             <div class="bottom">
@@ -131,10 +132,10 @@
                         </div>
 
                         <div class="col-lg-2">
-                            <div class="select_location" id="location">
+                            <div class="select_location location">
                                 <div class="col-lg-10">
                                     <p>Your Location</p>
-                                    <p id="set_location">Select a Location</p>
+                                    <p id="set_location" class="set_location">Select a Location</p>
                                 </div>
                                 <div class="col-lg-2 asd">
                                     <i class="fa-solid fa-angle-down"></i>
@@ -152,19 +153,21 @@
                             <a class="userikon" style="text-decoration: none; color:#666;" href="login.html"><i
                                     class="klbth-icon-user"></i></a>
 
-                            <a href="basket.html" class="bag">
+                            <div class="bag">
 
-                                <span class="money" id="total_header_cost">
-                                    $0.00
-                                </span>
+                                <a href="basket.html" class="monmon">
+                                    <span class="money total_header_cost col-5" id="total_header_cost">
+                                        $0.00
+                                    </span>
+                                </a>
 
                                 <i class="klbth-icon-shopping-bag bag_icon">
-                                    <span id="cartcount" class="amount">0</span>
+                                    <span id="cartcount" class="amount cartcount">0</span>
                                 </i>
 
                                 <div class="bag_div">
 
-                                    <div id="pustoy_basket" class="pustoy">
+                                    <div id="pustoy_basket" class=" pustoy_basket pustoy">
                                         <div class="image">
                                             <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 280.028 280.028" width="280.028" height="80.028">
@@ -197,8 +200,8 @@
 
                                     </div>
 
-                                    <div id="polniy_basket" class="polniy d-none">
-                                        <div id="small_basket_innner" class="polniy_top">
+                                    <div id="polniy_basket" class="polniy polniy_basket d-none">
+                                        <div id="small_basket_innner" class="small_basket_innner polniy_top">
 
                                         </div>
 
@@ -208,16 +211,19 @@
                                                 <span class="subsub">Subtotal</span>
                                                 <span class="dollar1">
                                                     <span>$</span>
-                                                    <span id="subtotal_right_countprice"></span>
+                                                    <span id="subtotal_right_countprice"
+                                                        class="subtotal_right_countprice"></span>
                                                 </span>
                                             </div>
+
+                                            <a href="basket.html" class="view_cart_a">View Your Cart</a>
                                             <button class="checkout_">Checkout</button>
                                             <p class="secondp_">We reduce shipping prices to only 2.49 €!</p>
 
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
 
                         </div>
 
@@ -226,7 +232,7 @@
                     <div class="bottom_bottom">
 
                         <div class="col-lg-2 categories">
-                            <div id="categories">
+                            <div id="categories" class="categories_">
                                 <i class="fas fa-bars"></i>
                                 <p>
                                     ALL CATEGORIES
@@ -236,7 +242,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2-7" id="all_categories">
+                        <div class="col-lg-2-7 all_categories_" id="all_categories">
 
                             <div class="continued" id="continued">
 
@@ -466,6 +472,449 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </header>
+
+    <header id="phone_header">
+
+
+
+        <section id="sidebar" class="sidebar">
+            <div class="container">
+                <div class="row all">
+
+                    <div class="col-6 sidebar_element">
+                        <a href="index.html">
+                            <img src="./assets/images/bacola-logo (1).png" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="col-6 sidebar_element">
+                        <span class="phone_menu">
+                            X
+                        </span>
+                    </div>
+
+                    <div class="col-12 select_location location sidebar_element">
+                        <div class="col-10">
+                            <p>Your Location</p>
+                            <p id="set_location" class="set_location">Select a Location</p>
+                        </div>
+                        <div class="col-2 asd">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="categories_main col-12 sidebar_element categories_">
+
+                        <i class="fas fa-bars"></i>
+                        <p>
+                            ALL CATEGORIES
+                        </p>
+                        <i class="fa-solid fa-angle-down"></i>
+
+                    </div>
+
+                    <div class="col-12 all_categories_ sidebar_element" id="all_categories">
+
+                        <div class="dla_hovera dla_najatiya1 categories_click_element">
+
+                            <div class=" col-6 categories_click_element_in">
+                                <i class="klbth-icon-apple-juice ikon"></i>
+                                <p class="mainmainmain">
+                                    Fruits & Vegetables
+                                </p>
+                            </div>
+
+                            <i class="fa-solid fa-angle-right ikon col-1"></i>
+                        </div>
+
+                        <div class="continued1" id="continued">
+
+                            <div class="col-lg-12 leftmenu" id="categories_all2">
+                                <p>Cuts & Sprouts</p>
+                                <p>Exotic Friuits & Veggies</p>
+                                <p>Fresh Fruits</p>
+                                <p>Fresh Vegetables</p>
+                                <p>Herbs & Seasonings</p>
+                                <p>Packaged Produce</p>
+                                <p>Party Trays</p>
+                            </div>
+
+                        </div>
+
+                        <div class=" col-6 categories_click_element_in categories_click_element">
+                            <i class="klbth-icon-meat ikon"></i>
+                            <span>
+                                Meats & Seafood
+                            </span>
+                        </div>
+
+                        <div class=" col-6 categories_click_element_in categories_click_element">
+                            <i class="klbth-icon-boiled-egg ikon"></i>
+                            <span>
+                                Breakfast & Dairy
+                            </span>
+                        </div>
+
+                        <div class="dla_hovera dla_najatiya categories_click_element">
+                            <div class=" col-6 categories_click_element_in">
+                                <i class="klbth-icon-cup ikon"></i>
+                                <p class="mainmainmain">
+                                    Beverages
+                                </p>
+                            </div>
+
+                            <i class="fa-solid fa-angle-right ikon"></i>
+                        </div>
+
+                        <div class="continued" id="continued1">
+
+                            <div class="col-lg-12 leftmenu" id="categories_all3">
+                                <p>Coffee</p>
+                                <p>Craft Beer</p>
+                                <p>Drink Boxes & Pouches</p>
+                                <p>Milk & Plant-Based Milk</p>
+                                <p>Soda & Pop</p>
+                                <p>Sparkling Water</p>
+                                <p>Tea & Kombutca</p>
+                                <p>Water</p>
+                                <p>Wine</p>
+                            </div>
+
+                        </div>
+
+                        <div class=" col-6 categories_click_element_in categories_click_element">
+                            <i class="klbth-icon-biscuit ikon"></i>
+                            <span>
+                                Breads & Bakery
+                            </span>
+                        </div>
+
+
+                        <div class=" col-6 categories_click_element_in categories_click_element">
+                            <i class="klbth-icon-snowflake ikon"></i>
+                            <span>
+                                Frozen Foods
+                            </span>
+                        </div>
+
+
+                        <div class=" col-6 categories_click_element_in categories_click_element">
+                            <i class="klbth-icon-candy ikon"></i>
+                            <span>
+                                Biscuits & Snacks
+                            </span>
+                        </div>
+
+
+                        <div class=" col-6 categories_click_element_in categories_click_element">
+                            <i class="klbth-icon-vegan ikon"></i>
+                            <span>
+                                Grocery & Staples
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <p>Site Navigation</p>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <div class="homehome">
+                            <a href="index.html">Home</a>
+                            <i class="fa-solid fa-angle-down angle"></i>
+                        </div>
+                        <div class="megamenu1">
+                            <div class="all">
+                                <p>Home 1</p>
+                                <p>Home 2</p>
+                                <p>Home 3</p>
+                                <p>Home 4</p>
+                                <p>Home 5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <div class="shopshop">
+                            <a href="shop.html">Shop</a>
+                            <i class="fa-solid fa-angle-down angle"></i>
+                        </div>
+
+                        <div class="megamenu2 display">
+
+                            <div class="all">
+
+                                <div class="col-12 footer_keeper">
+                                    <p class="fruit_">
+                                        FRUIT & VEGETABLES
+                                        <i class="fa-solid fa-angle-down angle"></i>
+
+                                    </p>
+                                    <div class="phone_megamenu2 phone_m_1">
+                                        <div class="megamenu_keeper">
+                                            <a href="">Fresh Vegetables</a>
+                                            <a href="">Herbs & Seasonings</a>
+                                            <a href="">Fresh Fruits</a>
+                                            <a href="">Cuts & Sprouts</a>
+                                            <a href="">Exotic Fruits & Veggies</a>
+                                            <a href="">Packaged Produce</a>
+                                            <a href="">Party Trays</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 footer_keeper">
+                                    <p class="breakfast_">
+                                        BREAKFAST & DAIRY
+                                        <i class="fa-solid fa-angle-down angle"></i>
+
+                                    </p>
+                                    <div class="phone_megamenu2 phone_m_2 ">
+                                        <div class="megamenu_keeper">
+                                            <a href="">Milk & Flavoured Milk</a>
+                                            <a href="">Butter and Margarine</a>
+                                            <a href="">Cheese</a>
+                                            <a href="">Eggs Substitutes</a>
+                                            <a href="">Honey</a>
+                                            <a href="">Marmalades</a>
+                                            <a href="">Sour Cream and Dips</a>
+                                            <a href="">Yogurt</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 footer_keeper">
+                                    <p class="meat_">
+                                        MEAT & SEAFOOD
+                                        <i class="fa-solid fa-angle-down angle"></i>
+
+                                    </p>
+                                    <div class="phone_megamenu2 phone_m_3">
+                                        <div class="megamenu_keeper">
+                                            <a href="">Breakfast Sausage</a>
+                                            <a href="">Dinner Sausage</a>
+                                            <a href="">Beef</a>
+                                            <a href="">Chicken</a>
+                                            <a href="">Sliced Deli Meat</a>
+                                            <a href="">Shrimp</a>
+                                            <a href="">Wild Caught Fillets</a>
+                                            <a href="">Crab and Shellfish</a>
+                                            <a href="">Farm Raised Fillets</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 footer_keeper">
+                                    <p class="beverag_">
+                                        BEVERAGES
+                                        <i class="fa-solid fa-angle-down angle"></i>
+
+                                    </p>
+                                    <div class="phone_megamenu2 phone_m_4">
+                                        <div class="megamenu_keeper">
+                                            <a href="">Water</a>
+                                            <a href="">Sparkling Water</a>
+                                            <a href="">Soda & Pop</a>
+                                            <a href="">Coffee</a>
+                                            <a href="">Milk & Plant-Based Milk</a>
+                                            <a href="">Tea & Kombucha</a>
+                                            <a href="">Drink Boxes & Pouches</a>
+                                            <a href="">Craft Beer</a>
+                                            <a href="">Wine</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 footer_keeper">
+                                    <p class="bread_">
+                                        BREADS & BAKERY
+                                        <i class="fa-solid fa-angle-down angle"></i>
+
+                                    </p>
+                                    <div class="phone_megamenu2 phone_m_5">
+                                        <div class="megamenu_keeper">
+                                            <a href="">Milk & Flavoured Milk</a>
+                                            <a href="">Butter and Margarine</a>
+                                            <a href="">Cheese</a>
+                                            <a href="">Eggs Substitutes</a>
+                                            <a href="">Honey</a>
+                                            <a href="">Marmalades</a>
+                                            <a href="">Sour Cream and Dips</a>
+                                            <a href="">Yogurt</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <i class="klbth-icon-meat ikon"></i>
+                        <span>
+                            Meats & Seafood
+                        </span>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <i class="klbth-icon-biscuit ikon"></i>
+                        <span>
+                            Breads & Bakery
+                        </span>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <p class="nav_p">
+                            <i class="klbth-icon-cup"></i>
+                            BEVERAGES
+                        </p>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <a href="bloh.html">Blog</a>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <p>Copyright 2022 © Bacola Theme. All rights reserved. Powered by Vasif Aliyev</p>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <div class="clicklang">
+                            <p>English</p>
+                            <i class="fa-solid fa-angle-down angle"></i>
+                        </div>
+                        <div class="langsss">
+                            <span>Azerbaijan</span>
+                            <span>Russian</span>
+                            <span>Arabic</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 sidebar_element">
+                        <div class="clickcurr">
+                            <p>USD</p>
+                            <i class="fa-solid fa-angle-down angle"></i>
+                        </div>
+                        <div class="currss">
+                            <span>AZN</span>
+                            <span>RUB</span>
+                            <span>AUD</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <div class="container">
+            <div class="row covid_mob_keeper">
+                <div class="col-12 covid_mob">
+                    <p>Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay</p>
+                </div>
+            </div>
+
+            <div class="row all">
+
+                <div class="col-3 left phone_menu">
+                    <i class="klbth-icon-menu-thin"></i>
+                </div>
+
+                <div class="col-3 middle">
+                    <a href="index.html">
+                        <img class="img-fluid" src="./assets/images/bacola-logo-mobile.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-3 right">
+                    <div class="bag">
+
+                        <a href="basket.html" class="monmon">
+                            <span class="money total_header_cost col-5" id="total_header_cost">
+                                $0.00
+                            </span>
+                        </a>
+
+                        <i class="klbth-icon-shopping-bag col-5 bag_icon">
+                            <span id="cartcount" class="amount cartcount">0</span>
+                        </i>
+
+                        <div class="bag_div" id="bag_div_ph">
+
+                            <div id="pustoy_basket" class="pustoy_basket pustoy">
+                                <div class="image">
+                                    <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 280.028 280.028" width="280.028" height="80.028">
+                                        <path class="c-01" d="M35.004 0h210.02v78.758H35.004V0z" fill="#b7343e">
+                                        </path>
+                                        <path class="c-02"
+                                            d="M262.527 61.256v201.27c0 9.626-7.876 17.502-17.502 17.502H35.004c-9.626 0-17.502-7.876-17.502-17.502V61.256h245.025z"
+                                            fill="#f04652"></path>
+                                        <path class="c-03"
+                                            d="M35.004 70.007h26.253V26.253L35.004 0v70.007zm183.767-43.754v43.754h26.253V0l-26.253 26.253z"
+                                            fill="#f04652"></path>
+                                        <path class="c-04"
+                                            d="M61.257 61.256V26.253L17.503 61.256h43.754zm157.514-35.003v35.003h43.754l-43.754-35.003z"
+                                            fill="#ab212b"></path>
+                                        <path class="c-05"
+                                            d="M65.632 105.01c-5.251 0-8.751 3.5-8.751 8.751s3.5 8.751 8.751 8.751 8.751-3.5 8.751-8.751c0-5.25-3.5-8.751-8.751-8.751zm148.764 0c-5.251 0-8.751 3.5-8.751 8.751s3.5 8.751 8.751 8.751 8.751-3.5 8.751-8.751c.001-5.25-3.501-8.751-8.751-8.751z"
+                                            fill="#c13942"></path>
+                                        <path class="c-06"
+                                            d="M65.632 121.637c5.251 0 6.126 6.126 6.126 6.126 0 39.379 29.753 70.882 68.257 70.882s68.257-31.503 68.257-70.882c0 0 .875-6.126 6.126-6.126s6.126 6.126 6.126 6.126c0 46.38-35.003 83.133-80.508 83.133s-80.508-37.629-80.508-83.133c-.001-.001.874-6.126 6.124-6.126z"
+                                            fill="#c13942"></path>
+                                        <path class="c-07"
+                                            d="M65.632 112.886c5.251 0 6.126 6.126 6.126 6.126 0 39.379 29.753 70.882 68.257 70.882s68.257-31.503 68.257-70.882c0 0 .875-6.126 6.126-6.126s6.126 6.126 6.126 6.126c0 46.38-35.003 83.133-80.508 83.133s-80.508-37.629-80.508-83.133c-.001 0 .874-6.126 6.124-6.126z"
+                                            fill="#fdfbf7"></path>
+                                    </svg>
+                                </div>
+
+                                <p class="firstp">No products in the cart.</p>
+
+                                <p class="secondp">We reduce shipping prices to only 2.49 €!</p>
+
+                            </div>
+
+                            <div id="polniy_basket" class="polniy polniy_basket d-none">
+                                <div id="small_basket_innner" class="small_basket_innner polniy_top">
+
+                                </div>
+
+                                <div class="polniy_bottom">
+
+                                    <div class="subtotal_bag_div" id="subtotal_bag_div">
+                                        <span class="subsub">Subtotal</span>
+                                        <span class="dollar1">
+                                            <span>$</span>
+                                            <span id="subtotal_right_countprice"
+                                                class="subtotal_right_countprice"></span>
+                                        </span>
+                                    </div>
+                                    <!-- <span class="view_cart_a" id="view_cart_a">
+                                        View Your Cart
+                                    </span> -->
+                                    <a href="basket.html" class="view_cart_a">View Your Cart</a>
+                                    <button class="checkout_">Checkout</button>
+                                    <p class="secondp_">We reduce shipping prices to only 2.49 €!</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
