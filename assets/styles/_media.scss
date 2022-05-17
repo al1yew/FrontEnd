@@ -843,10 +843,14 @@
 
                                     .phone_megamenu2 {
                                         margin-bottom: 15px;
-                                        display: flex;
-                                        align-items: flex-start;
-                                        justify-content: flex-start;
-                                        flex-direction: column;
+                                        display: none;
+
+                                        .megamenu_keeper {
+                                            display: flex;
+                                            align-items: flex-start;
+                                            justify-content: flex-start;
+                                            flex-direction: column;
+                                        }
 
                                         a {
                                             font-size: 13px;
@@ -856,16 +860,6 @@
                                         }
                                     }
                                 }
-
-
-                            }
-
-                            .phone_megamenu2 {
-                                display: none;
-                            }
-
-                            .phone_m_1 {
-                                display: none;
                             }
                         }
                     }
@@ -1210,15 +1204,11 @@
         }
     }
 
-    #second {
-        display: none;
-    }
-
     #footer {
         display: none;
     }
 
-    #phone_second {
+    #second {
         margin: 20px 0;
 
         .all {
@@ -1250,7 +1240,7 @@
                 .top_right {
                     button {
                         outline: none;
-                        padding: 5px 18px;
+                        padding: 5px 5px;
                         cursor: pointer;
                         font-size: 11px;
                         color: rgba(128, 128, 128, 0.612);
@@ -1575,7 +1565,7 @@
                 .top_right {
                     button {
                         outline: none;
-                        padding: 5px 18px;
+                        padding: 5px 5px;
                         cursor: pointer;
                         font-size: 11px;
                         color: rgba(128, 128, 128, 0.612);
@@ -1990,7 +1980,7 @@
                 .top_right {
                     button {
                         outline: none;
-                        padding: 5px 18px;
+                        padding: 5px 5px;
                         cursor: pointer;
                         font-size: 11px;
                         color: rgba(128, 128, 128, 0.612);

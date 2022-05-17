@@ -3805,6 +3805,9 @@ body {
   }
   #phone_header .sidebar .all .sidebar_element:nth-child(8) .megamenu2 .all .footer_keeper .phone_megamenu2 {
     margin-bottom: 15px;
+    display: none;
+  }
+  #phone_header .sidebar .all .sidebar_element:nth-child(8) .megamenu2 .all .footer_keeper .phone_megamenu2 .megamenu_keeper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3824,12 +3827,6 @@ body {
     margin-bottom: 15px;
     padding-left: 25px;
     color: #3E445A;
-  }
-  #phone_header .sidebar .all .sidebar_element:nth-child(8) .megamenu2 .phone_megamenu2 {
-    display: none;
-  }
-  #phone_header .sidebar .all .sidebar_element:nth-child(8) .megamenu2 .phone_m_1 {
-    display: none;
   }
   #phone_header .sidebar .all .sidebar_element:nth-child(9) {
     margin-bottom: 15px;
@@ -4212,21 +4209,18 @@ body {
             align-items: center;
     padding: 7px 15px;
   }
-  #second {
-    display: none;
-  }
   #footer {
     display: none;
   }
-  #phone_second {
+  #second {
     margin: 20px 0;
   }
-  #phone_second .all {
+  #second .all {
     padding: 0 10px;
     font-family: InterLight;
     font-weight: 600;
   }
-  #phone_second .all .top {
+  #second .all .top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4239,20 +4233,20 @@ body {
     margin-bottom: 20px;
     padding: 0;
   }
-  #phone_second .all .top .top_left {
+  #second .all .top .top_left {
     padding: 0;
   }
-  #phone_second .all .top .top_left h5 {
+  #second .all .top .top_left h5 {
     padding: 0;
     margin: 0;
   }
-  #phone_second .all .top .top_left p {
+  #second .all .top .top_left p {
     font-size: 8px;
     color: #9a9a9a;
   }
-  #phone_second .all .top .top_right button {
+  #second .all .top .top_right button {
     outline: none;
-    padding: 5px 18px;
+    padding: 5px 5px;
     cursor: pointer;
     font-size: 11px;
     color: rgba(128, 128, 128, 0.612);
@@ -4260,38 +4254,38 @@ body {
     border-radius: 15px;
     border: 0.5px solid #9b9bb4;
   }
-  #phone_second .all .bottom {
+  #second .all .bottom {
     border-radius: 10px;
     padding: 0;
     padding-bottom: 20px;
   }
-  #phone_second .all .bottom .slider_card {
+  #second .all .bottom .slider_card {
     color: black;
     border-radius: 10px;
     border-radius: 0;
     height: 100%;
     position: relative;
   }
-  #phone_second .all .bottom .slider_card img {
+  #second .all .bottom .slider_card img {
     -o-object-fit: cover;
        object-fit: cover;
     background-size: cover;
     width: 100%;
     margin: auto;
   }
-  #phone_second .all .bottom .slider_card ul {
+  #second .all .bottom .slider_card ul {
     padding: 5px 15px !important;
     font-family: Dosis;
   }
-  #phone_second .all .bottom .slider_card ul li {
+  #second .all .bottom .slider_card ul li {
     list-style: none;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(2) {
+  #second .all .bottom .slider_card ul li:nth-child(2) {
     font-size: 10px;
     color: #038E42;
     padding: 8px 0px;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(3) {
+  #second .all .bottom .slider_card ul li:nth-child(3) {
     color: #ffcd00;
     font-size: 11px;
     padding-bottom: 8px;
@@ -4302,33 +4296,33 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(3) span {
+  #second .all .bottom .slider_card ul li:nth-child(3) span {
     font-size: 12px;
     color: #7A7A7A;
     margin-left: 5px;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(4) {
+  #second .all .bottom .slider_card ul li:nth-child(4) {
     padding-bottom: 15px;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(4) span {
+  #second .all .bottom .slider_card ul li:nth-child(4) span {
     font-size: 14px;
     text-decoration: line-through;
     color: #71778E;
     margin-right: 10px;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(4) span:nth-child(2) {
+  #second .all .bottom .slider_card ul li:nth-child(4) span:nth-child(2) {
     padding: 0;
     margin: 0;
     font-size: 18px;
     text-decoration: none;
     color: red;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(4) span:last-child {
+  #second .all .bottom .slider_card ul li:nth-child(4) span:last-child {
     font-size: 18px;
     text-decoration: none;
     color: red;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(5) button {
+  #second .all .bottom .slider_card ul li:nth-child(5) button {
     width: 100%;
     outline: none;
     -webkit-transition: 0.3s;
@@ -4339,11 +4333,11 @@ body {
     color: black;
     background-color: #ffcd00;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(5) button:hover {
+  #second .all .bottom .slider_card ul li:nth-child(5) button:hover {
     color: white;
     background-color: blue;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(5) .top_counter {
+  #second .all .bottom .slider_card ul li:nth-child(5) .top_counter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4356,20 +4350,20 @@ body {
     border-radius: 20px;
     border: 0.5px solid #dee2e6;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(5) .top_counter #decrease {
+  #second .all .bottom .slider_card ul li:nth-child(5) .top_counter #decrease {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: #b6b6b6;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(5) .top_counter #increase {
+  #second .all .bottom .slider_card ul li:nth-child(5) .top_counter #increase {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-  #phone_second .all .bottom .slider_card ul li:nth-child(5) .top_counter button {
+  #second .all .bottom .slider_card ul li:nth-child(5) .top_counter button {
     width: 20%;
     border-radius: 0;
   }
-  #phone_second .all .bottom .slider_card .percentage {
+  #second .all .bottom .slider_card .percentage {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -4380,7 +4374,7 @@ body {
     color: white;
     border-radius: 4px;
   }
-  #phone_second .all .bottom .slider_card .recommend {
+  #second .all .bottom .slider_card .recommend {
     position: absolute;
     top: 40px;
     background-color: #71778e;
@@ -4391,7 +4385,7 @@ body {
     font-size: 10px;
     left: 10px;
   }
-  #phone_second .all .bottom .slider_card .size {
+  #second .all .bottom .slider_card .size {
     position: absolute;
     top: 10px;
     right: 7px;
@@ -4404,13 +4398,13 @@ body {
     -webkit-transition: 0.1s;
     transition: 0.1s;
   }
-  #phone_second .all .bottom .slider_card .size:hover {
+  #second .all .bottom .slider_card .size:hover {
     background-color: #233A95;
   }
-  #phone_second .all .bottom .slider_card .size:hover svg {
+  #second .all .bottom .slider_card .size:hover svg {
     background-color: #233A95;
   }
-  #phone_second .all .bottom .slider_card .size svg {
+  #second .all .bottom .slider_card .size svg {
     background-color: white;
     height: 25.3px;
     width: 25.3px;
@@ -4418,7 +4412,7 @@ body {
     -webkit-transition: 0.1s;
     transition: 0.1s;
   }
-  #phone_second .all .bottom .slider_card .heart {
+  #second .all .bottom .slider_card .heart {
     position: absolute;
     cursor: pointer;
     top: 60px;
@@ -4432,15 +4426,15 @@ body {
             box-shadow: 0px 0px 4px 1px grey;
     border-radius: 100%;
   }
-  #phone_second .all .bottom .slider_card .heart:hover {
+  #second .all .bottom .slider_card .heart:hover {
     background-color: #233A95;
   }
-  #phone_second .all .bottom .slider_card:hover .size {
+  #second .all .bottom .slider_card:hover .size {
     right: 10px;
     opacity: 1;
     visibility: visible;
   }
-  #phone_second .all .bottom .slider_card:hover .heart {
+  #second .all .bottom .slider_card:hover .heart {
     right: 10px;
     opacity: 1;
     visibility: visible;
@@ -4552,7 +4546,7 @@ body {
   }
   #phone_third_fourth .all .top .top_right button {
     outline: none;
-    padding: 5px 18px;
+    padding: 5px 5px;
     cursor: pointer;
     font-size: 11px;
     color: rgba(128, 128, 128, 0.612);
@@ -4969,7 +4963,7 @@ body {
   }
   #phone_fifth_sixth .all .top .top_right button {
     outline: none;
-    padding: 5px 18px;
+    padding: 5px 5px;
     cursor: pointer;
     font-size: 11px;
     color: rgba(128, 128, 128, 0.612);
