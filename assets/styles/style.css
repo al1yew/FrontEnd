@@ -3389,9 +3389,41 @@ body {
   }
   #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued {
     display: none;
+    padding-left: 45px;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued .leftmenu {
+    padding: 10px;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued p {
+    font-size: 13px;
+    padding: 10px 0;
+    color: #3e445a;
+    width: 80%;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued p:first-child {
+    padding-top: 0;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued p:last-child {
+    padding-bottom: 10px;
   }
   #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued1 {
     display: none;
+    padding-left: 45px;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued1 .leftmenu {
+    padding: 10px;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued1 p {
+    font-size: 13px;
+    padding: 10px 0;
+    color: #3e445a;
+    width: 80%;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued1 p:first-child {
+    padding-top: 0;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(5) .continued1 p:last-child {
+    padding-bottom: 10px;
   }
   #phone_header #sidebar .all .sidebar_element:nth-child(5) .ikon {
     display: -webkit-box;
@@ -3507,6 +3539,8 @@ body {
   #phone_header #sidebar .all .sidebar_element:nth-child(7) .megamenu1 {
     padding: 0;
     margin: 0;
+    display: none;
+    padding-left: 20px;
   }
   #phone_header #sidebar .all .sidebar_element:nth-child(7) .megamenu1 .all {
     display: -webkit-box;
@@ -3557,6 +3591,10 @@ body {
   #phone_header #sidebar .all .sidebar_element:nth-child(8) .megamenu2 {
     padding: 0;
     margin: 0;
+    display: none;
+    padding-left: 20px;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(8) .megamenu2 .phone_megamenu2 {
     display: none;
   }
   #phone_header #sidebar .all .sidebar_element:nth-child(8) .megamenu2 .all {
@@ -3616,6 +3654,140 @@ body {
     margin-bottom: 15px;
     padding-left: 25px;
     color: #3E445A;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(9) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #d7d7d7;
+    font-size: 14px;
+    color: #3E445A;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(10) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #d7d7d7;
+    font-size: 14px;
+    color: #3E445A;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(11) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #d7d7d7;
+    font-size: 14px;
+    color: #3E445A;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(12) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #d7d7d7;
+    font-size: 14px;
+    color: #3E445A;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(13) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #d7d7d7;
+    font-size: 14px;
+    color: #3E445A;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(14) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #d7d7d7;
+    font-size: 14px;
+    color: #3E445A;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(15) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #d7d7d7;
+    font-size: 14px;
+    color: #3E445A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(15) .clicklang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(15) .clicklang i {
+    padding-left: 8px;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(15) .langsss {
+    font-size: 14px;
+    display: none;
+    color: #3E445A;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(15) .langsss span {
+    width: 100%;
+    display: block;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(16) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #d7d7d7;
+    font-size: 14px;
+    color: #3E445A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(16) .clickcurr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(16) .clickcurr i {
+    padding-left: 8px;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(16) .currss {
+    font-size: 14px;
+    display: none;
+    color: #3E445A;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #phone_header #sidebar .all .sidebar_element:nth-child(16) .currss span {
+    width: 100%;
+    display: block;
   }
   #first {
     display: none;

@@ -95,7 +95,7 @@ $(document).ready(function () {
 
 //#endregion select location
 
-//#region categories
+//#region categories megamenu_phone
 
 $(document).ready(function () {
 
@@ -109,12 +109,39 @@ $(document).ready(function () {
 
   $('.dla_najatiya1').click(function () {
     $('.continued1').slideToggle(220);
-    $('.continued1').classToggle('shillaq');
+  })
+
+  $('.shopshop').click(function () {
+    $('.megamenu2').slideToggle(220);
+  })
+
+  $('.homehome').click(function () {
+    $('.megamenu1').slideToggle(220);
+  })
+
+  $('.fruit_').click(function () {
+    $('.phone_m_1').slideToggle(220);
+  })
+
+  $('.breakfast_').click(function () {
+    $('.phone_m_2').slideToggle(220);
+  })
+
+  $('.meat_').click(function () {
+    $('.phone_m_3').slideToggle(220);
+  })
+
+  $('.beverag_').click(function () {
+    $('.phone_m_4').slideToggle(220);
+  })
+
+  $('.bread_').click(function () {
+    $('.phone_m_5').slideToggle(220);
   })
 
 });
 
-//#endregion categories
+//#endregion categories megamenu_phone
 
 //#region login js
 

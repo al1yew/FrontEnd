@@ -496,10 +496,51 @@
 
                         .continued {
                             display: none;
+                            padding-left: 45px;
+
+                            .leftmenu {
+                                padding: 10px;
+                            }
+
+                            p {
+                                font-size: 13px;
+                                padding: 10px 0;
+                                color: #3e445a;
+                                width: 80%;
+
+                                &:first-child {
+                                    padding-top: 0;
+                                }
+
+                                &:last-child {
+                                    padding-bottom: 10px;
+                                }
+                            }
                         }
 
                         .continued1 {
                             display: none;
+                            padding-left: 45px;
+
+                            .leftmenu {
+                                padding: 10px;
+                            }
+
+                            p {
+
+                                font-size: 13px;
+                                padding: 10px 0;
+                                color: #3e445a;
+                                width: 80%;
+
+                                &:first-child {
+                                    padding-top: 0;
+                                }
+
+                                &:last-child {
+                                    padding-bottom: 10px;
+                                }
+                            }
                         }
 
                         .ikon {
@@ -592,6 +633,8 @@
                         .megamenu1 {
                             padding: 0;
                             margin: 0;
+                            display: none;
+                            padding-left: 20px;
 
                             .all {
                                 display: flex;
@@ -634,6 +677,11 @@
                             padding: 0;
                             margin: 0;
                             display: none;
+                            padding-left: 20px;
+
+                            .phone_megamenu2 {
+                                display: none;
+                            }
 
                             .all {
                                 display: flex;
@@ -681,6 +729,125 @@
                         }
                     }
 
+                    &:nth-child(9) {
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 0.5px solid rgb(215, 215, 215);
+                        font-size: 14px;
+                        color: #3E445A;
+                    }
+
+                    &:nth-child(10) {
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 0.5px solid rgb(215, 215, 215);
+                        font-size: 14px;
+                        color: #3E445A;
+                    }
+
+                    &:nth-child(11) {
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 0.5px solid rgb(215, 215, 215);
+                        font-size: 14px;
+                        color: #3E445A;
+                    }
+
+                    &:nth-child(12) {
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 0.5px solid rgb(215, 215, 215);
+                        font-size: 14px;
+                        color: #3E445A;
+                    }
+
+                    &:nth-child(13) {
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 0.5px solid rgb(215, 215, 215);
+                        font-size: 14px;
+                        color: #3E445A;
+                    }
+
+                    &:nth-child(14) {
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 0.5px solid rgb(215, 215, 215);
+                        font-size: 14px;
+                        color: #3E445A;
+                    }
+
+                    &:nth-child(15) {
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 0.5px solid rgb(215, 215, 215);
+                        font-size: 14px;
+                        color: #3E445A;
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-direction: column;
+
+                        .clicklang {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            i {
+                                padding-left: 8px;
+                            }
+                        }
+
+                        .langsss {
+                            font-size: 14px;
+                            display: none;
+                            color: #3E445A;
+                            padding-left: 20px;
+                            padding-bottom: 15px;
+
+                            span {
+                                width: 100%;
+                                display: block;
+                            }
+
+                            flex-direction: column;
+                        }
+                    }
+
+                    &:nth-child(16) {
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 0.5px solid rgb(215, 215, 215);
+                        font-size: 14px;
+                        color: #3E445A;
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-direction: column;
+
+                        .clickcurr {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            i {
+                                padding-left: 8px;
+                            }
+                        }
+
+                        .currss {
+                            font-size: 14px;
+                            display: none;
+                            color: #3E445A;
+                            padding-left: 20px;
+                            padding-bottom: 15px;
+
+                            span {
+                                width: 100%;
+                                display: block;
+                            }
+
+                            flex-direction: column;
+                        }
+                    }
 
                 }
             }
