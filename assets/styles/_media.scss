@@ -394,6 +394,11 @@
                 align-items: center;
 
                 .sidebar_element {
+                    .shillaq {
+                        transform: rotate(3.142rad);
+                        color: blue;
+                    }
+
                     padding: 0;
 
                     &:nth-child(1) {
@@ -459,6 +464,61 @@
                     }
 
                     &:nth-child(4) {
+                        background-color: rgb(43, 190, 249);
+                        border-radius: 5px;
+                        display: flex;
+                        font-size: 15px;
+                        font-family: Dosis;
+                        justify-content: space-between;
+                        padding: 10px;
+                        color: white;
+                        align-items: center;
+                        margin-bottom: 15px;
+
+                        i {
+                            color: white;
+                            font-size: 18px;
+                            margin: 0 5px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            color: white;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        margin-bottom: 15px;
+                        font-family: InterLight;
+                        font-weight: 700;
+                        display: none;
+                        padding-left: 20px;
+
+                        .categories_click_element {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            font-size: 14px;
+                            color: #3E445A;
+                            font-family: Inter;
+                            font-weight: 400;
+
+                        }
+
+                        .categories_click_element_in {
+                            display: flex;
+                            margin-bottom: 10px;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: 14px;
+                            color: #3E445A;
+                            font-family: Inter;
+                            font-weight: 400;
+                        }
+                    }
+
+                    &:nth-child(6) {
                         display: flex;
                         justify-content: flex-start;
                         align-items: flex-start;
@@ -477,7 +537,7 @@
                         }
                     }
 
-                    &:nth-child(5) {
+                    &:nth-child(7) {
                         margin-bottom: 15px;
                         padding-bottom: 15px;
                         border-bottom: 0.5px solid rgb(215, 215, 215);
@@ -487,6 +547,11 @@
                             justify-content: space-between;
                             align-items: center;
                             font-size: 15px;
+
+                            i {
+                                transition: 0.3s;
+
+                            }
 
                             a {
                                 text-decoration: none;
@@ -514,7 +579,7 @@
                         }
                     }
 
-                    &:nth-child(6) {
+                    &:nth-child(8) {
                         margin-bottom: 15px;
                         padding-bottom: 15px;
                         border-bottom: 0.5px solid rgb(215, 215, 215);
@@ -525,6 +590,10 @@
                             align-items: center;
                             font-size: 15px;
 
+                            i {
+                                transition: 0.3s;
+                            }
+
                             a {
                                 text-decoration: none;
                                 color: #3E445A;
@@ -534,6 +603,7 @@
                         .megamenu2 {
                             padding: 0;
                             margin: 0;
+                            display: none;
 
                             .all {
                                 display: flex;
@@ -550,6 +620,10 @@
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
+
+                                        &:first-child {
+                                            margin-top: 15px;
+                                        }
 
                                         &:last-child {
                                             margin: 0;
@@ -576,6 +650,8 @@
                             }
                         }
                     }
+
+
                 }
             }
         }
