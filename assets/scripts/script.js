@@ -103,6 +103,15 @@ $(document).ready(function () {
     $('.all_categories_').slideToggle(220);
   })
 
+  $('.dla_najatiya').click(function () {
+    $('.continued').slideToggle(220);
+  })
+
+  $('.dla_najatiya1').click(function () {
+    $('.continued1').slideToggle(220);
+    $('.continued1').classToggle('shillaq');
+  })
+
 });
 
 //#endregion categories

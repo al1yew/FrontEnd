@@ -494,11 +494,42 @@
                         display: none;
                         padding-left: 20px;
 
+                        .continued {
+                            display: none;
+                        }
+
+                        .continued1 {
+                            display: none;
+                        }
+
+                        .ikon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 15%;
+                            transition: 0.3s;
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 13px;
+                            color: #3e445a;
+                            width: 72%;
+                            transition: 0.3s;
+                        }
+
+                        span {
+                            font-size: 13px;
+                            transition: 0.3s;
+                            color: #3e445a;
+                            width: 85%;
+                        }
+
                         .categories_click_element {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-                            margin-bottom: 10px;
+                            margin-bottom: 20px;
                             font-size: 14px;
                             color: #3E445A;
                             font-family: Inter;
@@ -508,7 +539,6 @@
 
                         .categories_click_element_in {
                             display: flex;
-                            margin-bottom: 10px;
                             justify-content: flex-start;
                             align-items: center;
                             font-size: 14px;
