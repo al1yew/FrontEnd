@@ -73,10 +73,10 @@ $(document).ready(function () {
             pr_big +=
                 `
                 <tr class="basket_item" id= "${product.Id}">
-                    <td class="col-lg-1">
+                    <td class="col-lg-1 col-4">
                         <img class="img-fluid" src="${product.Src}">
                     </td>
-                    <td class="col-lg-6">
+                    <td class="col-lg-6 col-4-2">
                         <span>
                             ${product.Name}
                         </span>
@@ -84,7 +84,7 @@ $(document).ready(function () {
                     <td class="col-lg-1">
                         ${product.Price}$
                     </td>
-                    <td class="col-lg-2">
+                    <td class="col-lg-2 col-3">
                         <div class="top_counter col-lg-12">
                             <button id="decrease">
                                 -
@@ -106,7 +106,7 @@ $(document).ready(function () {
                     <td class="col-lg-1">
                         ${Math.round((product.Price * product.Count) * 100) / 100}$
                     </td>
-                    <td id="remove_prod_basket" class="col-lg-0-5 remove_prod_basket">
+                    <td id="remove_prod_basket" class="col-lg-0-5 col-0-8 remove_prod_basket">
                         <span>
                             X
                         </span>
