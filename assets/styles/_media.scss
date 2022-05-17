@@ -246,13 +246,13 @@
 
                                 .remove_x_small_basket {
                                     position: absolute;
-                                    top: -15%;
+                                    top: 0%;
                                     border-radius: 100%;
-                                    font-size: 10px;
-                                    left: 10%;
+                                    font-size: 12px;
+                                    left: 5%;
                                     color: white;
                                     background-color: red;
-                                    padding: 1px 6px;
+                                    padding: 2px 8px;
                                     cursor: pointer;
                                 }
 
@@ -260,6 +260,7 @@
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
+                                    flex-direction: column;
                                     padding: 10px 0;
                                     border-top: 0.5px solid #dee2e6;
                                     // border-bottom: 0.5px solid #dee2e6;
@@ -280,7 +281,7 @@
                                         align-items: flex-start;
 
                                         .top {
-                                            font-size: 13px;
+                                            font-size: 15px;
                                             color: black;
                                             background-color: white;
                                             transition: 0.3s;
@@ -295,7 +296,7 @@
                                             background-color: white;
                                             border: none;
                                             justify-content: center;
-                                            align-items: flex-start;
+                                            align-items: center;
 
                                             span {
                                                 font-size: 13.5px;
@@ -2389,6 +2390,10 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 flex-direction: column;
+
+                a {
+                    color: black;
+                }
 
                 .right_left {
                     display: flex;

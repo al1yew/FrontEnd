@@ -3109,13 +3109,13 @@ body {
   }
   #phone_header .all .right .bag .bag_div .polniy .polniy_top .remove_x_small_basket {
     position: absolute;
-    top: -15%;
+    top: 0%;
     border-radius: 100%;
-    font-size: 10px;
-    left: 10%;
+    font-size: 12px;
+    left: 5%;
     color: white;
     background-color: red;
-    padding: 1px 6px;
+    padding: 2px 8px;
     cursor: pointer;
   }
   #phone_header .all .right .bag .bag_div .polniy .polniy_top .product_bag_div {
@@ -3128,6 +3128,10 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 10px 0;
     border-top: 0.5px solid #dee2e6;
   }
@@ -3153,7 +3157,7 @@ body {
             align-items: flex-start;
   }
   #phone_header .all .right .bag .bag_div .polniy .polniy_top .product_bag_div .right .top {
-    font-size: 13px;
+    font-size: 15px;
     color: black;
     background-color: white;
     -webkit-transition: 0.3s;
@@ -3171,9 +3175,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #phone_header .all .right .bag .bag_div .polniy .polniy_top .product_bag_div .right .bottom span {
     font-size: 13.5px;
@@ -5315,6 +5319,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #phone_eleventh .all .right a {
+    color: black;
   }
   #phone_eleventh .all .right .right_left {
     display: -webkit-box;
