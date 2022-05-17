@@ -64,13 +64,15 @@ $(document).ready(function () {
   })
 
   let locations = document.querySelectorAll('.locations');
-  let set_location = document.querySelector('#set_location');
+  let set_locations = document.querySelectorAll('.set_location');
   let locals = document.querySelectorAll('.local');
   //sheherin adini saxlayan <p> uchun
+
   for (let local of locals) {
     local.onclick = function (e) {
-
-      set_location.innerHTML = e.target.children[0].innerHTML;
+      for (let set_location of set_locations) {
+        set_location.innerHTML = e.target.children[0].innerHTML;
+      }
 
       $('.modal_location').fadeOut(300);
 
@@ -79,7 +81,9 @@ $(document).ready(function () {
   //sheherin adi uchun span uchun
   for (let location of locations) {
     location.onclick = function (e) {
-      set_location.innerHTML = e.target.innerHTML;
+      for (let set_location of set_locations) {
+        set_location.innerHTML = e.target.innerHTML;
+      }
       $('.modal_location').fadeOut(300);
     }
   }
