@@ -92,6 +92,137 @@
         }
     }
 
+    .modal_location {
+
+        height: 100vh;
+        font-family: Inter;
+        position: fixed;
+        z-index: 1234;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #afafb67b;
+
+
+        .location_div {
+            height: 75%;
+            z-index: 123456;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+
+            .top {
+                position: relative;
+                display: flex;
+                margin-bottom: 20px;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h5 {
+                    padding: 0;
+                    font-size: 18px !important;
+                    margin: 0;
+                }
+
+                p {
+                    margin: 10px 0;
+                    font-size: 13px;
+                    color: #9b9bb4;
+                }
+
+                .inputarea {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: rgb(243, 244, 247);
+                    padding: 8px;
+                    border-radius: 5px;
+                    width: 100%;
+
+                    i {
+                        width: 8%;
+                        color: #233A95;
+                        font-size: 16px;
+                        transition: 0.35s;
+                        padding-left: 8px;
+                        margin-right: 8px;
+                    }
+
+                    input {
+                        outline: none;
+                        background-color: rgb(243, 244, 247);
+                        border: none;
+                        padding: 5px;
+                        width: 92%;
+
+                        &::-webkit-search-cancel-button {
+                            position: relative;
+                            right: 5px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                span {
+                    font-size: 13px;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    color: #7A7A7A;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: flex-start;
+                overflow-y: scroll;
+                height: 300px;
+                width: 100%;
+
+                p {
+                    padding: 15px 0;
+                    width: 100%;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    display: flex;
+                    border-bottom: 0.5px solid #9b9bb4;
+
+                    span {
+                        &:nth-child(1) {
+                            font-size: 12px;
+                            color: black;
+                            width: fit-content;
+                        }
+
+                        &:nth-child(2) {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 9px;
+                            color: #9b9bb4;
+                            width: 30%;
+                            margin-right: 10px;
+                            padding: 3px 10px;
+                            border: 0.3px solid #9b9bb4;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #phone_header {
         font-family: Inter;
         box-shadow: 0px 3px 5px 1px rgb(206, 206, 206);
@@ -376,17 +507,23 @@
             }
         }
 
-        #sidebar {
+
+
+        .sidebar {
             position: absolute;
-            left: 0;
+            left: -100%;
             top: 0;
+            background-attachment: fixed;
+            height: 850px;
+            overflow-y: scroll;
             background-color: white;
+            transition: 0.5s;
             width: 100%;
             margin: 0;
             padding: 0;
             font-family: Inter;
             padding: 15px;
-            z-index: 200;
+            z-index: 30;
 
             .all {
                 display: flex;
@@ -679,10 +816,6 @@
                             display: none;
                             padding-left: 20px;
 
-                            .phone_megamenu2 {
-                                display: none;
-                            }
-
                             .all {
                                 display: flex;
                                 align-items: flex-start;
@@ -725,6 +858,14 @@
                                 }
 
 
+                            }
+
+                            .phone_megamenu2 {
+                                display: none;
+                            }
+
+                            .phone_m_1 {
+                                display: none;
                             }
                         }
                     }
@@ -802,7 +943,7 @@
                             display: none;
                             color: #3E445A;
                             padding-left: 20px;
-                            padding-bottom: 15px;
+                            padding-top: 20px;
 
                             span {
                                 width: 100%;
@@ -838,7 +979,7 @@
                             display: none;
                             color: #3E445A;
                             padding-left: 20px;
-                            padding-bottom: 15px;
+                            padding-top: 20px;
 
                             span {
                                 width: 100%;
@@ -851,6 +992,14 @@
 
                 }
             }
+        }
+
+        .sidebar_active {
+            left: 0% !important;
+        }
+
+        .phone_m_1 {
+            display: none;
         }
     }
 

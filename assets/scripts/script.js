@@ -139,6 +139,29 @@ $(document).ready(function () {
     $('.phone_m_5').slideToggle(220);
   })
 
+  $('.clickcurr').click(function () {
+    $('.currss').slideToggle(220);
+  })
+
+  $('.clicklang').click(function () {
+    $('.langsss').slideToggle(220);
+  })
+
+  $('.phone_menu').click(function () {
+    $('.sidebar').toggleClass('sidebar_active');
+  })
+
+  // let sidebars = document.querySelectorAll('.sidebar');
+
+  // document.onclick = function (e) {
+  //   for (let sidebar of sidebars) {
+  //     if (e.target == sidebar) {
+  //       sidebar.style.display = "none";
+  //     }
+  //   }
+  // }
+
+
 });
 
 //#endregion categories megamenu_phone
