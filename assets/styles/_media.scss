@@ -132,7 +132,7 @@
 
 
         .location_div {
-            height: 75%;
+            height: 60%;
             z-index: 123456;
             display: flex;
             justify-content: space-between;
@@ -247,6 +247,7 @@
     }
 
     #phone_header {
+        z-index: 9876543;
         font-family: Inter;
         box-shadow: 0px 3px 5px 1px rgb(206, 206, 206);
         position: relative;
@@ -537,7 +538,7 @@
             left: -100%;
             top: 0;
             background-attachment: fixed;
-            height: 850px;
+            height: 650px;
             overflow-y: scroll;
             background-color: white;
             transition: 0.5s;
@@ -546,7 +547,7 @@
             padding: 0;
             font-family: Inter;
             padding: 15px;
-            z-index: 30;
+            z-index: 98765439398765430;
 
             .all {
                 display: flex;
@@ -4548,25 +4549,9 @@
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
-                    border-bottom: 1px solid #d9d9e9;
+                    // border-bottom: 1px solid #d9d9e9;
                     border-radius: 5px;
                     margin-top: 15px;
-
-                    .radiuslutop-sag {
-                        border-top-right-radius: 5px;
-                    }
-
-                    .radiuslutop-sol {
-                        border-top-left-radius: 5px;
-                    }
-
-                    .radiuslubottom-sag {
-                        border-bottom-right-radius: 5px;
-                    }
-
-                    .radiuslubottom-sol {
-                        border-bottom-left-radius: 5px;
-                    }
 
                     .product {
                         padding: 0;
@@ -5542,10 +5527,17 @@
         background-color: white;
         box-shadow: 0px -2px 4px 1px rgb(210, 210, 210);
         padding: 8px;
+
         position: fixed;
+        z-index: 9876546;
         bottom: 0;
         left: 0%;
         width: 100%;
+
+        a {
+            color: rgb(196, 196, 196);
+            text-decoration: none;
+        }
 
         .all {
             display: flex;
