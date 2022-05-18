@@ -7463,11 +7463,12 @@ body {
   #productinfo {
     background-color: #f4f4f4;
     margin-bottom: 40px;
+    padding: 10px;
   }
   #productinfo .all {
     background-color: white;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
   }
   #productinfo .all .top {
     padding: 0;
@@ -7500,42 +7501,32 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-family: DosisLight;
+    margin-bottom: 20px;
   }
   #productinfo .all .top .head_prod .brands_name {
-    font-family: InterLight;
-    padding-right: 10px;
-    border-right: 1px solid #c4c4c4;
-  }
-  #productinfo .all .top .head_prod .brands_name span {
-    font-size: 12px;
-  }
-  #productinfo .all .top .head_prod .brands_name span:first-child {
-    color: #9b9bb4;
-  }
-  #productinfo .all .top .head_prod .brands_name span:last-child {
-    color: black;
+    display: none;
   }
   #productinfo .all .top .head_prod .rating_prod {
-    padding: 0 10px;
-    border-right: 1px solid #c4c4c4;
+    padding-right: 20px;
   }
   #productinfo .all .top .head_prod .rating_prod i {
     color: yellow;
-    font-size: 12px;
+    font-size: 10px;
   }
   #productinfo .all .top .head_prod .rating_prod .greyy {
     color: #c4c4c4;
   }
   #productinfo .all .top .head_prod .rating_prod span {
-    font-size: 12px;
-    font-family: InterLight;
+    font-size: 10px;
+    font-family: DosisLight;
     font-weight: 500;
   }
   #productinfo .all .top .head_prod .num_prod {
     padding: 0 10px;
     font-family: InterLight;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7562,6 +7553,10 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #productinfo .all .bottom .left123 {
     position: relative;
@@ -7845,6 +7840,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 30px;
     font-family: InterLight;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7897,6 +7893,9 @@ body {
   #productinfo .all .bottom .right .desc div:last-child {
     margin-bottom: 0;
   }
+  #prodreview {
+    padding: 0 10px;
+  }
   #prodreview .all {
     background-color: white;
     border-radius: 10px;
@@ -7918,10 +7917,7 @@ body {
     border-bottom: 0.5px solid #d8d8d8;
   }
   #prodreview .all .tabmenu .tabclick {
-    font-size: 16px;
-    padding: 0 20px;
-    cursor: pointer;
-    padding-top: 0;
+    padding: 0 10px;
     color: #c8c8c8;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7932,7 +7928,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 20px;
+    font-size: 12px;
     font-family: DosisLight;
     font-weight: 600;
   }
@@ -7946,7 +7942,7 @@ body {
   #prodreview .all .review .review_head_p {
     font-family: DosisLight;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 15px;
   }
   #prodreview .all .review .person_rev {
@@ -8155,6 +8151,7 @@ body {
     padding-top: 30px;
   }
   #prodreview .all .description_p span {
+    font-size: 10px;
     padding: 10px;
     display: block;
   }

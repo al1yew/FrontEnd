@@ -4820,11 +4820,12 @@
     #productinfo {
         background-color: rgb(244, 244, 244);
         margin-bottom: 40px;
+        padding: 10px;
 
         .all {
             background-color: white;
             border-radius: 10px;
-            padding: 30px;
+            padding: 20px;
 
             .top {
                 padding: 0;
@@ -4844,34 +4845,20 @@
 
                 .head_prod {
                     display: flex;
-                    // justify-content: flex-start;
                     align-items: center;
+                    font-family: DosisLight;
+                    margin-bottom: 20px;
 
                     .brands_name {
-                        font-family: InterLight;
-                        padding-right: 10px;
-                        border-right: 1px solid rgb(196, 196, 196);
-
-                        span {
-                            font-size: 12px;
-
-                            &:first-child {
-                                color: #9b9bb4;
-                            }
-
-                            &:last-child {
-                                color: black;
-                            }
-                        }
+                        display: none;
                     }
 
                     .rating_prod {
-                        padding: 0 10px;
-                        border-right: 1px solid rgb(196, 196, 196);
+                        padding-right: 20px;
 
                         i {
                             color: yellow;
-                            font-size: 12px;
+                            font-size: 10px;
                         }
 
                         .greyy {
@@ -4879,8 +4866,8 @@
                         }
 
                         span {
-                            font-size: 12px;
-                            font-family: InterLight;
+                            font-size: 10px;
+                            font-family: DosisLight;
                             font-weight: 500;
                         }
                     }
@@ -4889,7 +4876,7 @@
                         padding: 0 10px;
                         font-family: InterLight;
                         font-weight: 500;
-                        font-size: 12px;
+                        font-size: 10px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -4913,6 +4900,7 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 0;
+                flex-direction: column;
 
                 .left123 {
                     position: relative;
@@ -5194,6 +5182,7 @@
 
                 .right {
                     display: flex;
+                    margin-top: 30px;
                     font-family: InterLight;
                     flex-direction: column;
 
@@ -5244,6 +5233,7 @@
 
 
     #prodreview {
+        padding: 0 10px;
 
         .all {
             background-color: white;
@@ -5265,15 +5255,12 @@
                         padding-right: 20px;
                     }
 
-                    font-size: 16px;
-                    padding: 0 20px;
-                    cursor: pointer;
-                    padding-top: 0;
+                    padding: 0 10px;
                     color: rgb(200, 200, 200);
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: 20px;
+                    font-size: 12px;
                     font-family: DosisLight;
                     font-weight: 600;
                 }
@@ -5285,7 +5272,7 @@
                 .review_head_p {
                     font-family: DosisLight;
                     font-weight: 600;
-                    font-size: 16px;
+                    font-size: 12px;
                     margin-bottom: 15px;
                 }
 
@@ -5487,8 +5474,9 @@
             .description_p {
                 padding: 0;
                 padding-top: 30px;
-
+                
                 span {
+                font-size: 10px;
                     padding: 10px;
                     display: block;
                 }
