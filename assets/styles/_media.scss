@@ -4028,7 +4028,7 @@
             justify-content: space-between;
 
             .shop_menu_active {
-                left: 0%;
+                left: 0% !important;
             }
 
             .left {
@@ -4037,6 +4037,7 @@
                 color: #71778e;
                 position: absolute;
                 top: 0px;
+                transition: 0.5s;
                 left: -100%;
                 z-index: 9999500;
                 width: 100%;

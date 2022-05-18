@@ -6803,7 +6803,7 @@ body {
             justify-content: space-between;
   }
   #all_content .all .shop_menu_active {
-    left: 0%;
+    left: 0% !important;
   }
   #all_content .all .left {
     background-color: white;
@@ -6811,6 +6811,8 @@ body {
     color: #71778e;
     position: absolute;
     top: 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     left: -100%;
     z-index: 9999500;
     width: 100%;
