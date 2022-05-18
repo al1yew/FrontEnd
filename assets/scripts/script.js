@@ -151,6 +151,14 @@ $(document).ready(function () {
     $('.sidebar').toggleClass('sidebar_active');
   })
 
+  $('.phone_shop_menu').click(function () {
+    $('.shop_menu').toggleClass('shop_menu_active');
+  })
+
+  $('.filter_by').click(function () {
+    $('.shop_menu').toggleClass('shop_menu_active');
+  })
+
   // let sidebars = document.querySelectorAll('.sidebar');
 
   // document.onclick = function (e) {
