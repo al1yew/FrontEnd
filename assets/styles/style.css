@@ -6792,7 +6792,7 @@ body {
   }
   #all_content {
     font-family: Inter;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
   }
   #all_content .all {
     display: -webkit-box;
@@ -7140,16 +7140,17 @@ body {
   #all_content .all .right .top .content {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 15%;
     color: black;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   #all_content .all .right .top .content h4 {
     font-family: InterLight;
+    font-weight: 800;
   }
   #all_content .all .right .top .content h3 {
-    font-weight: 600;
+    font-weight: 800;
   }
   #all_content .all .right .top .content h3 span {
     color: green;
@@ -7334,62 +7335,29 @@ body {
   }
   #all_content .all .right .bottom .product {
     padding: 0;
+    height: 380px;
     color: black;
-    height: 325px;
-    overflow: hidden;
-    cursor: pointer;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
     position: relative;
     background-color: white;
   }
-  #all_content .all .right .bottom .product:hover {
-    overflow: visible;
-    z-index: 121;
-  }
-  #all_content .all .right .bottom .product:hover .hovered_btn {
-    opacity: 1 !important;
-    z-index: 12;
-    visibility: 1 !important;
-  }
   #all_content .all .right .bottom .product .product_card {
-    border: 0.5px solid #d5d5d5;
     background-color: white;
+    height: 380px;
+    border: 0.5px solid #d5d5d5;
   }
-  #all_content .all .right .bottom .product .product_card:hover {
-    -webkit-box-shadow: 0px 0px 0.4px 0.4px #666;
-            box-shadow: 0px 0px 0.4px 0.4px #666;
-    border-radius: 5px;
+  #all_content .all .right .bottom .product .product_card .korotkiy li:nth-child(3) {
+    padding-bottom: 10px;
+  }
+  #all_content .all .right .bottom .product .product_card .korotkiy li:nth-child(5) {
+    padding-top: 20px;
   }
   #all_content .all .right .bottom .product .product_card img {
     -o-object-fit: cover;
        object-fit: cover;
     background-size: cover;
-    width: 90%;
+    width: 100%;
     margin: auto;
     vertical-align: middle;
-  }
-  #all_content .all .right .bottom .product .product_card .korotkiy {
-    height: 195px;
-    padding-bottom: 0;
-    margin-bottom: 18px;
-  }
-  #all_content .all .right .bottom .product .product_card .korotkiy li:last-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    height: 8.5vh;
-    margin: 0;
   }
   #all_content .all .right .bottom .product .product_card ul {
     padding: 5px 15px;
@@ -7397,6 +7365,9 @@ body {
   }
   #all_content .all .right .bottom .product .product_card ul li {
     list-style: none;
+  }
+  #all_content .all .right .bottom .product .product_card ul li:nth-child(1) {
+    font-size: 14px;
   }
   #all_content .all .right .bottom .product .product_card ul li:nth-child(2) {
     font-size: 10px;
@@ -7409,7 +7380,7 @@ body {
     margin-right: 10px;
   }
   #all_content .all .right .bottom .product .product_card ul li:nth-child(3) {
-    color: yellow;
+    color: #ffcd00;
     font-size: 11px;
     padding-bottom: 8px;
     display: -webkit-box;
@@ -7428,7 +7399,7 @@ body {
     padding-bottom: 15px;
   }
   #all_content .all .right .bottom .product .product_card ul li:nth-child(4) span {
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: line-through;
     color: #71778E;
     margin-right: 10px;
@@ -7436,34 +7407,34 @@ body {
   #all_content .all .right .bottom .product .product_card ul li:nth-child(4) span:nth-child(2) {
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     color: red;
   }
   #all_content .all .right .bottom .product .product_card ul li:nth-child(4) span:last-child {
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     color: red;
   }
   #all_content .all .right .bottom .product .product_card ul li:nth-child(5) {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    opacity: 0;
-    visibility: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   #all_content .all .right .bottom .product .product_card ul li:nth-child(5) button {
     width: 100%;
     outline: none;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
     border: none;
     padding: 5px 0px;
     border-radius: 20px;
-    background-color: yellow;
-  }
-  #all_content .all .right .bottom .product .product_card ul li:nth-child(5) button:hover {
     color: white;
-    background-color: blue;
+    background-color: #233a95;
   }
   #all_content .all .right .bottom .product .product_card ul li:nth-child(5) .top_counter {
     width: 100%;
@@ -7496,8 +7467,6 @@ body {
     position: absolute;
     top: 10px;
     right: 7px;
-    opacity: 0;
-    visibility: hidden;
     -webkit-box-shadow: 0px 0px 4px 1px grey;
             box-shadow: 0px 0px 4px 1px grey;
     border-radius: 100%;
@@ -7526,12 +7495,10 @@ body {
     cursor: pointer;
     top: 60px;
     right: 7px;
-    opacity: 0;
-    visibility: hidden;
     padding: 6px 10px;
     color: grey;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
     background-color: white;
     -webkit-box-shadow: 0px 0px 4px 1px grey;
             box-shadow: 0px 0px 4px 1px grey;
@@ -7539,16 +7506,6 @@ body {
   }
   #all_content .all .right .bottom .product .heart:hover {
     background-color: #233A95;
-  }
-  #all_content .all .right .bottom .product:hover .size {
-    right: 10px;
-    opacity: 1;
-    visibility: visible;
-  }
-  #all_content .all .right .bottom .product:hover .heart {
-    right: 10px;
-    opacity: 1;
-    visibility: visible;
   }
   #all_content .all .right .blue {
     background-color: blue !important;
