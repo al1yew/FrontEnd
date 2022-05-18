@@ -892,15 +892,10 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
 //#region phone header sticky
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 40) {
+  if ($(window).scrollTop() > 60) {
     $('.phone_header').addClass('phone_header_fixed');
   }
   else {
