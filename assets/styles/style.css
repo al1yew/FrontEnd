@@ -2605,6 +2605,14 @@ body {
     font-size: 12px;
     text-align: center;
   }
+  .phone_header_fixed {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    width: 100% !important;
+    background-color: white !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
   #header {
     display: none;
   }

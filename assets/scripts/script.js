@@ -893,3 +893,22 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+//#region phone header sticky
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 40) {
+    $('.phone_header').addClass('phone_header_fixed');
+  }
+  else {
+    $('.phone_header').removeClass('phone_header_fixed');
+  }
+})
+
+
+
+
+//#endregion phone header sticky
