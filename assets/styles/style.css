@@ -1452,7 +1452,7 @@ body {
     display: none;
   }
   .filter_by {
-    display: none;
+    display: none !important;
   }
 }
 

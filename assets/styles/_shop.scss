@@ -865,10 +865,11 @@
         }
     }
 
-    .phone_menu{
+    .phone_menu {
         display: none;
     }
-    .filter_by{
-        display: none;
+
+    .filter_by {
+        display: none !important;
     }
 }
