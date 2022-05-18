@@ -259,6 +259,19 @@ body {
     margin-right: 10px;
 }
 
+.klbth-icon-search:before {
+    content: '\e808';
+}
+
+.klbth-icon-heart-1:before {
+    content: '\e860';
+}
+
+.klbth-icon-store:before {
+    content: '\e88d';
+}
+
+
 /*#endregion Icons do not open it is too big press alt z*/
 
 @font-face {
@@ -300,23 +313,26 @@ a {
     text-decoration: none;
 }
 
+
+
 @media (min-width: 1050px) {
+
+    .covid_comp_keeper {
+        font-family: Inter;
+        background-color: rgb(35, 58, 149);
+
+        p {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-family: Inter;
+            padding: 9px;
+            margin: 0;
+        }
+    }
+
     #header {
         z-index: 55;
-
-        .top {
-            font-family: Inter;
-            background-color: rgb(35, 58, 149);
-
-            p {
-                text-align: center;
-                color: white;
-                font-size: 12px;
-                font-family: Inter;
-                padding: 9px;
-                margin: 0;
-            }
-        }
 
         .middle {
             font-family: Inter;

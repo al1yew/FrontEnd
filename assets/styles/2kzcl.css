@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .product-detail form.cart.single-ajax button{position:relative;}
 .product-detail form.cart.single-ajax button svg{color:#fff;}
-.klb-notice-ajax{position:fixed;bottom:15px;right:15px;z-index:9999;color:#fff;max-width:400px;}
+.klb-notice-ajax{position:fixed;bottom:15px;right:15px;z-index:9999;color:#fff;max-widthklbth-icon-store:400px;}
 @media(max-width:600px){
 .klb-notice-ajax{left:15px;right:15px;}
 }

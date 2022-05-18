@@ -2547,6 +2547,9 @@ body {
   #phone_header {
     display: none;
   }
+  .footersayagi {
+    display: none;
+  }
   #phone_first {
     display: none;
   }
@@ -2595,6 +2598,13 @@ body {
 }
 
 @media (max-width: 576px) {
+  .covid_mob_keeper .covid_mob {
+    padding: 9px 0;
+    background-color: #233a95;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+  }
   #header {
     display: none;
   }
@@ -8163,6 +8173,7 @@ body {
   #prodreview .all .description_p {
     padding: 0;
     padding-top: 30px;
+    font-size: 11px;
   }
   #prodreview .all .description_p span {
     padding: 10px;
@@ -8189,6 +8200,57 @@ body {
   }
   #prodreview .all .chosen {
     color: black !important;
+  }
+  .footersayagi {
+    background-color: white;
+    -webkit-box-shadow: 0px -2px 4px 1px #d2d2d2;
+            box-shadow: 0px -2px 4px 1px #d2d2d2;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+  }
+  .footersayagi .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #c4c4c4;
+    font-family: DosisLight;
+    font-weight: 600;
+  }
+  .footersayagi .all div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footersayagi .all div .futr_kipr {
+    font-size: 12px;
+  }
+  .footersayagi .all div .futr_kipr i::before {
+    font-size: 15px;
+  }
+  .footersayagi .all div .futr_kipr .klbth-icon-user:before {
+    content: '\e807';
+    padding: 0;
+    border-radius: 0%;
+    border: none;
   }
 }
 
@@ -8390,6 +8452,18 @@ body {
   margin-right: 10px;
 }
 
+.klbth-icon-search:before {
+  content: '\e808';
+}
+
+.klbth-icon-heart-1:before {
+  content: '\e860';
+}
+
+.klbth-icon-store:before {
+  content: '\e88d';
+}
+
 /*#endregion Icons do not open it is too big press alt z*/
 @font-face {
   font-family: Inter;
@@ -8431,20 +8505,20 @@ a {
 }
 
 @media (min-width: 1050px) {
-  #header {
-    z-index: 55;
-  }
-  #header .top {
+  .covid_comp_keeper {
     font-family: Inter;
     background-color: #233a95;
   }
-  #header .top p {
+  .covid_comp_keeper p {
     text-align: center;
     color: white;
     font-size: 12px;
     font-family: Inter;
     padding: 9px;
     margin: 0;
+  }
+  #header {
+    z-index: 55;
   }
   #header .middle {
     font-family: Inter;
